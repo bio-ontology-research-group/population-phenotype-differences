@@ -625,3 +625,36 @@ error narrows rather than creates the EUR-versus-region difference. Finding clas
 class) agreed with the judges' per-mention classification for 94.2% of 450 classified phrases on test-based versus
 bedside, 84.4% on the exact class, and 87% on sign versus symptom among bedside findings (model-versus-model agreement;
 clinician validation pending).
+
+## Extraction performance against Phenopacket Store curation (2026-10-28; validate_against_store.py; results/v4/validation/)
+
+The abstract pipeline (qwen_tasks.py abstract on unimatrix job 10600, hpo_map2 candidates + qwen_tasks.py select job
+10602, abs_to_cases.py) was run on the PubMed abstracts of the Store publications (1,488 with abstract; 1,444 parsed;
+93.7% of 5,477 phrases mapped) and compared with the Store curators' HPO classes, which were assigned from the full text.
+Lenient: equal, ancestor or descendant (ignoring classes at or above organ-system level). Micro-averaged.
+
+| Unit | n | precision exact | precision lenient | recall exact | recall lenient | F1 lenient | classes curated / extracted |
+|---|---|---|---|---|---|---|---|
+| publication x gene | 1,019 | 0.39 | 0.65 | 0.09 | 0.23 | 0.34 | 17.8 / 4.3 |
+| patient (single-patient units) | 400 | 0.38 | 0.62 | 0.13 | 0.26 | 0.36 | 11.3 / 4.0 |
+
+Lenient precision by population (publication units): EUR 0.66 (256), MENA 0.66 (140), SASIA 0.76 (12), LATAM 0.56 (20),
+AFR 0.64 (7), EASIA 0.66 (188). Lenient recall of curated classes by finding class: test-based 0.24, signs 0.20,
+symptoms 0.25. Abstracts contain about a quarter of the curated findings; what they contain is extracted with lenient
+precision 0.65 (the abstract audit, judged against the abstract itself, gives precision 93.7% and recall 92.2%).
+Earlier PMC-Patients pipeline vs Store (51 shared publications, full text vs full text): lenient P/R 0.60/0.72, exact
+0.45/0.55 (results/v4/validation/pmcp_vs_store_summary.csv).
+
+Test share, abstract extraction minus full-text curation (publication units): EUR +9.3 points (241), MENA +4.7 (134),
+SASIA -3.0 (12), LATAM -1.5 (20), AFR +0.7 (7), EASIA +8.3 (184). Abstracts emphasise test-based findings more than
+the full text, more so for European and East Asian publications; the population differences in this bias are not
+significant (MENA minus EUR -4.7 points, 95% CI -10.7 to +1.8, permutation p=0.16; LATAM -10.9, p=0.11) but their point
+estimates have the size of the MENA gap.
+
+Test-share gap within corpora (population minus EUR, MH within gene x corpus, 1,000 group permutations):
+Store: MENA -6.0 (p=0.11), SASIA +0.8, LATAM +2.6, AFR -7.8 (p=0.11), EASIA +5.9 (p=0.039).
+PMC-Patients: MENA +0.1, SASIA -7.0 (p=0.004), LATAM -7.9 (p=0.001), AFR -2.1, EASIA +0.9.
+Store + PMC-Patients (full text): MENA -2.1 (p=0.20), SASIA -5.6 (p=0.012), LATAM -5.0 (p=0.013), AFR -6.0 (p=0.19),
+EASIA +2.3 (p=0.040). Abstracts: MENA -6.0, SASIA -8.2, LATAM -4.8, AFR -9.9, EASIA -1.7 (all p<=0.002).
+The South Asian and Latin American deficits replicate in the full-text corpora; the MENA and African deficits point the
+same way but are not significant there, and part of the MENA gap in abstracts may come from what authors put in abstracts.
