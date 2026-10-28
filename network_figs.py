@@ -122,31 +122,58 @@ def cmd_shift(a):
         if tot == 0: return "D"
         return "s" if c["test"] / tot > 0.6 else "o" if c["bed"] / tot > 0.6 else "D"
     pos = nx.spring_layout(G, weight="w", seed=7, k=1.6 / math.sqrt(len(nodes)), iterations=300)
+    if a.print_layout:   # pull the few far outlying nodes inward so the dense core fills the panel (cosmetic)
+        P = np.array([pos[t] for t in nodes]); c0 = np.median(P, 0); r = np.linalg.norm(P - c0, axis=1); rmax = np.percentile(r, 95)
+        for t, rr, pp in zip(nodes, r, P):
+            if rr > rmax: pos[t] = c0 + (pp - c0) * (rmax + 0.15 * (rr - rmax)) / rr
     bcol = {b: plt.cm.tab20(k % 20) for k, b in enumerate(branches)}
-    fig, axes = plt.subplots(2, 3, figsize=(21, 14)); axes = axes.ravel()
+    fs = a.font  # base font size; None keeps the original screen layout
+    nr, nc = (3, 2) if a.print_layout else (2, 3)
+    W, H = (7.0, 8.6) if a.print_layout else (21, 14)
+    fig, axes = plt.subplots(nr, nc, figsize=(W, H)); axes = axes.ravel()
+    nscale = 0.25 if a.print_layout else 1.0
     for ax, pop in zip(axes, POPS):
         z = np.array([float(Z[pop][t]["z"]) if t in Z[pop] else 0.0 for t in nodes])
         q = np.array([float(Z[pop][t]["q_bh"]) if t in Z[pop] else 1.0 for t in nodes])
-        nx.draw_networkx_edges(G, pos, ax=ax, alpha=0.12, width=[0.5 + 4 * G[u][v]["w"] for u, v in G.edges()])
+        nx.draw_networkx_edges(G, pos, ax=ax, alpha=0.05 if a.print_layout else 0.12,
+                               width=[(0.3 + 1.5 * G[u][v]["w"]) if a.print_layout else (0.5 + 4 * G[u][v]["w"]) for u, v in G.edges()])
         for shp in ("o", "s", "D"):
             idx = [i for i, t in enumerate(nodes) if shape(t) == shp]
             if not idx: continue
             nx.draw_networkx_nodes(G, pos, nodelist=[nodes[i] for i in idx], ax=ax, node_shape=shp,
-                                   node_size=[20 + 6 * math.sqrt(freq[nodes[i]]) for i in idx],
+                                   node_size=[nscale * (20 + 6 * math.sqrt(freq[nodes[i]])) for i in idx],
                                    node_color=[np.clip(z[i], -6, 6) for i in idx], cmap=plt.cm.RdBu_r, vmin=-6, vmax=6,
-                                   edgecolors=["black" if q[i] < 0.05 else "#bbbbbb" for i in idx], linewidths=[1.4 if q[i] < 0.05 else 0.4 for i in idx])
-        lab = {t: short(terms[t]["name"])[:28] for k, t in enumerate(nodes) if abs(z[k]) > a.label_z and q[k] < 0.05}
-        nx.draw_networkx_labels(G, pos, labels=lab, ax=ax, font_size=6.5)
-        ax.set_title(f"{pop} vs EUR (total; {sum(q < 0.05)} of {len(nodes)} terms q<0.05)", fontsize=12); ax.axis("off")
+                                   edgecolors=["black" if q[i] < 0.05 else "#bbbbbb" for i in idx],
+                                   linewidths=[(0.9 if a.print_layout else 1.4) if q[i] < 0.05 else 0.3 for i in idx])
+        sel = [k for k, t in enumerate(nodes) if abs(z[k]) > a.label_z and q[k] < 0.05]
+        if a.max_labels:
+            span = np.ptp(np.array(list(pos.values())), axis=0); keep = []
+            for k in sorted(sel, key=lambda k: -abs(z[k])):
+                if all(abs(pos[nodes[k]][1] - pos[nodes[j]][1]) > 0.06 * span[1] or abs(pos[nodes[k]][0] - pos[nodes[j]][0]) > 0.35 * span[0] for j in keep):
+                    keep.append(k)
+                if len(keep) >= a.max_labels: break
+            sel = keep
+        lab = {nodes[k]: short(terms[nodes[k]]["name"])[:28] for k in sel}
+        if a.print_layout:
+            for t, txt in lab.items():
+                ax.annotate(txt, pos[t], fontsize=fs - 1.5, ha="center", va="bottom", xytext=(0, 3), textcoords="offset points",
+                            bbox=dict(boxstyle="round,pad=0.1", fc="white", ec="none", alpha=0.7), zorder=5)
+        else:
+            nx.draw_networkx_labels(G, pos, labels=lab, ax=ax, font_size=6.5)
+        ax.set_title(f"{pop} vs EUR ({sum(q < 0.05)} of {len(nodes)} terms q<0.05)" if a.print_layout else
+                     f"{pop} vs EUR (total; {sum(q < 0.05)} of {len(nodes)} terms q<0.05)", fontsize=fs + 1 if a.print_layout else 12); ax.axis("off")
     ax = axes[5]; ax.axis("off")
     sm = plt.cm.ScalarMappable(cmap=plt.cm.RdBu_r, norm=plt.Normalize(-6, 6)); sm.set_array([])
-    fig.colorbar(sm, ax=ax, fraction=0.5, shrink=0.6, label="term z (population minus EUR, within gene and source)")
+    cb = fig.colorbar(sm, ax=ax, fraction=0.5, shrink=0.6, orientation="horizontal" if a.print_layout else "vertical",
+                      label="term z (population minus EUR)" if a.print_layout else "term z (population minus EUR, within gene and source)")
+    if a.print_layout: cb.ax.tick_params(labelsize=fs); cb.set_label(cb.ax.get_xlabel(), fontsize=fs)
     for shp, txt in (("o", "mostly bedside/history findings"), ("s", "mostly test-based findings"), ("D", "mixed or unclassified")):
         ax.scatter([], [], marker=shp, c="grey", label=txt)
     ax.scatter([], [], marker="o", facecolors="none", edgecolors="black", linewidths=1.4, label="BH q < 0.05")
-    ax.legend(loc="lower center", frameon=False, fontsize=10)
-    ax.text(0.5, 0.95, f"{len(nodes)} HPO terms 2-3 levels below the root,\nedges: co-occurrence phi > {a.phi} in {N:,} patients\n"
-            "size: number of patients", ha="center", va="top", fontsize=10, transform=ax.transAxes)
+    if a.print_layout: ax.legend(loc="upper center", bbox_to_anchor=(0.5, 0.6), frameon=False, fontsize=fs)
+    else: ax.legend(loc="lower center", frameon=False, fontsize=10)
+    ax.text(0.5, 1.0 if a.print_layout else 0.95, f"{len(nodes)} HPO terms 2-3 levels below the root,\nedges: co-occurrence phi > {a.phi} in {N:,} patients\n"
+            "size: number of patients", ha="center", va="top", fontsize=fs if a.print_layout else 10, transform=ax.transAxes)
     fig.tight_layout(); fig.savefig(a.out + ".pdf"); fig.savefig(a.out + ".png", dpi=160)
     with open(a.out + "_nodes.csv", "w", newline="") as fh:
         w = csv.writer(fh); w.writerow(["hpo", "name", "branch", "n_cases", "class"] + [f"z_{p}" for p in POPS] + [f"q_{p}" for p in POPS])
@@ -221,7 +248,8 @@ def cmd_popnet(a):
     ang = {p: math.pi / 2 - 2 * math.pi * i / len(pops) for i, p in enumerate(pops)}
     pos = {p: (math.cos(t), math.sin(t)) for p, t in ang.items()}
     cmap = plt.get_cmap("RdBu_r"); vmax = 0.4
-    fig, axes = plt.subplots(1, 2, figsize=(12, 6))
+    pl = a.print_layout; fs = a.font
+    fig, axes = plt.subplots(1, 2, figsize=(7.0, 3.9) if pl else (12, 6))
     for ax, ver in zip(axes, ("total", "patient-carried")):
         for r in edges:
             if r["version"] != ver: continue
@@ -231,26 +259,31 @@ def cmd_popnet(a):
             src = next(p for p in pops if A == p + p)
             dst = next(p for p in pops if p != src and rest in (src + p, p + src))
             ax.add_patch(FancyArrowPatch(pos[src], pos[dst], connectionstyle="arc3,rad=0.15", arrowstyle="-|>",
-                                         mutation_scale=14, lw=1 + 6 * min(abs(e), 0.8), shrinkA=28, shrinkB=28,
+                                         mutation_scale=9 if pl else 14, lw=(0.6 + 3.5 * min(abs(e), 0.8)) if pl else (1 + 6 * min(abs(e), 0.8)), shrinkA=11 if pl else 28, shrinkB=11 if pl else 28,
                                          color="#b2182b" if e > 0 else "#2166ac", alpha=0.8,
                                          linestyle="-" if q < 0.05 else "--"))
         for p in pops:
             e, q = within.get((p, ver), (0.0, 1.0))
-            ax.scatter(*pos[p], s=200 + 1800 * math.sqrt(n[p] / max(n.values())), color=cmap(0.5 + e / (2 * vmax)),
-                       edgecolors="black" if q < 0.05 else "grey", linewidths=2.5 if q < 0.05 else 0.8, zorder=3)
-            ax.annotate(f"{p}\n{n[p]:,}", pos[p], ha="center", va="center", fontsize=9, zorder=4,
-                        color="white" if abs(e) > 0.25 else "black")
-        ax.set_title({"total": "Total (corpus fixed)", "patient-carried": "Patient-carried (author region fixed)"}[ver])
-        ax.set_xlim(-1.45, 1.45); ax.set_ylim(-1.45, 1.45); ax.set_aspect("equal"); ax.axis("off")
+            ax.scatter(*pos[p], s=(70 + 600 * math.sqrt(n[p] / max(n.values()))) if pl else (200 + 1800 * math.sqrt(n[p] / max(n.values()))), color=cmap(0.5 + e / (2 * vmax)),
+                       edgecolors="black" if q < 0.05 else "grey", linewidths=(1.8 if pl else 2.5) if q < 0.05 else 0.8, zorder=3)
+            if pl:
+                x0, y0 = pos[p]; rr = 1.33 + 0.4 * math.sqrt(n[p] / max(n.values()))
+                ax.annotate(f"{p}\n{n[p]:,}", (x0 * rr, y0 * rr), ha="center", va="center", fontsize=fs - 0.5, zorder=4)
+            else:
+                ax.annotate(f"{p}\n{n[p]:,}", pos[p], ha="center", va="center", fontsize=9, zorder=4,
+                            color="white" if abs(e) > 0.25 else "black")
+        ax.set_title({"total": "Total (corpus fixed)", "patient-carried": "Patient-carried (author region fixed)"}[ver], fontsize=fs + 0.5 if pl else None)
+        lim = 1.9 if pl else 1.45; ax.set_xlim(-lim, lim); ax.set_ylim(-lim, lim); ax.set_aspect("equal"); ax.axis("off")
     from matplotlib.lines import Line2D
     fig.legend(handles=[Line2D([], [], color="#b2182b", lw=3, label="A-A more similar than A-B"),
                             Line2D([], [], color="#2166ac", lw=3, label="A-A less similar than A-B"),
                             Line2D([], [], color="grey", lw=2, label="q < 0.05"),
                             Line2D([], [], color="grey", lw=2, ls="--", label="0.05 <= q < 0.1")],
-                   loc="lower center", ncol=4, frameon=False, fontsize=9, title="arrow A -> B", title_fontsize=9,
-               bbox_to_anchor=(0.45, 0.08))
+                   loc="lower center", ncol=2 if pl else 4, frameon=False, fontsize=fs if pl else 9, title="arrow A -> B", title_fontsize=fs if pl else 9,
+               bbox_to_anchor=(0.45, 0.0 if pl else 0.08))
     sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(-vmax, vmax))
-    fig.colorbar(sm, ax=axes, shrink=0.6, label="within-population minus outside similarity (z)")
+    cb = fig.colorbar(sm, ax=axes, shrink=0.6, label="within-population minus\noutside similarity (z)" if pl else "within-population minus outside similarity (z)")
+    if pl: cb.ax.tick_params(labelsize=fs); cb.set_label(cb.ax.get_ylabel(), fontsize=fs)
     fig.savefig(a.out + ".pdf", bbox_inches="tight"); fig.savefig(a.out + ".png", dpi=180, bbox_inches="tight")
 
 
@@ -261,6 +294,9 @@ def main():
     ap.add_argument("--termclass"); ap.add_argument("--points"); ap.add_argument("--contrasts"); ap.add_argument("--within"); ap.add_argument("--out", required=True)
     ap.add_argument("--n-nodes", type=int, default=140); ap.add_argument("--phi", type=float, default=0.08)
     ap.add_argument("--label-z", type=float, default=3.5); ap.add_argument("--q", type=float, default=0.05)
+    ap.add_argument("--print-layout", action="store_true", help="shift/popnet: 178 mm wide layout with print-size fonts")
+    ap.add_argument("--font", type=float, default=8, help="base font size for --print-layout")
+    ap.add_argument("--max-labels", type=int, default=0, help="shift: label at most N terms per panel (largest |z|)")
     a = ap.parse_args()
     {"shift": cmd_shift, "dag": cmd_dag, "spend": cmd_spend, "popnet": cmd_popnet}[a.cmd](a)
 
