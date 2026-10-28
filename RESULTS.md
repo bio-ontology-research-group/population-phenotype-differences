@@ -542,3 +542,52 @@ fixed (patient-carried) only LATAM keeps a better bedside-only rank (q=0.06); th
 The test-based findings carry about half of the phenotype evidence that places the causative gene in the top 10, so
 the patient-level consequence of an investigation that is not done is large even though the population-average
 difference in test share is 5 to 9 points.
+
+## Symptoms versus signs (2026-10-28; symptom_sign.py; results/v4/symptom_sign/)
+
+Signs = termclass clinical_exam (seen or measured at the bedside); symptoms = symptom_history (reported by patient or
+family, or from the history). Means per case with >=1 bedside finding: EUR 2.47 signs / 1.15 symptoms (symptom share
+0.337); MENA 2.89/1.03 (0.306); SASIA 2.65/0.91 (0.266); LATAM 3.10/1.06 (0.271); AFR 3.70/0.85 (0.277); EASIA
+2.39/0.96 (0.320). Population minus EUR, total version (BH q within version):
+
+| Population | log(1+ signs) | log(1+ symptoms) | symptom share of bedside |
+|---|---|---|---|
+| MENA | +0.123 (q=0.0012) | +0.042 (0.0012) | -0.014 (0.099) |
+| SASIA | +0.185 (0.0012) | +0.053 (0.0012) | -0.047 (0.0037) |
+| LATAM | +0.117 (0.0012) | +0.038 (0.0050) | -0.014 (0.33) |
+| AFR | +0.192 (0.0021) | +0.017 (0.59) | -0.019 (0.46) |
+| EASIA | +0.051 (0.0012) | +0.012 (0.041) | -0.010 (0.096) |
+
+The bedside excess consists mainly of signs; signs remain higher after age or sex adjustment (all q<=0.002) and with
+author region fixed for SASIA (+0.24, q=0.015) and LATAM (+0.15, q=0.015). Setting family (15 contrasts): MENA ancestry
+cared for in MENA vs reference: signs +0.124 (q=0.0026), symptoms +0.035 (0.011), symptom share -0.027 (0.059); MENA
+ancestry cared for in Europe vs reference: signs +0.026 (0.42), symptoms -0.001 (0.96). Own-region care vs reference:
+SASIA signs +0.167 (0.0026), symptom share -0.052 (0.048); LATAM signs +0.124 (0.0026); EASIA signs +0.062 (0.0026),
+symptom share -0.024 (0.0084). Reports from these regions describe more examination findings, and the extra signs follow
+the place of care.
+
+## Age and sex interactions (2026-10-28; age_sex_interaction.py; results/v4/age_sex/)
+
+Test-share difference vs EUR within gene x corpus x sex (age band) strata, one joint permutation per population so that
+subset differences have a permutation null; BH q over the 20 interaction contrasts.
+
+Sex (points, male / female; male minus female, q): MENA -6.8 / -3.1 (-3.7, p=0.021, q=0.21); SASIA -10.5 / -7.3 (-3.1,
+q=0.40); LATAM -6.3 / -4.1 (-2.2, q=0.60); AFR -14.7 / -4.9 (-9.7, q=0.33); EASIA 0.0 / +0.1 (q=0.96). The deficit is
+present in both sexes and nominally larger in males; no sex interaction reaches q<0.05.
+
+Age (infant / child / adolescent / adult): MENA -7.4 / -4.8 / -2.5 / -2.9; SASIA -6.4 / -7.5 / -10.6 / -3.1; LATAM
++0.1 / -4.5 / -12.4 / -2.7; AFR +3.3 / -11.2 / +3.5 / -12.1; EASIA -6.1 / 0.0 / +2.5 / +0.4. The only age interaction at
+q<0.05 is East Asian infants (-6.5 points vs East Asian adults, q=0.010). Age and sex of the populations (share with
+age known; infant/child/adolescent/adult among known; share with sex known; male among known): EUR 55%; 14/31/12/43;
+66%; 50.7% | MENA 58%; 18/44/14/23; 65%; 53.7% | SASIA 63%; 21/39/14/26; 69%; 57.6% | LATAM 58%; 12/34/13/41; 71%;
+49.3% | AFR 57%; 18/29/16/37; 64%; 56.2% | EASIA 58%; 14/31/10/44; 72%; 53.7%.
+
+## Organ-system co-reporting networks (2026-10-28; comorbidity_net.py; results/v4/comorbidity/)
+
+Within-gene co-reporting correlation of organ systems (22 nodes; split into test-based and bedside findings: 42 nodes),
+population vs EUR difference of Fisher-transformed correlations, 2,000 group permutations. No single edge at q<0.05 in
+any population. Global tests (sum of squared standardised excesses): organ level MENA p=0.11, SASIA 0.012, LATAM 0.15,
+AFR 0.019, EASIA 0.003; split MENA 0.0015, SASIA 0.015, LATAM 0.25, AFR 0.18, EASIA 0.0045. The mean excess does not
+differ between test-test, bedside-bedside and test-bedside edges (all |mean| < 0.01 except AFR). Which organ systems
+are reported together is shared across regions; the differences are diffuse and not concentrated in tests ordered
+together.
