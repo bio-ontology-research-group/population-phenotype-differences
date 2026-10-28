@@ -591,3 +591,13 @@ AFR 0.019, EASIA 0.003; split MENA 0.0015, SASIA 0.015, LATAM 0.25, AFR 0.18, EA
 differ between test-test, bedside-bedside and test-bedside edges (all |mean| < 0.01 except AFR). Which organ systems
 are reported together is shared across regions; the differences are diffuse and not concentrated in tests ordered
 together.
+
+## Place of care pooled over all non-European ancestries (2026-10-28; setting_pooled.py; results/v4/setting_pooled/)
+
+Same three contrasts for every ancestry and pooled over MENA, SASIA, LATAM, AFR and EASIA (own-region care vs EUR care
+with ancestry in the stratum key). Test share, pooled (q over 15 pooled tests): own-region care vs reference -3.8 points
+(q=0.0012; 8,248 patients); care in Europe/North America vs reference -2.2 (q=0.068; 1,116); own-region vs
+Europe/North America care within ancestry -4.1 (q=0.037; 1,166 vs 467). Per ancestry (own vs reference / EUR care vs
+reference / own vs EUR care): MENA -7.4 / +0.1 / -7.2 (q=0.013); SASIA -9.8 / -4.1 / -9.1; LATAM -3.0 / -5.8 (q=0.027)
+/ +0.5; AFR -12.4 / -2.8 / -8.4; EASIA -2.0 / -5.1 / +4.7. Small differences from the setting_all numbers come from
+restricting to cases with a test-based or bedside finding.
