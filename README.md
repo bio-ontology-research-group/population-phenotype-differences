@@ -59,6 +59,8 @@ extracted phrases only.
 - The OntoFUNC term database (`term.txt`, `term2term.txt`, `graph_path.txt`)
   built from that release with ELK; expected in `data/ontofunc_hp/`.
 - Similarity caches (`*.npy`, up to 17 GB); recomputed by `case_pairs.py`.
+- Natural Earth 1:110m country shapes (`ne_110m_admin_0_countries.shp`, public domain, https://www.naturalearthdata.com)
+  for the country map (`gim_figures.py --shapes`).
 - Raw LLM responses that quote source text, and the open-access lookup cache.
 
 ## Pipeline
