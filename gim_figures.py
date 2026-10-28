@@ -22,6 +22,8 @@ import csv
 import math
 import os
 
+import numpy as np
+
 import matplotlib
 
 matplotlib.use("Agg")
@@ -361,6 +363,101 @@ def figS_recovery(res, q):
     save(fig, res, "gim_figS_recovery")
 
 
+def figS_agesex(res, q):
+    """Deficit in test share by age band and sex (subset analyses, terms_all/age_*/sex_* runs)."""
+    share = "share of findings needing a test"
+    subsets = [("age_infant", "infant"), ("age_child", "child"), ("age_adolescent", "adolescent"), ("age_adult", "adult"),
+               ("sex_male", "male"), ("sex_female", "female")]
+    cols = [OI["orange"], OI["red"], OI["purple"], OI["blue"], OI["black"], OI["grey"]]
+    mks = ["o", "o", "o", "o", "s", "s"]
+    fig, ax = plt.subplots(figsize=(178 * MM, 80 * MM))
+    offs = np.linspace(0.32, -0.32, len(subsets))
+    for i, p in enumerate(POPS):
+        y0 = len(POPS) - 1 - i
+        for (run, lab), dy, col, mk in zip(subsets, offs, cols, mks):
+            f = os.path.join(res, "terms_all", f"{run}_{p}_outcomes.csv")
+            r = next(x for x in read_tsv(f, ",") if x["outcome"] == share)
+            e, lo, hi = excess_row(r, 100)
+            qq = q.get(("strata", f"{run}_{p}", share), 1.0)
+            ax.plot([lo, hi], [y0 + dy] * 2, color="#d0d0d0", lw=1.8, solid_capstyle="butt", zorder=1)
+            ax.plot(e, y0 + dy, marker=mk, ms=3.8, color=col, mfc=col if qq < 0.05 else "white", mew=0.9, zorder=3)
+    ax.axvline(0, color="grey", lw=0.6, zorder=0)
+    ax.set_yticks(range(len(POPS)))
+    ax.set_yticklabels([POPNAME[p] for p in POPS[::-1]])
+    ax.set_ylim(-0.6, len(POPS) - 0.4)
+    ax.set_xlabel("Share of test-based findings, population minus EUR (percentage points)")
+    ax.legend(handles=[Line2D([], [], color=c, marker=m, ls="", ms=4, label=l) for (_, l), c, m in zip(subsets, cols, mks)],
+              loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=6, frameon=False, handletextpad=0.2)
+    fig.tight_layout()
+    save(fig, res, "gim_figS_agesex")
+
+
+def figS_coreport(res, thr=0.10, vmax=0.15):
+    """Organ-system co-reporting network (test/bedside split): EUR backbone and population excess."""
+    E = read_tsv(os.path.join(res, "comorbidity", "organ_split_edges.csv"), ",")
+    N = read_tsv(os.path.join(res, "comorbidity", "organ_split_nodes.csv"), ",")
+    G = read_tsv(os.path.join(res, "comorbidity", "organ_split_global.csv"), ",")
+    pg = {r["pop"]: float(r["p_global"]) for r in G}
+    lab = {int(r["node"]): r["label"] for r in N}
+    systems = []
+    for i in sorted(lab):
+        sname = lab[i].rsplit(" (", 1)[0]
+        if sname not in systems: systems.append(sname)
+    ang = {}
+    k = len(systems)
+    for si, sname in enumerate(systems):
+        a0 = math.pi / 2 - 2 * math.pi * si / k
+        for i in lab:
+            if lab[i].rsplit(" (", 1)[0] == sname:
+                kind = lab[i].rsplit(" (", 1)[1].rstrip(")")
+                ang[i] = a0 + (0.06 if kind == "test" else -0.06)
+    pos = {i: (math.cos(a), math.sin(a)) for i, a in ang.items()}
+    backbone = [r for r in E if r["pop"] == "MENA" and float(r["r_ref_all"]) > thr]
+    keys = {(int(r["i"]), int(r["j"])) for r in backbone}
+    fig = plt.figure(figsize=(178 * MM, 215 * MM))
+    gs = fig.add_gridspec(3, 3, height_ratios=[1.35, 1, 1])
+    ax0 = fig.add_subplot(gs[0, :])
+    axes = [fig.add_subplot(gs[r, c]) for r in (1, 2) for c in range(3)]
+    def draw_nodes(ax, big):
+        for i, (x, y) in pos.items():
+            kind = lab[i].rsplit(" (", 1)[1].rstrip(")")
+            ax.plot(x, y, marker="s" if kind == "test" else "o", ms=5 if big else 3, color=OI["blue"] if kind == "test" else OI["red"],
+                    mec="white", mew=0.4, zorder=3)
+        ax.set_xlim(-1.75 if big else -1.15, 1.75 if big else 1.15); ax.set_ylim(-1.45 if big else -1.15, 1.45 if big else 1.15)
+        ax.set_aspect("equal"); ax.axis("off")
+    for r in backbone:
+        i, j = int(r["i"]), int(r["j"]); w = float(r["r_ref_all"])
+        ax0.plot(*zip(pos[i], pos[j]), color="#555555", lw=0.4 + 5 * (w - thr), alpha=0.6, zorder=1)
+    draw_nodes(ax0, True)
+    for si, sname in enumerate(systems):
+        a0 = math.pi / 2 - 2 * math.pi * si / k
+        rad = 1.1 if abs(math.sin(a0)) < 0.7 else (1.09 if si % 2 == 0 else 1.3)
+        rad = {"metabolism/homeostasis": 1.1, "blood and blood-forming tissues": 1.32, "cardiovascular system": 1.12,
+               "voice": 1.3}.get(sname, rad)
+        x, y = rad * math.cos(a0), rad * math.sin(a0)
+        ax0.text(x, y, sname, fontsize=6.5, ha="left" if x > 0.05 else "right" if x < -0.05 else "center",
+                 va="bottom" if y > 0.05 else "top" if y < -0.05 else "center")
+    ax0.set_title(f"EUR co-reporting backbone (within-gene correlation r > {thr})", fontsize=7.5)
+    ax0.plot([], [], "o", color=OI["red"], ms=4, label="bedside findings"); ax0.plot([], [], "s", color=OI["blue"], ms=4, label="test-based findings")
+    ax0.legend(loc="upper left", frameon=False, fontsize=6.5)
+    panel_label(ax0, "a", x=0.02)
+    cmap = plt.get_cmap("RdBu_r")
+    for ax, p, l in zip(axes, POPS, "bcdef"):
+        ex = {(int(r["i"]), int(r["j"])): float(r["excess"]) for r in E if r["pop"] == p}
+        for (i, j) in keys:
+            e = ex[(i, j)]
+            ax.plot(*zip(pos[i], pos[j]), color=cmap(0.5 + max(-1, min(1, e / vmax)) / 2), lw=1.1, zorder=1)
+        draw_nodes(ax, False)
+        ax.set_title(f"{POPNAME[p]} (global p = {pg[p]:.3g})", fontsize=7)
+        panel_label(ax, l, x=0.05)
+    axes[-1].axis("off")
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(-vmax, vmax))
+    cb = fig.colorbar(sm, ax=axes[-1], orientation="horizontal", fraction=0.4, shrink=0.9)
+    cb.set_label("excess in Fisher-z correlation,\npopulation minus EUR", fontsize=6.5); cb.ax.tick_params(labelsize=6)
+    fig.tight_layout()
+    save(fig, res, "gim_figS_coreport")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--res", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "results", "v4"))
@@ -372,6 +469,8 @@ def main():
     figS_decomp(a.res)
     figS_organ(a.res, q)
     figS_recovery(a.res, q)
+    figS_agesex(a.res, q)
+    figS_coreport(a.res)
 
 
 if __name__ == "__main__":
