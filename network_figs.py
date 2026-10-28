@@ -8,10 +8,16 @@ shift   Population-shift phenotype network (after the human symptoms-disease net
         unclassified grouping term), node size the number of cases. One panel per population on a shared layout.
 dag     Significant-term HPO subgraph per population: terms with BH q < Q, is_a edges between them after transitive
         reduction, drawn radially (graphviz twopi) from the phenotypic-abnormality root; colour = direction and |z|.
+popnet  Population similarity network: one node per population (size = cases in the similarity set, colour = excess
+        z-similarity of within-population pairs over pairs with all other populations, ring = BH q < 0.05); an arrow
+        A -> B when A-A pairs are more (red) or less (blue) similar than A-B pairs at BH q < 0.1 (solid q < 0.05),
+        width = |excess|. Panels: total and patient-carried.
 spend   Country-level scatter: mean within-stratum residual test share vs health expenditure per capita.
 
   network_figs.py shift --obo hp.obo --cases A.tsv [...] --terms-dir results/v4/terms_all --termclass T --out F
   network_figs.py dag   --obo hp.obo --terms-dir results/v4/terms_all --q 0.05 --out F
+  network_figs.py popnet --contrasts results/v4/allpairs/contrasts.tsv --within results/v4/qvalues.tsv
+                          --cases A.tsv [...] --out F
   network_figs.py spend --points results/v4/worldbank/healthspend_country_points.csv --out F
 """
 import argparse, collections, csv, json, math, os, subprocess
@@ -200,15 +206,63 @@ def cmd_spend(a):
     fig.tight_layout(); fig.savefig(a.out + ".pdf"); fig.savefig(a.out + ".png", dpi=180)
 
 
+def cmd_popnet(a):
+    import matplotlib; matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.patches import FancyArrowPatch
+    pops = ["EUR", "MENA", "SASIA", "EASIA", "LATAM", "AFR"]
+    n = collections.Counter()
+    for f in a.cases:
+        for r in csv.DictReader(open(f), delimiter="\t"):
+            if r["region"] in pops and r.get("terms"): n[r["region"]] += 1
+    edges = [r for r in csv.DictReader(open(a.contrasts), delimiter="\t")]
+    within = {(r["population"].split("-")[0], r["analysis"]): (float(r["estimate"]), float(r["q"]))
+              for r in csv.DictReader(open(a.within), delimiter="\t") if r["family"] == "within_vs_outside"}
+    ang = {p: math.pi / 2 - 2 * math.pi * i / len(pops) for i, p in enumerate(pops)}
+    pos = {p: (math.cos(t), math.sin(t)) for p, t in ang.items()}
+    cmap = plt.get_cmap("RdBu_r"); vmax = 0.4
+    fig, axes = plt.subplots(1, 2, figsize=(12, 6))
+    for ax, ver in zip(axes, ("total", "patient-carried")):
+        for r in edges:
+            if r["version"] != ver: continue
+            q = float(r["q_BH"]); e = float(r["excess"])
+            if q >= 0.1: continue
+            A, rest = r["contrast"].split("_vs_")
+            src = next(p for p in pops if A == p + p)
+            dst = next(p for p in pops if p != src and rest in (src + p, p + src))
+            ax.add_patch(FancyArrowPatch(pos[src], pos[dst], connectionstyle="arc3,rad=0.15", arrowstyle="-|>",
+                                         mutation_scale=14, lw=1 + 6 * min(abs(e), 0.8), shrinkA=28, shrinkB=28,
+                                         color="#b2182b" if e > 0 else "#2166ac", alpha=0.8,
+                                         linestyle="-" if q < 0.05 else "--"))
+        for p in pops:
+            e, q = within.get((p, ver), (0.0, 1.0))
+            ax.scatter(*pos[p], s=200 + 1800 * math.sqrt(n[p] / max(n.values())), color=cmap(0.5 + e / (2 * vmax)),
+                       edgecolors="black" if q < 0.05 else "grey", linewidths=2.5 if q < 0.05 else 0.8, zorder=3)
+            ax.annotate(f"{p}\n{n[p]:,}", pos[p], ha="center", va="center", fontsize=9, zorder=4,
+                        color="white" if abs(e) > 0.25 else "black")
+        ax.set_title({"total": "Total (corpus fixed)", "patient-carried": "Patient-carried (author region fixed)"}[ver])
+        ax.set_xlim(-1.45, 1.45); ax.set_ylim(-1.45, 1.45); ax.set_aspect("equal"); ax.axis("off")
+    from matplotlib.lines import Line2D
+    fig.legend(handles=[Line2D([], [], color="#b2182b", lw=3, label="A-A more similar than A-B"),
+                            Line2D([], [], color="#2166ac", lw=3, label="A-A less similar than A-B"),
+                            Line2D([], [], color="grey", lw=2, label="q < 0.05"),
+                            Line2D([], [], color="grey", lw=2, ls="--", label="0.05 <= q < 0.1")],
+                   loc="lower center", ncol=4, frameon=False, fontsize=9, title="arrow A -> B", title_fontsize=9,
+               bbox_to_anchor=(0.45, 0.08))
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(-vmax, vmax))
+    fig.colorbar(sm, ax=axes, shrink=0.6, label="within-population minus outside similarity (z)")
+    fig.savefig(a.out + ".pdf", bbox_inches="tight"); fig.savefig(a.out + ".png", dpi=180, bbox_inches="tight")
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["shift", "dag", "spend"])
+    ap.add_argument("cmd", choices=["shift", "dag", "spend", "popnet"])
     ap.add_argument("--obo"); ap.add_argument("--cases", action="append"); ap.add_argument("--terms-dir")
-    ap.add_argument("--termclass"); ap.add_argument("--points"); ap.add_argument("--out", required=True)
+    ap.add_argument("--termclass"); ap.add_argument("--points"); ap.add_argument("--contrasts"); ap.add_argument("--within"); ap.add_argument("--out", required=True)
     ap.add_argument("--n-nodes", type=int, default=140); ap.add_argument("--phi", type=float, default=0.08)
     ap.add_argument("--label-z", type=float, default=3.5); ap.add_argument("--q", type=float, default=0.05)
     a = ap.parse_args()
-    {"shift": cmd_shift, "dag": cmd_dag, "spend": cmd_spend}[a.cmd](a)
+    {"shift": cmd_shift, "dag": cmd_dag, "spend": cmd_spend, "popnet": cmd_popnet}[a.cmd](a)
 
 
 if __name__ == "__main__":
