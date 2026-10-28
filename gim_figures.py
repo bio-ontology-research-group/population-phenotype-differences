@@ -6,6 +6,9 @@ Writes PDFs (and PNG previews) to results/v4/figures/:
                        log(1+n) test-based and bedside counts (terms_all/all_outcomes.tsv, qvalues.tsv)
   gim_fig2_setting     (a) ancestry vs place of care (setting_all/*_outcomes.csv, test_share_q.tsv);
                        (b) country-level residual test share vs health expenditure (worldbank/)
+  gim_fig3_shift      (a) MH z-scores of all tested HPO classes by finding class and population
+                       (terms_all/main_*_total_terms.csv, termclass.jsonl); (b) dot matrix of the grouping classes with
+                       the largest shifts (figures/fig_shift_network_nodes.csv from network_figs.py shift)
   gim_figS_decomp      pair-similarity decomposition for MENA-EUR and EUR-EASIA (allpairs/*_decomposition.csv)
   gim_figS_organ       organ-system differences in log(1+n) counts (terms_all/main_*_total_outcomes.csv, qvalues.tsv)
   gim_figS_recovery    causative-gene recovery, population minus EUR (recovery/recovery_*_recovery.csv, qvalues.tsv)
@@ -188,6 +191,77 @@ def fig2(res):
     save(fig, res, "gim_fig2_setting")
 
 
+def fig3(res, termclass):
+    import json
+    import numpy as np
+    from matplotlib.colors import TwoSlopeNorm
+    tc = {x["id"]: x["class"] for x in map(json.loads, open(termclass))}
+    test = {"laboratory", "imaging", "physiological_test", "pathology"}
+    bed = {"clinical_exam", "symptom_history"}
+    fig = plt.figure(figsize=(178 * MM, 120 * MM))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1, 1.0], wspace=1.05, left=0.08, right=0.93, bottom=0.2, top=0.93)
+    a = fig.add_subplot(gs[0]); b = fig.add_subplot(gs[1])
+    # (a) all tested classes
+    for i, P in enumerate(POPS):
+        z = {"b": [], "t": []}
+        for r in read_tsv(os.path.join(res, "terms_all", f"main_{P}_total_terms.csv"), ","):
+            c = tc.get(r["hpo"])
+            if c in bed: z["b"].append(float(r["z"]))
+            elif c in test: z["t"].append(float(r["z"]))
+        for k, dx, col in (("b", -0.18, OI["red"]), ("t", 0.18, OI["blue"])):
+            v = np.clip(z[k], -6, 6)
+            parts = a.violinplot([v], positions=[i + dx], widths=0.34, showextrema=False)
+            for pc in parts["bodies"]:
+                pc.set_facecolor(col); pc.set_edgecolor("none"); pc.set_alpha(0.45)
+            a.plot([i + dx - 0.12, i + dx + 0.12], [np.median(z[k])] * 2, color=col, lw=1.6)
+    a.axhline(0, color=OI["grey"], lw=0.6)
+    a.set_xticks(range(len(POPS))); a.set_xticklabels([POPNAME[p] for p in POPS], rotation=35, ha="right")
+    a.set_ylabel("HPO class frequency vs EUR (Mantel-Haenszel z)"); a.set_ylim(-6.3, 6.3)
+    a.legend(handles=[Line2D([], [], color=OI["red"], lw=4, alpha=0.6, label="bedside or history class"),
+                      Line2D([], [], color=OI["blue"], lw=4, alpha=0.6, label="test-based class"),
+                      Line2D([], [], color="black", lw=1.6, label="median")], frameon=False, loc="upper center",
+             bbox_to_anchor=(0.5, -0.2), ncol=1)
+    panel_label(a, "a", x=-0.25, y=1.05)
+    # (b) dot matrix of grouping classes with the largest shifts
+    def fz(r, P):
+        return float(r[f"z_{P}"]) if r[f"z_{P}"] else float("nan")
+
+    def fq(r, P):
+        return float(r[f"q_{P}"]) if r[f"q_{P}"] else 1.0
+    rows = read_tsv(os.path.join(res, "figures", "fig_shift_network_nodes.csv"), ",")
+    sig = [r for r in rows if any(fq(r, P) < 0.05 for P in POPS)]
+    sig.sort(key=lambda r: -np.nanmax([abs(fz(r, P)) for P in POPS]))
+    sel = sig[:24]
+    order = {"o": 0, "s": 1, "D": 2}
+    sel.sort(key=lambda r: (order[r["class"]], -np.nanmean([fz(r, P) for P in POPS[:4]])))
+    norm = TwoSlopeNorm(vmin=-8, vcenter=0, vmax=8); cmap = plt.get_cmap("RdBu_r")
+    for y, r in enumerate(sel):
+        for x, P in enumerate(POPS):
+            zv = fz(r, P); qv = fq(r, P)
+            if zv != zv:
+                b.scatter(x, y, s=6, marker="x", color=OI["grey"], lw=0.6); continue
+            b.scatter(x, y, s=12 + 9 * min(abs(zv), 8), color=cmap(norm(max(-8, min(8, zv)))),
+                      edgecolors="black" if qv < 0.05 else "none", linewidths=0.8, zorder=3)
+    b.set_yticks(range(len(sel)))
+    def lab(n):
+        n = n.replace("Abnormality of the ", "").replace("Abnormality of ", "").replace("Abnormal ", "")[:42]
+        return n[0].upper() + n[1:]
+    b.set_yticklabels([lab(r["name"]) for r in sel])
+    for t, r in zip(b.get_yticklabels(), sel):
+        t.set_color({"o": OI["red"], "s": OI["blue"], "D": "#555555"}[r["class"]])
+    b.set_xticks(range(len(POPS))); b.set_xticklabels([POPNAME[p] for p in POPS], rotation=35, ha="right")
+    b.set_xlim(-0.6, len(POPS) - 0.4); b.set_ylim(len(sel) - 0.5, -0.5)
+    for y in range(1, len(sel)):
+        if sel[y]["class"] != sel[y - 1]["class"]: b.axhline(y - 0.5, color=OI["grey"], lw=0.5)
+    b.spines["left"].set_visible(False); b.tick_params(axis="y", length=0)
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
+    cb = fig.colorbar(sm, ax=b, shrink=0.45, pad=0.04); cb.set_label("z vs EUR"); cb.outline.set_linewidth(0.4)
+    panel_label(b, "b", x=-1.25, y=1.05)
+    b.scatter([], [], s=12 + 9 * 4, color="white", edgecolors="black", linewidths=0.8, label="q < 0.05")
+    b.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.2))
+    save(fig, res, "gim_fig3_shift")
+
+
 def figS_decomp(res):
     terms = [("curation[store|store]", "Store / Store"), ("curation[pmcp|store]", "PMC-Patients / Store"),
              ("curation[pmcp|pmcp]", "PMC-Patients / PMC-Patients"),
@@ -294,6 +368,7 @@ def main():
     q = qlookup(a.res)
     fig1(a.res, q)
     fig2(a.res)
+    fig3(a.res, os.path.join(os.path.dirname(a.res.rstrip("/")), "termclass.jsonl"))
     figS_decomp(a.res)
     figS_organ(a.res, q)
     figS_recovery(a.res, q)
