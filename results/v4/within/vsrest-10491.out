@@ -1,0 +1,280 @@
+start Wed Oct 28 09:25:55 AM +03 2026
+cases 65702; regions [('EUR', 27285), ('EASIA', 15059), ('MENA', 9382), ('UNKNOWN', 9348), ('SASIA', 1724), ('LATAM', 1676), ('MIXED', 542), ('OTHER', 435), ('AFR', 251)]
+
+########## AFR vs REST
+pairs 614172 in 156 genes; same-group pairs 1638
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   depth_sum                                     -0.081  [-0.254, +0.076]
+   depth_prod                                    +0.102  [-0.008, +0.208]
+   depth_absdiff                                 -0.089  [-0.221, +0.017]
+   curation[pavs_clin|pavs_clin]                 -1.044  [-19.082, +6.264]
+   curation[pavs_clin|pavs_lit]                  -0.753  [-16.464, +2.898]
+   curation[pavs_clin|pavs_us]                   -0.859  [-166.553, +124.136]
+   curation[pavs_clin|pmcp]                      -0.697  [-5.977, +0.146]
+   curation[pavs_clin|pubmed_abs]                -1.018  [-1.564, +0.253]
+   curation[pavs_clin|store]                     +0.311  [-3.191, +6.519]
+   curation[pavs_lit|pavs_lit]                   -1.478  [-1238.050, +1329.160]
+   curation[pavs_lit|pavs_us]                    +0.295  [-604.624, +602.960]
+   curation[pavs_lit|pmcp]                       -1.154  [-2.348, +0.880]
+   curation[pavs_lit|pubmed_abs]                 -0.605  [-1.766, +0.466]
+   curation[pavs_lit|store]                      +1.173  [-2.892, +3.837]
+   curation[pavs_us|pmcp]                        -0.730  [-262.577, +235.363]
+   curation[pavs_us|pubmed_abs]                  -0.650  [-24.894, +22.973]
+   curation[pavs_us|store]                       -0.158  [-12.690, +4.381]
+   curation[pmcp|pmcp]                           -0.248  [-0.519, +0.003]
+   curation[pmcp|pubmed_abs]                     -0.143  [-0.276, +0.014]
+   curation[pmcp|store]                          +0.864  [+0.532, +1.296]
+   curation[pubmed_abs|store]                    +0.385  [+0.034, +0.715]
+   curation[store|store]                         +3.341  [+2.556, +3.730]
+   same_group                                    +0.484  [+0.133, +1.121]
+   author_region_n_r1                            +0.619  [+0.096, +1.164]
+   author_region_same                            +0.058  [-0.083, +0.223]
+   author_region_unknown                         +0.314  [+0.153, +0.444]
+   population_n_AFR                              -0.702  [-1.241, -0.154]
+   population_same                               -0.125  [-0.580, +0.204]
+   (without author-region terms: population_n_AFR -0.340, population_same -0.163)
+   AFRAFR_vs_AFRREST                             -0.827  [-1.654, -0.005]
+   RESTREST_vs_AFRREST                           +0.576  [+0.218, +0.975]
+   [total          ] population_n_AFR         coef -0.340  null mean +0.013  excess -0.353  null 95% [-0.696, +0.682]  p=0.2587  units 4792
+   [total          ] population_same          coef -0.163  null mean -0.016  excess -0.147  null 95% [-0.619, +0.547]  p=0.5265  units 4792
+   [total          ] AFRAFR_vs_AFRREST        coef -0.503  null mean -0.003  excess -0.500  null 95% [-1.292, +1.219]  p=0.3487
+   [total          ] RESTREST_vs_AFRREST      coef +0.178  null mean -0.028  excess +0.206  null 95% [-0.342, +0.282]  p=0.3526
+   [patient-carried] population_n_AFR         coef -0.702  null mean -0.061  excess -0.641  null 95% [-0.482, +0.381]  p=0.0020  units 1222
+   [patient-carried] population_same          coef -0.125  null mean -0.019  excess -0.106  null 95% [-0.188, +0.159]  p=0.2328  units 1222
+   [patient-carried] AFRAFR_vs_AFRREST        coef -0.827  null mean -0.080  excess -0.747  null 95% [-0.625, +0.518]  p=0.0110
+   [patient-carried] RESTREST_vs_AFRREST      coef +0.576  null mean +0.042  excess +0.534  null 95% [-0.261, +0.376]  p=0.0010
+
+
+########## SASIA vs REST
+pairs 1279752 in 900 genes; same-group pairs 4527
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   depth_sum                                     +0.001  [-0.107, +0.097]
+   depth_prod                                    +0.081  [+0.009, +0.153]
+   depth_absdiff                                 -0.131  [-0.197, -0.070]
+   curation[pavs_clin|pavs_clin]                 -0.701  [-4.045, +4.587]
+   curation[pavs_clin|pavs_lit]                  -0.480  [-1.554, +1.745]
+   curation[pavs_clin|pavs_us]                   -0.287  [-15.211, +30.242]
+   curation[pavs_clin|pmcp]                      -0.675  [-3.290, -0.562]
+   curation[pavs_clin|pubmed_abs]                -0.805  [-1.044, -0.476]
+   curation[pavs_clin|store]                     +0.465  [-0.561, +3.168]
+   curation[pavs_lit|pavs_lit]                   +0.252  [-1.491, +1.798]
+   curation[pavs_lit|pavs_us]                    -0.078  [-54.174, +37.745]
+   curation[pavs_lit|pmcp]                       -0.469  [-0.907, -0.024]
+   curation[pavs_lit|pubmed_abs]                 -0.336  [-0.618, +0.064]
+   curation[pavs_lit|store]                      +1.302  [+0.445, +2.621]
+   curation[pavs_us|pmcp]                        -0.701  [-29.992, +34.276]
+   curation[pavs_us|pubmed_abs]                  -0.634  [-4.745, +3.331]
+   curation[pavs_us|store]                       -0.579  [-35.095, +17.133]
+   curation[pmcp|pmcp]                           -0.213  [-0.418, -0.076]
+   curation[pmcp|pubmed_abs]                     -0.142  [-0.231, -0.058]
+   curation[pmcp|store]                          +0.798  [+0.503, +1.098]
+   curation[pubmed_abs|store]                    +0.259  [+0.045, +0.500]
+   curation[store|store]                         +2.891  [+1.757, +3.248]
+   same_group                                    +0.752  [+0.499, +1.156]
+   author_region_n_r1                            +0.303  [+0.028, +0.611]
+   author_region_same                            +0.038  [-0.012, +0.130]
+   author_region_unknown                         +0.200  [+0.089, +0.293]
+   population_n_SASIA                            -0.248  [-0.594, +0.011]
+   population_same                               +0.022  [-0.119, +0.148]
+   (without author-region terms: population_n_SASIA +0.023, population_same +0.042)
+   SASIASASIA_vs_SASIAREST                       -0.226  [-0.644, +0.119]
+   RESTREST_vs_SASIAREST                         +0.271  [+0.027, +0.541]
+   [total          ] population_n_SASIA       coef +0.023  null mean +0.019  excess +0.004  null 95% [-0.103, +0.154]  p=0.9461  units 18519
+   [total          ] population_same          coef +0.042  null mean +0.006  excess +0.036  null 95% [-0.095, +0.099]  p=0.4346  units 18519
+   [total          ] SASIASASIA_vs_SASIAREST  coef +0.065  null mean +0.024  excess +0.040  null 95% [-0.175, +0.235]  p=0.6613
+   [total          ] RESTREST_vs_SASIAREST    coef +0.019  null mean -0.013  excess +0.032  null 95% [-0.107, +0.090]  p=0.5325
+   [patient-carried] population_n_SASIA       coef -0.248  null mean -0.020  excess -0.228  null 95% [-0.264, +0.215]  p=0.0629  units 1356
+   [patient-carried] population_same          coef +0.022  null mean +0.003  excess +0.020  null 95% [-0.027, +0.037]  p=0.2348  units 1356
+   [patient-carried] SASIASASIA_vs_SASIAREST  coef -0.226  null mean -0.018  excess -0.208  null 95% [-0.280, +0.231]  p=0.0959
+   [patient-carried] RESTREST_vs_SASIAREST    coef +0.271  null mean +0.023  excess +0.248  null 95% [-0.197, +0.259]  p=0.0340
+
+
+########## LATAM vs REST
+pairs 1357563 in 769 genes; same-group pairs 4982
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   depth_sum                                     -0.028  [-0.125, +0.067]
+   depth_prod                                    +0.102  [+0.038, +0.174]
+   depth_absdiff                                 -0.116  [-0.188, -0.059]
+   curation[pavs_clin|pavs_clin]                 -0.597  [-10.181, +3.762]
+   curation[pavs_clin|pavs_lit]                  -0.321  [-3.853, +2.347]
+   curation[pavs_clin|pavs_us]                   -0.024  [-24.507, +30.474]
+   curation[pavs_clin|pmcp]                      -0.697  [-4.678, -0.379]
+   curation[pavs_clin|pubmed_abs]                -0.805  [-1.034, -0.194]
+   curation[pavs_clin|store]                     +0.429  [-0.303, +3.397]
+   curation[pavs_lit|pavs_lit]                   +1.203  [-0.331, +3.025]
+   curation[pavs_lit|pavs_us]                    +0.151  [-43.830, +49.790]
+   curation[pavs_lit|pmcp]                       -0.622  [-1.066, -0.068]
+   curation[pavs_lit|pubmed_abs]                 -0.421  [-0.722, +0.109]
+   curation[pavs_lit|store]                      +0.526  [-1.150, +1.227]
+   curation[pavs_us|pmcp]                        -0.352  [-9.541, +13.768]
+   curation[pavs_us|pubmed_abs]                  -0.486  [-2.620, +2.488]
+   curation[pavs_us|store]                       -0.017  [-8.369, +3.517]
+   curation[pmcp|pmcp]                           -0.255  [-0.452, -0.126]
+   curation[pmcp|pubmed_abs]                     -0.154  [-0.242, -0.076]
+   curation[pmcp|store]                          +0.808  [+0.528, +1.103]
+   curation[pubmed_abs|store]                    +0.235  [+0.039, +0.461]
+   curation[store|store]                         +2.851  [+1.758, +3.238]
+   same_group                                    +0.680  [+0.396, +1.079]
+   author_region_n_r1                            -0.125  [-0.356, +0.051]
+   author_region_same                            +0.024  [-0.025, +0.105]
+   author_region_unknown                         +0.158  [+0.047, +0.254]
+   population_n_LATAM                            +0.109  [-0.052, +0.288]
+   population_same                               -0.013  [-0.121, +0.087]
+   (without author-region terms: population_n_LATAM +0.030, population_same -0.007)
+   LATAMLATAM_vs_LATAMREST                       +0.096  [-0.119, +0.309]
+   RESTREST_vs_LATAMREST                         -0.123  [-0.334, +0.031]
+   [total          ] population_n_LATAM       coef +0.030  null mean +0.011  excess +0.019  null 95% [-0.080, +0.109]  p=0.7043  units 18024
+   [total          ] population_same          coef -0.007  null mean +0.007  excess -0.014  null 95% [-0.068, +0.083]  p=0.6953  units 18024
+   [total          ] LATAMLATAM_vs_LATAMREST  coef +0.023  null mean +0.018  excess +0.004  null 95% [-0.126, +0.174]  p=0.9630
+   [total          ] RESTREST_vs_LATAMREST    coef -0.037  null mean -0.004  excess -0.033  null 95% [-0.087, +0.086]  p=0.4685
+   [patient-carried] population_n_LATAM       coef +0.109  null mean -0.072  excess +0.181  null 95% [-0.210, +0.073]  p=0.0150  units 1928
+   [patient-carried] population_same          coef -0.013  null mean -0.000  excess -0.013  null 95% [-0.036, +0.031]  p=0.4505  units 1928
+   [patient-carried] LATAMLATAM_vs_LATAMREST  coef +0.096  null mean -0.072  excess +0.168  null 95% [-0.222, +0.079]  p=0.0320
+   [patient-carried] RESTREST_vs_LATAMREST    coef -0.123  null mean +0.072  excess -0.194  null 95% [-0.072, +0.220]  p=0.0090
+
+
+########## MENA vs REST
+pairs 1589675 in 2134 genes; same-group pairs 6695
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   depth_sum                                     -0.033  [-0.121, +0.057]
+   depth_prod                                    +0.094  [+0.031, +0.165]
+   depth_absdiff                                 -0.123  [-0.179, -0.071]
+   curation[pavs_clin|pavs_clin]                 -0.562  [-3.042, +3.340]
+   curation[pavs_clin|pavs_lit]                  -0.480  [-1.974, +0.200]
+   curation[pavs_clin|pavs_us]                   -0.174  [-7.544, +10.629]
+   curation[pavs_clin|pmcp]                      -0.617  [-2.991, -0.504]
+   curation[pavs_clin|pubmed_abs]                -0.719  [-0.820, -0.357]
+   curation[pavs_clin|store]                     +0.303  [-0.024, +1.719]
+   curation[pavs_lit|pavs_lit]                   +0.678  [-0.162, +1.840]
+   curation[pavs_lit|pavs_us]                    -0.057  [-17.208, +21.302]
+   curation[pavs_lit|pmcp]                       -0.499  [-0.852, -0.068]
+   curation[pavs_lit|pubmed_abs]                 -0.329  [-0.543, +0.092]
+   curation[pavs_lit|store]                      +0.775  [-0.119, +1.322]
+   curation[pavs_us|pmcp]                        -0.371  [-7.215, +8.625]
+   curation[pavs_us|pubmed_abs]                  -0.653  [-2.346, +1.259]
+   curation[pavs_us|store]                       -0.095  [-3.990, +1.677]
+   curation[pmcp|pmcp]                           -0.190  [-0.359, -0.050]
+   curation[pmcp|pubmed_abs]                     -0.125  [-0.211, -0.051]
+   curation[pmcp|store]                          +0.775  [+0.517, +1.054]
+   curation[pubmed_abs|store]                    +0.247  [+0.054, +0.461]
+   curation[store|store]                         +2.681  [+1.579, +3.091]
+   same_group                                    +0.732  [+0.492, +1.093]
+   author_region_n_r1                            -0.038  [-0.158, +0.079]
+   author_region_same                            +0.022  [-0.021, +0.091]
+   author_region_unknown                         +0.156  [+0.059, +0.249]
+   population_n_MENA                             +0.024  [-0.082, +0.143]
+   population_same                               +0.031  [-0.023, +0.094]
+   (without author-region terms: population_n_MENA +0.005, population_same +0.041)
+   MENAMENA_vs_MENAREST                          +0.056  [-0.081, +0.195]
+   RESTREST_vs_MENAREST                          +0.007  [-0.103, +0.104]
+   [total          ] population_n_MENA        coef +0.005  null mean -0.010  excess +0.014  null 95% [-0.063, +0.044]  p=0.6194  units 27948
+   [total          ] population_same          coef +0.041  null mean -0.003  excess +0.044  null 95% [-0.045, +0.041]  p=0.0440  units 27948
+   [total          ] MENAMENA_vs_MENAREST     coef +0.045  null mean -0.013  excess +0.058  null 95% [-0.077, +0.060]  p=0.0949
+   [total          ] RESTREST_vs_MENAREST     coef +0.036  null mean +0.006  excess +0.029  null 95% [-0.061, +0.076]  p=0.4136
+   [patient-carried] population_n_MENA        coef +0.024  null mean -0.034  excess +0.059  null 95% [-0.131, +0.051]  p=0.2338  units 5281
+   [patient-carried] population_same          coef +0.031  null mean +0.012  excess +0.019  null 95% [-0.005, +0.029]  p=0.0340  units 5281
+   [patient-carried] MENAMENA_vs_MENAREST     coef +0.056  null mean -0.022  excess +0.078  null 95% [-0.117, +0.064]  p=0.0929
+   [patient-carried] RESTREST_vs_MENAREST     coef +0.007  null mean +0.046  excess -0.039  null 95% [-0.049, +0.148]  p=0.4565
+
+
+########## EASIA vs REST
+pairs 1616357 in 2243 genes; same-group pairs 6453
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   depth_sum                                     -0.044  [-0.130, +0.040]
+   depth_prod                                    +0.097  [+0.038, +0.165]
+   depth_absdiff                                 -0.124  [-0.182, -0.076]
+   curation[pavs_clin|pavs_clin]                 -0.509  [-4.114, +3.742]
+   curation[pavs_clin|pavs_lit]                  -0.383  [-1.818, +0.360]
+   curation[pavs_clin|pavs_us]                   -0.120  [-8.574, +12.899]
+   curation[pavs_clin|pmcp]                      -0.606  [-3.322, -0.514]
+   curation[pavs_clin|pubmed_abs]                -0.725  [-0.864, -0.362]
+   curation[pavs_clin|store]                     +0.321  [-0.018, +1.959]
+   curation[pavs_lit|pavs_lit]                   +0.407  [-0.390, +1.353]
+   curation[pavs_lit|pavs_us]                    -0.024  [-17.980, +20.824]
+   curation[pavs_lit|pmcp]                       -0.427  [-0.779, -0.010]
+   curation[pavs_lit|pubmed_abs]                 -0.311  [-0.533, +0.111]
+   curation[pavs_lit|store]                      +0.788  [-0.115, +1.456]
+   curation[pavs_us|pmcp]                        -0.305  [-5.698, +8.500]
+   curation[pavs_us|pubmed_abs]                  -0.592  [-1.985, +0.955]
+   curation[pavs_us|store]                       -0.043  [-4.012, +1.582]
+   curation[pmcp|pmcp]                           -0.199  [-0.375, -0.052]
+   curation[pmcp|pubmed_abs]                     -0.130  [-0.208, -0.060]
+   curation[pmcp|store]                          +0.775  [+0.538, +1.069]
+   curation[pubmed_abs|store]                    +0.255  [+0.078, +0.449]
+   curation[store|store]                         +2.683  [+1.515, +3.157]
+   same_group                                    +0.765  [+0.512, +1.109]
+   author_region_n_r1                            +0.013  [-0.219, +0.286]
+   author_region_same                            +0.021  [-0.048, +0.138]
+   author_region_unknown                         +0.166  [+0.068, +0.285]
+   population_n_EASIA                            +0.125  [-0.138, +0.351]
+   population_same                               +0.052  [-0.045, +0.111]
+   (without author-region terms: population_n_EASIA +0.139, population_same +0.067)
+   EASIAEASIA_vs_EASIAREST                       +0.177  [-0.091, +0.422]
+   RESTREST_vs_EASIAREST                         -0.073  [-0.359, +0.191]
+   [total          ] population_n_EASIA       coef +0.139  null mean -0.011  excess +0.150  null 95% [-0.053, +0.032]  p=0.0010  units 33187
+   [total          ] population_same          coef +0.067  null mean +0.001  excess +0.066  null 95% [-0.038, +0.038]  p=0.0020  units 33187
+   [total          ] EASIAEASIA_vs_EASIAREST  coef +0.205  null mean -0.010  excess +0.216  null 95% [-0.069, +0.038]  p=0.0010
+   [total          ] RESTREST_vs_EASIAREST    coef -0.072  null mean +0.012  excess -0.084  null 95% [-0.058, +0.070]  p=0.0100
+   [patient-carried] population_n_EASIA       coef +0.125  null mean +0.055  excess +0.070  null 95% [-0.064, +0.145]  p=0.1808  units 2954
+   [patient-carried] population_same          coef +0.052  null mean +0.051  excess +0.001  null 95% [+0.042, +0.061]  p=0.9061  units 2954
+   [patient-carried] EASIAEASIA_vs_EASIAREST  coef +0.177  null mean +0.106  excess +0.071  null 95% [-0.019, +0.200]  p=0.2058
+   [patient-carried] RESTREST_vs_EASIAREST    coef -0.073  null mean -0.004  excess -0.070  null 95% [-0.089, +0.115]  p=0.1758
+
+
+########## EUR vs REST
+pairs 1624520 in 2577 genes; same-group pairs 6767
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   depth_sum                                     -0.043  [-0.128, +0.042]
+   depth_prod                                    +0.096  [+0.038, +0.165]
+   depth_absdiff                                 -0.125  [-0.185, -0.078]
+   curation[pavs_clin|pavs_clin]                 -0.747  [-3.556, +3.305]
+   curation[pavs_clin|pavs_lit]                  -0.629  [-1.352, +0.594]
+   curation[pavs_clin|pavs_us]                   -0.200  [-7.517, +9.522]
+   curation[pavs_clin|pmcp]                      -0.690  [-3.308, -0.597]
+   curation[pavs_clin|pubmed_abs]                -0.798  [-0.896, -0.445]
+   curation[pavs_clin|store]                     +0.238  [-0.125, +1.596]
+   curation[pavs_lit|pavs_lit]                   +0.087  [-0.736, +1.011]
+   curation[pavs_lit|pavs_us]                    -0.083  [-17.351, +19.805]
+   curation[pavs_lit|pmcp]                       -0.526  [-0.864, -0.073]
+   curation[pavs_lit|pubmed_abs]                 -0.402  [-0.621, -0.003]
+   curation[pavs_lit|store]                      +0.801  [-0.044, +1.472]
+   curation[pavs_us|pmcp]                        -0.300  [-5.282, +7.520]
+   curation[pavs_us|pubmed_abs]                  -0.589  [-1.903, +0.935]
+   curation[pavs_us|store]                       -0.051  [-3.932, +1.685]
+   curation[pmcp|pmcp]                           -0.193  [-0.362, -0.056]
+   curation[pmcp|pubmed_abs]                     -0.128  [-0.208, -0.054]
+   curation[pmcp|store]                          +0.774  [+0.511, +1.064]
+   curation[pubmed_abs|store]                    +0.251  [+0.078, +0.456]
+   curation[store|store]                         +2.681  [+1.549, +3.156]
+   same_group                                    +0.761  [+0.519, +1.104]
+   author_region_n_r1                            -0.093  [-0.242, +0.061]
+   author_region_same                            +0.094  [+0.027, +0.215]
+   author_region_unknown                         +0.131  [+0.022, +0.249]
+   population_n_EUR                              -0.027  [-0.192, +0.122]
+   population_same                               -0.001  [-0.087, +0.057]
+   (without author-region terms: population_n_EUR -0.096, population_same +0.055)
+   EUREUR_vs_EURREST                             -0.029  [-0.264, +0.141]
+   RESTREST_vs_EURREST                           +0.026  [-0.122, +0.165]
+   [total          ] population_n_EUR         coef -0.096  null mean +0.002  excess -0.097  null 95% [-0.044, +0.043]  p=0.0010  units 34790
+   [total          ] population_same          coef +0.055  null mean -0.005  excess +0.060  null 95% [-0.037, +0.037]  p=0.0050  units 34790
+   [total          ] EUREUR_vs_EURREST        coef -0.041  null mean -0.003  excess -0.038  null 95% [-0.070, +0.067]  p=0.3287
+   [total          ] RESTREST_vs_EURREST      coef +0.150  null mean -0.007  excess +0.157  null 95% [-0.055, +0.039]  p=0.0010
+   [patient-carried] population_n_EUR         coef -0.027  null mean +0.011  excess -0.039  null 95% [-0.061, +0.092]  p=0.3427  units 7750
+   [patient-carried] population_same          coef -0.001  null mean -0.016  excess +0.014  null 95% [-0.033, +0.003]  p=0.1399  units 7750
+   [patient-carried] EUREUR_vs_EURREST        coef -0.029  null mean -0.004  excess -0.024  null 95% [-0.071, +0.069]  p=0.5025
+   [patient-carried] RESTREST_vs_EURREST      coef +0.026  null mean -0.027  excess +0.053  null 95% [-0.118, +0.059]  p=0.2438
+
+end Wed Oct 28 10:36:52 AM +03 2026
+ALLDONE

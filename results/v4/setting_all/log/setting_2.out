@@ -1,0 +1,52 @@
+824 cases (507 MENAanc_MENAcare) in 211 strata; corpora {'pubmed_abs': 721, 'pmcp': 103}; groups 638
+case-level outcomes (MENAanc_MENAcare minus MENAanc_EURcare, MH within strata; group-permutation p):
+   share of findings needing a test     -0.0719  null 95% [-0.0485, +0.0470]  p=0.0050
+   log(1+ test-based findings)          -0.0983  null 95% [-0.0810, +0.0818]  p=0.0235
+   log(1+ bedside/history findings)     +0.1107  null 95% [-0.0908, +0.0945]  p=0.0225
+   log(1+ laboratory)                   -0.0555  null 95% [-0.0683, +0.0682]  p=0.1089
+   log(1+ imaging)                      +0.0067  null 95% [-0.0601, +0.0596]  p=0.8166
+   log(1+ physiological_test)           -0.0474  null 95% [-0.0470, +0.0490]  p=0.0550
+   log(1+ pathology)                    -0.0224  null 95% [-0.0455, +0.0450]  p=0.3288
+   log(1+ clinical_exam)                +0.0834  null 95% [-0.0842, +0.0909]  p=0.0620
+   log(1+ symptom_history)              +0.0555  null 95% [-0.0621, +0.0671]  p=0.1034
+   organ[head or neck] log(1+ findings) +0.0332  null 95% [-0.0664, +0.0710]  p=0.3803
+   organ[head or neck] log(1+ test-based) -0.0277  null 95% [-0.0417, +0.0423]  p=0.2029
+   organ[head or neck] log(1+ bedside)  +0.0561  null 95% [-0.0590, +0.0601]  p=0.0700
+   organ[nervous system] log(1+ findings) +0.0012  null 95% [-0.0733, +0.0739]  p=0.9820
+   organ[nervous system] log(1+ test-based) -0.0610  null 95% [-0.0539, +0.0514]  p=0.0250
+   organ[nervous system] log(1+ bedside) +0.0421  null 95% [-0.0623, +0.0656]  p=0.1954
+   organ[blood and blood-forming tissues] log(1+ findings) +0.0146  null 95% [-0.0649, +0.0717]  p=0.7021
+   organ[blood and blood-forming tissues] log(1+ test-based) +0.0109  null 95% [-0.0634, +0.0694]  p=0.7761
+   organ[blood and blood-forming tissues] log(1+ bedside) +0.0102  null 95% [-0.0249, +0.0264]  p=0.4428
+   organ[metabolism/homeostasis] log(1+ findings) -0.0462  null 95% [-0.0648, +0.0652]  p=0.1494
+   organ[metabolism/homeostasis] log(1+ test-based) -0.0330  null 95% [-0.0636, +0.0639]  p=0.3003
+   organ[metabolism/homeostasis] log(1+ bedside) -0.0186  null 95% [-0.0266, +0.0311]  p=0.1824
+   organ[immune system] log(1+ findings) +0.0335  null 95% [-0.0492, +0.0507]  p=0.1889
+   organ[immune system] log(1+ test-based) +0.0139  null 95% [-0.0468, +0.0450]  p=0.5762
+   organ[immune system] log(1+ bedside) +0.0273  null 95% [-0.0335, +0.0338]  p=0.1234
+   organ[digestive system] log(1+ findings) +0.0615  null 95% [-0.0558, +0.0560]  p=0.0310
+   organ[digestive system] log(1+ test-based) -0.0187  null 95% [-0.0310, +0.0311]  p=0.2614
+   organ[digestive system] log(1+ bedside) +0.0758  null 95% [-0.0515, +0.0544]  p=0.0030
+   organ[Abnormal cellular phenotype] log(1+ findings) -0.0281  null 95% [-0.0535, +0.0548]  p=0.3038
+   organ[Abnormal cellular phenotype] log(1+ test-based) -0.0223  null 95% [-0.0519, +0.0527]  p=0.4128
+   organ[Abnormal cellular phenotype] log(1+ bedside) -0.0054  null 95% [-0.0153, +0.0147]  p=0.4648
+   organ[musculoskeletal system] log(1+ findings) +0.0625  null 95% [-0.0707, +0.0693]  p=0.0800
+   organ[musculoskeletal system] log(1+ test-based) +0.0249  null 95% [-0.0508, +0.0503]  p=0.3473
+   organ[musculoskeletal system] log(1+ bedside) +0.0457  null 95% [-0.0523, +0.0583]  p=0.1029
+depth diff -0.018 (null 95% [-0.103, +0.103])
+terms 814; p<0.05 36 (exp 41); FDR<0.1 0; FWER<0.05 0; global sum z^2 894 vs null 813, p=0.1484
+organ-system branches (mean term z; group-permutation p; FWER over 19 branches):
+  HP:0040064 Abnormality of limbs                               terms   36 mean z +0.914 p 0.0435 fwer 0.5587
+  HP:0025031 Abnormality of the digestive system                terms   82 mean z +0.523 p 0.0530 fwer 0.5662
+  HP:0033127 Abnormality of the musculoskeletal system          terms  148 mean z +0.473 p 0.0810 fwer 0.7241
+  HP:0001324 Muscle weakness                                  diff +0.043 z +2.82 p 0.0030 q 0.780 fwer 0.737 n 36
+  HP:0002846 Abnormal B cell morphology                       diff -0.020 z -2.88 p 0.0030 q 0.780 fwer 0.640 n 14
+  HP:0002093 Respiratory insufficiency                        diff -0.020 z -2.85 p 0.0065 q 0.780 fwer 0.693 n 8
+  HP:0040064 Abnormality of limbs                             diff +0.054 z +2.67 p 0.0075 q 0.780 fwer 0.909 n 86
+  HP:0025031 Abnormality of the digestive system              diff +0.070 z +2.58 p 0.0080 q 0.780 fwer 0.971 n 228
+  HP:0003394 Muscle spasm                                     diff -0.016 z -2.64 p 0.0085 q 0.780 fwer 0.945 n 5
+  HP:0001939 Abnormality of metabolism/homeostasis            diff -0.078 z -2.66 p 0.0110 q 0.780 fwer 0.929 n 325
+  HP:0025354 Abnormal cellular phenotype                      diff -0.066 z -2.57 p 0.0110 q 0.780 fwer 0.974 n 244
+  HP:0002110 Bronchiectasis                                   diff -0.012 z -2.56 p 0.0160 q 0.780 fwer 0.978 n 7
+  HP:0004303 Abnormal muscle fiber morphology                 diff -0.019 z -2.45 p 0.0160 q 0.780 fwer 0.995 n 9
+TASKDONE setting_MENAanc_MENAcare_vs_MENAanc_EURcare

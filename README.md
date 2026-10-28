@@ -35,9 +35,8 @@ care. Population and provenance labels are subject extensions
 `curationCorpus`, `reportingGroup`, `ancestryCareSetting`, `geographicOrigin`,
 `ancestry`, `placeOfCare`). Excluded (negated) findings carry `excluded: true`.
 
-Licences of the sources apply to the derived records: PMC-Patients is
-CC BY-NC-SA 4.0; Phenopacket Store and PAVS are CC BY 4.0. Article text is not
-redistributed; phenotype descriptions are the short extracted phrases only.
+Article text is not redistributed; phenotype descriptions are the short
+extracted phrases only.
 
 ### Case tables and results
 
@@ -96,6 +95,14 @@ The exact commands for each result are in `RESULTS.md` and `jobs/`
 (`terms_tasks.txt`, `setting_tasks.txt` hold the array-task arguments). Job
 scripts contain the cluster paths they were run with; adjust the working
 directory before reuse.
+
+## Licence
+
+Code (`*.py`, `jobs/`, `data/*.sh`): BSD 3-Clause, see `LICENSE`.
+Data (`results/`, including the phenopackets): CC BY 4.0, see `LICENSE-DATA`.
+Records derived from PMC-Patients (`results/phenopackets/pmcp/`,
+`results/cases_pmcp*.tsv`, `results/pmcp/`) are also subject to the
+PMC-Patients licence (CC BY-NC-SA 4.0).
 
 ## Software
 

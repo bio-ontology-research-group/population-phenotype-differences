@@ -1,0 +1,35 @@
+680 cases (600 EASIAanc_EASIAcare) in 72 strata; corpora {'pubmed_abs': 568, 'pmcp': 112}; groups 502
+case-level outcomes (EASIAanc_EASIAcare minus EASIAanc_EURcare, MH within strata; group-permutation p):
+   share of findings needing a test     +0.0467  null 95% [-0.0668, +0.0695]  p=0.2069
+   log(1+ test-based findings)          +0.0146  null 95% [-0.1321, +0.1337]  p=0.8276
+   log(1+ bedside/history findings)     -0.1893  null 95% [-0.1511, +0.1461]  p=0.0130
+   log(1+ laboratory)                   -0.0359  null 95% [-0.1120, +0.1103]  p=0.5312
+   log(1+ imaging)                      -0.0366  null 95% [-0.0969, +0.0986]  p=0.4443
+   log(1+ physiological_test)           -0.0180  null 95% [-0.0714, +0.0661]  p=0.6272
+   log(1+ pathology)                    +0.0490  null 95% [-0.0822, +0.0775]  p=0.2354
+   log(1+ clinical_exam)                -0.1380  null 95% [-0.1296, +0.1204]  p=0.0350
+   log(1+ symptom_history)              -0.1264  null 95% [-0.1058, +0.1041]  p=0.0170
+   organ[blood and blood-forming tissues] log(1+ findings) -0.0284  null 95% [-0.1069, +0.1041]  p=0.6242
+   organ[blood and blood-forming tissues] log(1+ test-based) +0.0237  null 95% [-0.1045, +0.1061]  p=0.6537
+   organ[blood and blood-forming tissues] log(1+ bedside) -0.0992  null 95% [-0.0555, +0.0478]  p=0.0005
+   organ[metabolism/homeostasis] log(1+ findings) -0.0032  null 95% [-0.1053, +0.1036]  p=0.9655
+   organ[metabolism/homeostasis] log(1+ test-based) -0.0293  null 95% [-0.1017, +0.0994]  p=0.5872
+   organ[metabolism/homeostasis] log(1+ bedside) +0.0209  null 95% [-0.0516, +0.0483]  p=0.3793
+   organ[musculoskeletal system] log(1+ findings) -0.0664  null 95% [-0.1020, +0.0974]  p=0.1919
+   organ[musculoskeletal system] log(1+ test-based) -0.0231  null 95% [-0.0785, +0.0727]  p=0.5207
+   organ[musculoskeletal system] log(1+ bedside) -0.0465  null 95% [-0.0763, +0.0695]  p=0.1894
+depth diff -0.098 (null 95% [-0.173, +0.174])
+terms 699; p<0.05 87 (exp 35); FDR<0.1 12; FWER<0.05 0; global sum z^2 890 vs null 699, p=0.0310
+organ-system branches (mean term z; group-permutation p; FWER over 19 branches):
+  HP:0001626 Abnormality of the cardiovascular system           terms   36 mean z -1.249 p 0.0025 fwer 0.0295
+  HP:0010311 Aplasia/Hypoplasia of the breasts                diff -0.027 z -3.40 p 0.0005 q 0.087 fwer 0.448 n 5
+  HP:0030972 Abnormal systemic blood pressure                 diff -0.098 z -4.08 p 0.0005 q 0.087 fwer 0.128 n 50
+  HP:0032263 Increased blood pressure                         diff -0.099 z -4.23 p 0.0005 q 0.087 fwer 0.105 n 49
+  HP:0004796 Gastrointestinal obstruction                     diff -0.041 z -4.07 p 0.0010 q 0.087 fwer 0.130 n 7
+  HP:0005214 Intestinal obstruction                           diff -0.041 z -4.07 p 0.0010 q 0.087 fwer 0.130 n 7
+  HP:0011025 Abnormal cardiovascular system physiology        diff -0.123 z -3.80 p 0.0010 q 0.087 fwer 0.209 n 75
+  HP:0012531 Pain                                             diff -0.077 z -3.37 p 0.0010 q 0.087 fwer 0.485 n 23
+  HP:0030949 Glomerular deposits                              diff +0.036 z +2.24 p 0.0010 q 0.087 fwer 1.000 n 7
+  HP:0000822 Hypertension                                     diff -0.078 z -3.39 p 0.0015 q 0.087 fwer 0.460 n 42
+  HP:0001713 Abnormal cardiac ventricle morphology            diff -0.040 z -3.49 p 0.0015 q 0.087 fwer 0.375 n 6
+TASKDONE setting_EASIAanc_EASIAcare_vs_EASIAanc_EURcare

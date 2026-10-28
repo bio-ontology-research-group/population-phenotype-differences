@@ -1,0 +1,27 @@
+53 cases (20 AFRanc_AFRcare) in 16 strata; corpora {'pubmed_abs': 46, 'pmcp': 7}; groups 49
+case-level outcomes (AFRanc_AFRcare minus AFRanc_EURcare, MH within strata; group-permutation p):
+   share of findings needing a test     -0.0530  null 95% [-0.1784, +0.1624]  p=0.5747
+   log(1+ test-based findings)          +0.2587  null 95% [-0.2612, +0.2716]  p=0.0555
+   log(1+ bedside/history findings)     +0.3644  null 95% [-0.3088, +0.3364]  p=0.0245
+   log(1+ laboratory)                   +0.0043  null 95% [-0.2467, +0.2523]  p=0.9790
+   log(1+ imaging)                      +0.2914  null 95% [-0.2167, +0.2606]  p=0.0200
+   log(1+ physiological_test)           +0.0592  null 95% [-0.1290, +0.1532]  p=0.5232
+   log(1+ pathology)                    +0.0423  null 95% [-0.1227, +0.1310]  p=0.5967
+   log(1+ clinical_exam)                +0.3037  null 95% [-0.2854, +0.3297]  p=0.0535
+   log(1+ symptom_history)              +0.1748  null 95% [-0.2225, +0.2378]  p=0.1334
+depth diff +0.442 (null 95% [-0.389, +0.398])
+terms 64; p<0.05 4 (exp 3); FDR<0.1 0; FWER<0.05 0; global sum z^2 73 vs null 64, p=0.2489
+organ-system branches (mean term z; group-permutation p; FWER over 8 branches):
+  HP:0001626 Abnormality of the cardiovascular system           terms    6 mean z +1.451 p 0.0175 fwer 0.1144
+  HP:0000152 Abnormality of head or neck                        terms    7 mean z +1.220 p 0.0805 fwer 0.4348
+  HP:0001627 Abnormal heart morphology                        diff +0.259 z +2.66 p 0.0065 q 0.208 fwer 0.149 n 5
+  HP:0030680 Abnormal cardiovascular system morphology        diff +0.259 z +2.66 p 0.0065 q 0.208 fwer 0.149 n 5
+  HP:0012337 Abnormal homeostasis                             diff +0.175 z +2.28 p 0.0260 q 0.554 fwer 0.415 n 10
+  HP:0025031 Abnormality of the digestive system              diff +0.175 z +1.72 p 0.0425 q 0.661 fwer 0.941 n 8
+  HP:0001626 Abnormality of the cardiovascular system         diff +0.188 z +1.79 p 0.0560 q 0.661 fwer 0.910 n 13
+  HP:0001945 Fever                                            diff +0.157 z +1.87 p 0.0860 q 0.661 fwer 0.839 n 5
+  HP:0004370 Abnormality of temperature regulation            diff +0.157 z +1.87 p 0.0860 q 0.661 fwer 0.839 n 5
+  HP:0000152 Abnormality of head or neck                      diff +0.168 z +1.79 p 0.0930 q 0.661 fwer 0.911 n 15
+  HP:0000234 Abnormality of the head                          diff +0.168 z +1.79 p 0.0930 q 0.661 fwer 0.911 n 15
+  HP:0000707 Abnormality of the nervous system                diff +0.185 z +1.58 p 0.1184 q 0.726 fwer 0.988 n 13
+TASKDONE setting_AFRanc_AFRcare_vs_AFRanc_EURcare

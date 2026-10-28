@@ -1,0 +1,51 @@
+843 cases (235 SASIA) in 182 strata; corpora {'store': 38, 'pmcp': 56, 'pubmed_abs': 749}; groups 720
+case-level outcomes (SASIA minus EUR, MH within strata; group-permutation p):
+   share of findings needing a test     -0.0818  null 95% [-0.0487, +0.0493]  p=0.0015
+   log(1+ test-based findings)          -0.0238  null 95% [-0.0933, +0.0918]  p=0.6342
+   log(1+ bedside/history findings)     +0.2010  null 95% [-0.1000, +0.0995]  p=0.0015
+   log(1+ laboratory)                   -0.0149  null 95% [-0.0685, +0.0721]  p=0.7026
+   log(1+ imaging)                      -0.0158  null 95% [-0.0678, +0.0703]  p=0.6547
+   log(1+ physiological_test)           +0.0326  null 95% [-0.0571, +0.0565]  p=0.2639
+   log(1+ pathology)                    +0.0003  null 95% [-0.0484, +0.0462]  p=0.9605
+   log(1+ clinical_exam)                +0.1665  null 95% [-0.0927, +0.0941]  p=0.0010
+   log(1+ symptom_history)              +0.0839  null 95% [-0.0724, +0.0746]  p=0.0245
+   organ[head or neck] log(1+ findings) +0.1056  null 95% [-0.0724, +0.0756]  p=0.0040
+   organ[head or neck] log(1+ test-based) +0.0217  null 95% [-0.0499, +0.0538]  p=0.4168
+   organ[head or neck] log(1+ bedside)  +0.0803  null 95% [-0.0602, +0.0609]  p=0.0090
+   organ[nervous system] log(1+ findings) +0.1168  null 95% [-0.0799, +0.0790]  p=0.0025
+   organ[nervous system] log(1+ test-based) +0.0259  null 95% [-0.0568, +0.0559]  p=0.3588
+   organ[nervous system] log(1+ bedside) +0.0973  null 95% [-0.0653, +0.0663]  p=0.0050
+   organ[blood and blood-forming tissues] log(1+ findings) +0.0155  null 95% [-0.0624, +0.0655]  p=0.6252
+   organ[blood and blood-forming tissues] log(1+ test-based) -0.0027  null 95% [-0.0615, +0.0634]  p=0.9315
+   organ[blood and blood-forming tissues] log(1+ bedside) +0.0324  null 95% [-0.0253, +0.0255]  p=0.0110
+   organ[metabolism/homeostasis] log(1+ findings) +0.0294  null 95% [-0.0685, +0.0693]  p=0.3933
+   organ[metabolism/homeostasis] log(1+ test-based) +0.0085  null 95% [-0.0646, +0.0655]  p=0.7771
+   organ[metabolism/homeostasis] log(1+ bedside) +0.0313  null 95% [-0.0315, +0.0326]  p=0.0675
+   organ[immune system] log(1+ findings) -0.0218  null 95% [-0.0527, +0.0568]  p=0.3828
+   organ[immune system] log(1+ test-based) -0.0359  null 95% [-0.0478, +0.0478]  p=0.1379
+   organ[immune system] log(1+ bedside) +0.0219  null 95% [-0.0369, +0.0411]  p=0.2824
+   organ[Abnormal cellular phenotype] log(1+ findings) -0.0384  null 95% [-0.0603, +0.0602]  p=0.1984
+   organ[Abnormal cellular phenotype] log(1+ test-based) -0.0343  null 95% [-0.0558, +0.0547]  p=0.2139
+   organ[Abnormal cellular phenotype] log(1+ bedside) -0.0040  null 95% [-0.0192, +0.0219]  p=0.6697
+   organ[musculoskeletal system] log(1+ findings) +0.0168  null 95% [-0.0719, +0.0718]  p=0.6727
+   organ[musculoskeletal system] log(1+ test-based) -0.0355  null 95% [-0.0490, +0.0538]  p=0.1724
+   organ[musculoskeletal system] log(1+ bedside) +0.0388  null 95% [-0.0566, +0.0606]  p=0.1994
+depth diff +0.149 (null 95% [-0.112, +0.110])
+terms 439; p<0.05 58 (exp 22); FDR<0.1 7; FWER<0.05 1; global sum z^2 666 vs null 439, p=0.0005
+organ-system branches (mean term z; group-permutation p; FWER over 18 branches):
+  HP:0000152 Abnormality of head or neck                        terms   56 mean z +1.319 p 0.0005 fwer 0.0060
+  HP:0001574 Abnormality of the integument                      terms   23 mean z +1.289 p 0.0025 fwer 0.0330
+  HP:0001626 Abnormality of the cardiovascular system           terms   23 mean z +1.326 p 0.0055 fwer 0.0790
+  HP:0000478 Abnormality of the eye                             terms   23 mean z +1.312 p 0.0055 fwer 0.0840
+  HP:0025031 Abnormality of the digestive system                terms   35 mean z +1.156 p 0.0075 fwer 0.0945
+  HP:0000271 Abnormality of the face                          diff +0.121 z +3.96 p 0.0005 q 0.073 fwer 0.024 n 219
+  HP:0002376 Developmental regression                         diff +0.050 z +3.45 p 0.0005 q 0.073 fwer 0.112 n 29
+  HP:0008064 Ichthyosis                                       diff +0.011 z +1.90 p 0.0005 q 0.073 fwer 1.000 n 15
+  HP:0000152 Abnormality of head or neck                      diff +0.113 z +3.42 p 0.0010 q 0.088 fwer 0.127 n 268
+  HP:0000234 Abnormality of the head                          diff +0.114 z +3.44 p 0.0010 q 0.088 fwer 0.116 n 264
+  HP:0001945 Fever                                            diff +0.043 z +3.14 p 0.0015 q 0.094 fwer 0.297 n 29
+  HP:0004370 Abnormality of temperature regulation            diff +0.043 z +3.14 p 0.0015 q 0.094 fwer 0.297 n 29
+  HP:0002197 Generalized-onset seizure                        diff +0.025 z +2.88 p 0.0025 q 0.110 fwer 0.591 n 12
+  HP:0004302 Functional motor deficit                         diff +0.030 z +2.74 p 0.0025 q 0.110 fwer 0.731 n 13
+  HP:0011036 Abnormality of renal excretion                   diff +0.023 z +2.49 p 0.0030 q 0.110 fwer 0.942 n 11
+TASKDONE age_child_SASIA

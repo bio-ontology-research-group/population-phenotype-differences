@@ -1,0 +1,28 @@
+387 cases (35 AFR) in 28 strata; corpora {'store': 156, 'pmcp': 27, 'pubmed_abs': 204}; groups 214
+case-level outcomes (AFR minus EUR, MH within strata; group-permutation p):
+   share of findings needing a test     -0.1228  null 95% [-0.1068, +0.0971]  p=0.0165
+   log(1+ test-based findings)          +0.0550  null 95% [-0.2893, +0.2676]  p=0.6762
+   log(1+ bedside/history findings)     +0.2773  null 95% [-0.2410, +0.2082]  p=0.0035
+   log(1+ laboratory)                   +0.0368  null 95% [-0.1274, +0.1341]  p=0.5422
+   log(1+ imaging)                      +0.0926  null 95% [-0.1696, +0.2096]  p=0.4178
+   log(1+ physiological_test)           +0.0934  null 95% [-0.1647, +0.1243]  p=0.3013
+   log(1+ pathology)                    -0.0274  null 95% [-0.1155, +0.1140]  p=0.6137
+   log(1+ clinical_exam)                +0.3118  null 95% [-0.2419, +0.2028]  p=0.0005
+   log(1+ symptom_history)              +0.0143  null 95% [-0.1116, +0.1220]  p=0.8046
+depth diff +0.286 (null 95% [-0.430, +0.361])
+terms 190; p<0.05 15 (exp 10); FDR<0.1 2; FWER<0.05 2; global sum z^2 294 vs null 190, p=0.0470
+organ-system branches (mean term z; group-permutation p; FWER over 14 branches):
+  HP:0025031 Abnormality of the digestive system                terms   14 mean z +1.372 p 0.0365 fwer 0.1964
+  HP:0025354 Abnormal cellular phenotype                        terms   19 mean z -0.968 p 0.0310 fwer 0.2319
+  HP:0001574 Abnormality of the integument                      terms   20 mean z +0.907 p 0.0765 fwer 0.6217
+  HP:0000951 Abnormality of the skin                          diff +0.203 z +5.30 p 0.0010 q 0.095 fwer 0.007 n 190
+  HP:0001574 Abnormality of the integument                    diff +0.199 z +5.14 p 0.0010 q 0.095 fwer 0.008 n 191
+  HP:0011121 Abnormal skin morphology                         diff +0.153 z +3.33 p 0.0030 q 0.152 fwer 0.247 n 177
+  HP:0012211 Abnormal renal physiology                        diff +0.116 z +3.60 p 0.0035 q 0.152 fwer 0.183 n 13
+  HP:0025033 Abnormal digestive system morphology             diff +0.145 z +3.71 p 0.0040 q 0.152 fwer 0.150 n 27
+  HP:0001438 Abnormal abdomen morphology                      diff +0.106 z +3.10 p 0.0080 q 0.217 fwer 0.296 n 16
+  HP:0025354 Abnormal cellular phenotype                      diff -0.187 z -2.10 p 0.0080 q 0.217 fwer 0.595 n 125
+  HP:0011805 Abnormal skeletal muscle morphology              diff -0.074 z -2.68 p 0.0110 q 0.261 fwer 0.397 n 34
+  HP:0000969 Edema                                            diff +0.075 z +2.60 p 0.0175 q 0.337 fwer 0.410 n 11
+  HP:0000077 Abnormality of the kidney                        diff +0.095 z +2.64 p 0.0195 q 0.337 fwer 0.402 n 19
+TASKDONE age_adult_AFR
