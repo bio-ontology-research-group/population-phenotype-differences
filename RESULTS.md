@@ -504,3 +504,41 @@ cared for in Europe or North America are reported like European patients, while 
 home are reported with fewer test-based findings. The direct within-ancestry comparison is significant for MENA
 (-7.2 points, q=0.019) and points the same way for SASIA (-14.3) and AFR (-5.3) with few cases. LATAM is the
 exception: the gap appears for LATAM-ancestry patients cared for in Europe/North America.
+
+## Gene-disease annotations and phenotype-based variant interpretation (2026-10-28; gda_impact.py, unimatrix jobs 10537, 10577)
+
+Each of 51,167 cases (six populations; Store, PMC-Patients, abstracts) ranked its causative gene among the 5,193 HPOA
+genes by BMA Resnik similarity to the genes' annotation profiles (genes_to_phenotype.txt 2026-01-08, extrinsic IC),
+with annotations supported only by the case's own publication removed (leave-publication-out). Rankings with all
+terms, bedside/history terms only and test-based terms only. Coverage: fraction of a case's terms equal to or below
+an annotated term of its gene (organ-system-level annotations ignored). Per-case file `results/v4/gda/gda_chunk*.csv`;
+tests `results/v4/gda/gda_stats_q.csv` (MH within strata, 2,000 group permutations, BH within version).
+
+Removing the test-based findings (cases with both kinds) costs about 2 log2 ranks (a 4-fold worse rank) in every
+population and halves the share of causative genes in the top 10:
+
+| Population | cases | log2 rank loss | top 10, all terms -> bedside only |
+|---|---|---|---|
+| EUR | 12,403 | +2.03 | 42.1% -> 19.7% |
+| MENA | 3,247 | +1.99 | 43.0% -> 20.1% |
+| SASIA | 956 | +2.20 | 45.7% -> 22.6% |
+| LATAM | 865 | +1.95 | 48.8% -> 27.3% |
+| AFR | 127 | +1.94 | 50.4% -> 25.2% |
+| EASIA | 7,636 | +2.15 | 45.9% -> 21.4% |
+
+Population vs EUR within gene x corpus (total version; negative log2 rank = better):
+
+| Population | log2 rank all (q) | bedside only (q) | test only (q) | coverage (q) |
+|---|---|---|---|---|
+| MENA | -0.15 (0.025) | -0.29 (0.0015) | -0.02 (0.80) | +0.026 (0.0015) |
+| SASIA | -0.30 (0.0037) | -0.41 (0.0015) | -0.12 | +0.031 (0.0046) |
+| LATAM | -0.30 (0.0015) | -0.45 (0.0015) | -0.30 (0.0037) | +0.014 |
+| AFR | -0.01 | -0.51 | +0.08 | +0.004 |
+| EASIA | -0.28 (0.0015) | -0.30 (0.0015) | -0.16 (0.0015) | +0.038 (0.0015) |
+
+The HPO annotations of the causative genes capture the findings of non-European patients at least as well as those
+of European patients, and the gene ranks better for them, chiefly through their bedside findings. With author region
+fixed (patient-carried) only LATAM keeps a better bedside-only rank (q=0.06); the other effects are not significant.
+The test-based findings carry about half of the phenotype evidence that places the causative gene in the top 10, so
+the patient-level consequence of an investigation that is not done is large even though the population-average
+difference in test share is 5 to 9 points.
