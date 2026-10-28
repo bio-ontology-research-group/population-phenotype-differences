@@ -601,3 +601,27 @@ Europe/North America care within ancestry -4.1 (q=0.037; 1,166 vs 467). Per ance
 reference / own vs EUR care): MENA -7.4 / +0.1 / -7.2 (q=0.013); SASIA -9.8 / -4.1 / -9.1; LATAM -3.0 / -5.8 (q=0.027)
 / +0.5; AFR -12.4 / -2.8 / -8.4; EASIA -2.0 / -5.1 / +4.7. Small differences from the setting_all numbers come from
 restricting to cases with a test-based or bedside finding.
+
+## Extraction audit on PubMed abstracts, all six populations (2026-10-28; results/v4/audit_abs/)
+
+120 abstract cases (20 per population, one patient per publication, seed 2026), 521 extracted phrases, shuffled into
+four region-blind batches and judged against the title and abstract by Sonnet agents (extraction correct / not in text
+/ negated / other person / not a phenotype; mapping exact / broader / too specific / wrong; how the finding is
+established; missed findings).
+
+| Population | phrases | precision | recall | recall test-based | recall bedside | mapping exact | broader | wrong or too specific | test share extracted | test share in text |
+|---|---|---|---|---|---|---|---|---|---|---|
+| EUR | 72 | 90.3 | 87.8 | 81.6 | 100.0 | 76.9 | 13.8 | 9.2 | 61.5 | 66.2 |
+| MENA | 88 | 96.6 | 86.7 | 78.4 | 91.8 | 78.8 | 16.5 | 4.7 | 34.1 | 37.8 |
+| SASIA | 96 | 94.8 | 94.8 | 90.7 | 100.0 | 83.5 | 14.3 | 2.2 | 53.8 | 56.2 |
+| LATAM | 88 | 93.2 | 98.8 | 97.4 | 100.0 | 76.8 | 17.1 | 6.1 | 45.1 | 45.8 |
+| AFR | 99 | 89.9 | 90.8 | 90.6 | 91.1 | 80.9 | 13.5 | 5.6 | 53.9 | 54.1 |
+| EASIA | 78 | 97.4 | 95.0 | 95.5 | 94.4 | 84.2 | 11.8 | 3.9 | 55.3 | 55.0 |
+| all | 521 | 93.7 | 92.2 | 89.1 | 95.7 | 80.3 | 14.5 | 5.1 | 50.2 | 52.0 |
+
+Extraction misses test-based findings more often than bedside findings, and most in EUR and MENA abstracts; the
+extracted test share is 1.8 points below the share stated in the text overall and 4.7 points below for EUR, so this
+error narrows rather than creates the EUR-versus-region difference. Finding classes (termclass.jsonl, assigned per HPO
+class) agreed with the judges' per-mention classification for 94.2% of 450 classified phrases on test-based versus
+bedside, 84.4% on the exact class, and 87% on sign versus symptom among bedside findings (model-versus-model agreement;
+clinician validation pending).
