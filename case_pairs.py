@@ -78,8 +78,15 @@ class CaseSim:
         With workers > 1 the rows are computed by forked processes into a memmap at `cache`.
         Z is built in row blocks, so peak memory stays near the size of S plus Z."""
         N = len(self.cases)
+        ids_file = (cache + ".ids.txt") if cache else None
         if cache and os.path.exists(cache):
             S = np.load(cache, mmap_mode="r")   # read-only map; Z below is the only full matrix held in memory
+            if S.shape != (N, N):
+                raise SystemExit(f"similarity cache {cache} has shape {S.shape}, expected {(N, N)}: stale case set")
+            if os.path.exists(ids_file):
+                cached_ids = open(ids_file).read().split("\n")[:N]
+                if cached_ids != [c["id"] for c in self.cases]:
+                    raise SystemExit(f"similarity cache {cache} was built for a different case order ({ids_file})")
         elif workers > 1 and cache:
             import multiprocessing as mp
             tmp = cache + ".part"
@@ -91,6 +98,7 @@ class CaseSim:
                 for k, _ in enumerate(pool.imap_unordered(_full_block, [(b, min(b + block, N)) for b in starts])):
                     print(f"  sim blocks {k + 1}/{len(starts)}", flush=True)
             os.replace(tmp, cache)
+            open(ids_file, "w").write("\n".join(c["id"] for c in self.cases) + "\n")
             S = np.load(cache, mmap_mode=None)
         else:
             S = np.empty((N, N), dtype=np.float32)

@@ -165,6 +165,8 @@ def sex_of(s):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sp", required=True); ap.add_argument("--gaz", required=True); ap.add_argument("--out", required=True)
+    ap.add_argument("--pavs-json", default=os.path.expanduser("~/Public/software/pavs/data/PAVS_phenopackets.json"),
+                    help="PAVS_phenopackets.json from the PAVS database export")
     a = ap.parse_args()
     B = Builder(a); st = collections.Counter(); index = []
     def write(corpus, pp, row, extra):
@@ -275,7 +277,7 @@ def main():
 
     # ---- PAVS (copied, augmented)
     rows = {r["id"]: r for r in csv.DictReader(open("results/cases_pavs.tsv"), delimiter="\t")}
-    for pp in json.load(open(os.path.expanduser("~/Public/software/pavs/data/PAVS_phenopackets.json"))):
+    for pp in json.load(open(a.pavs_json)):
         row = rows.get(pp["id"])
         if not row: continue
         pp = copy.deepcopy(pp); e = list(pp["subject"].get("extensions", []))

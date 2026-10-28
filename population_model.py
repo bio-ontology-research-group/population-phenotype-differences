@@ -132,6 +132,49 @@ def cmd_pairs(a, pre=None):
         if w is not None: X = X * w[:, None] ** .5; yy = yd * w ** .5
         else: yy = yd
         return np.linalg.lstsq(X, yy, rcond=None)[0]
+    if getattr(a, "r2_only", False):
+        # variance decomposition of within-gene pair similarity: share of the total variance between genes, and
+        # within genes the R^2 of the full model, of each layer alone and the unique R^2 of each layer (drop one)
+        P_ = demean(popcols(reg))
+        layers = {"phenotyping depth": [k for k in names_fixed if k.startswith("depth")],
+                  "curation process": [k for k in names_fixed if k.startswith("curation")],
+                  "reporting group": ["same_group"],
+                  "author region": [k for k in names_fixed if k.startswith("author_region")]}
+        colidx = {k: j for j, k in enumerate(names_fixed)}
+
+        def r2(blocks, w=None):
+            X = np.column_stack(blocks); yy = yd
+            if w is not None: X = X * w[:, None] ** .5; yy = yd * w ** .5
+            b = np.linalg.lstsq(X, yy, rcond=None)[0]; e = yy - X @ b
+            return 1 - (e @ e) / (yy @ yy)
+
+        def parts(w=None):
+            blk = {L: F_all[:, [colidx[k] for k in ks]] for L, ks in layers.items()}; blk["population"] = P_
+            full = r2(list(blk.values()), w)
+            res = {"within-gene R2, full model": full}
+            for L in blk:
+                res[f"{L}: alone"] = r2([blk[L]], w)
+                res[f"{L}: unique"] = full - r2([v for k, v in blk.items() if k != L], w)
+            return res
+        yc = y - y.mean(); gene_share = 1 - (yd @ yd) / (yc @ yc)
+        p0 = parts()
+        groups_u = np.unique(grp[use]); gidx = {g: k for k, g in enumerate(groups_u)}
+        gI = np.array([gidx[grp[i]] for i in I]); gJ = np.array([gidx[grp[j]] for j in J])
+        bs = []
+        for _ in range(getattr(a, "r2_boot", 0)):
+            m = np.bincount(rng.integers(0, len(groups_u), len(groups_u)), minlength=len(groups_u)).astype(float)
+            w = m[gI] * m[gJ]
+            if w.sum() > 0: bs.append(parts(w))
+        rows_ = [{"pair": f"{a.r1}-{a.r2}", "quantity": "between-gene share of variance", "value": gene_share, "lo": "", "hi": "",
+                  "n_pairs": len(I), "n_genes": int(gi.max() + 1)}]
+        for k, v in p0.items():
+            lo, hi = (np.percentile([b[k] for b in bs], [2.5, 97.5]) if bs else ("", ""))
+            rows_.append({"pair": f"{a.r1}-{a.r2}", "quantity": k, "value": v, "lo": lo, "hi": hi, "n_pairs": len(I), "n_genes": int(gi.max() + 1)})
+            print(f"   {k:40s} {100 * v:7.3f}%")
+        print(f"   between-gene share of variance {100 * gene_share:.2f}%")
+        with open(a.out + "_r2.csv", "w", newline="") as f:
+            w_ = csv.DictWriter(f, fieldnames=list(rows_[0])); w_.writeheader(); w_.writerows(rows_)
+        return []
     pop_names = [f"population_n_{a.r1}", "population_same"]
     b_all = fit(F_all, reg); b_noaut = fit(F_noaut, reg)
     # group-cluster bootstrap (resample groups; pair weight = product of case multiplicities)
@@ -346,6 +389,8 @@ def main():
     ap.add_argument("--r1", default="MENA"); ap.add_argument("--r2", default="EUR")
     ap.add_argument("--strata", choices=["total", "patient-carried"], default="total")
     ap.add_argument("--perms", type=int, default=1000); ap.add_argument("--boot", type=int, default=200)
+    ap.add_argument("--r2-only", action="store_true", help="pairs/allpairs: only the variance decomposition (OUT_r2.csv)")
+    ap.add_argument("--r2-boot", type=int, default=50, help="group-cluster bootstraps for the variance decomposition")
     ap.add_argument("--termclass", help="termclass.jsonl from qwen_tasks.py: adds case-level test-vs-bedside outcomes")
     ap.add_argument("--where", action="append", help="terms: keep only cases with COL=VALUE (repeatable)")
     ap.add_argument("--key-extra", help="terms: add this case-table column to the stratum key (cases without it dropped)")

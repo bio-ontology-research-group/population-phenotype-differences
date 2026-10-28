@@ -240,7 +240,7 @@ def main():
     for name in ("setting", "termclass", "select", "abstract"):
         p = sub.add_parser(name)
         p.add_argument("--out", required=True); p.add_argument("--key-file", required=True)
-        p.add_argument("--endpoint", default="http://unimatrix01.kaust.edu.sa:8000"); p.add_argument("--model", default="qwen3.8-27b")
+        p.add_argument("--endpoint", default=os.environ.get("LLM_ENDPOINT", "http://localhost:8000")); p.add_argument("--model", default="qwen3.8-27b")
         p.add_argument("--jobs", type=int, default=12)
         if name == "setting":
             p.add_argument("--cands", required=True); p.add_argument("--patients", required=True); p.add_argument("--affil", required=True)

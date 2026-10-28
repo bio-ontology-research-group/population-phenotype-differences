@@ -215,11 +215,11 @@ def main():
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest="stage", required=True)
     p = sub.add_parser("patient")
     p.add_argument("--cands", required=True); p.add_argument("--out", required=True); p.add_argument("--key-file", required=True)
-    p.add_argument("--endpoint", default="http://unimatrix01.kaust.edu.sa:8000"); p.add_argument("--model", default="qwen3.8-27b")
+    p.add_argument("--endpoint", default=os.environ.get("LLM_ENDPOINT", "http://localhost:8000")); p.add_argument("--model", default="qwen3.8-27b")
     p.add_argument("--jobs", type=int, default=12); p.add_argument("--limit", type=int, default=0); p.add_argument("--seed", type=int, default=1)
     m = sub.add_parser("map")
     m.add_argument("--patients", required=True); m.add_argument("--obo", required=True); m.add_argument("--out", required=True)
-    m.add_argument("--key-file", required=True); m.add_argument("--endpoint", default="http://unimatrix01.kaust.edu.sa:8000")
+    m.add_argument("--key-file", required=True); m.add_argument("--endpoint", default=os.environ.get("LLM_ENDPOINT", "http://localhost:8000"))
     m.add_argument("--model", default="qwen3.8-27b"); m.add_argument("--jobs", type=int, default=8)
     a = ap.parse_args(); {"patient": stage_patient, "map": stage_map}[a.stage](a)
 

@@ -4,13 +4,13 @@
 Writes PDFs (and PNG previews) to results/v4/figures/:
   gim_fig1_testshare   share of test-based findings vs EUR across analysis versions, and
                        log(1+n) test-based and bedside counts (terms_all/all_outcomes.tsv, qvalues.tsv)
-  gim_fig2_map         world map of the within-stratum residual test share by country of care
-                       (worldbank/healthspend_country_points.csv; Natural Earth 110m shapes, --shapes)
-  gim_fig2_setting     (a) ancestry vs place of care (setting_all/*_outcomes.csv, test_share_q.tsv);
-                       (b) country-level residual test share vs health expenditure (worldbank/)
-  gim_fig3_shift      (a) MH z-scores of all tested HPO classes by finding class and population
+  gim_fig2_shift       (a) MH z-scores of all tested HPO classes by finding class and population
                        (terms_all/main_*_total_terms.csv, termclass.jsonl); (b) dot matrix of the grouping classes with
                        the largest shifts (figures/fig_shift_network_nodes.csv from network_figs.py shift)
+  gim_fig3_setting     (a) ancestry vs place of care (setting_all/*_outcomes.csv, test_share_q.tsv);
+                       (b) country-level residual test share vs health expenditure (worldbank/)
+  gim_fig3_map         (c) world map of the within-stratum residual test share by country of care
+                       (worldbank/healthspend_country_points.csv; Natural Earth 110m shapes, --shapes)
   gim_figS_decomp      pair-similarity decomposition for MENA-EUR and EUR-EASIA (allpairs/*_decomposition.csv)
   gim_figS_organ       organ-system differences in log(1+n) counts (terms_all/main_*_total_outcomes.csv, qvalues.tsv)
   gim_figS_recovery    causative-gene recovery, population minus EUR (recovery/recovery_*_recovery.csv, qvalues.tsv)
@@ -126,7 +126,7 @@ def fig1(res, q):
     save(fig, res, "gim_fig1_testshare")
 
 
-def fig2(res):
+def fig_setting(res):
     sdir = os.path.join(res, "setting_all")
     qs = {r["contrast"]: float(r["q_BH"]) for r in read_tsv(os.path.join(sdir, "test_share_q.tsv"))}
     share = "share of findings needing a test"
@@ -152,7 +152,7 @@ def fig2(res):
     a.set_xlabel("Share of test-based findings, difference (percentage points)")
     a.legend(handles=[Line2D([], [], color=c, marker=m, ls="", ms=4.2, label=l) for _, l, c, m in contrasts],
              loc="upper center", bbox_to_anchor=(0.45, -0.17), frameon=False, ncol=1, handletextpad=0.2)
-    panel_label(a, "b")
+    panel_label(a, "a")
 
     pts = read_tsv(os.path.join(res, "worldbank", "healthspend_country_points.csv"), ",")
     slope = next(r for r in read_tsv(os.path.join(res, "worldbank", "healthspend_slopes.csv"), ",")
@@ -190,12 +190,12 @@ def fig2(res):
              + [Line2D([], [], color="white", marker="o", mec="black", ls="", ms=4, label="Gulf state")],
              loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=3, frameon=False, handletextpad=0.1,
              columnspacing=0.8, title="Most frequent population of the country's cases", title_fontsize=6.5)
-    panel_label(b, "c")
+    panel_label(b, "b")
     fig.tight_layout(w_pad=4.0)
-    save(fig, res, "gim_fig2_setting")
+    save(fig, res, "gim_fig3_setting")
 
 
-def fig3(res, termclass):
+def fig_shift(res, termclass):
     import json
     import numpy as np
     from matplotlib.colors import TwoSlopeNorm
@@ -225,7 +225,7 @@ def fig3(res, termclass):
                       Line2D([], [], color=OI["blue"], lw=4, alpha=0.6, label="test-based class"),
                       Line2D([], [], color="black", lw=1.6, label="median")], frameon=False, loc="upper center",
              bbox_to_anchor=(0.5, -0.2), ncol=1)
-    panel_label(a, "b", x=-0.25, y=1.05)
+    panel_label(a, "a", x=-0.25, y=1.05)
     # (b) dot matrix of grouping classes with the largest shifts
     def fz(r, P):
         return float(r[f"z_{P}"]) if r[f"z_{P}"] else float("nan")
@@ -260,13 +260,13 @@ def fig3(res, termclass):
     b.spines["left"].set_visible(False); b.tick_params(axis="y", length=0)
     sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
     cb = fig.colorbar(sm, ax=b, shrink=0.45, pad=0.04); cb.set_label("z vs EUR"); cb.outline.set_linewidth(0.4)
-    panel_label(b, "c", x=-1.25, y=1.05)
+    panel_label(b, "b", x=-1.25, y=1.05)
     b.scatter([], [], s=12 + 9 * 4, color="white", edgecolors="black", linewidths=0.8, label="q < 0.05")
     b.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.2))
-    save(fig, res, "gim_fig3_shift")
+    save(fig, res, "gim_fig2_shift")
 
 
-def fig2_map(res, shapes, min_n=20):
+def fig_map(res, shapes, min_n=20):
     """Choropleth of the mean within-stratum residual share of test-based findings by country of care."""
     import shapefile
     from matplotlib.collections import PolyCollection
@@ -292,13 +292,13 @@ def fig2_map(res, shapes, min_n=20):
             polys.append(pts_[parts[k]:parts[k + 1]]); cols.append(col)
     ax.add_collection(PolyCollection(polys, facecolors=cols, edgecolors="white", linewidths=0.25))
     ax.set_xlim(-170, 180); ax.set_ylim(-58, 84); ax.set_aspect("equal"); ax.axis("off")
-    panel_label(ax, "a", x=0.0, y=0.98)
+    panel_label(ax, "c", x=0.0, y=0.98)
     sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
     cb = fig.colorbar(sm, ax=ax, orientation="horizontal", shrink=0.45, pad=0.02, aspect=35)
     cb.set_label("Share of test-based findings, within-gene residual of the country of care (points)")
     cb.outline.set_linewidth(0.4)
     fig.tight_layout()
-    save(fig, res, "gim_fig2_map")
+    save(fig, res, "gim_fig3_map")
     return shown
 
 
@@ -499,13 +499,13 @@ def figS_coreport(res, thr=0.10, vmax=0.15):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--res", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "results", "v4"))
-    ap.add_argument("--shapes", help="Natural Earth ne_110m_admin_0_countries.shp (for gim_fig2_map; skipped if absent)")
+    ap.add_argument("--shapes", help="Natural Earth ne_110m_admin_0_countries.shp (for gim_fig3_map; skipped if absent)")
     a = ap.parse_args()
     q = qlookup(a.res)
     fig1(a.res, q)
-    fig2(a.res)
-    if a.shapes: fig2_map(a.res, a.shapes)
-    fig3(a.res, os.path.join(os.path.dirname(a.res.rstrip("/")), "termclass.jsonl"))
+    fig_shift(a.res, os.path.join(os.path.dirname(a.res.rstrip("/")), "termclass.jsonl"))
+    fig_setting(a.res)
+    if a.shapes: fig_map(a.res, a.shapes)
     figS_decomp(a.res)
     figS_organ(a.res, q)
     figS_recovery(a.res, q)

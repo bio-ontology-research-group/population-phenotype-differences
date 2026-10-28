@@ -10,7 +10,7 @@ Stages (both resumable, output is JSONL keyed by PMID):
 Usage:
   python3 store_origin_extract.py fetch --pmids store_pmids_union.txt --workdir W
   python3 store_origin_extract.py llm   --workdir W --key-file ~/.borg_llm_key \
-          --endpoint http://unimatrix01.kaust.edu.sa:8000 --model qwen3.8-27b --jobs 12
+          --endpoint http://localhost:8000 --model qwen3.8-27b --jobs 12
 The API key is read from a file and never printed.
 """
 import argparse, json, os, re, sys, time, threading, queue, urllib.request, urllib.parse
@@ -303,7 +303,7 @@ def main():
     l = sub.add_parser("llm")
     l.add_argument("--workdir", required=True)
     l.add_argument("--key-file", required=True)
-    l.add_argument("--endpoint", default="http://unimatrix01.kaust.edu.sa:8000")
+    l.add_argument("--endpoint", default=os.environ.get("LLM_ENDPOINT", "http://localhost:8000"))
     l.add_argument("--model", default="qwen3.8-27b")
     l.add_argument("--jobs", type=int, default=12)
     a = ap.parse_args()

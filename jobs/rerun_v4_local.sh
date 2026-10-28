@@ -1,7 +1,7 @@
 set -u
 cd /home/leechuck/Documents/papers/pavs-saudi-specific-phenotypes/analysis
-P=/home/leechuck/tmp/claude-1000/-home-leechuck-Documents-papers-pavs-saudi-specific-phenotypes/818691a1-fa28-4b8f-9820-3dbbc0854147/scratchpad/statsenv/bin/python
-T="--obo /home/leechuck/tmp/claude-1000/-home-leechuck-Documents-papers-pavs-saudi-specific-phenotypes/818691a1-fa28-4b8f-9820-3dbbc0854147/scratchpad/hpo/hp.obo --termdb /home/leechuck/tmp/claude-1000/-home-leechuck-Documents-papers-pavs-saudi-specific-phenotypes/818691a1-fa28-4b8f-9820-3dbbc0854147/scratchpad/ontofunc_hp --groups results/groups_lastauthor.tsv --termclass results/termclass.jsonl"
+P=${DATA:-data}/statsenv/bin/python
+T="--obo ${DATA:-data}/hpo/hp.obo --termdb ${DATA:-data}/ontofunc_hp --groups results/groups_lastauthor.tsv --termclass results/termclass.jsonl"
 term() { nice -n 15 $P population_model.py terms "$@" $T; }
 for r in MENA EASIA; do
   for st in total patient-carried; do

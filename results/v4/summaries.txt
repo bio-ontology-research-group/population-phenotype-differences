@@ -1,0 +1,60 @@
+# Cases by corpus and population (fine2 tables; PAVS from fine/cases_pavs.tsv)
+corpus	EUR	MENA	SASIA	LATAM	AFR	EASIA	other	total
+pavs_clin	0	2576	0	0	0	0	0	2576
+pavs_lit	0	1278	0	0	0	0	0	1278
+pavs_us	124	0	0	0	0	0	0	124
+pmcp	1932	597	219	205	27	2129	1683	6792
+pubmed_abs	20820	4732	1464	1384	183	12076	5252	45911
+store	4411	693	41	87	41	854	3390	9517
+total cases: 66198
+
+# Age band and sex per population (fine2; share of cases with the attribute stated)
+age_band	infant	child	adolescent	adult	stated	cases
+EUR	13.6	31.1	12.2	43.1	14852	27163
+MENA	18.4	44.4	13.9	23.4	3497	6022
+SASIA	20.6	38.7	14.2	26.5	1088	1724
+LATAM	11.6	33.8	13.2	41.4	974	1676
+AFR	18.1	29.2	16.0	36.8	144	251
+EASIA	14.2	31.2	10.2	44.4	8804	15059
+sex	male	female	stated	cases
+EUR	50.7	49.3	17795	27163
+MENA	53.7	46.3	3915	6022
+SASIA	57.6	42.4	1184	1724
+LATAM	49.3	50.7	1185	1676
+AFR	56.2	43.8	160	251
+EASIA	53.7	46.3	10790	15059
+
+# Finding classes per HPO class (termclass.jsonl)
+clinical_exam	3066
+imaging	2858
+laboratory	2123
+pathology	1274
+physiological_test	1086
+symptom_history	792
+mixed	569
+None	24
+test-based 7341; bedside 3858 (signs 3066, symptoms 792); total 11792
+
+# Annotation-free gene recovery, Hits@1 by corpus and population (recovery/*_percase.csv)
+corpus	population	queries	hits@1 (%)
+pavs_clin	MENA	1892	1.8
+pavs_lit	MENA	977	5.7
+pavs_us	EUR	121	1.7
+pmcp	AFR	27	11.1
+pmcp	EASIA	2110	16.2
+pmcp	EUR	1914	10.8
+pmcp	LATAM	202	16.8
+pmcp	MENA	586	12.1
+pmcp	SASIA	216	14.4
+pubmed_abs	AFR	178	10.7
+pubmed_abs	EASIA	11852	17.5
+pubmed_abs	EUR	20408	13.9
+pubmed_abs	LATAM	1364	17.4
+pubmed_abs	MENA	4582	13.1
+pubmed_abs	SASIA	1438	16.6
+store	AFR	37	45.9
+store	EASIA	805	27.7
+store	EUR	4053	18.9
+store	LATAM	81	35.8
+store	MENA	559	14.1
+store	SASIA	39	28.2

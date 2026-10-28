@@ -61,7 +61,7 @@ def main():
     ap.add_argument("--termdb"); ap.add_argument("--groups", required=True); ap.add_argument("--termclass", required=True)
     ap.add_argument("--pops", default="MENA,SASIA,LATAM,AFR,EASIA"); ap.add_argument("--ref", default="EUR")
     ap.add_argument("--split", action="store_true"); ap.add_argument("--min-cases", type=int, default=200)
-    ap.add_argument("--perms", type=int, default=1000); ap.add_argument("--out", required=True)
+    ap.add_argument("--perms", type=int, default=2000); ap.add_argument("--out", required=True)
     a = ap.parse_args()
     rng = np.random.default_rng(29)
     G = load_groups(a.groups)

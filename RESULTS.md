@@ -648,7 +648,7 @@ Earlier PMC-Patients pipeline vs Store (51 shared publications, full text vs ful
 Test share, abstract extraction minus full-text curation (publication units): EUR +9.3 points (241), MENA +4.7 (134),
 SASIA -3.0 (12), LATAM -1.5 (20), AFR +0.7 (7), EASIA +8.3 (184). Abstracts emphasise test-based findings more than
 the full text, more so for European and East Asian publications; the population differences in this bias are not
-significant (MENA minus EUR -4.7 points, 95% CI -10.7 to +1.8, permutation p=0.16; LATAM -10.9, p=0.11) but their point
+significant (MENA minus EUR -4.7 points, 95% CI -11.1 to +2.0, permutation p=0.15; LATAM -10.9, p=0.13) but their point
 estimates have the size of the MENA gap.
 
 Test-share gap within corpora (population minus EUR, MH within gene x corpus, 1,000 group permutations):
@@ -658,3 +658,29 @@ Store + PMC-Patients (full text): MENA -2.1 (p=0.20), SASIA -5.6 (p=0.012), LATA
 EASIA +2.3 (p=0.040). Abstracts: MENA -6.0, SASIA -8.2, LATAM -4.8, AFR -9.9, EASIA -1.7 (all p<=0.002).
 The South Asian and Latin American deficits replicate in the full-text corpora; the MENA and African deficits point the
 same way but are not significant there, and part of the MENA gap in abstracts may come from what authors put in abstracts.
+
+## Sensitivity: Pakistan and Afghanistan in South Asia (2026-10-28)
+
+`sensitivity_pakistan.py` moves the 403 cases whose stated origin (or place of care, when the label came from it) is Pakistan or
+Afghanistan from MENA to SASIA and recomputes the total-version test-share difference against EUR (results/v4/sensitivity/pakistan.csv).
+Main labelling: MENA -5.49, SASIA -6.99 (both p=0.0005; reproduces the terms run). Moved: MENA -5.56 (n 20,874; 4,361 MENA), SASIA -6.46
+(n 13,467; 1,783 SASIA), both p=0.0005. The placement does not drive either deficit. Reported as Supplementary Table S16.
+
+## Figure renumbering (2026-10-28)
+
+Main Figure 2 is now the class-shift figure (gim_fig2_shift, panels a and b) and Figure 3 the place-of-care figure
+(gim_fig3_setting panels a and b, gim_fig3_map panel c), so that figures are cited in order. The map covers 65 countries with at
+least 20 cases, 63 of which exist in the Natural Earth 1:110m shapes.
+
+## Variance decomposition of within-gene similarity (2026-10-28; results/v4/r2/, job 10624)
+
+`population_model.py pairs --r2-only --r2-boot 50` for all 15 population pairs (patient-carried pair model, gene fixed
+effects): between-gene share of the variance of Z, within-gene R2 of the full model, and for each layer the R2 alone
+and the drop in R2 when it is removed (unique), 50 bootstrap resamples of reporting groups. `r2_summary.py` ->
+results/v4/r2/summary.csv. Over the 15 pairs (medians, ranges): between-gene share 0.25 (0.12 to 0.41); within-gene R2
+of the full model 0.066 (0.023 to 0.274); unique R2 of phenotyping depth 0.012 (0.0015 to 0.022), curation process
+0.026 (0.003 to 0.238), reporting group 0.0006 (0.0001 to 0.0023), author region 0.0021 (0.0002 to 0.015), population
+0.0008 (0.0000 to 0.021; largest MENA-AFR 0.021 and LATAM-AFR 0.014). The four phenotyping layers together account
+for a median 86% (68% to 92%) of the within-gene variation the model explains, population for 1.2% (0.03% to 28%).
+Most of the within-gene variance (R2 of 0.02 to 0.27) is explained by none of the layers. Reported as Supplementary
+Table S17 and one Discussion sentence (Paul's heterogeneity point).
