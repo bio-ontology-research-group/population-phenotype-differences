@@ -1,0 +1,206 @@
+{
+ "id": "ABS_18409202-1",
+ "subject": {
+  "id": "ABS_18409202-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "16 years"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P16Y"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Germany"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:walldorf c"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001045",
+    "label": "Vitiligo"
+   },
+   "description": "vitiligo in segments of the integument"
+  },
+  {
+   "type": {
+    "id": "HP:0002725",
+    "label": "Systemic lupus erythematosus"
+   },
+   "description": "systemic lupus erythematosus"
+  },
+  {
+   "type": {
+    "id": "HP:0100834",
+    "label": "Neoplasm of the large intestine"
+   },
+   "description": "four synchronous colorectal cancers"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_18409202-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_18409202-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_18409202-1-MSH6",
+        "geneContext": {
+         "valueId": "HGNC:7329",
+         "symbol": "MSH6"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:18409202",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/18409202/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

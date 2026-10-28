@@ -1,0 +1,194 @@
+{
+ "id": "ABS_23295294-1",
+ "subject": {
+  "id": "ABS_23295294-1",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002828",
+     "label": "Brazil"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "puberty"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"46,XY karyotype\", \"excluded\": false}, {\"text\": \"signs of virilization at puberty\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Brazil"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:guerra-junior g"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000062",
+    "label": "Ambiguous genitalia"
+   },
+   "description": "genital ambiguity"
+  },
+  {
+   "type": {
+    "id": "HP:0025380",
+    "label": "Increased circulating androstenedione concentration"
+   },
+   "description": "increased androstenedione"
+  },
+  {
+   "type": {
+    "id": "HP:0040171",
+    "label": "Decreased serum testosterone concentration"
+   },
+   "description": "decreased testosterone levels"
+  },
+  {
+   "type": {
+    "id": "HP:0033527",
+    "label": "Decreased gonadotropin-stimulated testosterone-to-androstenedione ratio"
+   },
+   "description": "testosterone to androstenedione ratio < 0.8"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_23295294-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_23295294-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_23295294-1-HSD17B3",
+        "geneContext": {
+         "valueId": "HGNC:5212",
+         "symbol": "HSD17B3"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:23295294",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/23295294/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

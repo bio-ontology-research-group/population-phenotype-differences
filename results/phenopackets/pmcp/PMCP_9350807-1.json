@@ -1,0 +1,210 @@
+{
+ "id": "PMCP_9350807-1",
+ "subject": {
+  "id": "PMCP_9350807-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P47Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "As we were aware of the genetic mutation of interest, we ordered a Sanger sequencing"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "47-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "ataxia with oculomotor apraxia type 2"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9350807-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:srivastava ak"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007240",
+    "label": "Progressive gait ataxia"
+   },
+   "description": "progressive history of imbalance while walking"
+  },
+  {
+   "type": {
+    "id": "HP:0001260",
+    "label": "Dysarthria"
+   },
+   "description": "dysarthria"
+  },
+  {
+   "type": {
+    "id": "HP:0001251",
+    "label": "Ataxia"
+   },
+   "description": "cerebellar ataxia"
+  },
+  {
+   "type": {
+    "id": "HP:0000657",
+    "label": "Oculomotor apraxia"
+   },
+   "description": "oculomotor apraxia"
+  },
+  {
+   "type": {
+    "id": "HP:0007141",
+    "label": "Sensorimotor neuropathy"
+   },
+   "description": "sensory motor neuropathy (axonal) affecting all four limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0006254",
+    "label": "Elevated circulating alpha-fetoprotein concentration"
+   },
+   "description": "elevated alfa-fetoprotein (AFP) levels"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9350807-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9350807-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:445",
+       "symbol": "SETX"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35936600",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35936600/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

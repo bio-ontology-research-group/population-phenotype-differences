@@ -1,0 +1,231 @@
+{
+ "id": "PMCP_10248439-1",
+ "subject": {
+  "id": "PMCP_10248439-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P3Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "IWES, Cipher Gene, China"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "gene sequencing was performed (IWES, Cipher Gene, China)"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "3-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "malignant peripheral nerve sheath tumor"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no evident recurrence of the tumor\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10248439-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chen z"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001288",
+    "label": "Gait disturbance"
+   },
+   "description": "limping"
+  },
+  {
+   "type": {
+    "id": "HP:6001399",
+    "label": "Plantar pain"
+   },
+   "description": "intermittent pain in the right plantar"
+  },
+  {
+   "type": {
+    "id": "HP:6000660",
+    "label": "Paravertebral mass"
+   },
+   "description": "mass with a heterogeneous signal arising through the foramina at the right-sided Lumbar 5 (L5) and Sacral 1 (S1)"
+  },
+  {
+   "type": {
+    "id": "HP:0007340",
+    "label": "Lower limb muscle weakness"
+   },
+   "description": "decreased muscle strength and atrophy of the right lower limb"
+  },
+  {
+   "type": {
+    "id": "HP:0007210",
+    "label": "Lower limb amyotrophy"
+   },
+   "description": "decreased muscle strength and atrophy of the right lower limb"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10248439-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10248439-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10248439-1-SMARCB1",
+        "geneContext": {
+         "valueId": "HGNC:11103",
+         "symbol": "SMARCB1"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37305741",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37305741/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

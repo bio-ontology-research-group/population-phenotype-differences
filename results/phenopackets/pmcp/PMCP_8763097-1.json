@@ -1,0 +1,210 @@
+{
+ "id": "PMCP_8763097-1",
+ "subject": {
+  "id": "PMCP_8763097-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "King Khaled Eye Specialist Hospital (KKESH)"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the Vitreoretinal Division of King Khaled Eye Specialist Hospital (KKESH)"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Blau Syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"total rhegmatogenous retinal detachment (RD) with extensive proliferative vitreoretinopathy in the left eye\", \"excluded\": false}, {\"text\": \"3+ AC reaction in both eyes\", \"excluded\": false}, {\"text\": \"+ 4 vitritis in the left eye\", \"excluded\": false}, {\"text\": \"multiple distinct chorioretinal lesions\", \"excluded\": false}, {\"text\": \"peripheral focal vascular sheathing\", \"excluded\": false}, {\"text\": \"multiple early hypofluorescent areas\", \"excluded\": false}, {\"text\": \"peripheral vascular leakage\", \"excluded\": false}, {\"text\": \"no light perception in the left eye\", \"excluded\": false}, {\"text\": \"new development of macular chorioretinal lesions associated with diffuse areas of subretinal fibrosis\", \"excluded\": false}, {\"text\": \"no previous attacks of skin rashes or arthritis\", \"excluded\": true}, {\"text\": \"no previous attacks of skin rashes or arthritis\", \"excluded\": true}, {\"text\": \"without recurrence of uveitis or development of systemic manifestations of BS over 1-year follow-up\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8763097-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dhibi ha"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000518",
+    "label": "Cataract"
+   },
+   "description": "early-onset cataract"
+  },
+  {
+   "type": {
+    "id": "HP:0001117",
+    "label": "Sudden loss of visual acuity"
+   },
+   "description": "sudden drop of vision in the left eye"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8763097-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8763097-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8763097-1-NOD2",
+        "geneContext": {
+         "valueId": "HGNC:5331",
+         "symbol": "NOD2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35125805",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35125805/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

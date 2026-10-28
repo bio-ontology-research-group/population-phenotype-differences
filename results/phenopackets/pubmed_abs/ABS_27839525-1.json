@@ -1,0 +1,240 @@
+{
+ "id": "ABS_27839525-1",
+ "subject": {
+  "id": "ABS_27839525-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P1Y10M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002954",
+     "label": "Czech Republic"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "22 months"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "13 months"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P1Y1M"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"cardiorespiratory failure\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Czechia"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:honzik t"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001639",
+    "label": "Hypertrophic cardiomyopathy"
+   },
+   "description": "hypertrophic cardiomyopathy"
+  },
+  {
+   "type": {
+    "id": "HP:0033044",
+    "label": "Motor regression"
+   },
+   "description": "regression of gross motor development"
+  },
+  {
+   "type": {
+    "id": "HP:0003198",
+    "label": "Myopathy"
+   },
+   "description": "severe myopathy"
+  },
+  {
+   "type": {
+    "id": "HP:0011173",
+    "label": "Focal behavior arrest seizure"
+   },
+   "description": "psychomotor arrest"
+  },
+  {
+   "type": {
+    "id": "HP:0002352",
+    "label": "Leukoencephalopathy"
+   },
+   "description": "leucoencephalopathy"
+  },
+  {
+   "type": {
+    "id": "HP:0001272",
+    "label": "Cerebellar atrophy"
+   },
+   "description": "severe, mainly cerebellar neuronal degeneration"
+  },
+  {
+   "type": {
+    "id": "HP:0001397",
+    "label": "Hepatic steatosis"
+   },
+   "description": "hepatic steatosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_27839525-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_27839525-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_27839525-1-TK2",
+        "geneContext": {
+         "valueId": "HGNC:11831",
+         "symbol": "TK2"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27839525",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27839525/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "id": "ABS_24947919-1",
+ "subject": {
+  "id": "ABS_24947919-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal red blood cell indices and Hb level (12.3 g.dL\u207b\u00b9)\", \"excluded\": false}, {\"text\": \"peak work rate (WR), VO(2max) and gas exchange threshold (GET) within normal ranges for healthy females\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:fattoum s"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011902",
+    "label": "Abnormal hemoglobin"
+   },
+   "description": "Hb Hope"
+  },
+  {
+   "type": {
+    "id": "HP:0030878",
+    "label": "Abnormality on pulmonary function testing"
+   },
+   "description": "kinetics of pulmonary VO\u2082included the presence of a slow component"
+  },
+  {
+   "type": {
+    "id": "HP:0002795",
+    "label": "Abnormal respiratory system physiology"
+   },
+   "description": "Phase 3 showed a slow component similar to that reported in severe exercise"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_24947919-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_24947919-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_24947919-1-HBB",
+        "geneContext": {
+         "valueId": "HGNC:4827",
+         "symbol": "HBB"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24947919",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24947919/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,243 @@
+{
+ "id": "PMCP_5129214-1",
+ "subject": {
+  "id": "PMCP_5129214-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P52Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 74-year-old Caucasian woman was referred"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Denmark"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "At our institution, the echocardiogram was repeated"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "52 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Fabry's disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without eliciting symptoms or signs of ischemia\", \"excluded\": true}, {\"text\": \"did not identify arrhythmias\", \"excluded\": true}, {\"text\": \"without LV outflow tract obstruction\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5129214-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:theilade j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "well-controlled hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0410173",
+    "label": "Increased circulating troponin I concentration"
+   },
+   "description": "elevated cardiac troponins (troponin I was 121 ng/L, normal range < 40 ng/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0001712",
+    "label": "Left ventricular hypertrophy"
+   },
+   "description": "ECG suggested LV hypertrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0005144",
+    "label": "Ventricular septal hypertrophy"
+   },
+   "description": "hypertrophy (15 mm) of the interventricular septum"
+  },
+  {
+   "type": {
+    "id": "HP:0025435",
+    "label": "Increased circulating lactate dehydrogenase concentration"
+   },
+   "description": "slightly elevated lactate dehydrogenase (212; U/L; normal range 105\u2013205 U/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0033534",
+    "label": "Increased circulating brain natriuretic peptide concentration"
+   },
+   "description": "B-type natriuretic peptide (616 ng/L; normal range < 450 ng/L)"
+  },
+  {
+   "type": {
+    "id": "HP:4000004",
+    "label": "Myocardial late gadolinium enhancement"
+   },
+   "description": "late gadolinium hyperenhancement in inferolateral segments in a mid-myocardial location"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5129214-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5129214-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5129214-1-GLA",
+        "geneContext": {
+         "valueId": "HGNC:4296",
+         "symbol": "GLA"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27899143",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27899143/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

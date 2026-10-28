@@ -1,0 +1,246 @@
+{
+ "id": "ABS_10450185-1",
+ "subject": {
+  "id": "ABS_10450185-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P81Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "British"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "81 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"infarcts\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "United Kingdom"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wray r"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007957",
+    "label": "Corneal opacity"
+   },
+   "description": "corneal opacification"
+  },
+  {
+   "type": {
+    "id": "HP:0003233",
+    "label": "Decreased HDL cholesterol concentration"
+   },
+   "description": "major high density lipoprotein (HDL) deficiency in plasma"
+  },
+  {
+   "type": {
+    "id": "HP:0031211",
+    "label": "Elevated cholesterol ester level"
+   },
+   "description": "significant cholesterol esterification in plasma on non-HDL lipoproteins"
+  },
+  {
+   "type": {
+    "id": "HP:0003107",
+    "label": "Abnormal circulating cholesterol concentration"
+   },
+   "description": "plasma cholesterol 4.3-7.1 mmol/litre"
+  },
+  {
+   "type": {
+    "id": "HP:0002155",
+    "label": "Hypertriglyceridemia"
+   },
+   "description": "triglycerides 1.8-2.2 mmol/litre"
+  },
+  {
+   "type": {
+    "id": "HP:0031799",
+    "label": "Decreased circulating apolipoprotein A-I concentration"
+   },
+   "description": "apolipoprotein A-I < 0.16 g/litre"
+  },
+  {
+   "type": {
+    "id": "HP:0430148",
+    "label": "Abnormal circulating lipoprotein(a) concentration"
+   },
+   "description": "lipoprotein(a) 0.61 g/litre"
+  },
+  {
+   "type": {
+    "id": "HP:0003349",
+    "label": "Low cholesterol esterification rate"
+   },
+   "description": "Cholesterol esterification was impaired using HDL-3 and A-I proteoliposomes but not using VLDL/IDL/LDL"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_10450185-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_10450185-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_10450185-1-LCAT",
+        "geneContext": {
+         "valueId": "HGNC:6522",
+         "symbol": "LCAT"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:10450185",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/10450185/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

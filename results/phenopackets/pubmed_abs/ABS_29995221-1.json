@@ -1,0 +1,188 @@
+{
+ "id": "ABS_29995221-1",
+ "subject": {
+  "id": "ABS_29995221-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"complete loss of IL-12R\u03b21 expression on phytohemagglutinin-activated T cells and/or EBV-transformed B cells\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Belgium; France; Greece; Iran; Mexico; USA; Ukraine"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:bustamante j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0020172",
+    "label": "Adverse drug response"
+   },
+   "description": "adverse reactions to BCG vaccination"
+  },
+  {
+   "type": {
+    "id": "HP:0032101",
+    "label": "Unusual infection"
+   },
+   "description": "systemic salmonellosis"
+  },
+  {
+   "type": {
+    "id": "HP:0002728",
+    "label": "Chronic mucocutaneous candidiasis"
+   },
+   "description": "mucocutaneous candidiasis"
+  },
+  {
+   "type": {
+    "id": "HP:0032257",
+    "label": "Disseminated histoplasmosis"
+   },
+   "description": "disseminated histoplasmosis"
+  },
+  {
+   "type": {
+    "id": "HP:0031407",
+    "label": "Impaired cytokine signaling"
+   },
+   "description": "did not respond to IL-12 and IL-23"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_29995221-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_29995221-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_29995221-1-IL12RB1",
+        "geneContext": {
+         "valueId": "HGNC:5971",
+         "symbol": "IL12RB1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29995221",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29995221/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

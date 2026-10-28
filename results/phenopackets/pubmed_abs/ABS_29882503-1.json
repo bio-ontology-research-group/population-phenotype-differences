@@ -1,0 +1,233 @@
+{
+ "id": "ABS_29882503-1",
+ "subject": {
+  "id": "ABS_29882503-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Turkish"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Turkey"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dumitrescu am"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001513",
+    "label": "Obesity"
+   },
+   "description": "obese"
+  },
+  {
+   "type": {
+    "id": "HP:0031506",
+    "label": "Increased circulating T4 concentration"
+   },
+   "description": "high thyroxine"
+  },
+  {
+   "type": {
+    "id": "HP:0032210",
+    "label": "Decreased circulating free T3"
+   },
+   "description": "low triiodothyronine"
+  },
+  {
+   "type": {
+    "id": "HP:0034288",
+    "label": "Elevated circulating reverse T3 concentration"
+   },
+   "description": "high reverse triiodothyronine"
+  },
+  {
+   "type": {
+    "id": "HP:0033075",
+    "label": "Inappropriately normal thyroid-stimulating hormone level"
+   },
+   "description": "normal or slightly elevated thyrotropin"
+  },
+  {
+   "type": {
+    "id": "HP:0007018",
+    "label": "Attention deficit hyperactivity disorder"
+   },
+   "description": "attention-deficit disorder"
+  },
+  {
+   "type": {
+    "id": "HP:0001324",
+    "label": "Muscle weakness"
+   },
+   "description": "muscle weakness"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_29882503-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_29882503-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_29882503-1-SECISBP2",
+        "geneContext": {
+         "valueId": "HGNC:30972",
+         "symbol": "SECISBP2"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29882503",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29882503/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

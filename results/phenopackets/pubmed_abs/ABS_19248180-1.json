@@ -1,0 +1,220 @@
+{
+ "id": "ABS_19248180-1",
+ "subject": {
+  "id": "ABS_19248180-1",
+  "sex": "UNKNOWN_SEX",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P14Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "14 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Italy"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:ponzone a"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000829",
+    "label": "Hypoparathyroidism"
+   },
+   "description": "symptomatic hypoparathyroidism"
+  },
+  {
+   "type": {
+    "id": "HP:0008619",
+    "label": "Bilateral sensorineural hearing impairment"
+   },
+   "description": "sensorineural bilateral deafness"
+  },
+  {
+   "type": {
+    "id": "HP:0008718",
+    "label": "Unilateral renal dysplasia"
+   },
+   "description": "unilateral renal dysplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0001488",
+    "label": "Bilateral ptosis"
+   },
+   "description": "bilateral palpebral ptosis"
+  },
+  {
+   "type": {
+    "id": "HP:0000666",
+    "label": "Horizontal nystagmus"
+   },
+   "description": "horizontal nystagmus"
+  },
+  {
+   "type": {
+    "id": "HP:0000538",
+    "label": "Pseudopapilledema"
+   },
+   "description": "symmetrical pseudopapilledema"
+  },
+  {
+   "type": {
+    "id": "HP:0002135",
+    "label": "Basal ganglia calcification"
+   },
+   "description": "basal ganglia calcifications"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_19248180-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_19248180-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_19248180-1-GATA3",
+        "geneContext": {
+         "valueId": "HGNC:4172",
+         "symbol": "GATA3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:19248180",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/19248180/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

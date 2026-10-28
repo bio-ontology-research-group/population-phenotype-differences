@@ -1,0 +1,194 @@
+{
+ "id": "ABS_22590644-1",
+ "subject": {
+  "id": "ABS_22590644-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sousa ae"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002289",
+    "label": "Alopecia universalis"
+   },
+   "description": "alopecia universalis"
+  },
+  {
+   "type": {
+    "id": "HP:0005359",
+    "label": "Aplasia of the thymus"
+   },
+   "description": "thymus aplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0011839",
+    "label": "Abnormal total T cell count"
+   },
+   "description": "non-maternal circulating T-cells"
+  },
+  {
+   "type": {
+    "id": "HP:0002851",
+    "label": "Elevated double-negative T cell proportion"
+   },
+   "description": "large numbers of aberrant double-negative \u03b1\u03b2 T-cells (CD4negCD8neg, DN)"
+  },
+  {
+   "type": {
+    "id": "HP:0020112",
+    "label": "Increased regulatory T cell proportion"
+   },
+   "description": "large numbers of ... regulatory-like T-cells"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_22590644-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_22590644-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_22590644-1-FOXN1",
+        "geneContext": {
+         "valueId": "HGNC:12765",
+         "symbol": "FOXN1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22590644",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22590644/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

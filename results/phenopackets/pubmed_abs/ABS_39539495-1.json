@@ -1,0 +1,205 @@
+{
+ "id": "ABS_39539495-1",
+ "subject": {
+  "id": "ABS_39539495-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P33Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "China"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "33 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wang p"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EASIAanc_EASIAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007017",
+    "label": "Progressive forgetfulness"
+   },
+   "description": "progressive memory decline"
+  },
+  {
+   "type": {
+    "id": "HP:0002120",
+    "label": "Cerebral cortical atrophy"
+   },
+   "description": "mild cortical atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0025684",
+    "label": "Decreased amyloid beta 42 peptide CSF concentration"
+   },
+   "description": "concentration of A\u03b242 in cerebrospinal fluid (CSF) was obviously decreased"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_39539495-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_39539495-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_39539495-1-PSEN2",
+        "geneContext": {
+         "valueId": "HGNC:9509",
+         "symbol": "PSEN2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:39539495",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/39539495/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

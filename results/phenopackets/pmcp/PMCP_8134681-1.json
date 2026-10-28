@@ -1,0 +1,226 @@
+{
+ "id": "PMCP_8134681-1",
+ "subject": {
+  "id": "PMCP_8134681-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Children's Hospital, Fudan University"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "ethics committees of the Children's Hospital, Fudan University"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "7 month-23-day"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "congenital proprotein convertase 1/3 deficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"born without anomalies\", \"excluded\": true}, {\"text\": \"no immunity system deficiency\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8134681-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wang h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002014",
+    "label": "Diarrhea"
+   },
+   "description": "diarrhea with watery stool over ten times a day"
+  },
+  {
+   "type": {
+    "id": "HP:0000952",
+    "label": "Jaundice"
+   },
+   "description": "jaundice and cholestasis"
+  },
+  {
+   "type": {
+    "id": "HP:0034685",
+    "label": "Abnormal liver enzyme activity or concentration"
+   },
+   "description": "mild abnormal liver enzymes"
+  },
+  {
+   "type": {
+    "id": "HP:0002910",
+    "label": "Elevated circulating hepatic transaminase concentration"
+   },
+   "description": "AST 85.6 (normal 13\u201335 U/L); ALT 129.2 (normal 7\u201340 U/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0001943",
+    "label": "Hypoglycemia"
+   },
+   "description": "asymptomatic hypoglycemia, blood glucose 3.8 (normal 3.9\u20136.1 mmol/L)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8134681-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8134681-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8134681-1-PCSK1",
+        "geneContext": {
+         "valueId": "HGNC:8743",
+         "symbol": "PCSK1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34025722",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34025722/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

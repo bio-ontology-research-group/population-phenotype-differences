@@ -1,0 +1,246 @@
+{
+ "id": "PMCP_9477208-1",
+ "subject": {
+  "id": "PMCP_9477208-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P9Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our paediatric cardiomyopathy clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "9 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hypertrophic cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no signs of congestive heart failure\", \"excluded\": true}, {\"text\": \"no history of syncope\", \"excluded\": true}, {\"text\": \"no systolic anterior movement (SAM)\", \"excluded\": true}, {\"text\": \"no mitral regurgitation\", \"excluded\": true}, {\"text\": \"Holter monitoring did not demonstrate significant arrhythmias\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9477208-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:latus h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031664",
+    "label": "Systolic heart murmur"
+   },
+   "description": "2/6 systolic murmur in the 3rd intercostal space at the left sternal edge"
+  },
+  {
+   "type": {
+    "id": "HP:0003115",
+    "label": "Abnormal EKG"
+   },
+   "description": "discordant negative T-waves in Lead III and deep S-waves in the septal and anterior leads"
+  },
+  {
+   "type": {
+    "id": "HP:0031185",
+    "label": "Elevated circulating NT-proBNP concentration"
+   },
+   "description": "N-terminal prohormone of brain natriuretic peptide level was 434 ng/L"
+  },
+  {
+   "type": {
+    "id": "HP:0001670",
+    "label": "Asymmetric septal hypertrophy"
+   },
+   "description": "asymmetric septal hypertrophy (maximal wall thickness 18 mm) of the left ventricle"
+  },
+  {
+   "type": {
+    "id": "HP:0032092",
+    "label": "Left ventricular outflow tract obstruction"
+   },
+   "description": "mild flow acceleration in the mid-LV cavity (peak systolic velocity 2.6 m/s) consistent with HOCM"
+  },
+  {
+   "type": {
+    "id": "HP:0001712",
+    "label": "Left ventricular hypertrophy"
+   },
+   "description": "maximum wall thickness of 19 mm at the midventricular inferoseptal and inferior level"
+  },
+  {
+   "type": {
+    "id": "HP:0034313",
+    "label": "Hyperdynamic left ventricular ejection fraction"
+   },
+   "description": "Left ventricle systolic function was hyperdynamic with LVEF of 80%"
+  },
+  {
+   "type": {
+    "id": "HP:0001685",
+    "label": "Myocardial fibrosis"
+   },
+   "description": "area of patchy LGE at the level of the maximal LV wall thickness"
+  },
+  {
+   "type": {
+    "id": "HP:0003546",
+    "label": "Exercise intolerance"
+   },
+   "description": "reduced exercise capacity for his age with a peak oxygen uptake of 28 mL/kg/min"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9477208-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9477208-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9477208-1-MYL2",
+        "geneContext": {
+         "valueId": "HGNC:7583",
+         "symbol": "MYL2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36128439",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36128439/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

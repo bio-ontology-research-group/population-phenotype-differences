@@ -1,0 +1,38 @@
+539 cases (142 SASIA) in 115 strata; corpora {'store': 6, 'pmcp': 8, 'pubmed_abs': 525}; groups 491
+case-level outcomes (SASIA minus EUR, MH within strata; group-permutation p):
+   share of findings needing a test     -0.0734  null 95% [-0.0700, +0.0643]  p=0.0330
+   log(1+ test-based findings)          -0.0205  null 95% [-0.1136, +0.1148]  p=0.7616
+   log(1+ bedside/history findings)     +0.1828  null 95% [-0.1277, +0.1210]  p=0.0040
+   log(1+ laboratory)                   -0.0042  null 95% [-0.0988, +0.0990]  p=0.9455
+   log(1+ imaging)                      -0.0060  null 95% [-0.0860, +0.0852]  p=0.8906
+   log(1+ physiological_test)           -0.0120  null 95% [-0.0498, +0.0513]  p=0.6642
+   log(1+ pathology)                    -0.0130  null 95% [-0.0502, +0.0528]  p=0.6302
+   log(1+ clinical_exam)                +0.2034  null 95% [-0.1163, +0.1168]  p=0.0005
+   log(1+ symptom_history)              +0.0171  null 95% [-0.0719, +0.0747]  p=0.6617
+   organ[blood and blood-forming tissues] log(1+ findings) +0.0133  null 95% [-0.0882, +0.0868]  p=0.7546
+   organ[blood and blood-forming tissues] log(1+ test-based) +0.0016  null 95% [-0.0866, +0.0859]  p=0.9585
+   organ[blood and blood-forming tissues] log(1+ bedside) +0.0066  null 95% [-0.0240, +0.0261]  p=0.6242
+   organ[metabolism/homeostasis] log(1+ findings) -0.0192  null 95% [-0.1008, +0.0964]  p=0.6857
+   organ[metabolism/homeostasis] log(1+ test-based) -0.0606  null 95% [-0.0948, +0.0960]  p=0.2114
+   organ[metabolism/homeostasis] log(1+ bedside) +0.0471  null 95% [-0.0412, +0.0432]  p=0.0315
+depth diff +0.151 (null 95% [-0.146, +0.138])
+terms 260; p<0.05 34 (exp 13); FDR<0.1 9; FWER<0.05 1; global sum z^2 418 vs null 260, p=0.0010
+organ-system branches (mean term z; group-permutation p; FWER over 16 branches):
+  HP:0002086 Abnormality of the respiratory system              terms   13 mean z +1.602 p 0.0015 fwer 0.0220
+  HP:0001574 Abnormality of the integument                      terms   11 mean z +1.681 p 0.0065 fwer 0.0715
+  HP:0001626 Abnormality of the cardiovascular system           terms   14 mean z +1.390 p 0.0135 fwer 0.1759
+  HP:0000818 Abnormality of the endocrine system                terms   18 mean z +0.918 p 0.0260 fwer 0.2974
+  HP:0025031 Abnormality of the digestive system                terms   26 mean z +0.967 p 0.0545 fwer 0.5332
+  HP:0000707 Abnormality of the nervous system                  terms   31 mean z +0.812 p 0.0640 fwer 0.5577
+  HP:0002715 Abnormality of the immune system                   terms   37 mean z +0.907 p 0.0630 fwer 0.5662
+  HP:0000951 Abnormality of the skin                          diff +0.119 z +3.47 p 0.0005 q 0.022 fwer 0.066 n 100
+  HP:0001574 Abnormality of the integument                    diff +0.113 z +3.30 p 0.0005 q 0.022 fwer 0.119 n 103
+  HP:0002240 Hepatomegaly                                     diff +0.056 z +3.43 p 0.0005 q 0.022 fwer 0.079 n 15
+  HP:0003271 Visceromegaly                                    diff +0.056 z +3.43 p 0.0005 q 0.022 fwer 0.079 n 15
+  HP:0011121 Abnormal skin morphology                         diff +0.126 z +3.80 p 0.0005 q 0.022 fwer 0.021 n 92
+  HP:0011947 Respiratory tract infection                      diff +0.055 z +3.26 p 0.0005 q 0.022 fwer 0.141 n 15
+  HP:0002098 Respiratory distress                             diff +0.064 z +3.27 p 0.0010 q 0.037 fwer 0.137 n 26
+  HP:0000152 Abnormality of head or neck                      diff +0.131 z +3.35 p 0.0020 q 0.058 fwer 0.103 n 113
+  HP:0000234 Abnormality of the head                          diff +0.126 z +3.27 p 0.0020 q 0.058 fwer 0.137 n 111
+  HP:0002094 Dyspnea                                          diff +0.060 z +2.75 p 0.0055 q 0.143 fwer 0.540 n 30
+TASKDONE age_infant_SASIA

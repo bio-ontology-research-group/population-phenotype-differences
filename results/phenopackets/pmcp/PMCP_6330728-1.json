@@ -1,0 +1,265 @@
+{
+ "id": "PMCP_6330728-1",
+ "subject": {
+  "id": "PMCP_6330728-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P33Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002929",
+     "label": "Colombia"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Colombian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 33-year-old woman from Bogot\u00e1, Colombia"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002929",
+     "label": "Colombia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "at Universidad de los Andes, Colombia"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "33 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary Fructose Intolerance"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"did not display hepatomegaly\", \"excluded\": true}, {\"text\": \"did not display... altered linear growth\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6330728-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:mendivil co"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001324",
+    "label": "Muscle weakness"
+   },
+   "description": "repetitive episodes of weakness"
+  },
+  {
+   "type": {
+    "id": "HP:0001751",
+    "label": "Abnormal vestibular function"
+   },
+   "description": "dizziness"
+  },
+  {
+   "type": {
+    "id": "HP:0002315",
+    "label": "Headache"
+   },
+   "description": "sometimes headache"
+  },
+  {
+   "type": {
+    "id": "HP:0003401",
+    "label": "Paresthesia"
+   },
+   "description": "symmetric numbness in her face and arms"
+  },
+  {
+   "type": {
+    "id": "HP:0031972",
+    "label": "Presyncope"
+   },
+   "description": "sensation of imminent fainting"
+  },
+  {
+   "type": {
+    "id": "HP:0001943",
+    "label": "Hypoglycemia"
+   },
+   "description": "blood sugar measurements during the episodes, which yielded results between 40 and 60 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0012051",
+    "label": "Reactive hypoglycemia"
+   },
+   "description": "asymptomatic hypoglycemia (glycemia 2 h post-meal: 29 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0001988",
+    "label": "Recurrent hypoglycemia"
+   },
+   "description": "48 events of hypoglycemia below 70 mg/dL, the lowest reaching 42 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:6000804",
+    "label": "Elevated urine fructose level"
+   },
+   "description": "urinary fructose levels in three separate samples... were 361.2, 379, and 357.1 \u03bcM/L"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6330728-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6330728-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6330728-1-ALDOB",
+        "geneContext": {
+         "valueId": "HGNC:417",
+         "symbol": "ALDOB"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30675358",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30675358/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

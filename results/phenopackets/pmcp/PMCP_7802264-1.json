@@ -1,0 +1,245 @@
+{
+ "id": "PMCP_7802264-1",
+ "subject": {
+  "id": "PMCP_7802264-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P3Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Peking University First Hospital"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to Peking University First Hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "3-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Dent disease 1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without hematuria\", \"excluded\": true}, {\"text\": \"without ... hypertension\", \"excluded\": true}, {\"text\": \"without ... renal dysfunction\", \"excluded\": true}, {\"text\": \"no hypercalciuria\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7802264-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:li h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001959",
+    "label": "Polydipsia"
+   },
+   "description": "polydipsia"
+  },
+  {
+   "type": {
+    "id": "HP:0000103",
+    "label": "Polyuria"
+   },
+   "description": "polyuria"
+  },
+  {
+   "type": {
+    "id": "HP:0000093",
+    "label": "Proteinuria"
+   },
+   "description": "proteinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0003126",
+    "label": "Low-molecular-weight proteinuria"
+   },
+   "description": "LMW proteinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0012592",
+    "label": "Albuminuria"
+   },
+   "description": "albuminuria"
+  },
+  {
+   "type": {
+    "id": "HP:0020129",
+    "label": "Abnormal urine protein level"
+   },
+   "description": "elevated urine \u03b11-microglobin [\u03b11-MG]"
+  },
+  {
+   "type": {
+    "id": "HP:0002148",
+    "label": "Hypophosphatemia"
+   },
+   "description": "hypophosphataemia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7802264-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7802264-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7802264-1-CLCN5",
+        "geneContext": {
+         "valueId": "HGNC:2023",
+         "symbol": "CLCN5"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33430795",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33430795/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

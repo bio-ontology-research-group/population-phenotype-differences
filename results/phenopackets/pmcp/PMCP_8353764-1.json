@@ -1,0 +1,216 @@
+{
+ "id": "PMCP_8353764-1",
+ "subject": {
+  "id": "PMCP_8353764-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Chinese"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A four-month pregnant, 35-year-old G3P1+1 Chinese woman"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "West China Second University Hospital of Sichuan University"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "five years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hearing loss"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without absence of vestibular dysfunction\", \"excluded\": true}, {\"text\": \"vision, or visual field involvement\", \"excluded\": true}, {\"text\": \"without any other abnormal clinical manifestations\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8353764-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wang j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:6000182",
+    "label": "Absent otoacoustic emissions"
+   },
+   "description": "failed to pass otoacoustic emission bilaterally hearing screening at birth"
+  },
+  {
+   "type": {
+    "id": "HP:0012713",
+    "label": "Moderate hearing impairment"
+   },
+   "description": "moderate hearing loss in both ears (55 dB / 60 dB)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8353764-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8353764-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8353764-1-USH2A",
+        "geneContext": {
+         "valueId": "HGNC:12601",
+         "symbol": "USH2A"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34376197",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34376197/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

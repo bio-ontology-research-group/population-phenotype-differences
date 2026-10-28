@@ -1,0 +1,204 @@
+{
+ "id": "ABS_27533310-1",
+ "subject": {
+  "id": "ABS_27533310-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002825",
+     "label": "Chile"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "congenital"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003623",
+      "label": "Neonatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Chile"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:codner e"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002014",
+    "label": "Diarrhea"
+   },
+   "description": "congenital malabsorptive diarrhea"
+  },
+  {
+   "type": {
+    "id": "HP:0000819",
+    "label": "Diabetes mellitus"
+   },
+   "description": "diabetes"
+  },
+  {
+   "type": {
+    "id": "HP:0003510",
+    "label": "Severe short stature"
+   },
+   "description": "severe short stature"
+  },
+  {
+   "type": {
+    "id": "HP:0008187",
+    "label": "Absence of secondary sex characteristics"
+   },
+   "description": "failed to develop secondary sexual characteristics"
+  },
+  {
+   "type": {
+    "id": "HP:0030339",
+    "label": "Decreased circulating gonadotropin concentration"
+   },
+   "description": "basal and stimulated LH and FSH levels were low"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_27533310-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_27533310-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_27533310-1-NEUROG3",
+        "geneContext": {
+         "valueId": "HGNC:13806",
+         "symbol": "NEUROG3"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27533310",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27533310/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

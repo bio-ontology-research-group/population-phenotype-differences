@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_5465701-1",
+ "subject": {
+  "id": "PMCP_5465701-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P24Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002941",
+     "label": "Switzerland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our service"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "24 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "chronic calcifying pancreatitis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Clinical examination was normal\", \"excluded\": true}, {\"text\": \"Serum calcium, triglyceride, glucose, HbA1c, IgG4, total IgG, and rheumatoid factors were within normal range\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5465701-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:morris ma"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002027",
+    "label": "Abdominal pain"
+   },
+   "description": "recurrent abdominal pain"
+  },
+  {
+   "type": {
+    "id": "HP:0410019",
+    "label": "Epigastric pain"
+   },
+   "description": "epigastric pain with back irradiation"
+  },
+  {
+   "type": {
+    "id": "HP:0002017",
+    "label": "Nausea and vomiting"
+   },
+   "description": "nausea and vomiting"
+  },
+  {
+   "type": {
+    "id": "HP:0005236",
+    "label": "Chronic calcifying pancreatitis"
+   },
+   "description": "chronic calcifying pancreatitis"
+  },
+  {
+   "type": {
+    "id": "HP:0030992",
+    "label": "Abnormal pancreatic duct morphology"
+   },
+   "description": "enlarged main pancreatic duct 10 mm in size"
+  },
+  {
+   "type": {
+    "id": "HP:6000156",
+    "label": "Pancreatic atrophy"
+   },
+   "description": "caudal atrophy"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5465701-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5465701-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5465701-1-SPINK1",
+        "geneContext": {
+         "valueId": "HGNC:11244",
+         "symbol": "SPINK1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28611558",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28611558/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

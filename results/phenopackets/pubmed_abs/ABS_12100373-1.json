@@ -1,0 +1,238 @@
+{
+ "id": "ABS_12100373-1",
+ "subject": {
+  "id": "ABS_12100373-1",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Japanese"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002828",
+     "label": "Brazil"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "neonatal"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003623",
+      "label": "Neonatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Brazil"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:toda t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001319",
+    "label": "Neonatal hypotonia"
+   },
+   "description": "neonatal hypotonia"
+  },
+  {
+   "type": {
+    "id": "HP:0001270",
+    "label": "Motor delay"
+   },
+   "description": "delayed motor abilities"
+  },
+  {
+   "type": {
+    "id": "HP:0000750",
+    "label": "Delayed speech and language development"
+   },
+   "description": "delayed speech"
+  },
+  {
+   "type": {
+    "id": "HP:0001250",
+    "label": "Seizure"
+   },
+   "description": "seizures"
+  },
+  {
+   "type": {
+    "id": "HP:0002536",
+    "label": "Abnormal cortical gyration"
+   },
+   "description": "cerebral and cerebellar gyrus abnormalities"
+  },
+  {
+   "type": {
+    "id": "HP:0002500",
+    "label": "Abnormal cerebral white matter morphology"
+   },
+   "description": "signal intensity change in the white matter by MRI"
+  },
+  {
+   "type": {
+    "id": "HP:0003236",
+    "label": "Elevated circulating creatine kinase concentration"
+   },
+   "description": "high serum level of creatinephosphokinase (CK)"
+  },
+  {
+   "type": {
+    "id": "HP:0003560",
+    "label": "Muscular dystrophy"
+   },
+   "description": "dystrophic skeletal muscle"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_12100373-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_12100373-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_12100373-1-FKTN",
+        "geneContext": {
+         "valueId": "HGNC:3622",
+         "symbol": "FKTN"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:12100373",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/12100373/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

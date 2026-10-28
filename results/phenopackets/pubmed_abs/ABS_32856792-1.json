@@ -1,0 +1,215 @@
+{
+ "id": "ABS_32856792-1",
+ "subject": {
+  "id": "ABS_32856792-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005286",
+     "label": "Qatar"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Qatari"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005286",
+     "label": "Qatar"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Qatar"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:ben-omran t"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007443",
+    "label": "Partial albinism"
+   },
+   "description": "partial albinism"
+  },
+  {
+   "type": {
+    "id": "HP:0002721",
+    "label": "Immunodeficiency"
+   },
+   "description": "immunodeficiency"
+  },
+  {
+   "type": {
+    "id": "HP:0001871",
+    "label": "Abnormality of blood and blood-forming tissues"
+   },
+   "description": "hematological and neurological involvement"
+  },
+  {
+   "type": {
+    "id": "HP:0000951",
+    "label": "Abnormality of the skin"
+   },
+   "description": "Cutaneous manifestations"
+  },
+  {
+   "type": {
+    "id": "HP:0000707",
+    "label": "Abnormality of the nervous system"
+   },
+   "description": "neurological abnormalities"
+  },
+  {
+   "type": {
+    "id": "HP:0012156",
+    "label": "Hemophagocytosis"
+   },
+   "description": "HLH"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_32856792-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_32856792-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_32856792-1-RAB27A",
+        "geneContext": {
+         "valueId": "HGNC:9766",
+         "symbol": "RAB27A"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32856792",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32856792/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

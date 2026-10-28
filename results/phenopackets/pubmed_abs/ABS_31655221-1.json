@@ -1,0 +1,221 @@
+{
+ "id": "ABS_31655221-1",
+ "subject": {
+  "id": "ABS_31655221-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P11Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "11"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "2"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P2Y"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "New Zealand; United Kingdom"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:calder ad"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0041144",
+    "label": "Fractured clavicle bone"
+   },
+   "description": "recurrent clavicular fractures"
+  },
+  {
+   "type": {
+    "id": "HP:0005090",
+    "label": "Lateral femoral bowing"
+   },
+   "description": "mild lateral bowing of the thighs"
+  },
+  {
+   "type": {
+    "id": "HP:0006390",
+    "label": "Anterior tibial bowing"
+   },
+   "description": "anterior bowing of the shins"
+  },
+  {
+   "type": {
+    "id": "HP:0001547",
+    "label": "Abnormal rib cage morphology"
+   },
+   "description": "Abnormal modelling was noted in ribs and humeri"
+  },
+  {
+   "type": {
+    "id": "HP:0006371",
+    "label": "Broad long bone diaphyses"
+   },
+   "description": "generalised diaphyseal expansion of the long bones"
+  },
+  {
+   "type": {
+    "id": "HP:0100039",
+    "label": "Thickened cortex of bones"
+   },
+   "description": "thickening of the periosteal and endosteal surfaces of the cortices"
+  },
+  {
+   "type": {
+    "id": "HP:0003155",
+    "label": "Elevated circulating alkaline phosphatase concentration"
+   },
+   "description": "serum alkaline phosphatase was noted to be persistently elevated"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_31655221-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_31655221-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_31655221-1-TNFRSF11B",
+        "geneContext": {
+         "valueId": "HGNC:11909",
+         "symbol": "TNFRSF11B"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31655221",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31655221/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

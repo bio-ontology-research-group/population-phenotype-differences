@@ -1,0 +1,201 @@
+{
+ "id": "PMID_38614108_UK1_III_1",
+ "subject": {
+  "id": "UK1: III-1",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P66Y"
+   }
+  },
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "publicationPatientOrigins",
+    "value": {
+     "text": "[{\"country\": \"Canada\", \"ethnicity_or_ancestry\": \"White European ancestry\", \"n_patients\": 109, \"evidence\": \"109 White European ancestry\"}, {\"country\": \"Tunisia\", \"ethnicity_or_ancestry\": \"north African\", \"n_patients\": 18, \"evidence\": \"18 north African\"}, {\"country\": null, \"ethnicity_or_ancestry\": \"east Asian\", \"n_patients\": 2, \"evidence\": \"two east Asian\"}, {\"country\": null, \"ethnicity_or_ancestry\": \"Hispanic\", \"n_patients\": 1, \"evidence\": \"one Hispanic\"}]"
+    }
+   },
+   {
+    "name": "originLevel",
+    "value": {
+     "text": "publication (several origins; not resolved to this patient)"
+    }
+   },
+   {
+    "name": "recruitmentCountries",
+    "value": {
+     "text": "Canada; Tunisia"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": ""
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "store"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:farrer mj"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002322",
+    "label": "Resting tremor"
+   }
+  },
+  {
+   "type": {
+    "id": "HP:0002548",
+    "label": "Parkinsonism with favorable response to dopaminergic medication"
+   }
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "cP6jvpEIdyNOXskpGb83IK3v",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "disease": {
+     "id": "OMIM:620923",
+     "label": "Parkinson disease 26, autosomal dominant, susceptibility to"
+    },
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "UK1: III-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "acmgPathogenicityClassification": "PATHOGENIC",
+       "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+       "variationDescriptor": {
+        "id": "c213CtoG_RAB32_NM_006834v5",
+        "geneContext": {
+         "valueId": "HGNC:9772",
+         "symbol": "RAB32"
+        },
+        "expressions": [
+         {
+          "syntax": "hgvs.c",
+          "value": "NM_006834.5:c.213C>G"
+         },
+         {
+          "syntax": "hgvs.g",
+          "value": "NC_000006.12:g.146544084C>G"
+         },
+         {
+          "syntax": "hgvs.p",
+          "value": "NP_006825.1:p.(Ser71Arg)"
+         }
+        ],
+        "vcfRecord": {
+         "genomeAssembly": "hg38",
+         "chrom": "chr6",
+         "pos": 146544084,
+         "ref": "C",
+         "alt": "G"
+        },
+        "moleculeContext": "genomic",
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "diseases": [
+  {
+   "term": {
+    "id": "OMIM:620923",
+    "label": "Parkinson disease 26, autosomal dominant, susceptibility to"
+   },
+   "onset": {
+    "age": {
+     "iso8601duration": "P60Y"
+    }
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2025-12-07T15:01:39.625482Z",
+  "createdBy": "0000-0002-0736-9199",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "human phenotype ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2025-11-24",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "2025-07-25",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "so",
+    "name": "Sequence types and features ontology",
+    "url": "http://purl.obolibrary.org/obo/so.owl",
+    "version": "2024-11-18",
+    "namespacePrefix": "SO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+   },
+   {
+    "id": "omim",
+    "name": "An Online Catalog of Human Genes and Genetic Disorders",
+    "url": "https://www.omim.org",
+    "version": "06/01/25",
+    "namespacePrefix": "OMIM",
+    "iriPrefix": "https://www.omim.org/entry/"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "06/01/25",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0.2",
+  "externalReferences": [
+   {
+    "id": "PMID:38614108",
+    "description": "RAB32 Ser71Arg in autosomal dominant Parkinson's disease: linkage, association, and functional analyses."
+   },
+   {
+    "id": "pavs-population:store",
+    "description": "Phenopacket Store 0.1.26 (curated); origin labels extracted from the publication by Qwen3.8-27B"
+   }
+  ]
+ }
+}

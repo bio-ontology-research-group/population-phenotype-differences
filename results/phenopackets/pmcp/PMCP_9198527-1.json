@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9198527-1",
+ "subject": {
+  "id": "PMCP_9198527-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P39Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "The study was approved by the hospital institutional review board"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "39-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Alport's syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal photopic and scotopic responses\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9198527-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:alhazimi a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011501",
+    "label": "Anterior lenticonus"
+   },
+   "description": "anterior lenticonus"
+  },
+  {
+   "type": {
+    "id": "HP:0000518",
+    "label": "Cataract"
+   },
+   "description": "cataract"
+  },
+  {
+   "type": {
+    "id": "HP:0007663",
+    "label": "Reduced visual acuity"
+   },
+   "description": "corrected distance visual acuity of 20/25 and 20/60 in the right and left eyes, respectively"
+  },
+  {
+   "type": {
+    "id": "HP:0012045",
+    "label": "Retinal flecks"
+   },
+   "description": "generalized retinal flecks sparing the fovea"
+  },
+  {
+   "type": {
+    "id": "HP:0034362",
+    "label": "Dull foveal reflex"
+   },
+   "description": "dull foveal reflex in both eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0030607",
+    "label": "Reduced OCT-measured macular thickness"
+   },
+   "description": "temporal macular thinning"
+  },
+  {
+   "type": {
+    "id": "HP:0000654",
+    "label": "Decreased light- and dark-adapted electroretinogram amplitude"
+   },
+   "description": "general reduction of amplitudes"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9198527-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9198527-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9198527-1-COL4A5",
+        "geneContext": {
+         "valueId": "HGNC:2207",
+         "symbol": "COL4A5"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35719281",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35719281/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

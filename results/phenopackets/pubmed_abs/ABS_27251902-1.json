@@ -1,0 +1,214 @@
+{
+ "id": "ABS_27251902-1",
+ "subject": {
+  "id": "ABS_27251902-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00000566",
+     "label": "Libya"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Jews of Libyan origin"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002476",
+     "label": "Israel"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "recent-onset"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Israel"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chapman j"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100785",
+    "label": "Insomnia"
+   },
+   "description": "complaints of insomnia"
+  },
+  {
+   "type": {
+    "id": "HP:5200298",
+    "label": "Abnormal sleep architecture"
+   },
+   "description": "disappearance of sleep spindles"
+  },
+  {
+   "type": {
+    "id": "HP:0010857",
+    "label": "EEG with periodic abnormalities"
+   },
+   "description": "outbursts of periodic sharp waves"
+  },
+  {
+   "type": {
+    "id": "HP:0010535",
+    "label": "Sleep apnea"
+   },
+   "description": "irregular breathing with central and obstructive apnea and hypopnea"
+  },
+  {
+   "type": {
+    "id": "HP:5200300",
+    "label": "Abnormal movement during sleep"
+   },
+   "description": "hyperactive sleep consisting of multiple jerks, movements and parasomnia (mainly talking) throughout the night"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_27251902-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_27251902-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_27251902-1-PRNP",
+        "geneContext": {
+         "valueId": "HGNC:9449",
+         "symbol": "PRNP"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27251902",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27251902/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

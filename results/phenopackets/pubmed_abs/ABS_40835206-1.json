@@ -1,0 +1,229 @@
+{
+ "id": "ABS_40835206-1",
+ "subject": {
+  "id": "ABS_40835206-1",
+  "sex": "UNKNOWN_SEX",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0030674",
+    "label": "Antenatal onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002941",
+     "label": "Switzerland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "34 weeks gestation"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "21 weeks of gestation"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0030674",
+      "label": "Antenatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Switzerland"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:zweier c"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0006487",
+    "label": "Bowing of the long bones"
+   },
+   "description": "short and bowed long bones"
+  },
+  {
+   "type": {
+    "id": "HP:0000268",
+    "label": "Dolichocephaly"
+   },
+   "description": "dolichocephalus"
+  },
+  {
+   "type": {
+    "id": "HP:0003026",
+    "label": "Short long bone"
+   },
+   "description": "severe bowing and shortening of limb bones"
+  },
+  {
+   "type": {
+    "id": "HP:0000774",
+    "label": "Narrow chest"
+   },
+   "description": "narrow upper thorax"
+  },
+  {
+   "type": {
+    "id": "HP:0001373",
+    "label": "Joint dislocation"
+   },
+   "description": "joint dislocations"
+  },
+  {
+   "type": {
+    "id": "HP:0004348",
+    "label": "Abnormality of bone mineral density"
+   },
+   "description": "abnormal bone mineralization"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40835206-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40835206-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40835206-1-IL6ST",
+        "geneContext": {
+         "valueId": "HGNC:6021",
+         "symbol": "IL6ST"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40835206",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40835206/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,252 @@
+{
+ "id": "PMCP_8506203-1",
+ "subject": {
+  "id": "PMCP_8506203-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P46Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002930",
+     "label": "Uruguay"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Dr. Manuel Quintela Clinicas Hospital in Montevideo"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002930",
+     "label": "Uruguay"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Dr. Manuel Quintela Clinicas Hospital in Montevideo"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "46-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "familial acute myeloid leukemia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no monocytic, erythroid or megakaryocytic differentiation\", \"excluded\": true}, {\"text\": \"without dysplastic features or fibrosis\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8506203-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:grille s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001892",
+    "label": "Abnormal bleeding"
+   },
+   "description": "cutaneous bleeding"
+  },
+  {
+   "type": {
+    "id": "HP:0032162",
+    "label": "Unusual skin infection"
+   },
+   "description": "skin infections"
+  },
+  {
+   "type": {
+    "id": "HP:0001824",
+    "label": "Weight loss"
+   },
+   "description": "weight loss"
+  },
+  {
+   "type": {
+    "id": "HP:0001873",
+    "label": "Thrombocytopenia"
+   },
+   "description": "thrombocytopenia (72.0\u00d7109/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0001875",
+    "label": "Decreased total neutrophil count"
+   },
+   "description": "neutropenia (0.34\u00d7109/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0001882",
+    "label": "Decreased total leukocyte count"
+   },
+   "description": "white blood cell (WBC) count was 3.0\u00d7109/L"
+  },
+  {
+   "type": {
+    "id": "HP:0001903",
+    "label": "Anemia"
+   },
+   "description": "hemoglobin level was 10.2 g/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0005561",
+    "label": "Abnormal bone marrow cell morphology"
+   },
+   "description": "Bone marrow (BM) aspirate showed 50% of myeloblasts"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8506203-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8506203-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8506203-1-CEBPA",
+        "geneContext": {
+         "valueId": "HGNC:1833",
+         "symbol": "CEBPA"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34733449",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34733449/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

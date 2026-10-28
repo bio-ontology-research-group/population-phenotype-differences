@@ -1,0 +1,242 @@
+{
+ "id": "ABS_33112291-1",
+ "subject": {
+  "id": "ABS_33112291-1",
+  "sex": "UNKNOWN_SEX",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0003581",
+    "label": "Adult onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "adult"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "adulthood"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003581",
+      "label": "Adult onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:j\u00e9ru i"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003635",
+    "label": "Loss of subcutaneous adipose tissue in limbs"
+   },
+   "description": "lower-limb lipoatrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0001012",
+    "label": "Multiple lipomas"
+   },
+   "description": "upper-body and abdominal pseudo-lipomatous masses"
+  },
+  {
+   "type": {
+    "id": "HP:0000855",
+    "label": "Insulin resistance"
+   },
+   "description": "diabetes and/or insulin resistance"
+  },
+  {
+   "type": {
+    "id": "HP:0002155",
+    "label": "Hypertriglyceridemia"
+   },
+   "description": "hypertriglyceridemia"
+  },
+  {
+   "type": {
+    "id": "HP:0001397",
+    "label": "Hepatic steatosis"
+   },
+   "description": "liver steatosis"
+  },
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "high blood pressure"
+  },
+  {
+   "type": {
+    "id": "HP:0003011",
+    "label": "Abnormality of the musculature"
+   },
+   "description": "neuromuscular manifestations"
+  },
+  {
+   "type": {
+    "id": "HP:6001388",
+    "label": "Retinal drusen"
+   },
+   "description": "auto-fluorescent drusen-like retinal deposits"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_33112291-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_33112291-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_33112291-1-LIPE",
+        "geneContext": {
+         "valueId": "HGNC:6621",
+         "symbol": "LIPE"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33112291",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33112291/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

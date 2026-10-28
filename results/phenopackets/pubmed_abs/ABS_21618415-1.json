@@ -1,0 +1,206 @@
+{
+ "id": "ABS_21618415-1",
+ "subject": {
+  "id": "ABS_21618415-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Korean"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kim hj"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EASIAanc_EASIAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001891",
+    "label": "Iron deficiency anemia"
+   },
+   "description": "iron-refractory iron deficiency anemia"
+  },
+  {
+   "type": {
+    "id": "HP:0004840",
+    "label": "Hypochromic microcytic anemia"
+   },
+   "description": "hypochromic microcytic anemia"
+  },
+  {
+   "type": {
+    "id": "HP:0005505",
+    "label": "Refractory anemia"
+   },
+   "description": "unresponsive to oral iron treatment"
+  },
+  {
+   "type": {
+    "id": "HP:0012464",
+    "label": "Decreased transferrin saturation"
+   },
+   "description": "low transferrin saturation"
+  },
+  {
+   "type": {
+    "id": "HP:0031877",
+    "label": "Elevated circulating hepcidin concentration"
+   },
+   "description": "high level of iron-regulated hormone hepcidin"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_21618415-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_21618415-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_21618415-1-TMPRSS6",
+        "geneContext": {
+         "valueId": "HGNC:16517",
+         "symbol": "TMPRSS6"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:21618415",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/21618415/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

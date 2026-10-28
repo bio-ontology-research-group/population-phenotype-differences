@@ -1,0 +1,234 @@
+{
+ "id": "ABS_32388791-1",
+ "subject": {
+  "id": "ABS_32388791-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P59Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "59 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Turkey"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sogutcu n"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "local_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002027",
+    "label": "Abdominal pain"
+   },
+   "description": "abdominal pain and distension"
+  },
+  {
+   "type": {
+    "id": "HP:0031500",
+    "label": "Abdominal mass"
+   },
+   "description": "palpable abdominal mass"
+  },
+  {
+   "type": {
+    "id": "HP:0000078",
+    "label": "Abnormality of the genital system"
+   },
+   "description": "virilism"
+  },
+  {
+   "type": {
+    "id": "HP:0000062",
+    "label": "Ambiguous genitalia"
+   },
+   "description": "ambiguous genitalia"
+  },
+  {
+   "type": {
+    "id": "HP:0040253",
+    "label": "Increased size of the clitoris"
+   },
+   "description": "clitoramegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0000953",
+    "label": "Hyperpigmentation of the skin"
+   },
+   "description": "hyperpigmentation"
+  },
+  {
+   "type": {
+    "id": "HP:0031501",
+    "label": "Pelvic mass"
+   },
+   "description": "giant mass originating from the right tubo-ovarian structure"
+  },
+  {
+   "type": {
+    "id": "HP:0031918",
+    "label": "Ovarian sex cord-stromal tumor"
+   },
+   "description": "ovarian granulosa cell tumor"
+  },
+  {
+   "type": {
+    "id": "HP:0031213",
+    "label": "Elevated circulating 17-hydroxyprogesterone concentration"
+   },
+   "description": "high serum concentration of 17-OH progesterone"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_32388791-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_32388791-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_32388791-1-CYP21A2",
+        "geneContext": {
+         "valueId": "HGNC:2600",
+         "symbol": "CYP21A2"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32388791",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32388791/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

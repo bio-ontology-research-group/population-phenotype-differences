@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9148421-1",
+ "subject": {
+  "id": "PMCP_9148421-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P63Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "the test was not available in our hospital at the time"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "63 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hereditary paraganglioma syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"denied any history of headache, sweating or palpitations\", \"excluded\": true}, {\"text\": \"denied any history of headache, sweating or palpitations\", \"excluded\": true}, {\"text\": \"denied any history of headache, sweating or palpitations\", \"excluded\": true}, {\"text\": \"plasma normetanephrines level was normal\", \"excluded\": true}, {\"text\": \"24-hour urine fractionated metanephrines level was normal\", \"excluded\": true}, {\"text\": \"dehydroepiandrosterone sulfate (DHEA-S) level was normal\", \"excluded\": true}, {\"text\": \"overnight 1 mg Dexamethasone Suppression Test (OnDST) was performed, which was normal\", \"excluded\": true}, {\"text\": \"No extra-adrenal pathological radiotracer concentration was seen\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9148421-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:elouzi e"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002027",
+    "label": "Abdominal pain"
+   },
+   "description": "worsening left upper abdominal pain"
+  },
+  {
+   "type": {
+    "id": "HP:0008221",
+    "label": "Adrenal hyperplasia"
+   },
+   "description": "bilateral bulky adrenal glands"
+  },
+  {
+   "type": {
+    "id": "HP:0034880",
+    "label": "Adrenal mass"
+   },
+   "description": "lesion in the left adrenal gland"
+  },
+  {
+   "type": {
+    "id": "HP:0003334",
+    "label": "Elevated circulating catecholamine level"
+   },
+   "description": "plasma metanephrines level was elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0000834",
+    "label": "Abnormality of the adrenal glands"
+   },
+   "description": "abnormal focal radiotracer uptake at the left adrenal gland"
+  },
+  {
+   "type": {
+    "id": "HP:0002666",
+    "label": "Pheochromocytoma"
+   },
+   "description": "histopathology confirmed the diagnosis of pheochromocytoma"
+  },
+  {
+   "type": {
+    "id": "HP:0031500",
+    "label": "Abdominal mass"
+   },
+   "description": "residual lesion anterior to the upper part of the left kidney 18 mm in diameter"
+  },
+  {
+   "type": {
+    "id": "HP:6001046",
+    "label": "Breast cyst"
+   },
+   "description": "focal asymmetry in the right breast with multiple tiny cysts"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9148421-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9148421-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9148421-1-SDHA",
+        "geneContext": {
+         "valueId": "HGNC:10680",
+         "symbol": "SDHA"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35664384",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35664384/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

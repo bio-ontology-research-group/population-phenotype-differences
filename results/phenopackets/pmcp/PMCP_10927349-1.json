@@ -1,0 +1,240 @@
+{
+ "id": "PMCP_10927349-1",
+ "subject": {
+  "id": "PMCP_10927349-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P14Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "14-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "myotonia congenita"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no cognitive decline\", \"excluded\": true}, {\"text\": \"no dysmorphism\", \"excluded\": true}, {\"text\": \"no neurocutaneous markers\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10927349-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:panigrahi d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001288",
+    "label": "Gait disturbance"
+   },
+   "description": "struggling to walk and get up from sitting"
+  },
+  {
+   "type": {
+    "id": "HP:0003552",
+    "label": "Muscle stiffness"
+   },
+   "description": "tightness in his muscles"
+  },
+  {
+   "type": {
+    "id": "HP:0003740",
+    "label": "Myotonia with warm-up phenomenon"
+   },
+   "description": "weakness increased after a period of rest and improved with activity"
+  },
+  {
+   "type": {
+    "id": "HP:0008981",
+    "label": "Calf muscle hypertrophy"
+   },
+   "description": "calf muscle hypertrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0002486",
+    "label": "Myotonia"
+   },
+   "description": "generalized muscle stiffness and difficulty moving and speaking"
+  },
+  {
+   "type": {
+    "id": "HP:0003388",
+    "label": "Easy fatigability"
+   },
+   "description": "easy fatigability"
+  },
+  {
+   "type": {
+    "id": "HP:0010548",
+    "label": "Percussion myotonia"
+   },
+   "description": "percussion-activated myotonia in the hands and legs"
+  },
+  {
+   "type": {
+    "id": "HP:0012899",
+    "label": "Handgrip myotonia"
+   },
+   "description": "marked difficulty opening his fist"
+  },
+  {
+   "type": {
+    "id": "HP:0100284",
+    "label": "EMG: myotonic discharges"
+   },
+   "description": "increased insertional activity and a dive-bomber sound on insertion and myotonic pattern"
+  },
+  {
+   "type": {
+    "id": "HP:0033767",
+    "label": "Abnormal single motor unit action potential"
+   },
+   "description": "Motor unit potential showed decreased amplitude and activity"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10927349-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10927349-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10927349-1-CLCN1",
+        "geneContext": {
+         "valueId": "HGNC:2019",
+         "symbol": "CLCN1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38469025",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38469025/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

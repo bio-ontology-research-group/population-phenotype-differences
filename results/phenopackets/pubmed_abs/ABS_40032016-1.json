@@ -1,0 +1,246 @@
+{
+ "id": "ABS_40032016-1",
+ "subject": {
+  "id": "ABS_40032016-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P28Y7M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "28.6 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Markers of bone turnover were increased\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:feigerlova e"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000098",
+    "label": "Tall stature"
+   },
+   "description": "tall stature (+2.2 SD)"
+  },
+  {
+   "type": {
+    "id": "HP:0002750",
+    "label": "Delayed skeletal maturation"
+   },
+   "description": "delayed bone age (13 years)"
+  },
+  {
+   "type": {
+    "id": "HP:0008197",
+    "label": "Absence of pubertal development"
+   },
+   "description": "no breast development"
+  },
+  {
+   "type": {
+    "id": "HP:0000956",
+    "label": "Acanthosis nigricans"
+   },
+   "description": "bilateral axillary acanthosis nigricans"
+  },
+  {
+   "type": {
+    "id": "HP:0000855",
+    "label": "Insulin resistance"
+   },
+   "description": "insulin resistance"
+  },
+  {
+   "type": {
+    "id": "HP:0008189",
+    "label": "Insulin insensitivity"
+   },
+   "description": "decreased insulin sensitivity"
+  },
+  {
+   "type": {
+    "id": "HP:0031793",
+    "label": "Increased serum leptin"
+   },
+   "description": "increased leptinemia"
+  },
+  {
+   "type": {
+    "id": "HP:0005625",
+    "label": "Osteoporosis of vertebrae"
+   },
+   "description": "severe osteoporosis of the lumbar spine (Z-score -3.9)"
+  },
+  {
+   "type": {
+    "id": "HP:0000938",
+    "label": "Osteopenia"
+   },
+   "description": "osteopenia of the femoral neck (Z-score -1.8)"
+  },
+  {
+   "type": {
+    "id": "HP:0000939",
+    "label": "Osteoporosis"
+   },
+   "description": "Osteoporosis worsened (Z-score -5.6 at the lumbar spine; Z-score -4.4 at the femoral neck)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40032016-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40032016-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40032016-1-ESR1",
+        "geneContext": {
+         "valueId": "HGNC:3467",
+         "symbol": "ESR1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40032016",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40032016/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

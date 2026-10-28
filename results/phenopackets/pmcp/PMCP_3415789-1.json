@@ -1,0 +1,260 @@
+{
+ "id": "PMCP_3415789-1",
+ "subject": {
+  "id": "PMCP_3415789-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P57Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002828",
+     "label": "Brazil"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "attended in the clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "57"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hereditary aceruloplasminemia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no evidence of visceromegalies\", \"excluded\": true}, {\"text\": \"no accumulation of this element\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3415789-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lima fl"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000708",
+    "label": "Atypical behavior"
+   },
+   "description": "alterations in behavior"
+  },
+  {
+   "type": {
+    "id": "HP:0000734",
+    "label": "Disinhibition"
+   },
+   "description": "lack of self-control"
+  },
+  {
+   "type": {
+    "id": "HP:0000716",
+    "label": "Depression"
+   },
+   "description": "depression"
+  },
+  {
+   "type": {
+    "id": "HP:0000739",
+    "label": "Anxiety"
+   },
+   "description": "anxiety"
+  },
+  {
+   "type": {
+    "id": "HP:0000741",
+    "label": "Apathy"
+   },
+   "description": "apathetic"
+  },
+  {
+   "type": {
+    "id": "HP:0000980",
+    "label": "Pallor"
+   },
+   "description": "pale skin"
+  },
+  {
+   "type": {
+    "id": "HP:0005978",
+    "label": "Type II diabetes mellitus"
+   },
+   "description": "type 2 diabetes mellitus"
+  },
+  {
+   "type": {
+    "id": "HP:0011031",
+    "label": "Abnormality of iron homeostasis"
+   },
+   "description": "marked iron overload"
+  },
+  {
+   "type": {
+    "id": "HP:0012753",
+    "label": "T2 hypointense basal ganglia"
+   },
+   "description": "bilateral low signal on T2 at the basal ganglia probably due to iron deposits"
+  },
+  {
+   "type": {
+    "id": "HP:0012465",
+    "label": "Elevated hepatic iron concentration"
+   },
+   "description": "significant iron deposit in the parenchyma"
+  },
+  {
+   "type": {
+    "id": "HP:0003281",
+    "label": "Increased circulating ferritin concentration"
+   },
+   "description": "ferritin levels (from 1114 ng/mL to 457 ng/mL)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3415789-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3415789-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3415789-1-CP",
+        "geneContext": {
+         "valueId": "HGNC:2295",
+         "symbol": "CP"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:23049345",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/23049345/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

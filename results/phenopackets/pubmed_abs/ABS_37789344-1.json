@@ -1,0 +1,208 @@
+{
+ "id": "ABS_37789344-1",
+ "subject": {
+  "id": "ABS_37789344-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "forties"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Nuclear mitosis was scarce\", \"excluded\": false}, {\"text\": \"positive staining for KIT and DOG1\", \"excluded\": false}, {\"text\": \"negative staining for S100 and desmin\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kobayashi m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100607",
+    "label": "Dysmenorrhea"
+   },
+   "description": "menstrual pain"
+  },
+  {
+   "type": {
+    "id": "HP:0031500",
+    "label": "Abdominal mass"
+   },
+   "description": "large mass was detected in her lower abdomen"
+  },
+  {
+   "type": {
+    "id": "HP:0032215",
+    "label": "Disseminated cutaneous warts"
+   },
+   "description": "hundreds of skin warts"
+  },
+  {
+   "type": {
+    "id": "HP:0000957",
+    "label": "Cafe-au-lait spot"
+   },
+   "description": "caf\u00e9 au lait spots"
+  },
+  {
+   "type": {
+    "id": "HP:0007378",
+    "label": "Neoplasm of the gastrointestinal tract"
+   },
+   "description": "multicystic exophytic tumor measuring 11.5 cm originating from the jejunal wall"
+  },
+  {
+   "type": {
+    "id": "HP:0020162",
+    "label": "Abnormal neoplastic cell morphology"
+   },
+   "description": "spindle-shaped tumor cells showing little atypia with a fascicular or bundle arrangement"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_37789344-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_37789344-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_37789344-1-NF1",
+        "geneContext": {
+         "valueId": "HGNC:7765",
+         "symbol": "NF1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37789344",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37789344/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "id": "PMCP_6375306-1",
+ "subject": {
+  "id": "PMCP_6375306-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P11Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002939",
+     "label": "Poland"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "referred to the Children\u2019s Memorial Health Institute, Warsaw, Poland"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002939",
+     "label": "Poland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the Children\u2019s Memorial Health Institute, Warsaw, Poland"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "11 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Chronic Pancreatitis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"injury\", \"excluded\": true}, {\"text\": \"anatomical anomalies\", \"excluded\": true}, {\"text\": \"toxic-metabolic disorders\", \"excluded\": true}, {\"text\": \"biliary disease\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6375306-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sahin-t\u00f3th m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001409",
+    "label": "Portal hypertension"
+   },
+   "description": "prehepatic portal hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0030242",
+    "label": "Portal vein thrombosis"
+   },
+   "description": "portal vein thrombosis"
+  },
+  {
+   "type": {
+    "id": "HP:0100027",
+    "label": "Recurrent pancreatitis"
+   },
+   "description": "two episodes of acute pancreatitis"
+  },
+  {
+   "type": {
+    "id": "HP:0006280",
+    "label": "Chronic pancreatitis"
+   },
+   "description": "chronic pancreatitis"
+  },
+  {
+   "type": {
+    "id": "HP:0012090",
+    "label": "Abnormal pancreas morphology"
+   },
+   "description": "heterogeneous pancreas"
+  },
+  {
+   "type": {
+    "id": "HP:0030992",
+    "label": "Abnormal pancreatic duct morphology"
+   },
+   "description": "dilated pancreatic duct"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6375306-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6375306-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6375306-1-PRSS1",
+        "geneContext": {
+         "valueId": "HGNC:9475",
+         "symbol": "PRSS1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30792736",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30792736/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

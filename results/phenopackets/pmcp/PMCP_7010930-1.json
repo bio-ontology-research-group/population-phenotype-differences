@@ -1,0 +1,252 @@
+{
+ "id": "PMCP_7010930-1",
+ "subject": {
+  "id": "PMCP_7010930-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P59Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002937",
+     "label": "Finland"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Medical Ethics Committee of Helsinki University Central Hospital, Finland"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002937",
+     "label": "Finland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Medical Ethics Committee of Helsinki University Central Hospital, Finland"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "59 years-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Phosphofructokinase Deficiency (Glycogen Storage Disease Type VII)"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal motor development\", \"excluded\": true}, {\"text\": \"normal exercise tolerability\", \"excluded\": true}, {\"text\": \"without anemia\", \"excluded\": true}, {\"text\": \"normal EMG\", \"excluded\": true}, {\"text\": \"No muscle atrophy was evident\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7010930-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:piiril\u00e4 pl"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001324",
+    "label": "Muscle weakness"
+   },
+   "description": "muscle weakness"
+  },
+  {
+   "type": {
+    "id": "HP:0003326",
+    "label": "Myalgia"
+   },
+   "description": "attacks of muscle pain"
+  },
+  {
+   "type": {
+    "id": "HP:0003394",
+    "label": "Muscle spasm"
+   },
+   "description": "cramping"
+  },
+  {
+   "type": {
+    "id": "HP:0002013",
+    "label": "Vomiting"
+   },
+   "description": "vomiting"
+  },
+  {
+   "type": {
+    "id": "HP:0001923",
+    "label": "Reticulocytosis"
+   },
+   "description": "mild reticulocytosis"
+  },
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "high blood pressure"
+  },
+  {
+   "type": {
+    "id": "HP:0003546",
+    "label": "Exercise intolerance"
+   },
+   "description": "walking on an incline was limited by muscle pain"
+  },
+  {
+   "type": {
+    "id": "HP:0003551",
+    "label": "Difficulty climbing stairs"
+   },
+   "description": "could walk only one flight of stairs"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7010930-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7010930-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7010930-1-PFKM",
+        "geneContext": {
+         "valueId": "HGNC:8877",
+         "symbol": "PFKM"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32117019",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32117019/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

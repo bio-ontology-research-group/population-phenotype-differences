@@ -1,0 +1,211 @@
+{
+ "id": "PMCP_4421328-1",
+ "subject": {
+  "id": "PMCP_4421328-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P20Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our clinic in 2006"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "20-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Fabry disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"completely asymptomatic for Fabry disease\", \"excluded\": true}, {\"text\": \"no overt proteinuria\", \"excluded\": true}, {\"text\": \"no sign of FD could be detected\", \"excluded\": true}, {\"text\": \"Skin examination was unremarkable for angiokeratomas\", \"excluded\": true}, {\"text\": \"did not reveal either cornea verticillata or cataract\", \"excluded\": true}, {\"text\": \"did not show signs of cardiac hypertrophy, systolic\u2013diastolic dysfunction or cardiac valve diseases\", \"excluded\": true}, {\"text\": \"did not show any evidence of hearing loss\", \"excluded\": true}, {\"text\": \"negative for infarctual encephalopathy\", \"excluded\": true}, {\"text\": \"no evidence of sensitive-motor abnormalities\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4421328-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cagnoli l"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012592",
+    "label": "Albuminuria"
+   },
+   "description": "isolated persistent microalbuminuria (303 mg/L; normal value <30 mg/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0032596",
+    "label": "Renal tubular epithelial cell cytoplasmic vacuolization"
+   },
+   "description": "numerous vacuolated cells in both glomerular tuft and tubular cells"
+  },
+  {
+   "type": {
+    "id": "HP:6001025",
+    "label": "Pathological inclusion body"
+   },
+   "description": "myelin osmiophilic bodies were also present in glomeruli or between tubules"
+  },
+  {
+   "type": {
+    "id": "HP:0033265",
+    "label": "Podocyte myelin figures"
+   },
+   "description": "numerous osmiophilic and laminated \u2018zebra\u2019 bodies in podocytes, epithelial and endothelial cells of the glomerular tuft"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4421328-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4421328-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4421328-1-GLA",
+        "geneContext": {
+         "valueId": "HGNC:4296",
+         "symbol": "GLA"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25949379",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25949379/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

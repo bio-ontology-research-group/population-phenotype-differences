@@ -1,0 +1,232 @@
+{
+ "id": "ABS_15752294-1",
+ "subject": {
+  "id": "ABS_15752294-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P42Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "42 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normocalcaemia\", \"excluded\": false}, {\"text\": \"normal serum parathyroid hormone value\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chassaing n"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025507",
+    "label": "Yellow papule"
+   },
+   "description": "yellow papules on the neck"
+  },
+  {
+   "type": {
+    "id": "HP:0001102",
+    "label": "Angioid streaks"
+   },
+   "description": "ophthalmologic angioid streaks"
+  },
+  {
+   "type": {
+    "id": "HP:0000787",
+    "label": "Nephrolithiasis"
+   },
+   "description": "recurrent bilateral nephrolithiasis"
+  },
+  {
+   "type": {
+    "id": "HP:0002148",
+    "label": "Hypophosphatemia"
+   },
+   "description": "hypophosphoraemia"
+  },
+  {
+   "type": {
+    "id": "HP:0003109",
+    "label": "Hyperphosphaturia"
+   },
+   "description": "hyperphosphaturia"
+  },
+  {
+   "type": {
+    "id": "HP:0002150",
+    "label": "Hypercalciuria"
+   },
+   "description": "hypercalciuria"
+  },
+  {
+   "type": {
+    "id": "HP:0031415",
+    "label": "High serum calcitriol"
+   },
+   "description": "high 1,25-dihydroxy vitamin D value"
+  },
+  {
+   "type": {
+    "id": "HP:0008672",
+    "label": "Calcium oxalate nephrolithiasis"
+   },
+   "description": "renal calcium oxalate stone"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_15752294-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_15752294-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_15752294-1-ABCC6",
+        "geneContext": {
+         "valueId": "HGNC:57",
+         "symbol": "ABCC6"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:15752294",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/15752294/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

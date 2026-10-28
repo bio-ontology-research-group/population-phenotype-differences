@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_10800497-1",
+ "subject": {
+  "id": "PMCP_10800497-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P50Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to the hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "50-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hereditary pulmonary alveolar proteinosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"forced expiratory volume in 1 s (FEV1) of 2.44 L (76.2% of predicted)\", \"excluded\": false}, {\"text\": \"Fibroblast foci were also observed alongside the terminal bronchiole\", \"excluded\": false}, {\"text\": \"did not show the typical crazy-paving pattern\", \"excluded\": true}, {\"text\": \"no milky appearance in the BAL fluid\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10800497-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cheng k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002094",
+    "label": "Dyspnea"
+   },
+   "description": "3-year history of dyspnea and cough"
+  },
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "occasionally experiences fever"
+  },
+  {
+   "type": {
+    "id": "HP:0031245",
+    "label": "Productive cough"
+   },
+   "description": "produces sputum"
+  },
+  {
+   "type": {
+    "id": "HP:0030830",
+    "label": "Crackles"
+   },
+   "description": "decreased breath sounds with crackles in both lower lung fields"
+  },
+  {
+   "type": {
+    "id": "HP:0032341",
+    "label": "Reduced forced vital capacity"
+   },
+   "description": "forced vital capacity (FVC) of 2.71 L (69.5% of predicted)"
+  },
+  {
+   "type": {
+    "id": "HP:0045051",
+    "label": "Decreased DLCO"
+   },
+   "description": "diffusion capacity of carbon monoxide (DLco) at 34% of predicted"
+  },
+  {
+   "type": {
+    "id": "HP:0002206",
+    "label": "Pulmonary fibrosis"
+   },
+   "description": "peri-bronchovascular and interlobular septal thickening, reticular abnormality, architectural distortion, and traction bronchiectasis"
+  },
+  {
+   "type": {
+    "id": "HP:0025179",
+    "label": "Ground-glass opacification"
+   },
+   "description": "ground-glass opacities"
+  },
+  {
+   "type": {
+    "id": "HP:0011718",
+    "label": "Abnormality of the pulmonary veins"
+   },
+   "description": "abnormal communication between the right upper pulmonary vein and the right inferior pulmonary vein at the right hilum"
+  },
+  {
+   "type": {
+    "id": "HP:0006517",
+    "label": "Intraalveolar phospholipid accumulation"
+   },
+   "description": "alveolar lumina filled with eosinophilic proteinaceous material"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10800497-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10800497-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10800497-1-CSF2RB",
+        "geneContext": {
+         "valueId": "HGNC:2436",
+         "symbol": "CSF2RB"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38259275",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38259275/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

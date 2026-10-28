@@ -1,0 +1,223 @@
+{
+ "id": "PMCP_10284639-1",
+ "subject": {
+  "id": "PMCP_10284639-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P45Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Hispanic"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "45-year-old Hispanic woman"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "45 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary breast cancer syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"denied any nipple discharge\", \"excluded\": true}, {\"text\": \"denied any breast skin changes\", \"excluded\": true}, {\"text\": \"no skin, nipple, or areolar changes\", \"excluded\": true}, {\"text\": \"no palpable mass in the right breast\", \"excluded\": true}, {\"text\": \"no palpable axillary lymphadenopathy bilaterally\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10284639-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sarma r"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0032408",
+    "label": "Breast mass"
+   },
+   "description": "lump in her left breast"
+  },
+  {
+   "type": {
+    "id": "HP:0003002",
+    "label": "Breast carcinoma"
+   },
+   "description": "invasive, poorly differentiated, high-grade ductal carcinoma with medullary features in the right breast"
+  },
+  {
+   "type": {
+    "id": "HP:0034752",
+    "label": "Axillary lymphadenopathy"
+   },
+   "description": "abnormal appearing left axillary node"
+  },
+  {
+   "type": {
+    "id": "HP:0005978",
+    "label": "Type II diabetes mellitus"
+   },
+   "description": "type 2 diabetes"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10284639-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10284639-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10284639-1-BRCA1",
+        "geneContext": {
+         "valueId": "HGNC:1100",
+         "symbol": "BRCA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37350805",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37350805/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

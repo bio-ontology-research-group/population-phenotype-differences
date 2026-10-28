@@ -1,0 +1,235 @@
+{
+ "id": "PMCP_2946666-1",
+ "subject": {
+  "id": "PMCP_2946666-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Korean"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "in a Korean Family"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "visited the hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "five-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Jervell and Lange-Nielsen Syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no abnormality during physical and neurologic examination\", \"excluded\": true}, {\"text\": \"no abnormality observed in the electroencephalogram\", \"excluded\": true}, {\"text\": \"structurally normal heart\", \"excluded\": true}, {\"text\": \"no ventricular arrhythmia\", \"excluded\": true}, {\"text\": \"not on drugs that could extend the duration of QT\", \"excluded\": true}, {\"text\": \"Nor did he have any electrolyte imbalance such as hypomagnesemia or hypocalcemia\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "2946666-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:noh ci"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001279",
+    "label": "Syncope"
+   },
+   "description": "recurrent syncope"
+  },
+  {
+   "type": {
+    "id": "HP:0002069",
+    "label": "Bilateral tonic-clonic seizure"
+   },
+   "description": "seizure-like movement such as tonic-clonic activity, eyeball deviation, and loss of consciousness"
+  },
+  {
+   "type": {
+    "id": "HP:0008527",
+    "label": "Congenital sensorineural hearing impairment"
+   },
+   "description": "congenital sensorineural deafness"
+  },
+  {
+   "type": {
+    "id": "HP:0005184",
+    "label": "Prolonged QTc interval"
+   },
+   "description": "markedly prolonged QTc interval of 590 ms"
+  },
+  {
+   "type": {
+    "id": "HP:0012266",
+    "label": "T-wave alternans"
+   },
+   "description": "T wave alternans"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_2946666-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_2946666-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_2946666-1-KCNQ1",
+        "geneContext": {
+         "valueId": "HGNC:6294",
+         "symbol": "KCNQ1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:20890437",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/20890437/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

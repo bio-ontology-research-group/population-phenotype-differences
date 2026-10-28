@@ -1,0 +1,226 @@
+{
+ "id": "PMCP_6820463-1",
+ "subject": {
+  "id": "PMCP_6820463-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P62Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "62-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hypophosphatasia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no evidence of hyperosteoidosis\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6820463-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cundy t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0041166",
+    "label": "Fractured vertebra"
+   },
+   "description": "sacral and multiple vertebral fractures"
+  },
+  {
+   "type": {
+    "id": "HP:0000939",
+    "label": "Osteoporosis"
+   },
+   "description": "osteoporosis"
+  },
+  {
+   "type": {
+    "id": "HP:0004349",
+    "label": "Reduced bone mineral density"
+   },
+   "description": "T-scores of \u22125.2 at the lumbar spine, \u22123.5 at the femoral neck, \u22123.3 at the total femur, and \u22122.6 at the total radius sites"
+  },
+  {
+   "type": {
+    "id": "HP:0004325",
+    "label": "Decreased body weight"
+   },
+   "description": "low body weight"
+  },
+  {
+   "type": {
+    "id": "HP:0003282",
+    "label": "Decreased circulating alkaline phosphatase activity"
+   },
+   "description": "low serum ALP of 35 U/L"
+  },
+  {
+   "type": {
+    "id": "HP:0032476",
+    "label": "Abnormal circulating vitamin B6 concentration"
+   },
+   "description": "pyridoxal 5\u2032-phosphate level was elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0000938",
+    "label": "Osteopenia"
+   },
+   "description": "trabecular bone to be osteopenic, with reduced bone volume and slender trabeculae"
+  },
+  {
+   "type": {
+    "id": "HP:0003330",
+    "label": "Abnormal bone structure"
+   },
+   "description": "mild increase in porosity"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6820463-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6820463-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6820463-1-ALPL",
+        "geneContext": {
+         "valueId": "HGNC:438",
+         "symbol": "ALPL"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31687651",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31687651/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

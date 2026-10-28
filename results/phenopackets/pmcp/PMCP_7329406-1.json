@@ -1,0 +1,231 @@
+{
+ "id": "PMCP_7329406-1",
+ "subject": {
+  "id": "PMCP_7329406-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P32Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002952",
+     "label": "Hungary"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Semmelweis University"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002952",
+     "label": "Hungary"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Semmelweis University"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "32 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary breast-ovarian cancer syndrome (implied by BRCA1 germline mutation and breast cancer)"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"palpated nodules in her right breast\", \"excluded\": false}, {\"text\": \"bilateral multifocal tumor\", \"excluded\": false}, {\"text\": \"invasive breast carcinoma (no special type)\", \"excluded\": false}, {\"text\": \"disease recurrence\", \"excluded\": false}, {\"text\": \"metastases with extracapsular extension and perineural invasion\", \"excluded\": false}, {\"text\": \"lung metastasis\", \"excluded\": false}, {\"text\": \"metastasis in the left frontal lobe\", \"excluded\": false}, {\"text\": \"repeated seizure\", \"excluded\": false}, {\"text\": \"abscess-like lesion in the cavity of the previously operated area, surrounded by large perifocal edema\", \"excluded\": false}, {\"text\": \"new metastasis in the contralateral frontal lobe\", \"excluded\": false}, {\"text\": \"gastric hemorrhage\", \"excluded\": false}, {\"text\": \"metastatic involvement of the gastric wall\", \"excluded\": false}, {\"text\": \"cardiac decompensation\", \"excluded\": false}, {\"text\": \"no detectable distant metastasis\", \"excluded\": true}, {\"text\": \"histopathology also excluded the possibility of a true abscess\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7329406-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:horv\u00e1th a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0010622",
+    "label": "Neoplasm of the skeletal system"
+   },
+   "description": "multiple bone metastases"
+  },
+  {
+   "type": {
+    "id": "HP:0002427",
+    "label": "Expressive aphasia"
+   },
+   "description": "motor aphasia"
+  },
+  {
+   "type": {
+    "id": "HP:0002069",
+    "label": "Bilateral tonic-clonic seizure"
+   },
+   "description": "grand mal seizure"
+  },
+  {
+   "type": {
+    "id": "HP:0002592",
+    "label": "Gastric ulcer"
+   },
+   "description": "gastric ulcer"
+  },
+  {
+   "type": {
+    "id": "HP:0002878",
+    "label": "Respiratory failure"
+   },
+   "description": "respiratory failure"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7329406-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7329406-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7329406-1-BRCA1",
+        "geneContext": {
+         "valueId": "HGNC:1100",
+         "symbol": "BRCA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32611325",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32611325/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

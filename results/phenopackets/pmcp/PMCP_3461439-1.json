@@ -1,0 +1,230 @@
+{
+ "id": "PMCP_3461439-1",
+ "subject": {
+  "id": "PMCP_3461439-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P8M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Yorkshire terrier"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "An 8 month old neutered male Yorkshire terrier"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): USA"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "8 month old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "L-2-hydroxyglutaric aciduria"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"No abnormalities were found on neurologic examination\", \"excluded\": true}, {\"text\": \"normal protein\", \"excluded\": true}, {\"text\": \"No abnormalities were apparent on FLAIR, gradient echo or T1 weighted images with or without gadolinium contrast\", \"excluded\": true}, {\"text\": \"has not shown any dementia, ataxia or generalized seizures\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3461439-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:o'brien dp"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000752",
+    "label": "Hyperactivity"
+   },
+   "description": "episodes of hyperactivity and aggressive behavior"
+  },
+  {
+   "type": {
+    "id": "HP:0012229",
+    "label": "CSF pleocytosis"
+   },
+   "description": "mild mononuclear pleocytosis"
+  },
+  {
+   "type": {
+    "id": "HP:0410263",
+    "label": "Brain imaging abnormality"
+   },
+   "description": "hyperintensity of the gray matter of the thalamus, cerebral cortex and cerebellum on T2 weighted images"
+  },
+  {
+   "type": {
+    "id": "HP:0032278",
+    "label": "2-hydroxyglutarate aciduria"
+   },
+   "description": "elevated concentration of hydroxyglutaric acid"
+  },
+  {
+   "type": {
+    "id": "HP:0002161",
+    "label": "Hyperlysinemia"
+   },
+   "description": "elevated lysine"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3461439-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3461439-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3461439-1-L2HGDH",
+        "geneContext": {
+         "valueId": "HGNC:20499",
+         "symbol": "L2HGDH"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22834903",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22834903/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_10315180-2",
+ "subject": {
+  "id": "PMCP_10315180-2",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P48Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): USA"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "48-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "CMT2 disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"denied symptoms in the upper extremities\", \"excluded\": true}, {\"text\": \"did not experience muscle weakness\", \"excluded\": true}, {\"text\": \"did not experience... a tendency for falls\", \"excluded\": true}, {\"text\": \"Position, vibration, and light touch sensations were normal\", \"excluded\": true}, {\"text\": \"the knee reflexes were normal\", \"excluded\": true}, {\"text\": \"Gait was also normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10315180-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:shields cb"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025238",
+    "label": "Foot pain"
+   },
+   "description": "numbness and intermittent sharp pain in the feet bilaterally"
+  },
+  {
+   "type": {
+    "id": "HP:0001761",
+    "label": "Pes cavus"
+   },
+   "description": "high-arched feet"
+  },
+  {
+   "type": {
+    "id": "HP:0007328",
+    "label": "Impaired pain sensation"
+   },
+   "description": "Pinprick sensation was diminished over the plantar and dorsal aspects of both feet"
+  },
+  {
+   "type": {
+    "id": "HP:0003438",
+    "label": "Absent Achilles reflex"
+   },
+   "description": "The ankle reflexes were absent bilaterally"
+  },
+  {
+   "type": {
+    "id": "HP:0003431",
+    "label": "Decreased motor nerve conduction velocity"
+   },
+   "description": "slowing of the motor conduction of the median nerves"
+  },
+  {
+   "type": {
+    "id": "HP:0007078",
+    "label": "Decreased amplitude of sensory action potentials"
+   },
+   "description": "No SNAPs could be recorded over the superficial fibular or superficial radial nerves"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10315180-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10315180-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10315180-2-MPZ",
+        "geneContext": {
+         "valueId": "HGNC:7225",
+         "symbol": "MPZ"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37404437",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37404437/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

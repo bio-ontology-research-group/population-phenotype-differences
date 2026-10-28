@@ -1,0 +1,215 @@
+{
+ "id": "ABS_40629618-1",
+ "subject": {
+  "id": "ABS_40629618-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P27Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "27 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yang z"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001394",
+    "label": "Cirrhosis"
+   },
+   "description": "liver cirrhosis"
+  },
+  {
+   "type": {
+    "id": "HP:0004904",
+    "label": "Maturity-onset diabetes of the young"
+   },
+   "description": "maturity-onset diabetes of the young"
+  },
+  {
+   "type": {
+    "id": "HP:0002605",
+    "label": "Hepatic necrosis"
+   },
+   "description": "severe lobular hepatitis (multiple lobular/large necroses)"
+  },
+  {
+   "type": {
+    "id": "HP:0025321",
+    "label": "Copper accumulation in liver"
+   },
+   "description": "early cirrhosis with a small amount of copper deposits"
+  },
+  {
+   "type": {
+    "id": "HP:0001397",
+    "label": "Hepatic steatosis"
+   },
+   "description": "hepatocyte lipidosis"
+  },
+  {
+   "type": {
+    "id": "HP:0033193",
+    "label": "Ballooning hepatocyte degeneration"
+   },
+   "description": "balloon-like changes"
+  },
+  {
+   "type": {
+    "id": "HP:6000457",
+    "label": "Mallory bodies"
+   },
+   "description": "Mallory bodies"
+  },
+  {
+   "type": {
+    "id": "HP:0006568",
+    "label": "Increased hepatic glycogen content"
+   },
+   "description": "glycogenated hepatocyte nuclei"
+  },
+  {
+   "type": {
+    "id": "HP:0200032",
+    "label": "Kayser-Fleischer ring"
+   },
+   "description": "Kayser-Fleischer corneal rings"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40629618-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40629618-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40629618-1-ATP7B",
+        "geneContext": {
+         "valueId": "HGNC:870",
+         "symbol": "ATP7B"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40629618",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40629618/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

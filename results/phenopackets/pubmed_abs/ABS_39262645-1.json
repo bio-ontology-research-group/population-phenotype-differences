@@ -1,0 +1,215 @@
+{
+ "id": "ABS_39262645-1",
+ "subject": {
+  "id": "ABS_39262645-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Saudi"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:alakkas a"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002373",
+    "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+   },
+   "description": "febrile seizures"
+  },
+  {
+   "type": {
+    "id": "HP:0000752",
+    "label": "Hyperactivity"
+   },
+   "description": "hyperactivity"
+  },
+  {
+   "type": {
+    "id": "HP:0001249",
+    "label": "Intellectual disability"
+   },
+   "description": "intellectual difficulties"
+  },
+  {
+   "type": {
+    "id": "HP:0000473",
+    "label": "Torticollis"
+   },
+   "description": "cervical dystonia"
+  },
+  {
+   "type": {
+    "id": "HP:0040330",
+    "label": "Confluent hyperintensity of cerebral white matter on MRI"
+   },
+   "description": "symmetrical confluent high T2/FLAIR signal intensity of the white matter involving the subcortical U fibers and deep white matter with sparing of the immediate periventricular white matter, internal capsules and corpus callosum"
+  },
+  {
+   "type": {
+    "id": "HP:0012751",
+    "label": "Abnormal basal ganglia MRI signal intensity"
+   },
+   "description": "symmetric abnormal T2 signal intensity of the caudate nuclei, lentiform nucleus as well as the dentate nuclei of the cerebellum"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_39262645-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_39262645-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_39262645-1-L2HGDH",
+        "geneContext": {
+         "valueId": "HGNC:20499",
+         "symbol": "L2HGDH"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:39262645",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/39262645/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

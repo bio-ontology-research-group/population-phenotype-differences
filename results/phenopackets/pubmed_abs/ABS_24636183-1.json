@@ -1,0 +1,208 @@
+{
+ "id": "ABS_24636183-1",
+ "subject": {
+  "id": "ABS_24636183-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Oklahoma"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Canada; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:schaefer ej"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007957",
+    "label": "Corneal opacity"
+   },
+   "description": "corneal opacification"
+  },
+  {
+   "type": {
+    "id": "HP:0003233",
+    "label": "Decreased HDL cholesterol concentration"
+   },
+   "description": "mean levels of high-density lipoprotein (HDL) cholesterol (C), apolipoprotein (apo) A-I, and apoA-I in very large alpha-1 HDL particles that were 9%, 17%, and 5% of normal"
+  },
+  {
+   "type": {
+    "id": "HP:0010979",
+    "label": "Abnormality of lipoprotein cholesterol concentration"
+   },
+   "description": "no detectable lipoprotein-X"
+  },
+  {
+   "type": {
+    "id": "HP:0003077",
+    "label": "Hyperlipidemia"
+   },
+   "description": "mean low-density lipoprotein cholesterol (LDL-C) and triglyceride levels that were elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0025433",
+    "label": "Decreased lecithin cholesterol acyl transferase level"
+   },
+   "description": "mean lecithin cholesterol acyltransferase (LCAT) activities, cholesterol esterification rates, and free cholesterol levels were 8%, 42%, and 258% of normal"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_24636183-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_24636183-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_24636183-1-LCAT",
+        "geneContext": {
+         "valueId": "HGNC:6522",
+         "symbol": "LCAT"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24636183",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24636183/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

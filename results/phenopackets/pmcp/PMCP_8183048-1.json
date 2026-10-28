@@ -1,0 +1,251 @@
+{
+ "id": "PMCP_8183048-1",
+ "subject": {
+  "id": "PMCP_8183048-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0030674",
+    "label": "Antenatal onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "in accordance with the French law"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "in accordance with the French law"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "22 weeks of gestation"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "fetal hydrocephalus linked to CCDC88C pathogenic variants"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no other associated brain, visceral or growth parameter abnormalities\", \"excluded\": true}, {\"text\": \"Neither skeletal nor visceral anomalies were identified in the first fetus\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8183048-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:saugier-veber p"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000256",
+    "label": "Macrocephaly"
+   },
+   "description": "macrocephaly (head circumference >> 97th percentile)"
+  },
+  {
+   "type": {
+    "id": "HP:0002119",
+    "label": "Ventriculomegaly"
+   },
+   "description": "severe bilateral ventriculomegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0000272",
+    "label": "Malar flattening"
+   },
+   "description": "malar hypoplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0000463",
+    "label": "Anteverted nares"
+   },
+   "description": "small nose with anteverted nostrils"
+  },
+  {
+   "type": {
+    "id": "HP:0000308",
+    "label": "Microretrognathia"
+   },
+   "description": "microretrognathism"
+  },
+  {
+   "type": {
+    "id": "HP:0002410",
+    "label": "Aqueductal stenosis"
+   },
+   "description": "AS atresia consisted of few rosettes lined by ependymal cells"
+  },
+  {
+   "type": {
+    "id": "HP:0007165",
+    "label": "Periventricular heterotopia"
+   },
+   "description": "Subependymal gray matter heterotopias were observed in both cases"
+  },
+  {
+   "type": {
+    "id": "HP:0007376",
+    "label": "Abnormal choroid plexus morphology"
+   },
+   "description": "abnormal morphology of the choroid plexuses which were voluminous due to hydrops of the connective tissue core"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8183048-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8183048-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8183048-1-CCDC88C",
+        "geneContext": {
+         "valueId": "HGNC:19967",
+         "symbol": "CCDC88C"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34092257",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34092257/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

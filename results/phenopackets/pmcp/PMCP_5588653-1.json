@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_5588653-1",
+ "subject": {
+  "id": "PMCP_5588653-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P4Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): India"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "4 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Childhood Ataxia with Central Nervous System Hypomyelination"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"bilateral central tegmental tract... hyperintensities\", \"excluded\": false}, {\"text\": \"no neurocutaneous markers\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5588653-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:benakappa a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0033044",
+    "label": "Motor regression"
+   },
+   "description": "regression of motor milestones"
+  },
+  {
+   "type": {
+    "id": "HP:0002333",
+    "label": "Motor deterioration"
+   },
+   "description": "lost walking, sitting, and neck control"
+  },
+  {
+   "type": {
+    "id": "HP:0002373",
+    "label": "Febrile seizure (within the age range of 3 months to 6 years)"
+   },
+   "description": "two episodes of seizures with fever"
+  },
+  {
+   "type": {
+    "id": "HP:0002509",
+    "label": "Limb hypertonia"
+   },
+   "description": "increased tone of all four limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0006801",
+    "label": "Hyperactive deep tendon reflexes"
+   },
+   "description": "exaggerated deep tendon reflexes"
+  },
+  {
+   "type": {
+    "id": "HP:0003487",
+    "label": "Babinski sign"
+   },
+   "description": "extensor plantar response"
+  },
+  {
+   "type": {
+    "id": "HP:0030890",
+    "label": "Hyperintensity of cerebral white matter on MRI"
+   },
+   "description": "periventricular and lobar hyperintensities"
+  },
+  {
+   "type": {
+    "id": "HP:6000416",
+    "label": "T2 hyperintense cerebellar lesion"
+   },
+   "description": "cerebellar white matter... hyperintensities"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5588653-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5588653-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5588653-1-EIF2B3",
+        "geneContext": {
+         "valueId": "HGNC:3259",
+         "symbol": "EIF2B3"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28904586",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28904586/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

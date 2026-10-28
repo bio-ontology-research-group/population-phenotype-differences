@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_7758994-1",
+ "subject": {
+  "id": "PMCP_7758994-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P61Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "transferred to our institutions for further management"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "61-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Neurofibromatosis type 1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"acute onset of bleeding per rectum\", \"excluded\": false}, {\"text\": \"bloody bowel movements with diarrhea\", \"excluded\": false}, {\"text\": \"mild abdominal pain\", \"excluded\": false}, {\"text\": \"hemoglobin was 6.6 g/dl\", \"excluded\": false}, {\"text\": \"6.9 \u00d7 5.8 \u00d7 6.8 cm hyper-vascular mass in the left pelvis\", \"excluded\": false}, {\"text\": \"9 mm enhancing tumor in the second portion of the duodenum\", \"excluded\": false}, {\"text\": \"bright red blood present throughout the entire colon\", \"excluded\": false}, {\"text\": \"denied nausea, emesis, chest pain, shortness of breath, syncope or other symptoms\", \"excluded\": true}, {\"text\": \"no evidence of nodal metastases\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7758994-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:augustin t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:6000410",
+    "label": "Small intestine mass"
+   },
+   "description": "7 cm mass originating from the distal jejunum"
+  },
+  {
+   "type": {
+    "id": "HP:0005265",
+    "label": "Abnormal jejunum morphology"
+   },
+   "description": "two additional proximal jejunal lesions"
+  },
+  {
+   "type": {
+    "id": "HP:0007378",
+    "label": "Neoplasm of the gastrointestinal tract"
+   },
+   "description": "10 small (0.5 to 2 cm) lesions"
+  },
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0100633",
+    "label": "Esophagitis"
+   },
+   "description": "esophagitis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7758994-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7758994-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7758994-1-NF1",
+        "geneContext": {
+         "valueId": "HGNC:7765",
+         "symbol": "NF1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33391646",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33391646/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

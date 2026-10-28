@@ -1,0 +1,241 @@
+{
+ "id": "ABS_38724151-1",
+ "subject": {
+  "id": "ABS_38724151-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P33Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "33 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Italy"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cancellieri a"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0034015",
+    "label": "Cavitating pulmonary nodule"
+   },
+   "description": "migrant cavitary nodules at CT scan"
+  },
+  {
+   "type": {
+    "id": "HP:0002094",
+    "label": "Dyspnea"
+   },
+   "description": "dyspnea"
+  },
+  {
+   "type": {
+    "id": "HP:0002105",
+    "label": "Hemoptysis"
+   },
+   "description": "blood sputum"
+  },
+  {
+   "type": {
+    "id": "HP:0000963",
+    "label": "Thin skin"
+   },
+   "description": "translucent and thin skin"
+  },
+  {
+   "type": {
+    "id": "HP:0001015",
+    "label": "Prominent superficial veins"
+   },
+   "description": "evident venous vascular pattern"
+  },
+  {
+   "type": {
+    "id": "HP:0000233",
+    "label": "Thin vermilion border"
+   },
+   "description": "vermilion of the lip thin"
+  },
+  {
+   "type": {
+    "id": "HP:0000347",
+    "label": "Micrognathia"
+   },
+   "description": "micrognathia"
+  },
+  {
+   "type": {
+    "id": "HP:0000460",
+    "label": "Narrow nose"
+   },
+   "description": "thin nose"
+  },
+  {
+   "type": {
+    "id": "HP:0030880",
+    "label": "Raynaud phenomenon"
+   },
+   "description": "occasional Raynaud phenomenon"
+  },
+  {
+   "type": {
+    "id": "HP:0011986",
+    "label": "Ectopic ossification"
+   },
+   "description": "irregularly shaped, but mainly not dendritic, foci of ossification that often contained bone marrow and were embedded or surrounded by tendinous-like fibrous tissue"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_38724151-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_38724151-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_38724151-1-COL3A1",
+        "geneContext": {
+         "valueId": "HGNC:2201",
+         "symbol": "COL3A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38724151",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38724151/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

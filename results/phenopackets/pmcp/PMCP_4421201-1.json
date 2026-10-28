@@ -1,0 +1,266 @@
+{
+ "id": "PMCP_4421201-1",
+ "subject": {
+  "id": "PMCP_4421201-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P15Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "hospitalized in the emergency room"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "15-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "familial hypokalaemic periodic paralysis type 1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without extrasystoles\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4421201-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dussol b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002445",
+    "label": "Tetraplegia"
+   },
+   "description": "tetraplegia"
+  },
+  {
+   "type": {
+    "id": "HP:0002273",
+    "label": "Tetraparesis"
+   },
+   "description": "Tetraparesis began in the legs"
+  },
+  {
+   "type": {
+    "id": "HP:0001657",
+    "label": "Prolonged QT interval"
+   },
+   "description": "long QT"
+  },
+  {
+   "type": {
+    "id": "HP:0002900",
+    "label": "Hypokalemia"
+   },
+   "description": "profound hypokalaemia: 1.6 mmol/l"
+  },
+  {
+   "type": {
+    "id": "HP:0002901",
+    "label": "Hypocalcemia"
+   },
+   "description": "hypocalcaemia (2.16 mmol/l)"
+  },
+  {
+   "type": {
+    "id": "HP:0000160",
+    "label": "Narrow mouth"
+   },
+   "description": "small mouth"
+  },
+  {
+   "type": {
+    "id": "HP:0000445",
+    "label": "Wide nose"
+   },
+   "description": "broad nose"
+  },
+  {
+   "type": {
+    "id": "HP:0000369",
+    "label": "Low-set ears"
+   },
+   "description": "low implantation of ears"
+  },
+  {
+   "type": {
+    "id": "HP:0001611",
+    "label": "Hypernasal speech"
+   },
+   "description": "nasal speech"
+  },
+  {
+   "type": {
+    "id": "HP:0000405",
+    "label": "Conductive hearing impairment"
+   },
+   "description": "transmission hypoacusia"
+  },
+  {
+   "type": {
+    "id": "HP:0031817",
+    "label": "Decreased circulating parathyroid hormone level"
+   },
+   "description": "parathormone level was inappropriately low"
+  },
+  {
+   "type": {
+    "id": "HP:0003690",
+    "label": "Limb muscle weakness"
+   },
+   "description": "weakness in the extremities"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4421201-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4421201-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4421201-1-CACNA1S",
+        "geneContext": {
+         "valueId": "HGNC:1397",
+         "symbol": "CACNA1S"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25983995",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25983995/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "id": "ABS_10918262-1",
+ "subject": {
+  "id": "ABS_10918262-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002942",
+     "label": "Austria"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Austrian"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002942",
+     "label": "Austria"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"distal latencies were prolonged\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Austria"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hartung hp"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003701",
+    "label": "Proximal muscle weakness"
+   },
+   "description": "proximal muscle weakness and wasting predominantly of the shoulder girdle musculature"
+  },
+  {
+   "type": {
+    "id": "HP:0002460",
+    "label": "Distal muscle weakness"
+   },
+   "description": "normal or slightly reduced distal muscle power"
+  },
+  {
+   "type": {
+    "id": "HP:0001760",
+    "label": "Abnormal foot morphology"
+   },
+   "description": "mild foot deformity"
+  },
+  {
+   "type": {
+    "id": "HP:0002600",
+    "label": "Hyporeflexia of lower limbs"
+   },
+   "description": "absent or reduced tendon reflexes in the lower limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0003474",
+    "label": "Somatic sensory dysfunction"
+   },
+   "description": "normal or slightly diminished sensation"
+  },
+  {
+   "type": {
+    "id": "HP:0003431",
+    "label": "Decreased motor nerve conduction velocity"
+   },
+   "description": "motor nerve conduction velocities were slowed to less than 33 m/s"
+  },
+  {
+   "type": {
+    "id": "HP:0033383",
+    "label": "Decreased compound muscle action potential amplitude"
+   },
+   "description": "compound motor action potentials were low"
+  },
+  {
+   "type": {
+    "id": "HP:0003448",
+    "label": "Decreased sensory nerve conduction velocity"
+   },
+   "description": "Sensory nerve conduction velocities were extremely reduced or no sensory potentials were recordable"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_10918262-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_10918262-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_10918262-1-PMP22",
+        "geneContext": {
+         "valueId": "HGNC:9118",
+         "symbol": "PMP22"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:10918262",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/10918262/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

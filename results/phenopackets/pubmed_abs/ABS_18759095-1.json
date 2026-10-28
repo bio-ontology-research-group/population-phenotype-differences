@@ -1,0 +1,228 @@
+{
+ "id": "ABS_18759095-1",
+ "subject": {
+  "id": "ABS_18759095-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "India"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:shroff d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000505",
+    "label": "Visual impairment"
+   },
+   "description": "visual impairment"
+  },
+  {
+   "type": {
+    "id": "HP:0004322",
+    "label": "Short stature"
+   },
+   "description": "short stature"
+  },
+  {
+   "type": {
+    "id": "HP:0001249",
+    "label": "Intellectual disability"
+   },
+   "description": "mental retardation"
+  },
+  {
+   "type": {
+    "id": "HP:0000659",
+    "label": "Peters anomaly"
+   },
+   "description": "Peters' anomaly"
+  },
+  {
+   "type": {
+    "id": "HP:0003498",
+    "label": "Disproportionate short stature"
+   },
+   "description": "disproportionate short stature"
+  },
+  {
+   "type": {
+    "id": "HP:0000924",
+    "label": "Abnormality of the skeletal system"
+   },
+   "description": "skeletal abnormalities"
+  },
+  {
+   "type": {
+    "id": "HP:0000337",
+    "label": "Broad forehead"
+   },
+   "description": "broad forehead"
+  },
+  {
+   "type": {
+    "id": "HP:0000506",
+    "label": "Telecanthus"
+   },
+   "description": "telecanthus"
+  },
+  {
+   "type": {
+    "id": "HP:0002263",
+    "label": "Exaggerated cupid's bow"
+   },
+   "description": "cupid bow shaped upper lip"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_18759095-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_18759095-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_18759095-1-B3GLCT",
+        "geneContext": {
+         "valueId": "HGNC:20207",
+         "symbol": "B3GLCT"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:18759095",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/18759095/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

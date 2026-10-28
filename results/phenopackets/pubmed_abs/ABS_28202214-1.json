@@ -1,0 +1,222 @@
+{
+ "id": "ABS_28202214-1",
+ "subject": {
+  "id": "ABS_28202214-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P39D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "39 days"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "neonatal"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003623",
+      "label": "Neonatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Netherlands; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wanders rja"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003623",
+    "label": "Neonatal onset"
+   },
+   "description": "severe neonatal course"
+  },
+  {
+   "type": {
+    "id": "HP:0003128",
+    "label": "Lactic acidosis"
+   },
+   "description": "elevated blood and cerebrospinal fluid lactate and pyruvate concentrations"
+  },
+  {
+   "type": {
+    "id": "HP:0003348",
+    "label": "Hyperalaninemia"
+   },
+   "description": "high plasma alanine"
+  },
+  {
+   "type": {
+    "id": "HP:0500152",
+    "label": "Hypocystinemia"
+   },
+   "description": "slightly low plasma cystine"
+  },
+  {
+   "type": {
+    "id": "HP:6000469",
+    "label": "Elevated urine 2,3-dihydroxy-2-methylbutanoic acid level"
+   },
+   "description": "2-Methyl-2,3-dihydroxybutyric acid was markedly elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0001992",
+    "label": "Organic aciduria"
+   },
+   "description": "metabolites of the three branched-chain \u03b1-ketoacids on urine organic acids analysis"
+  },
+  {
+   "type": {
+    "id": "HP:0002928",
+    "label": "Decreased activity of the pyruvate dehydrogenase complex"
+   },
+   "description": "Lymphocyte pyruvate dehydrogenase complex (PDC) activity was deficient"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_28202214-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_28202214-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_28202214-1-ECHS1",
+        "geneContext": {
+         "valueId": "HGNC:3151",
+         "symbol": "ECHS1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28202214",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28202214/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

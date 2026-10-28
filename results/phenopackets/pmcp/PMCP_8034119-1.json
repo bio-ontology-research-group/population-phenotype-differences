@@ -1,0 +1,237 @@
+{
+ "id": "PMCP_8034119-1",
+ "subject": {
+  "id": "PMCP_8034119-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P43Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "white"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 43-year-old white female (II:2) presented with reduced vision"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "standard practice at the time"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "43 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "CRX associated macular dystrophy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"loss of the ellipsoid zone (EZ)\", \"excluded\": false}, {\"text\": \"photopic and 30 Hz flicker stimuli were normal\", \"excluded\": true}, {\"text\": \"EOG light rise was ... normal in the left\", \"excluded\": true}, {\"text\": \"None of the family had any co-existing systemic disorders\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8034119-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:downes sm"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007663",
+    "label": "Reduced visual acuity"
+   },
+   "description": "reduced vision in her right eye"
+  },
+  {
+   "type": {
+    "id": "HP:0007401",
+    "label": "Macular atrophy"
+   },
+   "description": "bilateral central atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0011504",
+    "label": "Bull's eye maculopathy"
+   },
+   "description": "features of bull\u2019s eye maculopathy (BEM)"
+  },
+  {
+   "type": {
+    "id": "HP:0030467",
+    "label": "Abnormal pattern electroretinogram"
+   },
+   "description": "pattern electro-retinogram was significantly affected in both eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0030469",
+    "label": "Abnormal dark-adapted electroretinogram"
+   },
+   "description": "rod electro-retinogram (ERG) showed slight increase in implicit times of both \u2018a\u2019 and \u2018b\u2019 waves with significant reduction of the \u2018b\u2019 wave amplitude"
+  },
+  {
+   "type": {
+    "id": "HP:0030454",
+    "label": "Abnormal electrooculogram"
+   },
+   "description": "EOG light rise was borderline reduced in the right eye"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8034119-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8034119-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8034119-1-CRX",
+        "geneContext": {
+         "valueId": "HGNC:2383",
+         "symbol": "CRX"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33836713",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33836713/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

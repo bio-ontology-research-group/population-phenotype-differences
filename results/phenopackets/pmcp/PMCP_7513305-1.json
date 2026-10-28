@@ -1,0 +1,237 @@
+{
+ "id": "PMCP_7513305-1",
+ "subject": {
+  "id": "PMCP_7513305-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P29Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Hispanic"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "29-year-old, nonpregnant, G4P2-0-2-2 Hispanic woman"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Our patient first presented to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "29-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "BRCA1 deleterious gene mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"unilateral dilated subareolar ducts\", \"excluded\": false}, {\"text\": \"thin, circumferential rim-enhancing fluid collection associated with the left implant\", \"excluded\": false}, {\"text\": \"without erythema or evidence of skin lesions\", \"excluded\": true}, {\"text\": \"without proliferative changes, atypia, or neoplasm\", \"excluded\": true}, {\"text\": \"No pathologic evidence of malignancy\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7513305-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:fine s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:6000062",
+    "label": "Abnormal nipple discharge"
+   },
+   "description": "left-sided clear, yellow nipple discharge from a single duct"
+  },
+  {
+   "type": {
+    "id": "HP:0034392",
+    "label": "Joint contracture"
+   },
+   "description": "grade III capsular contracture"
+  },
+  {
+   "type": {
+    "id": "HP:0032408",
+    "label": "Breast mass"
+   },
+   "description": "suspicious 1.2-cm heterogeneous mass"
+  },
+  {
+   "type": {
+    "id": "HP:0009124",
+    "label": "Abnormal adipose tissue morphology"
+   },
+   "description": "area of fat necrosis"
+  },
+  {
+   "type": {
+    "id": "HP:0010783",
+    "label": "Erythema"
+   },
+   "description": "erythematous skin changes noncontiguous with the nipple\u2013areola complex (NAC)"
+  },
+  {
+   "type": {
+    "id": "HP:0012647",
+    "label": "Abnormal inflammatory response"
+   },
+   "description": "chronic inflammatory changes"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7513305-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7513305-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7513305-1-BRCA1",
+        "geneContext": {
+         "valueId": "HGNC:1100",
+         "symbol": "BRCA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32967733",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32967733/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

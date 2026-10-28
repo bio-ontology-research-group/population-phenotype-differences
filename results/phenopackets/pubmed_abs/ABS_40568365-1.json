@@ -1,0 +1,227 @@
+{
+ "id": "ABS_40568365-1",
+ "subject": {
+  "id": "ABS_40568365-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P35Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00003750",
+     "label": "Bangladesh"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Bangladesh"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "35 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Italy"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:antonella m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0030793",
+    "label": "Jaw swelling"
+   },
+   "description": "voluminous right mandibular swelling"
+  },
+  {
+   "type": {
+    "id": "HP:0030792",
+    "label": "Jaw neoplasm"
+   },
+   "description": "nonossifying fibroma of the mandible"
+  },
+  {
+   "type": {
+    "id": "HP:0000802",
+    "label": "Impotence"
+   },
+   "description": "functional impotence"
+  },
+  {
+   "type": {
+    "id": "HP:6000089",
+    "label": "Brown tumor"
+   },
+   "description": "pluri-lobulated cyst-like lesion in the proximal humeral area diagnosed as a brown tumor (BT)"
+  },
+  {
+   "type": {
+    "id": "HP:0003072",
+    "label": "Hypercalcemia"
+   },
+   "description": "hypercalcemia"
+  },
+  {
+   "type": {
+    "id": "HP:0002148",
+    "label": "Hypophosphatemia"
+   },
+   "description": "hypophosphatemia"
+  },
+  {
+   "type": {
+    "id": "HP:0003165",
+    "label": "Elevated circulating parathyroid hormone level"
+   },
+   "description": "high PTH levels"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40568365-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40568365-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40568365-1-CDC73",
+        "geneContext": {
+         "valueId": "HGNC:16783",
+         "symbol": "CDC73"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40568365",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40568365/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

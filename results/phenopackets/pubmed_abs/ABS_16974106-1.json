@@ -1,0 +1,235 @@
+{
+ "id": "ABS_16974106-1",
+ "subject": {
+  "id": "ABS_16974106-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P1Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002928",
+     "label": "Argentina"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "1 year"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Argentina"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:belgorosky a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0033667",
+    "label": "Diminished mental health"
+   },
+   "description": "severe psychological damage"
+  },
+  {
+   "type": {
+    "id": "HP:0031507",
+    "label": "Decreased circulating T4 concentration"
+   },
+   "description": "low serum T4"
+  },
+  {
+   "type": {
+    "id": "HP:0004325",
+    "label": "Decreased body weight"
+   },
+   "description": "weight was low"
+  },
+  {
+   "type": {
+    "id": "HP:0002925",
+    "label": "Elevated circulating thyroid-stimulating hormone concentration"
+   },
+   "description": "serum TSH was mildly elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0011788",
+    "label": "Increased circulating free T3"
+   },
+   "description": "serum T3 and free T3 were high"
+  },
+  {
+   "type": {
+    "id": "HP:0005616",
+    "label": "Accelerated skeletal maturation"
+   },
+   "description": "Bone age was advanced"
+  },
+  {
+   "type": {
+    "id": "HP:0004395",
+    "label": "Malnutrition"
+   },
+   "description": "malnutrition"
+  },
+  {
+   "type": {
+    "id": "HP:0031438",
+    "label": "Abnormal sex hormone-binding globulin level"
+   },
+   "description": "Serum SHBG... was markedly elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0001987",
+    "label": "Hyperammonemia"
+   },
+   "description": "ammonemia... were found to be elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0002151",
+    "label": "Increased circulating lactate concentration"
+   },
+   "description": "lactic acid... were found to be elevated"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_16974106-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_16974106-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_16974106-1-SLC16A2",
+        "geneContext": {
+         "valueId": "HGNC:10923",
+         "symbol": "SLC16A2"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:16974106",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/16974106/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

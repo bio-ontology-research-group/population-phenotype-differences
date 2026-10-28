@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_7857801-1",
+ "subject": {
+  "id": "PMCP_7857801-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P41Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002938",
+     "label": "Belgium"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Our patient showed no clinical features"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "41-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Focal segmental glomerulosclerosis (FSGS) / Collagen IV nephropathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no hypertension or oedema\", \"excluded\": true}, {\"text\": \"no clinical features of Alport syndrome\", \"excluded\": true}, {\"text\": \"did not have any family history of kidney disease\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7857801-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:de scheerder ma"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002907",
+    "label": "Microscopic hematuria"
+   },
+   "description": "microscopic haematuria since childhood"
+  },
+  {
+   "type": {
+    "id": "HP:0000093",
+    "label": "Proteinuria"
+   },
+   "description": "persistent proteinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0012593",
+    "label": "Nephrotic range proteinuria"
+   },
+   "description": "nephrotic-range proteinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0031266",
+    "label": "Podocyte foot process effacement"
+   },
+   "description": "diffuse podocyte foot process effacement (FPE)"
+  },
+  {
+   "type": {
+    "id": "HP:0033282",
+    "label": "Abnormal glomerular basement membrane morphology"
+   },
+   "description": "splitting of the lamina densa"
+  },
+  {
+   "type": {
+    "id": "HP:0003651",
+    "label": "Foam cells"
+   },
+   "description": "Foamy cells were seen"
+  },
+  {
+   "type": {
+    "id": "HP:0000097",
+    "label": "Focal segmental glomerulosclerosis"
+   },
+   "description": "focal segmental glomerulosclerosis (FSGS)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7857801-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7857801-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7857801-1-COL4A3",
+        "geneContext": {
+         "valueId": "HGNC:2204",
+         "symbol": "COL4A3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33564449",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33564449/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

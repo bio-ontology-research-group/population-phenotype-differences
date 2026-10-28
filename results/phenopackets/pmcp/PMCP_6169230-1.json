@@ -1,0 +1,238 @@
+{
+ "id": "PMCP_6169230-1",
+ "subject": {
+  "id": "PMCP_6169230-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P8Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Department of Orthodontics at the Medical Center of the University of G\u00f6ttingen"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Department of Orthodontics at the Medical Center of the University of G\u00f6ttingen"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "8-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Gorlin-Goltz syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"New radiolucencies were detected in the panoramic radiograph associated with the retained teeth 18, 17, 37, 38, and 48 as well as an evident enlargement of the radiolucency around the crown of tooth 13\", \"excluded\": false}, {\"text\": \"no extra- or intraoral pathological findings\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6169230-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kauffmann p"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0034350",
+    "label": "Valvular pulmonary stenosis"
+   },
+   "description": "mild pulmonary valve stenosis"
+  },
+  {
+   "type": {
+    "id": "HP:0001684",
+    "label": "Secundum atrial septal defect"
+   },
+   "description": "secundum atrial septal defect with a left-right shunt"
+  },
+  {
+   "type": {
+    "id": "HP:0000164",
+    "label": "Abnormality of the dentition"
+   },
+   "description": "three suspicious hypomineralisations visible as radiolucencies in the panoramic radiograph associated with the retained teeth 13 and 23 and the ectopic tooth 27"
+  },
+  {
+   "type": {
+    "id": "HP:4000093",
+    "label": "Ectopic tooth eruption"
+   },
+   "description": "ectopic tooth 27"
+  },
+  {
+   "type": {
+    "id": "HP:0006292",
+    "label": "Abnormality of dental eruption"
+   },
+   "description": "retained teeth 13 and 23"
+  },
+  {
+   "type": {
+    "id": "HP:0006321",
+    "label": "Multiple non-erupting secondary teeth"
+   },
+   "description": "retained teeth 18, 17, 37, 38, and 48"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6169230-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6169230-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6169230-1-PTCH1",
+        "geneContext": {
+         "valueId": "HGNC:9585",
+         "symbol": "PTCH1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30327736",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30327736/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

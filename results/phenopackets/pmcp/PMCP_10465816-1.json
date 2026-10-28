@@ -1,0 +1,251 @@
+{
+ "id": "PMCP_10465816-1",
+ "subject": {
+  "id": "PMCP_10465816-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P30Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Chinese"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Patient was a 30-year-old Chinese female"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00003923",
+     "label": "Singapore"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Singapore"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "30-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "congenital LQTS type 2"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal transthoracic echocardiography\", \"excluded\": true}, {\"text\": \"no arrhythmia in 24-hour Holter\", \"excluded\": true}, {\"text\": \"negative treadmill exercise test\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10465816-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:tan cl"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001279",
+    "label": "Syncope"
+   },
+   "description": "recurrent syncope"
+  },
+  {
+   "type": {
+    "id": "HP:0005184",
+    "label": "Prolonged QTc interval"
+   },
+   "description": "QTc was prolonged in electrocardiogram (ECG)"
+  },
+  {
+   "type": {
+    "id": "HP:0002566",
+    "label": "Intestinal malrotation"
+   },
+   "description": "congenital malrotation of gut"
+  },
+  {
+   "type": {
+    "id": "HP:0001082",
+    "label": "Cholecystitis"
+   },
+   "description": "acute cholecystitis"
+  },
+  {
+   "type": {
+    "id": "HP:0001974",
+    "label": "Increased total leukocyte count"
+   },
+   "description": "elevated white blood cell count"
+  },
+  {
+   "type": {
+    "id": "HP:0030151",
+    "label": "Cholangitis"
+   },
+   "description": "acute cholangitis"
+  },
+  {
+   "type": {
+    "id": "HP:0031677",
+    "label": "Polymorphic ventricular tachycardia"
+   },
+   "description": "polymorphic ventricular tachycardia (VT)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10465816-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10465816-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10465816-1-KCNH2",
+        "geneContext": {
+         "valueId": "HGNC:6251",
+         "symbol": "KCNH2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37654919",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37654919/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

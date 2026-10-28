@@ -1,0 +1,245 @@
+{
+ "id": "PMCP_9205732-1",
+ "subject": {
+  "id": "PMCP_9205732-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P4Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "first case to be published from Turkey"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "first case to be published from Turkey"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "4 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "AR agammaglobulinemia (BLNK defect)"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Physical examination was normal on admission\", \"excluded\": true}, {\"text\": \"chest radiography was normal\", \"excluded\": true}, {\"text\": \"no major infectious episodes and autoimmune manifestations were noted up to date\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9205732-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kutukculer n"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002205",
+    "label": "Recurrent respiratory infections"
+   },
+   "description": "recurrent respiratory tract infections"
+  },
+  {
+   "type": {
+    "id": "HP:0004315",
+    "label": "Decreased circulating IgG concentration"
+   },
+   "description": "very low IgG"
+  },
+  {
+   "type": {
+    "id": "HP:0002720",
+    "label": "Decreased circulating IgA concentration"
+   },
+   "description": "very low IgA"
+  },
+  {
+   "type": {
+    "id": "HP:0003496",
+    "label": "Increased circulating IgM level"
+   },
+   "description": "very high IgM levels"
+  },
+  {
+   "type": {
+    "id": "HP:0010976",
+    "label": "Decreased total B cell count"
+   },
+   "description": "very low CD19+ B cells"
+  },
+  {
+   "type": {
+    "id": "HP:0032140",
+    "label": "Decreased specific antibody response to vaccination"
+   },
+   "description": "Specific IgG antibodies against hepatitis A and B vaccines were both undetectable"
+  },
+  {
+   "type": {
+    "id": "HP:0001397",
+    "label": "Hepatic steatosis"
+   },
+   "description": "mild hepatosteatosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9205732-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9205732-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9205732-1-BLNK",
+        "geneContext": {
+         "valueId": "HGNC:14211",
+         "symbol": "BLNK"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35719418",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35719418/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

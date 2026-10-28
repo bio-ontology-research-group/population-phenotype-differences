@@ -1,0 +1,259 @@
+{
+ "id": "PMCP_5688374-1",
+ "subject": {
+  "id": "PMCP_5688374-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P28Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "white"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 28-year-old white male"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented for evaluation"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "28-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Cystic Fibrosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no significant oral or inhaled glucocorticoid use\", \"excluded\": true}, {\"text\": \"tobacco or alcohol use\", \"excluded\": true}, {\"text\": \"other risk factors for low bone density\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5688374-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sicilian l"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004349",
+    "label": "Reduced bone mineral density"
+   },
+   "description": "low bone density"
+  },
+  {
+   "type": {
+    "id": "HP:0000819",
+    "label": "Diabetes mellitus"
+   },
+   "description": "CF-related diabetes (CFRD)"
+  },
+  {
+   "type": {
+    "id": "HP:0001738",
+    "label": "Exocrine pancreatic insufficiency"
+   },
+   "description": "pancreatic insufficiency"
+  },
+  {
+   "type": {
+    "id": "HP:0041159",
+    "label": "Fractured rib"
+   },
+   "description": "possible rib fracture"
+  },
+  {
+   "type": {
+    "id": "HP:0033563",
+    "label": "Anti-tissue transglutaminase antibody positivity"
+   },
+   "description": "elevated anti-tissue transglutaminase (TTG) IgA level of 195.09 U/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0012343",
+    "label": "Decreased circulating ferritin concentration"
+   },
+   "description": "significant iron deficiency with a low ferritin level of 6 ug/L"
+  },
+  {
+   "type": {
+    "id": "HP:0012464",
+    "label": "Decreased transferrin saturation"
+   },
+   "description": "low transferrin saturation of 5%"
+  },
+  {
+   "type": {
+    "id": "HP:0011473",
+    "label": "Villous atrophy"
+   },
+   "description": "villous blunting with intraepithelial lymphocytosis consistent with celiac disease"
+  },
+  {
+   "type": {
+    "id": "HP:0000823",
+    "label": "Delayed puberty"
+   },
+   "description": "delayed puberty",
+   "excluded": true
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5688374-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5688374-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5688374-1-CFTR",
+        "geneContext": {
+         "valueId": "HGNC:1884",
+         "symbol": "CFTR"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29230333",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29230333/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

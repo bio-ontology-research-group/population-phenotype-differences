@@ -1,0 +1,241 @@
+{
+ "id": "ABS_30157810-1",
+ "subject": {
+  "id": "ABS_30157810-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P3Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002729",
+     "label": "Sweden"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "3 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Iraq; Sweden"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:smith cie"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001510",
+    "label": "Growth delay"
+   },
+   "description": "severely growth retarded"
+  },
+  {
+   "type": {
+    "id": "HP:0025015",
+    "label": "Abnormal vascular morphology"
+   },
+   "description": "vascular malformations"
+  },
+  {
+   "type": {
+    "id": "HP:0000964",
+    "label": "Eczematoid dermatitis"
+   },
+   "description": "extensive eczema"
+  },
+  {
+   "type": {
+    "id": "HP:0500093",
+    "label": "Food allergy"
+   },
+   "description": "multiple food-allergies"
+  },
+  {
+   "type": {
+    "id": "HP:0002719",
+    "label": "Recurrent infections"
+   },
+   "description": "prone to infections"
+  },
+  {
+   "type": {
+    "id": "HP:0003212",
+    "label": "Increased circulating IgE concentration"
+   },
+   "description": "high serum-IgE"
+  },
+  {
+   "type": {
+    "id": "HP:0031397",
+    "label": "Decreased naive T cell proportion"
+   },
+   "description": "reduced na\u00efve CD4+ and CD8+ T-cells"
+  },
+  {
+   "type": {
+    "id": "HP:0410395",
+    "label": "Increased effector memory CD8+ T cell proportion"
+   },
+   "description": "increased number of activated effector memory CD8+ T cells"
+  },
+  {
+   "type": {
+    "id": "HP:0011840",
+    "label": "Abnormal T cell physiology"
+   },
+   "description": "aberrant T-cell functions"
+  },
+  {
+   "type": {
+    "id": "HP:0000118",
+    "label": "Phenotypic abnormality"
+   },
+   "description": "multi-organ failure"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_30157810-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_30157810-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_30157810-1-PGM3",
+        "geneContext": {
+         "valueId": "HGNC:8907",
+         "symbol": "PGM3"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30157810",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30157810/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

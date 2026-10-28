@@ -1,0 +1,217 @@
+{
+ "id": "ABS_25111166-1",
+ "subject": {
+  "id": "ABS_25111166-1",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:malloy mj"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0500018",
+    "label": "Abnormal cardiac exercise stress test"
+   },
+   "description": "suggestion of myocardial ischemia on treadmill testing"
+  },
+  {
+   "type": {
+    "id": "HP:0002621",
+    "label": "Atherosclerosis"
+   },
+   "description": "mild atherosclerosis noted on carotid ultrasonography"
+  },
+  {
+   "type": {
+    "id": "HP:0003124",
+    "label": "Hypercholesterolemia"
+   },
+   "description": "exceptionally high cholesterol content (760 mg/dL; to convert to millimoles per liter, multiply by 0.0259)"
+  },
+  {
+   "type": {
+    "id": "HP:0010979",
+    "label": "Abnormality of lipoprotein cholesterol concentration"
+   },
+   "description": "high cholesterol to triglycerides ratio (1.52) in very low-density lipoproteins"
+  },
+  {
+   "type": {
+    "id": "HP:0012184",
+    "label": "Increased HDL cholesterol concentration"
+   },
+   "description": "elevated levels of small-diameter high-density lipoproteins, including high levels of prebeta-1 high-density lipoprotein"
+  },
+  {
+   "type": {
+    "id": "HP:0025201",
+    "label": "Abnormal circulating apolipoprotein concentration"
+   },
+   "description": "Intermediate-density lipoproteins, low-density lipoproteins, and very low-density lipoproteins contained elevated apoA-I and apoA-IV levels"
+  },
+  {
+   "type": {
+    "id": "HP:0033459",
+    "label": "Decreased circulating apolipoprotein concentration"
+   },
+   "description": "The patient's apoC-III and apoC-IV levels were decreased in very low-density lipoproteins"
+  },
+  {
+   "type": {
+    "id": "HP:0032245",
+    "label": "Abnormal metabolism"
+   },
+   "description": "Electron microscopy revealed large lamellar particles having electron-opaque cores attached to electron-lucent zones in intermediate-density and low-density lipoproteins"
+  },
+  {
+   "type": {
+    "id": "HP:0003119",
+    "label": "Abnormal circulating lipid concentration"
+   },
+   "description": "Low-density lipoprotein particle diameters were distributed bimodally"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_25111166-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_25111166-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_25111166-1-APOE",
+        "geneContext": {
+         "valueId": "HGNC:613",
+         "symbol": "APOE"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25111166",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25111166/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

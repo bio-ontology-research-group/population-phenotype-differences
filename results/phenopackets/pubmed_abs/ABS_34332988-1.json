@@ -1,0 +1,227 @@
+{
+ "id": "ABS_34332988-1",
+ "subject": {
+  "id": "ABS_34332988-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P16Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "16 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "second week of her birth"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:gong l"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001046",
+    "label": "Intermittent jaundice"
+   },
+   "description": "recurrent jaundice"
+  },
+  {
+   "type": {
+    "id": "HP:0002910",
+    "label": "Elevated circulating hepatic transaminase concentration"
+   },
+   "description": "abnormal liver function"
+  },
+  {
+   "type": {
+    "id": "HP:0003316",
+    "label": "Butterfly vertebrae"
+   },
+   "description": "butterfly vertebrae"
+  },
+  {
+   "type": {
+    "id": "HP:0011220",
+    "label": "Prominent forehead"
+   },
+   "description": "prominent forehead"
+  },
+  {
+   "type": {
+    "id": "HP:0000490",
+    "label": "Deeply set eye"
+   },
+   "description": "deep-set eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0000307",
+    "label": "Pointed chin"
+   },
+   "description": "pointed chin"
+  },
+  {
+   "type": {
+    "id": "HP:0000414",
+    "label": "Bulbous nose"
+   },
+   "description": "straight nose with bulbous tip"
+  },
+  {
+   "type": {
+    "id": "HP:0001395",
+    "label": "Hepatic fibrosis"
+   },
+   "description": "disorder liver structure with cholestasis and fibrosis in portal area"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_34332988-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_34332988-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_34332988-1-NOTCH2",
+        "geneContext": {
+         "valueId": "HGNC:7882",
+         "symbol": "NOTCH2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34332988",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34332988/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

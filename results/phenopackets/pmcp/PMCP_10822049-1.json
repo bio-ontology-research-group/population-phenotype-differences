@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_10822049-1",
+ "subject": {
+  "id": "PMCP_10822049-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P26Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "26-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Osteoporotic Burst Fracture in a Young Male Adult as First Presentation of a Rare PLS3 Mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"pullout of one screw\", \"excluded\": false}, {\"text\": \"neurologically intact\", \"excluded\": true}, {\"text\": \"no concomitant injuries\", \"excluded\": true}, {\"text\": \"no chronic disease\", \"excluded\": true}, {\"text\": \"no medication use\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10822049-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:vitoula k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0041168",
+    "label": "Fractured lumbar vertebra"
+   },
+   "description": "burst fracture of the L1 vertebral body"
+  },
+  {
+   "type": {
+    "id": "HP:0003978",
+    "label": "Fractured radius"
+   },
+   "description": "diaphyseal fractures of both radius bones"
+  },
+  {
+   "type": {
+    "id": "HP:0005619",
+    "label": "Thoracolumbar kyphosis"
+   },
+   "description": "severe local kyphosis (30\u00b0 kyphosis at the thoracolumbar junction)"
+  },
+  {
+   "type": {
+    "id": "HP:0003468",
+    "label": "Abnormal vertebral morphology"
+   },
+   "description": "significant loss of vertebral body height (exceeding 50%)"
+  },
+  {
+   "type": {
+    "id": "HP:0004349",
+    "label": "Reduced bone mineral density"
+   },
+   "description": "BMD result was 0.748 gr/cm2 (Z-score: -3.7) at the lumbar spine"
+  },
+  {
+   "type": {
+    "id": "HP:0031163",
+    "label": "Low femoral bone density"
+   },
+   "description": "BMD result was 1.665 gr/cm2 (Z-score: -2.9) at the femoral neck"
+  },
+  {
+   "type": {
+    "id": "HP:0002808",
+    "label": "Kyphosis"
+   },
+   "description": "residual kyphosis of 10\u00b0"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10822049-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10822049-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10822049-1-PLS3",
+        "geneContext": {
+         "valueId": "HGNC:9091",
+         "symbol": "PLS3"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38283430",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38283430/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

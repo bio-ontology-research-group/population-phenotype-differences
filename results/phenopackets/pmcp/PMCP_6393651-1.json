@@ -1,0 +1,237 @@
+{
+ "id": "PMCP_6393651-1",
+ "subject": {
+  "id": "PMCP_6393651-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0011463",
+    "label": "Childhood onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "Germany, Morocco"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "German maternal and Moroccan paternal descent"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "two siblings of German maternal and Moroccan paternal descent"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Germany"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "8 years and 5 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Cystic Fibrosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"fewer episodes of airway infections\", \"excluded\": false}, {\"text\": \"responses of the specimens of the elder sibling were in the CF range below the lowermost value ever measured\", \"excluded\": false}, {\"text\": \"fourfold lower amounts of complex glycosylated CFTR\", \"excluded\": false}, {\"text\": \"Spirometry is normal for age in both siblings\", \"excluded\": true}, {\"text\": \"never for S. aureus\", \"excluded\": true}, {\"text\": \"normal chloride secretory responses to forskolin/IBMX\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6393651-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:t\u00fcmmler b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002837",
+    "label": "Recurrent bronchitis"
+   },
+   "description": "recurrent episodes of obstructive bronchitis"
+  },
+  {
+   "type": {
+    "id": "HP:0002205",
+    "label": "Recurrent respiratory infections"
+   },
+   "description": "recurrent detection of Staphylococcus aureus and of Haemophilus influenzae in respiratory specimens"
+  },
+  {
+   "type": {
+    "id": "HP:0005376",
+    "label": "Recurrent Haemophilus influenzae infections"
+   },
+   "description": "Throat swabs were repeatedly positive for H. influenzae"
+  },
+  {
+   "type": {
+    "id": "HP:0030878",
+    "label": "Abnormality on pulmonary function testing"
+   },
+   "description": "slightly elevated lung clearance indices of 8.0 and 7.8"
+  },
+  {
+   "type": {
+    "id": "HP:0040128",
+    "label": "Abnormal sweat electrolytes"
+   },
+   "description": "Chloride levels in sweat tests were in the lower intermediate range between 40 and 45 mmol/L"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6393651-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6393651-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6393651-1-CFTR",
+        "geneContext": {
+         "valueId": "HGNC:1884",
+         "symbol": "CFTR"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30600599",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30600599/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

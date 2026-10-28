@@ -1,0 +1,258 @@
+{
+ "id": "PMCP_10903170-1",
+ "subject": {
+  "id": "PMCP_10903170-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P54Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00003902",
+     "label": "Malaysia"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Malay"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "This 54-year-old Malay woman"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00003902",
+     "label": "Malaysia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "not currently reimbursed by the government health financing system in Malaysia"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "54"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "heterozygous familial hypercholesterolaemia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"There was no tendon xanthoma\", \"excluded\": true}, {\"text\": \"no history of hypertension\", \"excluded\": true}, {\"text\": \"no history of cerebrovascular disease\", \"excluded\": true}, {\"text\": \"Edinburgh Claudication Questionnaire was negative for peripheral vascular disease (PVD)\", \"excluded\": true}, {\"text\": \"no history of chronic kidney disease\", \"excluded\": true}, {\"text\": \"no history of diabetes\", \"excluded\": true}, {\"text\": \"no history of hypothyroidism\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10903170-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:ramli as"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003124",
+    "label": "Hypercholesterolemia"
+   },
+   "description": "hypercholesterolaemia"
+  },
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "retrosternal chest pain during exertion"
+  },
+  {
+   "type": {
+    "id": "HP:0001681",
+    "label": "Angina pectoris"
+   },
+   "description": "WHO Rose Angina Questionnaire was positive"
+  },
+  {
+   "type": {
+    "id": "HP:0005181",
+    "label": "Premature coronary artery atherosclerosis"
+   },
+   "description": "premature coronary artery disease"
+  },
+  {
+   "type": {
+    "id": "HP:0005145",
+    "label": "Coronary artery stenosis"
+   },
+   "description": "80% blocked left circumflex artery and obtuse marginal arteries"
+  },
+  {
+   "type": {
+    "id": "HP:0025500",
+    "label": "Class II obesity"
+   },
+   "description": "obese, with a body mass index of 38.4 kg/m2"
+  },
+  {
+   "type": {
+    "id": "HP:0001084",
+    "label": "Corneal arcus"
+   },
+   "description": "Bilateral grade 2 corneal arcus"
+  },
+  {
+   "type": {
+    "id": "HP:0003141",
+    "label": "Increased LDL cholesterol concentration"
+   },
+   "description": "highest LDL-c level was 8.0 mmol/L"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10903170-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10903170-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10903170-1-LDLR",
+        "geneContext": {
+         "valueId": "HGNC:6547",
+         "symbol": "LDLR"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38425725",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38425725/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

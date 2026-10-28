@@ -1,0 +1,249 @@
+{
+ "id": "ABS_40226226-1",
+ "subject": {
+  "id": "ABS_40226226-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "birth"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003623",
+      "label": "Neonatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:alkhayyal ma"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "local_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001097",
+    "label": "Keratoconjunctivitis sicca"
+   },
+   "description": "severe dry eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0000613",
+    "label": "Photophobia"
+   },
+   "description": "photophobia"
+  },
+  {
+   "type": {
+    "id": "HP:0000522",
+    "label": "Alacrima"
+   },
+   "description": "no tears since birth in both eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0000501",
+    "label": "Glaucoma"
+   },
+   "description": "secondary glaucoma"
+  },
+  {
+   "type": {
+    "id": "HP:0007750",
+    "label": "Hypoplasia of the fovea"
+   },
+   "description": "foveal hypoplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0000491",
+    "label": "Keratitis"
+   },
+   "description": "aniridia-associated keratopathy"
+  },
+  {
+   "type": {
+    "id": "HP:0007656",
+    "label": "Lacrimal gland aplasia"
+   },
+   "description": "absence of lacrimal gland"
+  },
+  {
+   "type": {
+    "id": "HP:0007732",
+    "label": "Lacrimal gland hypoplasia"
+   },
+   "description": "lacrimal gland hypoplasia of the right eye"
+  },
+  {
+   "type": {
+    "id": "HP:0011859",
+    "label": "Punctate keratitis"
+   },
+   "description": "bilateral superficial punctate keratitis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40226226-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40226226-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40226226-1-PAX6",
+        "geneContext": {
+         "valueId": "HGNC:8620",
+         "symbol": "PAX6"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40226226",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40226226/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

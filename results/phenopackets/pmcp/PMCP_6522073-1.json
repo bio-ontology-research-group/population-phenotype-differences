@@ -1,0 +1,168 @@
+{
+ "id": "PMCP_6522073-1",
+ "subject": {
+  "id": "PMCP_6522073-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P32Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "32"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Charcot\u2013Marie\u2013Tooth disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"mobility and balance difficulties\", \"excluded\": false}, {\"text\": \"significant problems with fine motor activity of both hands\", \"excluded\": false}, {\"text\": \"hoarse\", \"excluded\": false}, {\"text\": \"shortness of breath after speaking for several minutes\", \"excluded\": false}, {\"text\": \"weakness in biceps and triceps muscles in her upper extremities\", \"excluded\": false}, {\"text\": \"no movements in her intrinsic hand muscles, wrist extensors or wrist flexors\", \"excluded\": false}, {\"text\": \"trace movements of her hamstrings\", \"excluded\": false}, {\"text\": \"no movements of her quadriceps, anterior tibialis, gastrocnemius or intrinsic foot muscles\", \"excluded\": false}, {\"text\": \"mild decrease to pin prick on her right great toe\", \"excluded\": false}, {\"text\": \"unable to detect vibration with a Rydell tuning fork at her toes, ankles, knees and fingers\", \"excluded\": false}, {\"text\": \"Joint position was absent at her toes and left ankle, and reduced at both knees\", \"excluded\": false}, {\"text\": \"Compound muscle action potential (CMAP) and sensory nerve action potential (SNAP) amplitudes were unobtainable\", \"excluded\": false}, {\"text\": \"normal early developmental milestones\", \"excluded\": true}, {\"text\": \"Small fiber sensory modalities, such as pin prick or light touch, are essentially normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6522073-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:giacomello m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001605",
+    "label": "Vocal cord paralysis"
+   },
+   "description": "vocal cord paralysis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6522073-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6522073-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:16877",
+       "symbol": "MFN2"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30649465",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30649465/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

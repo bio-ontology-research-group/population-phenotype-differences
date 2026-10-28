@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_9512129-1",
+ "subject": {
+  "id": "PMCP_9512129-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P35Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "35-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "inherited hypofibrinogenemia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no clinical evidence for a coagulation defect with increased bleeding tendency\", \"excluded\": true}, {\"text\": \"normal menstrual bleeding\", \"excluded\": true}, {\"text\": \"absence of epistaxis\", \"excluded\": true}, {\"text\": \"abnormal bruising or hematoma\", \"excluded\": true}, {\"text\": \"no perioperative bleeding complications\", \"excluded\": true}, {\"text\": \"no abnormal bleeding in association with the miscarriages\", \"excluded\": true}, {\"text\": \"did not have a history of thrombotic or thromboembolic events\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9512129-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:zawislak b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0200067",
+    "label": "Recurrent spontaneous abortion"
+   },
+   "description": "recurrent miscarriages"
+  },
+  {
+   "type": {
+    "id": "HP:0025502",
+    "label": "Overweight"
+   },
+   "description": "overweight (1.63m; 101 kg)"
+  },
+  {
+   "type": {
+    "id": "HP:0011900",
+    "label": "Hypofibrinogenemia"
+   },
+   "description": "slight reduction of quick-derived fibrinogen to 165 mg/dl"
+  },
+  {
+   "type": {
+    "id": "HP:0001928",
+    "label": "Abnormality of coagulation"
+   },
+   "description": "thrombin time was slightly prolonged with 17.6 seconds"
+  },
+  {
+   "type": {
+    "id": "HP:0034263",
+    "label": "Abnormal vaginal bleeding"
+   },
+   "description": "slight vaginal bleeding"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9512129-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9512129-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9512129-1-FGB",
+        "geneContext": {
+         "valueId": "HGNC:3662",
+         "symbol": "FGB"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36176499",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36176499/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

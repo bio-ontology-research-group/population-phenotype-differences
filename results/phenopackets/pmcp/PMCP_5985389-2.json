@@ -1,0 +1,233 @@
+{
+ "id": "PMCP_5985389-2",
+ "subject": {
+  "id": "PMCP_5985389-2",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Both patients are being followed up according to the recommended pediatric screening protocol"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 year old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "von Hippel-Lindau disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5985389-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:evliyao\u011flu o"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001954",
+    "label": "Recurrent fever"
+   },
+   "description": "intermittent fever"
+  },
+  {
+   "type": {
+    "id": "HP:0032263",
+    "label": "Increased blood pressure"
+   },
+   "description": "blood pressure level of 160/100 mmHg"
+  },
+  {
+   "type": {
+    "id": "HP:0001649",
+    "label": "Tachycardia"
+   },
+   "description": "heart rate of 110 beats per minute"
+  },
+  {
+   "type": {
+    "id": "HP:0011978",
+    "label": "Elevated urinary vanillylmandelic acid"
+   },
+   "description": "elevated 24 h urinary VMA level of 83 mg/day"
+  },
+  {
+   "type": {
+    "id": "HP:0034880",
+    "label": "Adrenal mass"
+   },
+   "description": "44x33 mm, well circumscribed mass with a necrotic core in the left adrenal gland"
+  },
+  {
+   "type": {
+    "id": "HP:0002666",
+    "label": "Pheochromocytoma"
+   },
+   "description": "tumor was PCC"
+  },
+  {
+   "type": {
+    "id": "HP:6000409",
+    "label": "Pancreatic mass"
+   },
+   "description": "11x10 mm nodular lesion in the corpus of the pancreas"
+  },
+  {
+   "type": {
+    "id": "HP:0002894",
+    "label": "Neoplasm of the pancreas"
+   },
+   "description": "diagnosis of PCC and PNET"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5985389-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5985389-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5985389-2-VHL",
+        "geneContext": {
+         "valueId": "HGNC:12687",
+         "symbol": "VHL"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29022557",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29022557/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

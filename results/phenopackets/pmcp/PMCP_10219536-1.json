@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_10219536-1",
+ "subject": {
+  "id": "PMCP_10219536-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P50Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002951",
+     "label": "Romania"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "sent to our clinical department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "50-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "HNDC, superimposed with LVNC"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal coronary arteries\", \"excluded\": true}, {\"text\": \"no arrhythmic events or conduction disturbances\", \"excluded\": true}, {\"text\": \"no signs of myocardial edema\", \"excluded\": true}, {\"text\": \"LGE images were unequivocal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10219536-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:donoiu i"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "grade 2 arterial hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0003119",
+    "label": "Abnormal circulating lipid concentration"
+   },
+   "description": "dyslipidemia"
+  },
+  {
+   "type": {
+    "id": "HP:0025169",
+    "label": "Left ventricular systolic dysfunction"
+   },
+   "description": "diffuse mildLV hypokinesia and systolic dysfunction"
+  },
+  {
+   "type": {
+    "id": "HP:0012664",
+    "label": "Reduced left ventricular ejection fraction"
+   },
+   "description": "3DE LV ejection fraction (LVEF) of 42%"
+  },
+  {
+   "type": {
+    "id": "HP:0005162",
+    "label": "Abnormal left ventricular function"
+   },
+   "description": "LV global longitudinal strain (LVGLS) was also reduced, with a value of \u221214.5%"
+  },
+  {
+   "type": {
+    "id": "HP:0011995",
+    "label": "Atrial septal dilatation"
+   },
+   "description": "interatrial septum aneurysm"
+  },
+  {
+   "type": {
+    "id": "HP:0030682",
+    "label": "Left ventricular noncompaction"
+   },
+   "description": "apical LV hypertrabeculation, meeting the criteria for LV non-compaction"
+  },
+  {
+   "type": {
+    "id": "HP:0002375",
+    "label": "Hypokinesia"
+   },
+   "description": "discrete generalized hypokinesia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10219536-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10219536-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10219536-1-TTN",
+        "geneContext": {
+         "valueId": "HGNC:12403",
+         "symbol": "TTN"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37240911",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37240911/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

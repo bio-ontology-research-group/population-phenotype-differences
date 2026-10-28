@@ -1,0 +1,251 @@
+{
+ "id": "PMCP_9052997-1",
+ "subject": {
+  "id": "PMCP_9052997-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P48Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 48-year-old Caucasian female"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "initially presented at an outpatient setting"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "48-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "pulmonary artery hypertension"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"lightheadedness with exertion\", \"excluded\": false}, {\"text\": \"no response to vasoreactivity testing\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9052997-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sahay s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002875",
+    "label": "Exertional dyspnea"
+   },
+   "description": "shortness of breath and exertional dyspnea"
+  },
+  {
+   "type": {
+    "id": "HP:6000013",
+    "label": "Bendopnea"
+   },
+   "description": "dyspnea when bending down"
+  },
+  {
+   "type": {
+    "id": "HP:0012398",
+    "label": "Peripheral edema"
+   },
+   "description": "swelling of her hands and legs"
+  },
+  {
+   "type": {
+    "id": "HP:0005133",
+    "label": "Right ventricular dilatation"
+   },
+   "description": "moderately enlarged right ventricular (RV) with impaired function"
+  },
+  {
+   "type": {
+    "id": "HP:0033119",
+    "label": "Elevated right ventricular systolic pressure"
+   },
+   "description": "RV systolic pressure ~50 mmHg"
+  },
+  {
+   "type": {
+    "id": "HP:0004890",
+    "label": "Elevated pulmonary artery pressure"
+   },
+   "description": "pulmonary artery pressure (PAP) 87/47/54 mmHg"
+  },
+  {
+   "type": {
+    "id": "HP:0005317",
+    "label": "Increased pulmonary vascular resistance"
+   },
+   "description": "pulmonary vascular resistance (PVR) 14 Wood units"
+  },
+  {
+   "type": {
+    "id": "HP:0033534",
+    "label": "Increased circulating brain natriuretic peptide concentration"
+   },
+   "description": "B-type natriuretic peptide was 214 pg/ml"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9052997-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9052997-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9052997-1-NOTCH3",
+        "geneContext": {
+         "valueId": "HGNC:7883",
+         "symbol": "NOTCH3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35506080",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35506080/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

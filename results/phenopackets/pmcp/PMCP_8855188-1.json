@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_8855188-1",
+ "subject": {
+  "id": "PMCP_8855188-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our department for further treatment"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "five-day-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "ornithine transcarbamylase deficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no movement or responsiveness\", \"excluded\": false}, {\"text\": \"low birth weight infant\", \"excluded\": false}, {\"text\": \"abnormal increase in muscle tone\", \"excluded\": false}, {\"text\": \"moaning\", \"excluded\": false}, {\"text\": \"foaming at the mouth\", \"excluded\": false}, {\"text\": \"screaming\", \"excluded\": false}, {\"text\": \"pumping\", \"excluded\": false}, {\"text\": \"blood in the stool\", \"excluded\": false}, {\"text\": \"low body temperature (35 \u00b0C)\", \"excluded\": false}, {\"text\": \"low blood pressure (35/15 mmHg)\", \"excluded\": false}, {\"text\": \"bradycardia (97/min)\", \"excluded\": false}, {\"text\": \"lack of spontaneous breathing\", \"excluded\": false}, {\"text\": \"final blood glucose level of the patient was 2.6 mmol/L\", \"excluded\": false}, {\"text\": \"high blood ammonia [461.0 \u03bcmol/L (ref: 18\u201372)]\", \"excluded\": false}, {\"text\": \"high lactic acid [10.80 mmo1/L (ref: 1.06\u20132.09)]\", \"excluded\": false}, {\"text\": \"high homocysteine [29.21 \u03bcmol/L (ref: < 15)]\", \"excluded\": false}, {\"text\": \"no meconium-stained amniotic fluid\", \"excluded\": true}, {\"text\": \"no abnormalities in the umbilical cord\", \"excluded\": true}, {\"text\": \"no premature rupture of membranes\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8855188-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chen j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0008872",
+    "label": "Feeding difficulties in infancy"
+   },
+   "description": "did not feed"
+  },
+  {
+   "type": {
+    "id": "HP:0002239",
+    "label": "Gastrointestinal hemorrhage"
+   },
+   "description": "gastrointestinal bleeding"
+  },
+  {
+   "type": {
+    "id": "HP:0002094",
+    "label": "Dyspnea"
+   },
+   "description": "shortness of breath"
+  },
+  {
+   "type": {
+    "id": "HP:0002013",
+    "label": "Vomiting"
+   },
+   "description": "vomiting"
+  },
+  {
+   "type": {
+    "id": "HP:0003270",
+    "label": "Abdominal distention"
+   },
+   "description": "abdominal distention"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8855188-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8855188-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8855188-1-OTC",
+        "geneContext": {
+         "valueId": "HGNC:8512",
+         "symbol": "OTC"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35211578",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35211578/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

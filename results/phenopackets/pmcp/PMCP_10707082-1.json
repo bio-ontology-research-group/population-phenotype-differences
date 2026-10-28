@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_10707082-1",
+ "subject": {
+  "id": "PMCP_10707082-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P8Y6M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002951",
+     "label": "Romania"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "visited the clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "8-years- and 6-month-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "severe Haemophilia A"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without any dysmorphic features\", \"excluded\": true}, {\"text\": \"no occurrences of muscular, soft tissue, or joint bleeding\", \"excluded\": true}, {\"text\": \"remained without other phenotypic, neurocognitive, organic, metabolic, or autoimmune alterations\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10707082-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:arghirescu ts"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003645",
+    "label": "Prolonged partial thromboplastin time"
+   },
+   "description": "abnormal hemostatic parameters (activated partial thromboplastin time (aPTT) of 52 s)"
+  },
+  {
+   "type": {
+    "id": "HP:0006298",
+    "label": "Prolonged bleeding after dental extraction"
+   },
+   "description": "prolonged post-dental extraction bleeding"
+  },
+  {
+   "type": {
+    "id": "HP:0004322",
+    "label": "Short stature"
+   },
+   "description": "height of 118 cm (percentile 5, N-126.7 \u00b1 5.8 cm)"
+  },
+  {
+   "type": {
+    "id": "HP:0025573",
+    "label": "Mild myopia"
+   },
+   "description": "mild myopia in both eyes (\u22120.75)"
+  },
+  {
+   "type": {
+    "id": "HP:0003125",
+    "label": "Reduced factor VIII activity"
+   },
+   "description": "FVIII repeatedly <1% (N = 70\u2013150%)"
+  },
+  {
+   "type": {
+    "id": "HP:0008330",
+    "label": "Reduced von Willebrand factor activity"
+   },
+   "description": "factor von Willebrand activity\u201448.4% (N = 50\u2013150%)"
+  },
+  {
+   "type": {
+    "id": "HP:0012147",
+    "label": "Reduced quantity of Von Willebrand factor"
+   },
+   "description": "von Willebrand antigen\u201446.5% (N = 50\u2013150%)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10707082-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10707082-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10707082-1-F8",
+        "geneContext": {
+         "valueId": "HGNC:3546",
+         "symbol": "F8"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38068488",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38068488/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

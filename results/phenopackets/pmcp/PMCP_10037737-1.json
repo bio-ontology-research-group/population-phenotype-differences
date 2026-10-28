@@ -1,0 +1,223 @@
+{
+ "id": "PMCP_10037737-1",
+ "subject": {
+  "id": "PMCP_10037737-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P40Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): China"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "40-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "PHEO and concurrent POZ"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"negative chromogranin A\", \"excluded\": false}, {\"text\": \"no abnormalities were observed on physical examination\", \"excluded\": true}, {\"text\": \"blood pressure and heart rate were within the normal range\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10037737-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cui h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001962",
+    "label": "Palpitations"
+   },
+   "description": "sporadic episodes of palpitations"
+  },
+  {
+   "type": {
+    "id": "HP:0000975",
+    "label": "Hyperhidrosis"
+   },
+   "description": "intermittent diaphoresis"
+  },
+  {
+   "type": {
+    "id": "HP:0003334",
+    "label": "Elevated circulating catecholamine level"
+   },
+   "description": "serum and urinary catecholamines were elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0034880",
+    "label": "Adrenal mass"
+   },
+   "description": "rounded mass (5.14 cm \u00d7 4.31 cm) in the right adrenal gland"
+  },
+  {
+   "type": {
+    "id": "HP:6000285",
+    "label": "Retroperitoneal mass"
+   },
+   "description": "irregularly shaped mass (7.55 cm \u00d7 4.71 cm) at the umbilical level between the retroperitoneal inferior vena cava and the abdominal aorta"
+  },
+  {
+   "type": {
+    "id": "HP:0020162",
+    "label": "Abnormal neoplastic cell morphology"
+   },
+   "description": "tumor cells were round or polygonal with abundant cytoplasm"
+  },
+  {
+   "type": {
+    "id": "HP:0034792",
+    "label": "Decreased muscle succinate dehydrogenase staining"
+   },
+   "description": "loss of succinate dehydrogenase subunit B (SDHB) protein expression"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10037737-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10037737-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:10681",
+       "symbol": "SDHB"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36950957",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36950957/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

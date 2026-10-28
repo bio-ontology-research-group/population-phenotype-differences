@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_4895955-1",
+ "subject": {
+  "id": "PMCP_4895955-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P24Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002941",
+     "label": "Switzerland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to our clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "24-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Buschke-Ollendorff syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no dysmorphic features\", \"excluded\": true}, {\"text\": \"No skin lesions were detected\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4895955-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:gruenert j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0009603",
+    "label": "Deviation of the thumb"
+   },
+   "description": "painless and slowly progressive radial abduction of his right thumb"
+  },
+  {
+   "type": {
+    "id": "HP:0033466",
+    "label": "Weak grip"
+   },
+   "description": "affecting grip and pretension"
+  },
+  {
+   "type": {
+    "id": "HP:0046505",
+    "label": "Hand pain"
+   },
+   "description": "discomfort while working at the computer"
+  },
+  {
+   "type": {
+    "id": "HP:0100898",
+    "label": "Connective tissue nevi"
+   },
+   "description": "sclerotic skin lesions over the radial aspect of the distal third of the first metacarpal bone"
+  },
+  {
+   "type": {
+    "id": "HP:0100699",
+    "label": "Scarring"
+   },
+   "description": "scar of previous operation over the radial aspect of the base of the thumb"
+  },
+  {
+   "type": {
+    "id": "HP:0010739",
+    "label": "Osteopoikilosis"
+   },
+   "description": "spotted pattern with multiple circular or ovoid sclerotic lesions, consistent with osteopoikilosis"
+  },
+  {
+   "type": {
+    "id": "HP:0009485",
+    "label": "Radial deviation of the hand or of fingers of the hand"
+   },
+   "description": "Growth disturbance during childhood led to radial deviation in the IP and MP joints"
+  },
+  {
+   "type": {
+    "id": "HP:0005652",
+    "label": "Cortical sclerosis"
+   },
+   "description": "cortical bone appeared highly sclerotic and thickened"
+  },
+  {
+   "type": {
+    "id": "HP:0200036",
+    "label": "Skin nodule"
+   },
+   "description": "white nodule in the dermis"
+  },
+  {
+   "type": {
+    "id": "HP:0100039",
+    "label": "Thickened cortex of bones"
+   },
+   "description": "nodular thickening of the cortical bone"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4895955-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4895955-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4895955-1-LEMD3",
+        "geneContext": {
+         "valueId": "HGNC:28887",
+         "symbol": "LEMD3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27267960",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27267960/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

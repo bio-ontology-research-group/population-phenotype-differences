@@ -1,0 +1,250 @@
+{
+ "id": "PMCP_3234058-1",
+ "subject": {
+  "id": "PMCP_3234058-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P52Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "Norway, England"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Norwegian-English"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "light-skinned woman of Norwegian-English extraction"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the National Cancer Institute"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "52-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Stage IIb fallopian tube cancer"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no excess exposure to sunlight or artificial ultraviolet light\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3234058-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:muggia f"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0030394",
+    "label": "Fallopian tube carcinoma"
+   },
+   "description": "Stage IIb fallopian tube cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0001045",
+    "label": "Vitiligo"
+   },
+   "description": "vitiligo"
+  },
+  {
+   "type": {
+    "id": "HP:0012531",
+    "label": "Pain"
+   },
+   "description": "discomfort in all pre-existing areas of vitiligo"
+  },
+  {
+   "type": {
+    "id": "HP:0200042",
+    "label": "Skin ulcer"
+   },
+   "description": "deeply erythematous with superficial ulcerations"
+  },
+  {
+   "type": {
+    "id": "HP:0000953",
+    "label": "Hyperpigmentation of the skin"
+   },
+   "description": "surrounding areas became deeply hyperpigmented"
+  },
+  {
+   "type": {
+    "id": "HP:0002012",
+    "label": "Abnormality of the abdominal organs"
+   },
+   "description": "progression of disease in the liver, spleen and pelvic areas"
+  },
+  {
+   "type": {
+    "id": "HP:0002896",
+    "label": "Neoplasm of the liver"
+   },
+   "description": "liver metastases became apparent"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3234058-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3234058-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3234058-1-BRCA1",
+        "geneContext": {
+         "valueId": "HGNC:1100",
+         "symbol": "BRCA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22275986",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22275986/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

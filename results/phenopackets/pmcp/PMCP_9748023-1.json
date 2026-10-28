@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9748023-1",
+ "subject": {
+  "id": "PMCP_9748023-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P29Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00003744",
+     "label": "Thailand"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Patient 1... presented with reduced night vision"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "29 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "retinitis pigmentosa"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"thickening of subfoveal Haller\u2019s layer\", \"excluded\": false}, {\"text\": \"normal colour vision\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9748023-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:atchaneeyasakul lo"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000662",
+    "label": "Nyctalopia"
+   },
+   "description": "reduced night vision"
+  },
+  {
+   "type": {
+    "id": "HP:0001133",
+    "label": "Constriction of peripheral visual field"
+   },
+   "description": "constricted VF"
+  },
+  {
+   "type": {
+    "id": "HP:0000550",
+    "label": "Undetectable electroretinogram"
+   },
+   "description": "non-recordable ERG"
+  },
+  {
+   "type": {
+    "id": "HP:0007737",
+    "label": "Spicular pigmentation of the retina"
+   },
+   "description": "hyperpigmentation along the retinal vessels"
+  },
+  {
+   "type": {
+    "id": "HP:0007722",
+    "label": "Retinal pigment epithelial atrophy"
+   },
+   "description": "RPE atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0030614",
+    "label": "Foveal photoreceptor layer loss on macular OCT"
+   },
+   "description": "loss of ellipsoid zone except at the central fovea"
+  },
+  {
+   "type": {
+    "id": "HP:6000367",
+    "label": "Central thinning of the outer nuclear layer of the retina"
+   },
+   "description": "thinning of outer nuclear layer"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9748023-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9748023-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9748023-1-EYS",
+        "geneContext": {
+         "valueId": "HGNC:21555",
+         "symbol": "EYS"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36513702",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36513702/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

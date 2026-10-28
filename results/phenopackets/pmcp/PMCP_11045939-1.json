@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_11045939-1",
+ "subject": {
+  "id": "PMCP_11045939-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P34Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): China"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "34-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "TAP1 deficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no palpable enlargement of nearby superficial lymph nodes was detected\", \"excluded\": true}, {\"text\": \"no other abnormalities were found\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "11045939-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lin n"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0200035",
+    "label": "Skin plaque"
+   },
+   "description": "non-painful plaques affecting her right leg"
+  },
+  {
+   "type": {
+    "id": "HP:0200042",
+    "label": "Skin ulcer"
+   },
+   "description": "recurrently progressed to ulceration and crusting"
+  },
+  {
+   "type": {
+    "id": "HP:0025474",
+    "label": "Erythematous plaque"
+   },
+   "description": "dark red plaques distributed across the right lower extremity"
+  },
+  {
+   "type": {
+    "id": "HP:0005403",
+    "label": "Decreased total T cell count"
+   },
+   "description": "decreased count of CD3+ T cells (499.48 cells/\u00b5l)"
+  },
+  {
+   "type": {
+    "id": "HP:0040218",
+    "label": "Reduced total natural killer cell count"
+   },
+   "description": "decreased count of ... NK cells (69.52 cells/\u00b5l)"
+  },
+  {
+   "type": {
+    "id": "HP:0002955",
+    "label": "Granulomatosis"
+   },
+   "description": "dense granulomatous inflammation with variable lymphocytic infiltration"
+  },
+  {
+   "type": {
+    "id": "HP:0032252",
+    "label": "Granuloma"
+   },
+   "description": "palisaded, sarcoidal, and suppurative nature with caseation"
+  },
+  {
+   "type": {
+    "id": "HP:0003237",
+    "label": "Increased circulating IgG concentration"
+   },
+   "description": "RuV IgG titer was significantly elevated (>500 IU/mL)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_11045939-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_11045939-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_11045939-1-TAP1",
+        "geneContext": {
+         "valueId": "HGNC:43",
+         "symbol": "TAP1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38680488",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38680488/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "id": "PMCP_10276720-1",
+ "subject": {
+  "id": "PMCP_10276720-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P13Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "arrives to our emergency room"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "13-years-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "St\u00fcve-Wiedemann syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no infection signs were seen\", \"excluded\": true}, {\"text\": \"The eye fundus and the rest of the examination were strictly normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10276720-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:molina js"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0200026",
+    "label": "Ocular pain"
+   },
+   "description": "pain, redness, and corneal opacity in his right eye"
+  },
+  {
+   "type": {
+    "id": "HP:0034774",
+    "label": "Decreased blink rate"
+   },
+   "description": "bilateral low blinking frequency"
+  },
+  {
+   "type": {
+    "id": "HP:0030953",
+    "label": "Conjunctival hyperemia"
+   },
+   "description": "mild hyperemia of the RE"
+  },
+  {
+   "type": {
+    "id": "HP:0012804",
+    "label": "Corneal ulceration"
+   },
+   "description": "central corneal ulceration with positive corneal staining to fluorescein"
+  },
+  {
+   "type": {
+    "id": "HP:0007957",
+    "label": "Corneal opacity"
+   },
+   "description": "central, and inferior opacity"
+  },
+  {
+   "type": {
+    "id": "HP:0011859",
+    "label": "Punctate keratitis"
+   },
+   "description": "mild punctate superficial keratitis that was positive to fluorescein staining"
+  },
+  {
+   "type": {
+    "id": "HP:0000633",
+    "label": "Decreased lacrimation"
+   },
+   "description": "low tear meniscus in both eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0012155",
+    "label": "Decreased corneal sensation"
+   },
+   "description": "corneal hypoesthesia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10276720-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10276720-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10276720-1-LIFR",
+        "geneContext": {
+         "valueId": "HGNC:6597",
+         "symbol": "LIFR"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37026318",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37026318/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "id": "PMCP_10478923-1",
+ "subject": {
+  "id": "PMCP_10478923-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P47Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "A Wide Clinical Scenario Reported in a Single Institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "47-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "AT deficiency type I"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"No IVC thrombus was shown\", \"excluded\": true}, {\"text\": \"She had no cardiovascular risk factors (CVRFs)\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10478923-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:marco-vera p"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002625",
+    "label": "Deep venous thrombosis"
+   },
+   "description": "proximal deep VT in the left leg"
+  },
+  {
+   "type": {
+    "id": "HP:0012114",
+    "label": "Endometrial carcinoma"
+   },
+   "description": "ovarian endometrial cancer stage I"
+  },
+  {
+   "type": {
+    "id": "HP:0002875",
+    "label": "Exertional dyspnea"
+   },
+   "description": "moderate exercise-induced dyspnea"
+  },
+  {
+   "type": {
+    "id": "HP:0031246",
+    "label": "Nonproductive cough"
+   },
+   "description": "dry cough"
+  },
+  {
+   "type": {
+    "id": "HP:0033141",
+    "label": "Severe SARS-CoV-2 infection"
+   },
+   "description": "Low-load severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infection"
+  },
+  {
+   "type": {
+    "id": "HP:0002204",
+    "label": "Pulmonary embolism"
+   },
+   "description": "multiple filling defects related to PE"
+  },
+  {
+   "type": {
+    "id": "HP:0002090",
+    "label": "Pneumonia"
+   },
+   "description": "pneumonia in the right superior lung"
+  },
+  {
+   "type": {
+    "id": "HP:0004936",
+    "label": "Venous thrombosis"
+   },
+   "description": "venous free-floating thrombus in the IVC"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10478923-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10478923-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10478923-1-SERPINC1",
+        "geneContext": {
+         "valueId": "HGNC:775",
+         "symbol": "SERPINC1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37674759",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37674759/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

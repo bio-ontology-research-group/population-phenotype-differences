@@ -1,0 +1,231 @@
+{
+ "id": "PMCP_3254894-1",
+ "subject": {
+  "id": "PMCP_3254894-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P11Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the emergency department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "11-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hypokalemic periodic paralysis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no dyspnea, dysphagia, or palpitation\", \"excluded\": true}, {\"text\": \"no thyroid enlargement\", \"excluded\": true}, {\"text\": \"Sensory change, muscular atrophy, myotonia, and pyramidal tract signs were not present\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3254894-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:park hw"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002273",
+    "label": "Tetraparesis"
+   },
+   "description": "sudden onset quadriparesis"
+  },
+  {
+   "type": {
+    "id": "HP:0007340",
+    "label": "Lower limb muscle weakness"
+   },
+   "description": "transient lower extremity weakness"
+  },
+  {
+   "type": {
+    "id": "HP:0003690",
+    "label": "Limb muscle weakness"
+   },
+   "description": "symmetric upper and lower extremity weakness (grade III/V)"
+  },
+  {
+   "type": {
+    "id": "HP:0001265",
+    "label": "Hyporeflexia"
+   },
+   "description": "decreased deep tendon reflex"
+  },
+  {
+   "type": {
+    "id": "HP:0002900",
+    "label": "Hypokalemia"
+   },
+   "description": "serum potassium level of 1.9 (3.5 to 5.5 mmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0003115",
+    "label": "Abnormal EKG"
+   },
+   "description": "ST segment depression, T wave flattening, and U waves"
+  },
+  {
+   "type": {
+    "id": "HP:0008153",
+    "label": "Periodic hypokalemic paresis"
+   },
+   "description": "yearly attacks of paralysis with concomittant hypokalemia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3254894-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3254894-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3254894-1-CACNA1S",
+        "geneContext": {
+         "valueId": "HGNC:1397",
+         "symbol": "CACNA1S"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22253645",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22253645/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

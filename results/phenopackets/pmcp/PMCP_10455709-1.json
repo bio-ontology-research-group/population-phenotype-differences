@@ -1,0 +1,246 @@
+{
+ "id": "PMCP_10455709-1",
+ "subject": {
+  "id": "PMCP_10455709-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to our hospital's emergency"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Von Hippel\u2013Lindau Disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no fever\", \"excluded\": true}, {\"text\": \"no seizures\", \"excluded\": true}, {\"text\": \"no urinary issues\", \"excluded\": true}, {\"text\": \"no chest pain\", \"excluded\": true}, {\"text\": \"no shortness of breath\", \"excluded\": true}, {\"text\": \"no petechiae\", \"excluded\": true}, {\"text\": \"no bruises\", \"excluded\": true}, {\"text\": \"no edema\", \"excluded\": true}, {\"text\": \"no rash\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10455709-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chowdhary sk"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004372",
+    "label": "Reduced consciousness"
+   },
+   "description": "altered sensorium and irritability"
+  },
+  {
+   "type": {
+    "id": "HP:0001962",
+    "label": "Palpitations"
+   },
+   "description": "episodic palpitations"
+  },
+  {
+   "type": {
+    "id": "HP:0000975",
+    "label": "Hyperhidrosis"
+   },
+   "description": "sweating"
+  },
+  {
+   "type": {
+    "id": "HP:0001337",
+    "label": "Tremor"
+   },
+   "description": "tremors"
+  },
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "high blood pressure"
+  },
+  {
+   "type": {
+    "id": "HP:0032263",
+    "label": "Increased blood pressure"
+   },
+   "description": "blood pressure on admission was 160/98 mmHg"
+  },
+  {
+   "type": {
+    "id": "HP:0034880",
+    "label": "Adrenal mass"
+   },
+   "description": "hypoechoic right suprarenal lesion with increased vascularity"
+  },
+  {
+   "type": {
+    "id": "HP:0011976",
+    "label": "Elevated urinary catecholamine level"
+   },
+   "description": "24-h urinary fractionated metanephrines and catecholamines levels were found elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0002666",
+    "label": "Pheochromocytoma"
+   },
+   "description": "pheochromocytoma"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10455709-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10455709-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10455709-1-VHL",
+        "geneContext": {
+         "valueId": "HGNC:12687",
+         "symbol": "VHL"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37635887",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37635887/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "id": "PMCP_7004153-1",
+ "subject": {
+  "id": "PMCP_7004153-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P29Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "29 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Lennox-Gastaut syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7004153-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:devinsky o"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001263",
+    "label": "Global developmental delay"
+   },
+   "description": "global developmental delays affecting motor, cognitive, and social function"
+  },
+  {
+   "type": {
+    "id": "HP:0032794",
+    "label": "Myoclonic seizure"
+   },
+   "description": "multiple seizure types including myoclonic, tonic, tonic-clonic, and atypical absence"
+  },
+  {
+   "type": {
+    "id": "HP:0032792",
+    "label": "Tonic seizure"
+   },
+   "description": "multiple seizure types including myoclonic, tonic, tonic-clonic, and atypical absence"
+  },
+  {
+   "type": {
+    "id": "HP:0002069",
+    "label": "Bilateral tonic-clonic seizure"
+   },
+   "description": "multiple seizure types including myoclonic, tonic, tonic-clonic, and atypical absence"
+  },
+  {
+   "type": {
+    "id": "HP:0007270",
+    "label": "Atypical absence seizure"
+   },
+   "description": "multiple seizure types including myoclonic, tonic, tonic-clonic, and atypical absence"
+  },
+  {
+   "type": {
+    "id": "HP:0010845",
+    "label": "EEG with generalized slow activity"
+   },
+   "description": "EEGs showed mild generalized slowing"
+  },
+  {
+   "type": {
+    "id": "HP:0010848",
+    "label": "EEG with spike-wave complexes (2.5-3.5 Hz)"
+   },
+   "description": "sleep-potentiated runs of 2- to 4-Hz generalized spike-wave discharges"
+  },
+  {
+   "type": {
+    "id": "HP:0011182",
+    "label": "Interictal epileptiform activity"
+   },
+   "description": "EEGs continued to show abundant epileptiform activity"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7004153-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7004153-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:4083",
+       "symbol": "GABRB3"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31755996",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31755996/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

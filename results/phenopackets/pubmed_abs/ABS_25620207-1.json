@@ -1,0 +1,224 @@
+{
+ "id": "ABS_25620207-1",
+ "subject": {
+  "id": "ABS_25620207-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China; Israel; Italy; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dallapiccola b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011344",
+    "label": "Severe global developmental delay"
+   },
+   "description": "severe developmental delay"
+  },
+  {
+   "type": {
+    "id": "HP:0001249",
+    "label": "Intellectual disability"
+   },
+   "description": "intellectual disability"
+  },
+  {
+   "type": {
+    "id": "HP:0000252",
+    "label": "Microcephaly"
+   },
+   "description": "microcephaly"
+  },
+  {
+   "type": {
+    "id": "HP:0001090",
+    "label": "Abnormally large globe"
+   },
+   "description": "large prominent eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0000446",
+    "label": "Narrow nasal bridge"
+   },
+   "description": "a narrow nasal bridge"
+  },
+  {
+   "type": {
+    "id": "HP:0010804",
+    "label": "Tented upper lip vermilion"
+   },
+   "description": "a tented upper lip"
+  },
+  {
+   "type": {
+    "id": "HP:0000218",
+    "label": "High palate"
+   },
+   "description": "a high palate"
+  },
+  {
+   "type": {
+    "id": "HP:0000194",
+    "label": "Open mouth"
+   },
+   "description": "an open mouth"
+  },
+  {
+   "type": {
+    "id": "HP:0100679",
+    "label": "Lack of skin elasticity"
+   },
+   "description": "tightly adherent skin"
+  },
+  {
+   "type": {
+    "id": "HP:0007495",
+    "label": "Prematurely aged appearance"
+   },
+   "description": "an aged appearance"
+  },
+  {
+   "type": {
+    "id": "HP:0009064",
+    "label": "Generalized lipodystrophy"
+   },
+   "description": "severe generalized lipodystrophy"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_25620207-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_25620207-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_25620207-1-KCNJ6",
+        "geneContext": {
+         "valueId": "HGNC:6267",
+         "symbol": "KCNJ6"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25620207",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25620207/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

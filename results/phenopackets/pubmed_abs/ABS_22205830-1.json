@@ -1,0 +1,214 @@
+{
+ "id": "ABS_22205830-1",
+ "subject": {
+  "id": "ABS_22205830-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P30Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "30 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kishi s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007902",
+    "label": "Vitreous hemorrhage"
+   },
+   "description": "vitreous hemorrhage"
+  },
+  {
+   "type": {
+    "id": "HP:0007663",
+    "label": "Reduced visual acuity"
+   },
+   "description": "Best corrected visual acuity of her right and left eyes at her initial visit was 10/20 and 20/20, respectively"
+  },
+  {
+   "type": {
+    "id": "HP:0007730",
+    "label": "Iris hypopigmentation"
+   },
+   "description": "hypochromic iris was observed in the superior iris between the 10 and 2 o'clock positions in her right eye"
+  },
+  {
+   "type": {
+    "id": "HP:0007894",
+    "label": "Fundus hypopigmentation"
+   },
+   "description": "Hypopigmentation of the fundus was seen in the superior part of her right eye"
+  },
+  {
+   "type": {
+    "id": "HP:6001168",
+    "label": "Abnormal optic disc vasculature morphology"
+   },
+   "description": "huge neovascularization on the optic disc that was 7 discs in diameter"
+  },
+  {
+   "type": {
+    "id": "HP:0000573",
+    "label": "Retinal hemorrhage"
+   },
+   "description": "dot hemorrhages were observed all over the left fundi"
+  },
+  {
+   "type": {
+    "id": "HP:0030666",
+    "label": "Retinal neovascularization"
+   },
+   "description": "Fluorescein angiography showed a huge neovascularization in the right eye and a tiny neovascularization in the left eye"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_22205830-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_22205830-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_22205830-1-PAX3",
+        "geneContext": {
+         "valueId": "HGNC:8617",
+         "symbol": "PAX3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22205830",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22205830/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

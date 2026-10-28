@@ -1,0 +1,210 @@
+{
+ "id": "PMCP_5073165-1",
+ "subject": {
+  "id": "PMCP_5073165-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y10M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to the Pediatric Emergency Department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17.8 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "vitamin D hydroxylation-deficient rickets type 1A"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"elevated alkaline phosphatase of 1,665 U/L\", \"excluded\": false}, {\"text\": \"PTH was 178 pg/mL\", \"excluded\": false}, {\"text\": \"Initial 1,25(OH)2D3 level was 5.26 pg/mL\", \"excluded\": false}, {\"text\": \"QT prolongation\", \"excluded\": false}, {\"text\": \"cupping and fraying of the ulna and distal radius\", \"excluded\": false}, {\"text\": \"Harrison sulcus\", \"excluded\": false}, {\"text\": \"severe dental caries\", \"excluded\": false}, {\"text\": \"neither genu valgum/varum nor scoliosis\", \"excluded\": true}, {\"text\": \"neither genu valgum/varum nor scoliosis\", \"excluded\": true}, {\"text\": \"Nephrocalcinosis did not develop\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5073165-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yoo hw"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025190",
+    "label": "Bilateral tonic-clonic seizure with generalized onset"
+   },
+   "description": "generalized tonic-clonic seizure"
+  },
+  {
+   "type": {
+    "id": "HP:0002901",
+    "label": "Hypocalcemia"
+   },
+   "description": "low serum calcium of 4.8 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0003016",
+    "label": "Metaphyseal widening"
+   },
+   "description": "metaphyseal widening"
+  },
+  {
+   "type": {
+    "id": "HP:0000897",
+    "label": "Rachitic rosary"
+   },
+   "description": "rachitic rosary"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5073165-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5073165-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5073165-1-CYP27B1",
+        "geneContext": {
+         "valueId": "HGNC:2606",
+         "symbol": "CYP27B1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27777911",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27777911/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_7837857-1",
+ "subject": {
+  "id": "PMCP_7837857-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P14Y1M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): China"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "14-year 1-month-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "IPEX syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal level of white blood cell count and hemoglobin\", \"excluded\": true}, {\"text\": \"serum albumin level and his liver function were normal\", \"excluded\": true}, {\"text\": \"expression of antineutrophil cytoplasmic antibodies and other autoantibodies... were all negative\", \"excluded\": true}, {\"text\": \"lymphocyte subsets analysis was normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7837857-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chen j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005263",
+    "label": "Gastritis"
+   },
+   "description": "severe gastritis involving the entire stomach"
+  },
+  {
+   "type": {
+    "id": "HP:0002592",
+    "label": "Gastric ulcer"
+   },
+   "description": "ulcers of the stomach"
+  },
+  {
+   "type": {
+    "id": "HP:0002021",
+    "label": "Pyloric stenosis"
+   },
+   "description": "stenosis of pylorus"
+  },
+  {
+   "type": {
+    "id": "HP:0002013",
+    "label": "Vomiting"
+   },
+   "description": "vomiting"
+  },
+  {
+   "type": {
+    "id": "HP:0004313",
+    "label": "Decreased circulating immunoglobulin concentration"
+   },
+   "description": "levels of serum immunoglobulin (Ig) G, Ig A, and Ig M were significantly decreased"
+  },
+  {
+   "type": {
+    "id": "HP:0002205",
+    "label": "Recurrent respiratory infections"
+   },
+   "description": "recurrent respiratory bacterial infections"
+  },
+  {
+   "type": {
+    "id": "HP:0003502",
+    "label": "Mild short stature"
+   },
+   "description": "Z score of height for age and body mass index (BMI) for age were both between -3 SD and -2 SD"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7837857-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7837857-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7837857-1-FOXP3",
+        "geneContext": {
+         "valueId": "HGNC:6106",
+         "symbol": "FOXP3"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33546062",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33546062/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

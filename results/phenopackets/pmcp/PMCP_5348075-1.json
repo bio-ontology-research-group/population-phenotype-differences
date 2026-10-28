@@ -1,0 +1,224 @@
+{
+ "id": "PMCP_5348075-1",
+ "subject": {
+  "id": "PMCP_5348075-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P12Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 12-year-old Caucasian male patient"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "12 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "MODY2"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"absence of glycosuria\", \"excluded\": true}, {\"text\": \"No signs of acanthosis were observed\", \"excluded\": true}, {\"text\": \"There were no signs of dyslipidemia\", \"excluded\": true}, {\"text\": \"no clinical signs of lipodystrophy\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5348075-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dedov i"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025691",
+    "label": "Impaired fasting glucose"
+   },
+   "description": "fasting hyperglycemia (7.7 mmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0000819",
+    "label": "Diabetes mellitus"
+   },
+   "description": "glucose levels at baseline and 120 min of 6.6 and 12.1 mmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0040217",
+    "label": "Elevated hemoglobin A1c"
+   },
+   "description": "glycated hemoglobin (HbA1c) level of 6.4%"
+  },
+  {
+   "type": {
+    "id": "HP:0040270",
+    "label": "Impaired glucose tolerance"
+   },
+   "description": "impaired glucose tolerance (6.5 mmol/L at baseline, 8.9 mmol/L on 120 min)"
+  },
+  {
+   "type": {
+    "id": "HP:0000842",
+    "label": "Hyperinsulinemia"
+   },
+   "description": "pronounced hyperinsulinemia (immunoreactive insulin [IRI] from 321.3 mU/L up to 442.1 mU/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0000855",
+    "label": "Insulin resistance"
+   },
+   "description": "IR (Caro index 0.02 [normal >0.2], homeostasis model assessment [HOMA] 92.82 [normal <3.4])"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5348075-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5348075-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5348075-1-GCK",
+        "geneContext": {
+         "valueId": "HGNC:4195",
+         "symbol": "GCK"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28331372",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28331372/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,254 @@
+{
+ "id": "ABS_24789686-1",
+ "subject": {
+  "id": "ABS_24789686-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "mixed ethnicity (Mexican-American mother, Persian father)"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "5 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "15 months"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P1Y3M"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:church ja"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001263",
+    "label": "Global developmental delay"
+   },
+   "description": "developmental delay"
+  },
+  {
+   "type": {
+    "id": "HP:0002205",
+    "label": "Recurrent respiratory infections"
+   },
+   "description": "multiple respiratory infections"
+  },
+  {
+   "type": {
+    "id": "HP:0031292",
+    "label": "Cutaneous abscess"
+   },
+   "description": "skin abscesses"
+  },
+  {
+   "type": {
+    "id": "HP:0032283",
+    "label": "Disseminated nontuberculous mycobacterial infection"
+   },
+   "description": "disseminated Mycobacterium avium complex"
+  },
+  {
+   "type": {
+    "id": "HP:0004313",
+    "label": "Decreased circulating immunoglobulin concentration"
+   },
+   "description": "hypogammaglobulinemia"
+  },
+  {
+   "type": {
+    "id": "HP:0005403",
+    "label": "Decreased total T cell count"
+   },
+   "description": "modest T-lymphopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0031379",
+    "label": "Abnormal T cell proliferation"
+   },
+   "description": "borderline mitogen responses"
+  },
+  {
+   "type": {
+    "id": "HP:0032140",
+    "label": "Decreased specific antibody response to vaccination"
+   },
+   "description": "absent tetanus toxoid and Haemophilus influenzae type b antibody levels"
+  },
+  {
+   "type": {
+    "id": "HP:0031389",
+    "label": "Abnormal MHC II cell surface expression"
+   },
+   "description": "absent HLA-DR antigen on monocytes and B-cells"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_24789686-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_24789686-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_24789686-1-CIITA",
+        "geneContext": {
+         "valueId": "HGNC:7067",
+         "symbol": "CIITA"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24789686",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24789686/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,237 @@
+{
+ "id": "PMCP_8960534-1",
+ "subject": {
+  "id": "PMCP_8960534-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P28Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "28-year-old Caucasian male"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "We present a chronological medical history"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "28 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Aplastic Anemia and Colon Cancer With Underlying Spliceosome Mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"common variable immunodeficiency disease (CVID)\", \"excluded\": false}, {\"text\": \"auto-immune enteropathy\", \"excluded\": false}, {\"text\": \"40 pounds weight loss\", \"excluded\": false}, {\"text\": \"requiring numerous blood transfusions\", \"excluded\": false}, {\"text\": \"cyclosporine-induced nephropathy\", \"excluded\": false}, {\"text\": \"stage two adenocarcinoma of the colon at the splenic flexure\", \"excluded\": false}, {\"text\": \"high levels of microsatellite instability (MSI-H)\", \"excluded\": false}, {\"text\": \"MLH1 deficiency\", \"excluded\": false}, {\"text\": \"worsening pancytopenia\", \"excluded\": false}, {\"text\": \"negative deficient mismatch repair (dMMR)\", \"excluded\": true}, {\"text\": \"no confirmatory MLH1 mutation was noted on genetic testing\", \"excluded\": true}, {\"text\": \"BRAF mutation was also negative\", \"excluded\": true}, {\"text\": \"normal fluorescence in situ hybridization (FISH) for myelodysplastic syndrome (MDS)\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8960534-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:bhayani s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001876",
+    "label": "Pancytopenia"
+   },
+   "description": "pancytopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0003003",
+    "label": "Colon cancer"
+   },
+   "description": "colon cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0001915",
+    "label": "Aplastic anemia"
+   },
+   "description": "aplastic anemia"
+  },
+  {
+   "type": {
+    "id": "HP:0005528",
+    "label": "Bone marrow hypocellularity"
+   },
+   "description": "5% hypocellular marrow"
+  },
+  {
+   "type": {
+    "id": "HP:0005561",
+    "label": "Abnormal bone marrow cell morphology"
+   },
+   "description": "1% blasts"
+  },
+  {
+   "type": {
+    "id": "HP:0031411",
+    "label": "Abnormal chromosome morphology"
+   },
+   "description": "46 XY,del(13)(q12q22)/46,XY"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8960534-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8960534-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8960534-1-ZRSR2",
+        "geneContext": {
+         "valueId": "HGNC:23019",
+         "symbol": "ZRSR2"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35371815",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35371815/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,245 @@
+{
+ "id": "PMCP_6476011-1",
+ "subject": {
+  "id": "PMCP_6476011-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "University Hospital of Pisa"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the Endocrine Unit of the University Hospital of Pisa"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary Hypercalcemia Caused by a Homozygous Pathogenic Variant in the CYP24A1 Gene"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"elevated 25(OH)D3:24,25(OH)2D3 ratio\", \"excluded\": false}, {\"text\": \"no evidence of major bone abnormalities\", \"excluded\": true}, {\"text\": \"absence of specific signs at chest X-rays\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6476011-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:marcocci c"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003072",
+    "label": "Hypercalcemia"
+   },
+   "description": "hypercalcemia"
+  },
+  {
+   "type": {
+    "id": "HP:0031817",
+    "label": "Decreased circulating parathyroid hormone level"
+   },
+   "description": "undetectable/low PTH levels"
+  },
+  {
+   "type": {
+    "id": "HP:0011848",
+    "label": "Abdominal colic"
+   },
+   "description": "renal colic"
+  },
+  {
+   "type": {
+    "id": "HP:0000787",
+    "label": "Nephrolithiasis"
+   },
+   "description": "unilateral kidney stones"
+  },
+  {
+   "type": {
+    "id": "HP:0002150",
+    "label": "Hypercalciuria"
+   },
+   "description": "hypercalciuria"
+  },
+  {
+   "type": {
+    "id": "HP:0031415",
+    "label": "High serum calcitriol"
+   },
+   "description": "elevated serum levels of 1,25(OH)2D"
+  },
+  {
+   "type": {
+    "id": "HP:0100511",
+    "label": "Abnormality of vitamin D metabolism"
+   },
+   "description": "low 24,25(OH)2D3"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6476011-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6476011-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6476011-1-CYP24A1",
+        "geneContext": {
+         "valueId": "HGNC:2602",
+         "symbol": "CYP24A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31089432",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31089432/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

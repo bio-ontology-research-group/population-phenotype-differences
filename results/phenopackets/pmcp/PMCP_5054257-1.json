@@ -1,0 +1,229 @@
+{
+ "id": "PMCP_5054257-1",
+ "subject": {
+  "id": "PMCP_5054257-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P66Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "Korea"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "iNtRON Biotechnology, Korea"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "South Korea"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to the hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "66-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "atypical hemolytic uremic syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"hemoglobin level of 11.2 g/dL\", \"excluded\": false}, {\"text\": \"platelet count of 60,000 /mm3\", \"excluded\": false}, {\"text\": \"peripheral blood smear revealed many schistocytes\", \"excluded\": false}, {\"text\": \"She had no history of bloody diarrhea\", \"excluded\": true}, {\"text\": \"The Shiga-toxin assay on stool samples showed negative results\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5054257-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:oh d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011446",
+    "label": "Abnormality of mental function"
+   },
+   "description": "altered mental status"
+  },
+  {
+   "type": {
+    "id": "HP:0002157",
+    "label": "Azotemia"
+   },
+   "description": "blood urea nitrogen and creatinine levels were increased to 46.3 mg/dL and 1.25 mg/dL, respectively"
+  },
+  {
+   "type": {
+    "id": "HP:0025435",
+    "label": "Increased circulating lactate dehydrogenase concentration"
+   },
+   "description": "lactated dehydrogenase (LDH) level was elevated to 1,192 U/L"
+  },
+  {
+   "type": {
+    "id": "HP:0005421",
+    "label": "Decreased circulating complement C3 concentration"
+   },
+   "description": "C3, 40.1 mg/dL (90\u2013180 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0025722",
+    "label": "Cerebral infarct"
+   },
+   "description": "Brain MRI showed a subtle diffusion-restricted lesion in the right corpus callosum and left cerebellum, suggestive of cerebral infarction"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5054257-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5054257-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5054257-1-C3",
+        "geneContext": {
+         "valueId": "HGNC:1318",
+         "symbol": "C3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27722136",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27722136/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

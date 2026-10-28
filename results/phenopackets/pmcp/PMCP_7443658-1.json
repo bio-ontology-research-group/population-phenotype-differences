@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_7443658-1",
+ "subject": {
+  "id": "PMCP_7443658-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P32Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): USA"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "32-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Recessive Dystrophic Epidermolysis Bullosa"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"severe RDEB\", \"excluded\": false}, {\"text\": \"several foci of intense uptake along the right upper extremity\", \"excluded\": false}, {\"text\": \"no cutaneous lesions were visible on exam\", \"excluded\": true}, {\"text\": \"no lymphadenopathy was apparent\", \"excluded\": true}, {\"text\": \"denied any other side effects, including worsening RDEB wounds\", \"excluded\": true}, {\"text\": \"no immune-related adverse events reported\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7443658-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:ansstas g"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0006739",
+    "label": "Squamous cell carcinoma of the skin"
+   },
+   "description": "multiple SCCs on the lower back and right hand"
+  },
+  {
+   "type": {
+    "id": "HP:0034752",
+    "label": "Axillary lymphadenopathy"
+   },
+   "description": "large axillary lymph node"
+  },
+  {
+   "type": {
+    "id": "HP:0200036",
+    "label": "Skin nodule"
+   },
+   "description": "new large fungating eroded nodule on the right forearm"
+  },
+  {
+   "type": {
+    "id": "HP:0001072",
+    "label": "Thickened skin"
+   },
+   "description": "skin thickening throughout the body"
+  },
+  {
+   "type": {
+    "id": "HP:0002018",
+    "label": "Nausea"
+   },
+   "description": "mild nausea"
+  },
+  {
+   "type": {
+    "id": "HP:0012378",
+    "label": "Fatigue"
+   },
+   "description": "fatigue"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7443658-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7443658-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7443658-1-COL7A1",
+        "geneContext": {
+         "valueId": "HGNC:2214",
+         "symbol": "COL7A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32884539",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32884539/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

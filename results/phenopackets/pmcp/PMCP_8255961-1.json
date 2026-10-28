@@ -1,0 +1,259 @@
+{
+ "id": "PMCP_8255961-1",
+ "subject": {
+  "id": "PMCP_8255961-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P7D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Taiwan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "She was referred to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "7 days"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Autosomal Recessive Renal Tubular Dysgenesis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no obvious acute tubular necrosis\", \"excluded\": true}, {\"text\": \"no renal dysplasia\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8255961-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lee nc"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001562",
+    "label": "Oligohydramnios"
+   },
+   "description": "oligohydramnios"
+  },
+  {
+   "type": {
+    "id": "HP:0025700",
+    "label": "Anhydramnios"
+   },
+   "description": "anhydramnios"
+  },
+  {
+   "type": {
+    "id": "HP:0010477",
+    "label": "Aplasia of the bladder"
+   },
+   "description": "absence of a bladder"
+  },
+  {
+   "type": {
+    "id": "HP:0006559",
+    "label": "Hepatic calcification"
+   },
+   "description": "hepatic calcifications"
+  },
+  {
+   "type": {
+    "id": "HP:0001518",
+    "label": "Small for gestational age"
+   },
+   "description": "birth body weight of 1,839 g (small-for-date)"
+  },
+  {
+   "type": {
+    "id": "HP:0030917",
+    "label": "Low APGAR score"
+   },
+   "description": "Apgar score of 4\u20136"
+  },
+  {
+   "type": {
+    "id": "HP:0002615",
+    "label": "Hypotension"
+   },
+   "description": "hypotension"
+  },
+  {
+   "type": {
+    "id": "HP:0012418",
+    "label": "Hypoxemia"
+   },
+   "description": "frequent desaturation"
+  },
+  {
+   "type": {
+    "id": "HP:0011025",
+    "label": "Abnormal cardiovascular system physiology"
+   },
+   "description": "poor cardiopulmonary function"
+  },
+  {
+   "type": {
+    "id": "HP:0100520",
+    "label": "Oliguria"
+   },
+   "description": "oliguria"
+  },
+  {
+   "type": {
+    "id": "HP:0008660",
+    "label": "Renotubular dysgenesis"
+   },
+   "description": "well-developed proximal tubules were hardly found"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8255961-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8255961-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8255961-1-AGT",
+        "geneContext": {
+         "valueId": "HGNC:333",
+         "symbol": "AGT"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34234805",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34234805/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

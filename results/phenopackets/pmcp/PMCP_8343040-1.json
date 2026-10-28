@@ -1,0 +1,259 @@
+{
+ "id": "PMCP_8343040-1",
+ "subject": {
+  "id": "PMCP_8343040-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P39Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted for scheduled surgery"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "39-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Malignant Hyperthermia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no edema\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8343040-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:fern\u00e1ndez mt"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012416",
+    "label": "Hypercapnia"
+   },
+   "description": "rapidly progressive rise of EtCO2 (CO2 at the end of expiration) was observed, reaching values of up to 130 mmHg"
+  },
+  {
+   "type": {
+    "id": "HP:0001649",
+    "label": "Tachycardia"
+   },
+   "description": "tachycardia"
+  },
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "axillary hyperthermia 39.5 C"
+  },
+  {
+   "type": {
+    "id": "HP:0005967",
+    "label": "Mixed respiratory and metabolic acidosis"
+   },
+   "description": "mixed acidosis"
+  },
+  {
+   "type": {
+    "id": "HP:0002153",
+    "label": "Hyperkalemia"
+   },
+   "description": "hyperkalemia"
+  },
+  {
+   "type": {
+    "id": "HP:0002901",
+    "label": "Hypocalcemia"
+   },
+   "description": "hypocalcemia"
+  },
+  {
+   "type": {
+    "id": "HP:0000083",
+    "label": "Renal insufficiency"
+   },
+   "description": "renal failure"
+  },
+  {
+   "type": {
+    "id": "HP:0003712",
+    "label": "Skeletal muscle hypertrophy"
+   },
+   "description": "muscle hypertrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0002913",
+    "label": "Myoglobinuria"
+   },
+   "description": "myoglobinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0001943",
+    "label": "Hypoglycemia"
+   },
+   "description": "severe hypoglycemia 0.83 mmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0003236",
+    "label": "Elevated circulating creatine kinase concentration"
+   },
+   "description": "progressive increase in transaminases, lactate dehydrogenase (LDH) and creatinine kinase (CK)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8343040-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8343040-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8343040-1-RYR1",
+        "geneContext": {
+         "valueId": "HGNC:10483",
+         "symbol": "RYR1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34421497",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34421497/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

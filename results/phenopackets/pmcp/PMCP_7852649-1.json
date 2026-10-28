@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_7852649-1",
+ "subject": {
+  "id": "PMCP_7852649-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P24Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "She was then transferred to our department for further diagnosis."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "24-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Dubin-Johnson syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"gallbladder stones\", \"excluded\": false}, {\"text\": \"nucleated inflammatory cells were present in the hepatic sinus\", \"excluded\": false}, {\"text\": \"multiple gallbladder stones\", \"excluded\": false}, {\"text\": \"increased liver parenchymal density\", \"excluded\": false}, {\"text\": \"melanin-like pigment deposition was observed in hepatocyte lysosomes\", \"excluded\": false}, {\"text\": \"no spider nevus in the anterior of the chest wall and neck region\", \"excluded\": true}, {\"text\": \"negative liver palmar\", \"excluded\": true}, {\"text\": \"liver and spleen were non-palpable under the ribs\", \"excluded\": true}, {\"text\": \"No obvious abnormalities were found in the portal area, fibrous tissue, bile ducts, or blood vessels between the lobules\", \"excluded\": true}, {\"text\": \"periodic acid-Schiff staining was negative\", \"excluded\": true}, {\"text\": \"reticular fiber and collagen fiber staining (Masson) showed no obvious abnormalities\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7852649-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:zhu jj"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001082",
+    "label": "Cholecystitis"
+   },
+   "description": "acute cholecystitis"
+  },
+  {
+   "type": {
+    "id": "HP:0034714",
+    "label": "Hepatic melanin-like lysosomal pigmentation"
+   },
+   "description": "dark brown liver surface"
+  },
+  {
+   "type": {
+    "id": "HP:0000952",
+    "label": "Jaundice"
+   },
+   "description": "episodes of jaundice during each pregnancy"
+  },
+  {
+   "type": {
+    "id": "HP:0033193",
+    "label": "Ballooning hepatocyte degeneration"
+   },
+   "description": "some hepatocytes showed watery and balloon-like degeneration"
+  },
+  {
+   "type": {
+    "id": "HP:0001744",
+    "label": "Splenomegaly"
+   },
+   "description": "enlarged spleen"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7852649-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7852649-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7852649-1-ABCC2",
+        "geneContext": {
+         "valueId": "HGNC:53",
+         "symbol": "ABCC2"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33585635",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33585635/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_3970455-1",
+ "subject": {
+  "id": "PMCP_3970455-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P14Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "He presented to the emergency room"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "14-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hypoplastic Left Heart Syndrome with Significant Aortic Aneurysm"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"mitral valve hypoplasia\", \"excluded\": false}, {\"text\": \"no evidence of osteoarthritis\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3970455-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:pizarro c"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0045017",
+    "label": "Congenital malformation of the left heart"
+   },
+   "description": "hypoplastic left heart syndrome"
+  },
+  {
+   "type": {
+    "id": "HP:0001650",
+    "label": "Aortic valve stenosis"
+   },
+   "description": "aortic valve stenosis"
+  },
+  {
+   "type": {
+    "id": "HP:0004942",
+    "label": "Aortic aneurysm"
+   },
+   "description": "aneurysmal dilatation of his reconstructed ascending aorta and neoaortic root"
+  },
+  {
+   "type": {
+    "id": "HP:0010444",
+    "label": "Pulmonic regurgitation"
+   },
+   "description": "regurgitation of his native pulmonic valve"
+  },
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "severe chest pain radiating to the neck"
+  },
+  {
+   "type": {
+    "id": "HP:0031643",
+    "label": "Fusiform ascending tubular aorta aneurysm"
+   },
+   "description": "fusiform aneurysmal dilatation of the ascending aorta"
+  },
+  {
+   "type": {
+    "id": "HP:0001679",
+    "label": "Abnormal aortic morphology"
+   },
+   "description": "mucopolysaccharide rich areas and fibrosis with fragmentation and disorganization of the elastic fibers"
+  },
+  {
+   "type": {
+    "id": "HP:0004934",
+    "label": "Vascular calcification"
+   },
+   "description": "dystrophic calcification"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3970455-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3970455-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3970455-1-SMAD3",
+        "geneContext": {
+         "valueId": "HGNC:6769",
+         "symbol": "SMAD3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24711937",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24711937/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

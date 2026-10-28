@@ -1,0 +1,278 @@
+{
+ "id": "PMCP_5614890-1",
+ "subject": {
+  "id": "PMCP_5614890-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P9Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002474",
+     "label": "Syria"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Syrian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "He is a Syrian refugee"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Netherlands"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "emergency department of our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "9-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "glucose-6-phosphate dehydrogenase (G6PD) deficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no malaria parasites\", \"excluded\": true}, {\"text\": \"direct antiglobuline test (DAT/Coombs) was negative\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5614890-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:bartels m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "fever"
+  },
+  {
+   "type": {
+    "id": "HP:0000952",
+    "label": "Jaundice"
+   },
+   "description": "jaundice"
+  },
+  {
+   "type": {
+    "id": "HP:0040319",
+    "label": "Dark urine"
+   },
+   "description": "dark urine"
+  },
+  {
+   "type": {
+    "id": "HP:0011134",
+    "label": "Low-grade fever"
+   },
+   "description": "mild fever"
+  },
+  {
+   "type": {
+    "id": "HP:0000980",
+    "label": "Pallor"
+   },
+   "description": "pale mucous membranes"
+  },
+  {
+   "type": {
+    "id": "HP:0012418",
+    "label": "Hypoxemia"
+   },
+   "description": "blood oxygen level was 81%"
+  },
+  {
+   "type": {
+    "id": "HP:0001649",
+    "label": "Tachycardia"
+   },
+   "description": "tachycardia"
+  },
+  {
+   "type": {
+    "id": "HP:0001878",
+    "label": "Hemolytic anemia"
+   },
+   "description": "severe hemolysis"
+  },
+  {
+   "type": {
+    "id": "HP:0001903",
+    "label": "Anemia"
+   },
+   "description": "hemoglobin (Hb) was 4 mmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0008282",
+    "label": "Unconjugated hyperbilirubinemia"
+   },
+   "description": "indirect bilirubin was 90 \u03bcmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0020181",
+    "label": "Reduced haptoglobin level"
+   },
+   "description": "haptoglobin was 0.16 g/L"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5614890-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5614890-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5614890-1-G6PD",
+        "geneContext": {
+         "valueId": "HGNC:4057",
+         "symbol": "G6PD"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28914431",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28914431/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

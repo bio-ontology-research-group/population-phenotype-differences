@@ -1,0 +1,247 @@
+{
+ "id": "PMCP_10191487-1",
+ "subject": {
+  "id": "PMCP_10191487-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P1Y4M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "16 months"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Congenital Hepatic Fibrosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"mild splenomegaly\", \"excluded\": false}, {\"text\": \"no evidence of acute leukemia or lymphoma\", \"excluded\": true}, {\"text\": \"no macrocysts were identified in the kidneys\", \"excluded\": true}, {\"text\": \"no other overt sequelae of portal hypertension\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10191487-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lin hc"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001433",
+    "label": "Hepatosplenomegaly"
+   },
+   "description": "hepatosplenomegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0001876",
+    "label": "Pancytopenia"
+   },
+   "description": "pancytopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0001882",
+    "label": "Decreased total leukocyte count"
+   },
+   "description": "white blood cell count of 3.91 K/cu mm"
+  },
+  {
+   "type": {
+    "id": "HP:0001903",
+    "label": "Anemia"
+   },
+   "description": "hemoglobin of 9.7 g/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0001873",
+    "label": "Thrombocytopenia"
+   },
+   "description": "platelets of 70,000"
+  },
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "fever"
+  },
+  {
+   "type": {
+    "id": "HP:0031956",
+    "label": "Elevated circulating aspartate aminotransferase concentration"
+   },
+   "description": "mildly elevated aspartate transaminase"
+  },
+  {
+   "type": {
+    "id": "HP:0012852",
+    "label": "Hepatic bridging fibrosis"
+   },
+   "description": "bridging fibrosis containing numerous irregular shaped, tortuous, and occasional saccular shaped duct structures"
+  },
+  {
+   "type": {
+    "id": "HP:0033132",
+    "label": "Renal cortical hyperechogenicity"
+   },
+   "description": "hyperechogenic renal cortex"
+  },
+  {
+   "type": {
+    "id": "HP:0033131",
+    "label": "Renal medullary hyperechogenicity"
+   },
+   "description": "punctate echogenic foci in the medullary pyramids"
+  },
+  {
+   "type": {
+    "id": "HP:0001875",
+    "label": "Decreased total neutrophil count"
+   },
+   "description": "intermittent pancytopenia with neutropenia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10191487-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10191487-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10191487-1-PKHD1",
+        "geneContext": {
+         "valueId": "HGNC:9016",
+         "symbol": "PKHD1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37206942",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37206942/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

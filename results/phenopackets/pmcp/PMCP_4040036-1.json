@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_4040036-1",
+ "subject": {
+  "id": "PMCP_4040036-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P19D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "shifted to NICU"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "19 days"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Very severe spinal muscular atrophy: Type 0 with Dandy-Walker variant"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"No seizures were noted\", \"excluded\": true}, {\"text\": \"no clinical or lab evidence suggestive of hypoxic-ischemic injury to other organ systems\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4040036-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:narwal v"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001558",
+    "label": "Decreased fetal movement"
+   },
+   "description": "decreased fetal movements from 30 weeks of gestation"
+  },
+  {
+   "type": {
+    "id": "HP:0002280",
+    "label": "Enlarged cisterna magna"
+   },
+   "description": "cisterna magna communicating with the fourth ventricle through the cerebellar hemisphere"
+  },
+  {
+   "type": {
+    "id": "HP:0001612",
+    "label": "Weak cry"
+   },
+   "description": "weak cry"
+  },
+  {
+   "type": {
+    "id": "HP:0001252",
+    "label": "Hypotonia"
+   },
+   "description": "hypotonic"
+  },
+  {
+   "type": {
+    "id": "HP:0002098",
+    "label": "Respiratory distress"
+   },
+   "description": "poor spontaneous efforts"
+  },
+  {
+   "type": {
+    "id": "HP:0012389",
+    "label": "Appendicular hypotonia"
+   },
+   "description": "Extreme hypotonia of limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0002374",
+    "label": "Diminished movement"
+   },
+   "description": "no spontaneous movements of limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0001284",
+    "label": "Areflexia"
+   },
+   "description": "deep tendon reflexes were absent"
+  },
+  {
+   "type": {
+    "id": "HP:0001320",
+    "label": "Cerebellar vermis hypoplasia"
+   },
+   "description": "partial vermian hypoplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0010950",
+    "label": "Abnormal fourth ventricle morphology"
+   },
+   "description": "partial obstruction to the fourth ventricle"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4040036-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4040036-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4040036-1-SMN1",
+        "geneContext": {
+         "valueId": "HGNC:11117",
+         "symbol": "SMN1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24891907",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24891907/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

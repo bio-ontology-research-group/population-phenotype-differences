@@ -1,0 +1,217 @@
+{
+ "id": "PMCP_10551059-1",
+ "subject": {
+  "id": "PMCP_10551059-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P44Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Netherlands"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the cardiac outpatient clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "44"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "paraganglioma"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"plasma 3-MT was increased four times the upper reference limit\", \"excluded\": false}, {\"text\": \"no chest pain (at exercise), shortness of breath, or palpitations\", \"excluded\": true}, {\"text\": \"normal cardiac and pulmonary sounds\", \"excluded\": true}, {\"text\": \"absence of peripheral oedema\", \"excluded\": true}, {\"text\": \"normal sinus rhythm\", \"excluded\": true}, {\"text\": \"normal biventricular function without valve abnormalities\", \"excluded\": true}, {\"text\": \"no signs of compression of the left main or LAD\", \"excluded\": true}, {\"text\": \"no coronary calcifications\", \"excluded\": true}, {\"text\": \"no regional wall motion abnormalities\", \"excluded\": true}, {\"text\": \"no signs of cardiac ischaemia\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10551059-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:antoni ml"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100635",
+    "label": "Carotid paraganglioma"
+   },
+   "description": "left-sided carotid body tumour"
+  },
+  {
+   "type": {
+    "id": "HP:0002886",
+    "label": "Vagal paraganglioma"
+   },
+   "description": "right-sided vagal body and carotid body tumour"
+  },
+  {
+   "type": {
+    "id": "HP:0100544",
+    "label": "Neoplasm of the heart"
+   },
+   "description": "extracardiac (high mediastinal) and an intracardiac tumour"
+  },
+  {
+   "type": {
+    "id": "HP:0002668",
+    "label": "Paraganglioma"
+   },
+   "description": "strongly increased gallium dotatate uptake between the carotid and the subclavian artery"
+  },
+  {
+   "type": {
+    "id": "HP:0020162",
+    "label": "Abnormal neoplastic cell morphology"
+   },
+   "description": "tumour cells in a typical \u2018zellballen\u2019 pattern"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10551059-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10551059-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10551059-1-SDHD",
+        "geneContext": {
+         "valueId": "HGNC:10683",
+         "symbol": "SDHD"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37811153",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37811153/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "id": "ABS_35393256-1",
+ "subject": {
+  "id": "ABS_35393256-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P20Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "20 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yu gy"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000159",
+    "label": "Abnormal lip morphology"
+   },
+   "description": "tumour-like lesion of the lip"
+  },
+  {
+   "type": {
+    "id": "HP:0000212",
+    "label": "Gingival overgrowth"
+   },
+   "description": "hyperplasia and erosion of the gingiva"
+  },
+  {
+   "type": {
+    "id": "HP:0000280",
+    "label": "Coarse facial features"
+   },
+   "description": "coarse face and neck skin"
+  },
+  {
+   "type": {
+    "id": "HP:0000177",
+    "label": "Abnormal upper lip morphology"
+   },
+   "description": "diffuse tumour-like lesion on the upper lip showing a reddish erosive nodular surface with yellowish-white exudation"
+  },
+  {
+   "type": {
+    "id": "HP:0031446",
+    "label": "Erosion of oral mucosa"
+   },
+   "description": "erosive buccal mucosa"
+  },
+  {
+   "type": {
+    "id": "HP:0000166",
+    "label": "Severe periodontitis"
+   },
+   "description": "severe periodontitis"
+  },
+  {
+   "type": {
+    "id": "HP:0001880",
+    "label": "Increased total eosinophil count"
+   },
+   "description": "significantly increased peripheral blood eosinophil count"
+  },
+  {
+   "type": {
+    "id": "HP:0003212",
+    "label": "Increased circulating IgE concentration"
+   },
+   "description": "significantly increased ... serum IgE level"
+  },
+  {
+   "type": {
+    "id": "HP:0011839",
+    "label": "Abnormal total T cell count"
+   },
+   "description": "abnormal T lymphocyte count"
+  },
+  {
+   "type": {
+    "id": "HP:0011450",
+    "label": "Unusual CNS infection"
+   },
+   "description": "cerebral infection"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_35393256-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_35393256-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_35393256-1-DOCK8",
+        "geneContext": {
+         "valueId": "HGNC:19191",
+         "symbol": "DOCK8"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35393256",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35393256/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

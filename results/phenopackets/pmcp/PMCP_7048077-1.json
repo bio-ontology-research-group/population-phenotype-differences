@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_7048077-1",
+ "subject": {
+  "id": "PMCP_7048077-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to a tertiary hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "5 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Primary ciliary dyskinesia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"persistent neonatal respiratory distress\", \"excluded\": false}, {\"text\": \"static cilia throughout the sample on high-speed video microscopy analysis\", \"excluded\": false}, {\"text\": \"outer dynein arm defect on ciliary ultrastructure analysis by transmission electron microscopy\", \"excluded\": false}, {\"text\": \"extremely low levels of nasal nitric oxide (nNO) at 25 parts per billion (8.33 nl/min)\", \"excluded\": false}, {\"text\": \"increased productive cough\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7048077-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:walker wt"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "pyrexia"
+  },
+  {
+   "type": {
+    "id": "HP:0012735",
+    "label": "Cough"
+   },
+   "description": "cough"
+  },
+  {
+   "type": {
+    "id": "HP:0001651",
+    "label": "Dextrocardia"
+   },
+   "description": "dextrocardia"
+  },
+  {
+   "type": {
+    "id": "HP:0031245",
+    "label": "Productive cough"
+   },
+   "description": "persistent wet cough"
+  },
+  {
+   "type": {
+    "id": "HP:0030828",
+    "label": "Wheezing"
+   },
+   "description": "wheeze"
+  },
+  {
+   "type": {
+    "id": "HP:0030830",
+    "label": "Crackles"
+   },
+   "description": "crepitations at lung bases"
+  },
+  {
+   "type": {
+    "id": "HP:0100750",
+    "label": "Atelectasis"
+   },
+   "description": "extensive collapse of his right side lower lobe with volume loss"
+  },
+  {
+   "type": {
+    "id": "HP:0025695",
+    "label": "Mucus plug"
+   },
+   "description": "mucus plugging of the right-sided lower bronchial division"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7048077-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7048077-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7048077-1-DNAI1",
+        "geneContext": {
+         "valueId": "HGNC:2954",
+         "symbol": "DNAI1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32128223",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32128223/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

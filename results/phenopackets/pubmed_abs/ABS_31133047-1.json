@@ -1,0 +1,238 @@
+{
+ "id": "ABS_31133047-1",
+ "subject": {
+  "id": "ABS_31133047-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "congenital to adult-onset"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003623",
+      "label": "Neonatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Italy"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:nigro v"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001324",
+    "label": "Muscle weakness"
+   },
+   "description": "muscle weakness"
+  },
+  {
+   "type": {
+    "id": "HP:0001844",
+    "label": "Abnormal hallux morphology"
+   },
+   "description": "hanging big toe"
+  },
+  {
+   "type": {
+    "id": "HP:0003687",
+    "label": "Centrally nucleated skeletal muscle fibers"
+   },
+   "description": "internal nuclei"
+  },
+  {
+   "type": {
+    "id": "HP:0003803",
+    "label": "Type 1 muscle fiber predominance"
+   },
+   "description": "type 1 fiber predominance"
+  },
+  {
+   "type": {
+    "id": "HP:0020202",
+    "label": "Abnormal Z disk morphology"
+   },
+   "description": "ultrastructural defects of Z line"
+  },
+  {
+   "type": {
+    "id": "HP:0003202",
+    "label": "Skeletal muscle atrophy"
+   },
+   "description": "marked hypodensity of the sartorius bilaterally"
+  },
+  {
+   "type": {
+    "id": "HP:0040173",
+    "label": "Abnormality of the tongue muscle"
+   },
+   "description": "scattered abnormal high-intensity areas in the internal tongue muscle and in the posterior cervical muscles"
+  },
+  {
+   "type": {
+    "id": "HP:0001637",
+    "label": "Abnormal myocardium morphology"
+   },
+   "description": "Cardiac involvement"
+  },
+  {
+   "type": {
+    "id": "HP:0034392",
+    "label": "Joint contracture"
+   },
+   "description": "spine and hand contractures"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_31133047-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_31133047-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_31133047-1-MYPN",
+        "geneContext": {
+         "valueId": "HGNC:23246",
+         "symbol": "MYPN"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31133047",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31133047/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

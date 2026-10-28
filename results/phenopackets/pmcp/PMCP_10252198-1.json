@@ -1,0 +1,251 @@
+{
+ "id": "PMCP_10252198-1",
+ "subject": {
+  "id": "PMCP_10252198-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P32Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005282",
+     "label": "United Arab Emirates"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Emirati"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "The patient (III:6; A) is from an extended Emirati family"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005282",
+     "label": "United Arab Emirates"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "missing from our cohort of 343 in-house exomes"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "32-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "peripartum DCM"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without signs of heart failure\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10252198-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:akawi n"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001873",
+    "label": "Thrombocytopenia"
+   },
+   "description": "mild thrombocytopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0011025",
+    "label": "Abnormal cardiovascular system physiology"
+   },
+   "description": "cardiac symptoms"
+  },
+  {
+   "type": {
+    "id": "HP:0001962",
+    "label": "Palpitations"
+   },
+   "description": "palpitations"
+  },
+  {
+   "type": {
+    "id": "HP:0012663",
+    "label": "Mildly reduced left ventricular ejection fraction"
+   },
+   "description": "mildly reduced global systolic function with an ejection fraction (EF) of 40%"
+  },
+  {
+   "type": {
+    "id": "HP:0034376",
+    "label": "Atrioventricular valve regurgitation"
+   },
+   "description": "trace mitral and tricuspid regurgitation"
+  },
+  {
+   "type": {
+    "id": "HP:0011703",
+    "label": "Sinus tachycardia"
+   },
+   "description": "sinus tachycardia"
+  },
+  {
+   "type": {
+    "id": "HP:0012665",
+    "label": "Moderately reduced left ventricular ejection fraction"
+   },
+   "description": "EF of 30\u201335%"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10252198-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10252198-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10252198-1-NEXN",
+        "geneContext": {
+         "valueId": "HGNC:29557",
+         "symbol": "NEXN"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37298070",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37298070/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

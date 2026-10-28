@@ -1,0 +1,215 @@
+{
+ "id": "ABS_24203066-1",
+ "subject": {
+  "id": "ABS_24203066-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0003623",
+    "label": "Neonatal onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "newborn"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "soon after birth"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:levine ma"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001252",
+    "label": "Hypotonia"
+   },
+   "description": "hypotonia"
+  },
+  {
+   "type": {
+    "id": "HP:0002878",
+    "label": "Respiratory failure"
+   },
+   "description": "respiratory failure"
+  },
+  {
+   "type": {
+    "id": "HP:0002757",
+    "label": "Recurrent fractures"
+   },
+   "description": "multiple fractures"
+  },
+  {
+   "type": {
+    "id": "HP:0006462",
+    "label": "Generalized bone demineralization"
+   },
+   "description": "diffuse bone demineralization"
+  },
+  {
+   "type": {
+    "id": "HP:0003072",
+    "label": "Hypercalcemia"
+   },
+   "description": "marked elevation in serum ionized calcium (1.99 mmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0003165",
+    "label": "Elevated circulating parathyroid hormone level"
+   },
+   "description": "elevated serum levels of intact PTH (1154 pg/mL)"
+  },
+  {
+   "type": {
+    "id": "HP:0012053",
+    "label": "Decreased circulating calcifediol concentration"
+   },
+   "description": "serum 25-hydroxyvitamin D was low"
+  },
+  {
+   "type": {
+    "id": "HP:0003127",
+    "label": "Hypocalciuria"
+   },
+   "description": "fractional excretion of calcium was reduced"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_24203066-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_24203066-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_24203066-1-CASR",
+        "geneContext": {
+         "valueId": "HGNC:1514",
+         "symbol": "CASR"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24203066",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24203066/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

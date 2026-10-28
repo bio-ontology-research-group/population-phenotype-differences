@@ -1,0 +1,231 @@
+{
+ "id": "PMCP_10558361-2",
+ "subject": {
+  "id": "PMCP_10558361-2",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P23Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the emergency department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "23-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "acromegaly"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Serum IGF1 level was 704 ng/mL\", \"excluded\": false}, {\"text\": \"basal GH level was 6.40 ng/mL\", \"excluded\": false}, {\"text\": \"prolactin was 17.40 ng/mL\", \"excluded\": false}, {\"text\": \"failure of GH suppression with a GH nadir of 5.82 ng/mL\", \"excluded\": false}, {\"text\": \"visual deficit\", \"excluded\": false}, {\"text\": \"24 \u00d7 22 \u00d7 26 mm tumor with suprasellar and cavernous extension\", \"excluded\": false}, {\"text\": \"acute bleeding in the tumour\", \"excluded\": false}, {\"text\": \"pituitary adenoma with frequent immunoreactive cells for GH and rarer for prolactin\", \"excluded\": false}, {\"text\": \"cortisol and thyroxine deficiencies\", \"excluded\": false}, {\"text\": \"without visual defects\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10558361-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lemos mc"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002315",
+    "label": "Headache"
+   },
+   "description": "frequent and severe headaches"
+  },
+  {
+   "type": {
+    "id": "HP:0025693",
+    "label": "Pituitary macroadenoma"
+   },
+   "description": "20 \u00d7 18 mm pituitary tumour with suprasellar extension"
+  },
+  {
+   "type": {
+    "id": "HP:0011029",
+    "label": "Internal hemorrhage"
+   },
+   "description": "evidence of bleeding into the tumour"
+  },
+  {
+   "type": {
+    "id": "HP:0033794",
+    "label": "Acral overgrowth"
+   },
+   "description": "Acral growth"
+  },
+  {
+   "type": {
+    "id": "HP:0000303",
+    "label": "Mandibular prognathia"
+   },
+   "description": "prognathism"
+  },
+  {
+   "type": {
+    "id": "HP:0000098",
+    "label": "Tall stature"
+   },
+   "description": "height and weight were 189 cm and 97 kg"
+  },
+  {
+   "type": {
+    "id": "HP:0000508",
+    "label": "Ptosis"
+   },
+   "description": "ptosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10558361-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10558361-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10558361-2-AIP",
+        "geneContext": {
+         "valueId": "HGNC:358",
+         "symbol": "AIP"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37149543",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37149543/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

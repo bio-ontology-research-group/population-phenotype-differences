@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_10704451-1",
+ "subject": {
+  "id": "PMCP_10704451-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our epilepsy ward"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17 years-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "KCNT1-related SHE combined with DoA"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"abnormal behaviors during sleep persisting for over 4 years\", \"excluded\": false}, {\"text\": \"getting up to open and close doors\", \"excluded\": false}, {\"text\": \"sudden sitting up\", \"excluded\": false}, {\"text\": \"looking left\", \"excluded\": false}, {\"text\": \"The patient had not experienced any seizures during wakefulness\", \"excluded\": true}, {\"text\": \"Neither the patient nor his younger brother exhibited cognitive impairment\", \"excluded\": true}, {\"text\": \"high-resolution magnetic resonance imaging scan of the brain did not show any abnormalities\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10704451-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:liu w"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004372",
+    "label": "Reduced consciousness"
+   },
+   "description": "unresponsive"
+  },
+  {
+   "type": {
+    "id": "HP:0004305",
+    "label": "Involuntary movements"
+   },
+   "description": "involuntary hand movements"
+  },
+  {
+   "type": {
+    "id": "HP:0000733",
+    "label": "Motor stereotypy"
+   },
+   "description": "aimless adjustment of the quilt"
+  },
+  {
+   "type": {
+    "id": "HP:0001289",
+    "label": "Confusion"
+   },
+   "description": "confused looking around"
+  },
+  {
+   "type": {
+    "id": "HP:0031959",
+    "label": "Leg dystonia"
+   },
+   "description": "dystonia of the left lower limb"
+  },
+  {
+   "type": {
+    "id": "HP:0001649",
+    "label": "Tachycardia"
+   },
+   "description": "synchronous heart rate increase"
+  },
+  {
+   "type": {
+    "id": "HP:0025199",
+    "label": "Fragmented sleep"
+   },
+   "description": "SWS fragmentation index of 17.9/h"
+  },
+  {
+   "type": {
+    "id": "HP:5200298",
+    "label": "Abnormal sleep architecture"
+   },
+   "description": "high values of cycle-alternating pattern (CAP) rates"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10704451-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10704451-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10704451-1-KCNT1",
+        "geneContext": {
+         "valueId": "HGNC:18865",
+         "symbol": "KCNT1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38073640",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38073640/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

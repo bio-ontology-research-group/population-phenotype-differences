@@ -1,0 +1,235 @@
+{
+ "id": "ABS_33191321-1",
+ "subject": {
+  "id": "ABS_33191321-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P42Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "42 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:ogura t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100648",
+    "label": "Neoplasm of the tongue"
+   },
+   "description": "history of surgery for tongue cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0031983",
+    "label": "Abnormal pulmonary thoracic imaging finding"
+   },
+   "description": "abnormal chest shadow"
+  },
+  {
+   "type": {
+    "id": "HP:0025390",
+    "label": "Reticular pattern on pulmonary HRCT"
+   },
+   "description": "lower lobe reticulation"
+  },
+  {
+   "type": {
+    "id": "HP:0008404",
+    "label": "Nail dystrophy"
+   },
+   "description": "nail dystrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0002745",
+    "label": "Oral leukoplakia"
+   },
+   "description": "oral leukoplakia"
+  },
+  {
+   "type": {
+    "id": "HP:0007427",
+    "label": "Reticulated skin pigmentation"
+   },
+   "description": "reticulated hypopigmentation"
+  },
+  {
+   "type": {
+    "id": "HP:0002206",
+    "label": "Pulmonary fibrosis"
+   },
+   "description": "subpleural and perilobular fibrosis"
+  },
+  {
+   "type": {
+    "id": "HP:0006530",
+    "label": "Abnormal pulmonary interstitial morphology"
+   },
+   "description": "homogenous fibrosis and cell infiltration in the centrilobular region"
+  },
+  {
+   "type": {
+    "id": "HP:0011950",
+    "label": "Bronchiolitis"
+   },
+   "description": "bronchiolitis"
+  },
+  {
+   "type": {
+    "id": "HP:0002093",
+    "label": "Respiratory insufficiency"
+   },
+   "description": "respiratory function has continued to decrease"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_33191321-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_33191321-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_33191321-1-DKC1",
+        "geneContext": {
+         "valueId": "HGNC:2890",
+         "symbol": "DKC1"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33191321",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33191321/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,230 @@
+{
+ "id": "PMCP_10858638-1",
+ "subject": {
+  "id": "PMCP_10858638-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P15Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00003756",
+     "label": "Viet Nam"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Vietnamese"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 15-year-old Asian (Vietnamese) male high school student"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00003756",
+     "label": "Viet Nam"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "we decided to implant an implantable cardioverter defibrillator (ICD)"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "15-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "arrhythmogenic right ventricular cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"At least three distinct PVC morphologies were observed\", \"excluded\": false}, {\"text\": \"occasionally coupled PVCs\", \"excluded\": false}, {\"text\": \"non-sustained episodes of VT\", \"excluded\": false}, {\"text\": \"enlarged RV with dyskinesia\", \"excluded\": false}, {\"text\": \"reduced ejection fraction (RV ejection fraction 34.97%)\", \"excluded\": false}, {\"text\": \"an aneurysm close to the RV apex\", \"excluded\": false}, {\"text\": \"diffused fatty infiltration in the RV free wall\", \"excluded\": false}, {\"text\": \"never had syncope or presyncope\", \"excluded\": true}, {\"text\": \"no clinical signs of heart failure\", \"excluded\": true}, {\"text\": \"no non-sustained or sustained VT was captured\", \"excluded\": true}, {\"text\": \"Left ventricular structure and function was normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10858638-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:nguyen tv"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001962",
+    "label": "Palpitations"
+   },
+   "description": "palpitations"
+  },
+  {
+   "type": {
+    "id": "HP:0006682",
+    "label": "Premature ventricular contraction"
+   },
+   "description": "frequent and various forms of premature ventricular complexes (PVC)"
+  },
+  {
+   "type": {
+    "id": "HP:0003140",
+    "label": "T-wave inversion in the right precordial leads"
+   },
+   "description": "negative T waves in leads V1\u2013V3"
+  },
+  {
+   "type": {
+    "id": "HP:0005133",
+    "label": "Right ventricular dilatation"
+   },
+   "description": "mildly dilated right ventricle"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10858638-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10858638-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10858638-1-PKP2",
+        "geneContext": {
+         "valueId": "HGNC:9024",
+         "symbol": "PKP2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38336791",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38336791/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

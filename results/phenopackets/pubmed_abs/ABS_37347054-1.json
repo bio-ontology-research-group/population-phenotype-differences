@@ -1,0 +1,241 @@
+{
+ "id": "ABS_37347054-1",
+ "subject": {
+  "id": "ABS_37347054-1",
+  "sex": "UNKNOWN_SEX",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0011463",
+    "label": "Childhood onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002939",
+     "label": "Poland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "pediatric"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"congenital malformation complex\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Germany; Poland"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:walkowiak j"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0040185",
+    "label": "Macrothrombocytopenia"
+   },
+   "description": "macrothrombocytopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0031404",
+    "label": "Impaired antigen-specific response"
+   },
+   "description": "poor specific antibody response"
+  },
+  {
+   "type": {
+    "id": "HP:0005387",
+    "label": "Combined immunodeficiency"
+   },
+   "description": "B and T cell immunodeficiency"
+  },
+  {
+   "type": {
+    "id": "HP:0002720",
+    "label": "Decreased circulating IgA concentration"
+   },
+   "description": "low serum immunoglobulin A level"
+  },
+  {
+   "type": {
+    "id": "HP:0011968",
+    "label": "Feeding difficulties"
+   },
+   "description": "feeding disorders"
+  },
+  {
+   "type": {
+    "id": "HP:0004395",
+    "label": "Malnutrition"
+   },
+   "description": "malnutrition"
+  },
+  {
+   "type": {
+    "id": "HP:0011024",
+    "label": "Abnormality of the gastrointestinal tract"
+   },
+   "description": "gastrointestinal infection"
+  },
+  {
+   "type": {
+    "id": "HP:0011471",
+    "label": "Gastrostomy tube feeding in infancy"
+   },
+   "description": "gastrostomy"
+  },
+  {
+   "type": {
+    "id": "HP:0004298",
+    "label": "Abnormal abdominal wall morphology"
+   },
+   "description": "abdominal wall infection"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_37347054-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_37347054-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_37347054-1-CDC42",
+        "geneContext": {
+         "valueId": "HGNC:1736",
+         "symbol": "CDC42"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37347054",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37347054/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

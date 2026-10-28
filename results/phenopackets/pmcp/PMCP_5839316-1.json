@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_5839316-1",
+ "subject": {
+  "id": "PMCP_5839316-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P15Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "transferred to the regional neurology unit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "15-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "mitochondrial disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"jerking of her left arm spreading periodically to involve the rest of her body\", \"excluded\": false}, {\"text\": \"five generalized tonic-clonic seizures\", \"excluded\": false}, {\"text\": \"positive visual phenomena (colored circles)\", \"excluded\": false}, {\"text\": \"hypersomnolence\", \"excluded\": false}, {\"text\": \"encephalopathic\", \"excluded\": false}, {\"text\": \"frequent focal motor seizures affecting the left arm\", \"excluded\": false}, {\"text\": \"electrical EPC arising from the right occipital region\", \"excluded\": false}, {\"text\": \"new epileptic focus affecting the right arm\", \"excluded\": false}, {\"text\": \"stroke-like lesions\", \"excluded\": false}, {\"text\": \"Debilitating EPC reemerged, affecting the right arm, leg, and paraspinal muscles\", \"excluded\": false}, {\"text\": \"normal routine laboratory studies\", \"excluded\": true}, {\"text\": \"normal MRI head\", \"excluded\": true}, {\"text\": \"negative anti-NMDAR and anti-VGKC antibodies\", \"excluded\": true}, {\"text\": \"Her liver function was normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5839316-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:baker mr"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025190",
+    "label": "Bilateral tonic-clonic seizure with generalized onset"
+   },
+   "description": "prolonged generalized tonic-clonic seizure"
+  },
+  {
+   "type": {
+    "id": "HP:0002315",
+    "label": "Headache"
+   },
+   "description": "headache"
+  },
+  {
+   "type": {
+    "id": "HP:0002317",
+    "label": "Unsteady gait"
+   },
+   "description": "unsteadiness"
+  },
+  {
+   "type": {
+    "id": "HP:0001336",
+    "label": "Myoclonus"
+   },
+   "description": "frequent myoclonic jerks (including abdominal muscles)"
+  },
+  {
+   "type": {
+    "id": "HP:0002133",
+    "label": "Status epilepticus"
+   },
+   "description": "ongoing electrographic focal status epilepticus"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5839316-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5839316-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5839316-1-POLG",
+        "geneContext": {
+         "valueId": "HGNC:9179",
+         "symbol": "POLG"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29588995",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29588995/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

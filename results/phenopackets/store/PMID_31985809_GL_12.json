@@ -1,0 +1,203 @@
+{
+ "id": "PMID_31985809_GL_12",
+ "subject": {
+  "id": "GL-12",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "publicationPatientOrigins",
+    "value": {
+     "text": "[{\"country\": \"Turkey\", \"ethnicity_or_ancestry\": \"Turkish\", \"n_patients\": 2, \"evidence\": \"GL-1 ... Turkish ... GL-2 ... Turkish\"}, {\"country\": \"France\", \"ethnicity_or_ancestry\": \"French\", \"n_patients\": 5, \"evidence\": \"GL-3 French (Mulhouse) ... GL-6 French (Dijon) ... GL-8 French (Lille)\"}, {\"country\": \"Morocco\", \"ethnicity_or_ancestry\": \"Moroccan\", \"n_patients\": 2, \"evidence\": \"GL-4 Moroccan ... GL-11 Moroccan\"}, {\"country\": \"Lebanon\", \"ethnicity_or_ancestry\": \"Lebanese\", \"n_patients\": 2, \"evidence\": \"GL-12 Lebanese ... GL-13 Lebanese\"}, {\"country\": \"USA\", \"ethnicity_or_ancestry\": null, \"n_patients\": 1, \"evidence\": \"GL-14 ... USA\"}, {\"country\": \"The Netherlands\", \"ethnicity_or_ancestry\": \"Caucasian\", \"n_patients\": 1, \"evidence\": \"GL-19 ... The Netherlands (indicated as Caucasian)\"}, {\"country\": \"Argentina\", \"ethnicity_or_ancestry\": null, \"n_patients\": 1, \"evidence\": \"ARG13 ... Argentina\"}]"
+    }
+   },
+   {
+    "name": "originLevel",
+    "value": {
+     "text": "publication (several origins; not resolved to this patient)"
+    }
+   },
+   {
+    "name": "recruitmentCountries",
+    "value": {
+     "text": "France; Argentina"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MIXED"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": ""
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "store"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:veltman ja"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012205",
+    "label": "Globozoospermia"
+   }
+  },
+  {
+   "type": {
+    "id": "HP:0003251",
+    "label": "Male infertility"
+   }
+  },
+  {
+   "type": {
+    "id": "HP:0000798",
+    "label": "Oligozoospermia"
+   }
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "hxLESmemdarQS3hUoLxR1C9c",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "disease": {
+     "id": "OMIM:620838",
+     "label": "Spermatogenic failure 91"
+    },
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "GL-12",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "acmgPathogenicityClassification": "PATHOGENIC",
+       "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+       "variationDescriptor": {
+        "id": "c853GtoA_CCIN_NM_005893v3",
+        "geneContext": {
+         "valueId": "HGNC:1568",
+         "symbol": "CCIN"
+        },
+        "expressions": [
+         {
+          "syntax": "hgvs.c",
+          "value": "NM_005893.3:c.853G>A"
+         },
+         {
+          "syntax": "hgvs.g",
+          "value": "NC_000009.12:g.36170355G>A"
+         },
+         {
+          "syntax": "hgvs.p",
+          "value": "NP_005884.2:p.(Gly285Ser)"
+         }
+        ],
+        "vcfRecord": {
+         "genomeAssembly": "hg38",
+         "chrom": "chr9",
+         "pos": 36170355,
+         "ref": "G",
+         "alt": "A"
+        },
+        "moleculeContext": "genomic",
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "diseases": [
+  {
+   "term": {
+    "id": "OMIM:620838",
+    "label": "Spermatogenic failure 91"
+   },
+   "onset": {
+    "ontologyClass": {
+     "id": "HP:0011462",
+     "label": "Young adult onset"
+    }
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2025-10-23T07:43:32.432843Z",
+  "createdBy": "0000-0002-0736-9199",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "human phenotype ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2025-09-01",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "2025-07-25",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "so",
+    "name": "Sequence types and features ontology",
+    "url": "http://purl.obolibrary.org/obo/so.owl",
+    "version": "2024-11-18",
+    "namespacePrefix": "SO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+   },
+   {
+    "id": "omim",
+    "name": "An Online Catalog of Human Genes and Genetic Disorders",
+    "url": "https://www.omim.org",
+    "version": "06/01/25",
+    "namespacePrefix": "OMIM",
+    "iriPrefix": "https://www.omim.org/entry/"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "06/01/25",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0.2",
+  "externalReferences": [
+   {
+    "id": "PMID:31985809",
+    "description": "Exome sequencing reveals novel causes as well as new candidate genes for human globozoospermia"
+   },
+   {
+    "id": "pavs-population:store",
+    "description": "Phenopacket Store 0.1.26 (curated); origin labels extracted from the publication by Qwen3.8-27B"
+   }
+  ]
+ }
+}

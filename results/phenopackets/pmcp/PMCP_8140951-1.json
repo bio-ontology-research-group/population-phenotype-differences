@@ -1,0 +1,265 @@
+{
+ "id": "PMCP_8140951-1",
+ "subject": {
+  "id": "PMCP_8140951-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P19Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Indian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "in an Indian patient"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to AIIMS New Delhi"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "19-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "dilated cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no evidence of inflammation\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8140951-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:seth s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002094",
+    "label": "Dyspnea"
+   },
+   "description": "shortness of breath"
+  },
+  {
+   "type": {
+    "id": "HP:0002615",
+    "label": "Hypotension"
+   },
+   "description": "blood pressure was 94/52 mmHg"
+  },
+  {
+   "type": {
+    "id": "HP:0031185",
+    "label": "Elevated circulating NT-proBNP concentration"
+   },
+   "description": "NTproBNP... levels... were 1881 pg/ml"
+  },
+  {
+   "type": {
+    "id": "HP:0410174",
+    "label": "Increased circulating troponin T concentration"
+   },
+   "description": "TropT... levels... were 11.1 pg/ml"
+  },
+  {
+   "type": {
+    "id": "HP:0002910",
+    "label": "Elevated circulating hepatic transaminase concentration"
+   },
+   "description": "SGOT and SGPT levels were 76 and 109 units/l"
+  },
+  {
+   "type": {
+    "id": "HP:0002608",
+    "label": "Celiac disease"
+   },
+   "description": "history of celiac disease"
+  },
+  {
+   "type": {
+    "id": "HP:0012666",
+    "label": "Severely reduced left ventricular ejection fraction"
+   },
+   "description": "severe left ventricular systolic dysfunction with an ejection fraction of 14%"
+  },
+  {
+   "type": {
+    "id": "HP:0011713",
+    "label": "Left bundle branch block"
+   },
+   "description": "left bundle branch block (LBBB)"
+  },
+  {
+   "type": {
+    "id": "HP:0001645",
+    "label": "Sudden cardiac death"
+   },
+   "description": "sudden cardiac death"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8140951-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8140951-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8140951-1-RBM20",
+        "geneContext": {
+         "valueId": "HGNC:27424",
+         "symbol": "RBM20"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34021826",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34021826/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

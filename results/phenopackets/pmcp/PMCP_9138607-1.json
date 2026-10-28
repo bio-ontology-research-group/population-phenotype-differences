@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9138607-1",
+ "subject": {
+  "id": "PMCP_9138607-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P35Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "came to our attention"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "35-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Wilson disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"hepatic cirrhosis with ascites\", \"excluded\": false}, {\"text\": \"low ceruloplasmin levels\", \"excluded\": false}, {\"text\": \"elevated 24 h urinary copper excretion\", \"excluded\": false}, {\"text\": \"increased hepatic copper concentration\", \"excluded\": false}, {\"text\": \"first tonic-clonic seizure\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9138607-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:meletti s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000992",
+    "label": "Cutaneous photosensitivity"
+   },
+   "description": "photosensitivity"
+  },
+  {
+   "type": {
+    "id": "HP:0025190",
+    "label": "Bilateral tonic-clonic seizure with generalized onset"
+   },
+   "description": "generalized tonic-clonic seizures"
+  },
+  {
+   "type": {
+    "id": "HP:0001336",
+    "label": "Myoclonus"
+   },
+   "description": "myoclonic jerks without loss of consciousness"
+  },
+  {
+   "type": {
+    "id": "HP:0010849",
+    "label": "EEG with spike-wave complexes (>3.5 Hz)"
+   },
+   "description": "generalized bursts of rapid spike-and-wave of 4\u20136 Hz"
+  },
+  {
+   "type": {
+    "id": "HP:0007351",
+    "label": "Upper limb postural tremor"
+   },
+   "description": "slight distal postural and intentional tremor to the upper limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0002070",
+    "label": "Limb ataxia"
+   },
+   "description": "minimal bilateral ataxia to the finger-to-nose test"
+  },
+  {
+   "type": {
+    "id": "HP:0012752",
+    "label": "Focal T2 hypointense basal ganglia lesion"
+   },
+   "description": "hypointensities in the globus pallidus internus bilaterally, in T2-weighted sequences"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9138607-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9138607-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9138607-1-ATP7B",
+        "geneContext": {
+         "valueId": "HGNC:870",
+         "symbol": "ATP7B"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35624941",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35624941/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

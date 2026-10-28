@@ -1,0 +1,219 @@
+{
+ "id": "ABS_40490815-1",
+ "subject": {
+  "id": "ABS_40490815-1",
+  "sex": "UNKNOWN_SEX",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P3M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002729",
+     "label": "Sweden"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "3 months"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "fetal"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0030674",
+      "label": "Antenatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan; Sweden"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hayakawa h"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100544",
+    "label": "Neoplasm of the heart"
+   },
+   "description": "cardiac tumor in the left ventricle (LV) of the fetus, which gradually enlarged to > 40 mm in diameter"
+  },
+  {
+   "type": {
+    "id": "HP:0005162",
+    "label": "Abnormal left ventricular function"
+   },
+   "description": "The diastolic and systolic functions of the LV were completely disrupted"
+  },
+  {
+   "type": {
+    "id": "HP:0001635",
+    "label": "Congestive heart failure"
+   },
+   "description": "severe heart failure (cardiovascular profile score 7)"
+  },
+  {
+   "type": {
+    "id": "HP:0004383",
+    "label": "Hypoplastic left ventricle"
+   },
+   "description": "The hemodynamic flow was consistent with hypoplastic left heart syndrome"
+  },
+  {
+   "type": {
+    "id": "HP:0009718",
+    "label": "Subependymal giant-cell astrocytoma"
+   },
+   "description": "several cranial regions with 7.9 \u00d7 6.9 mm subependymal giant cell astrocytoma (SEGA)"
+  },
+  {
+   "type": {
+    "id": "HP:0012663",
+    "label": "Mildly reduced left ventricular ejection fraction"
+   },
+   "description": "mildly reduced LV ejection fraction"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40490815-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40490815-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:12363",
+       "symbol": "TSC2"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40490815",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40490815/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

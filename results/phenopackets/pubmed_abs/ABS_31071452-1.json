@@ -1,0 +1,236 @@
+{
+ "id": "ABS_31071452-1",
+ "subject": {
+  "id": "ABS_31071452-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "infantile"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003593",
+      "label": "Infantile onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Norway; Turkey; USA; Ukraine"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:aleinikova ov"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002205",
+    "label": "Recurrent respiratory infections"
+   },
+   "description": "recurring chest infections"
+  },
+  {
+   "type": {
+    "id": "HP:0002795",
+    "label": "Abnormal respiratory system physiology"
+   },
+   "description": "lung disease"
+  },
+  {
+   "type": {
+    "id": "HP:0011371",
+    "label": "Recurrent viral skin infections"
+   },
+   "description": "herpetic skin infections"
+  },
+  {
+   "type": {
+    "id": "HP:0005528",
+    "label": "Bone marrow hypocellularity"
+   },
+   "description": "bone marrow aplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0031545",
+    "label": "Abnormally low T cell receptor excision circle level"
+   },
+   "description": "low numbers of TRECs/KRECs"
+  },
+  {
+   "type": {
+    "id": "HP:0030374",
+    "label": "Decreased proportion of memory B cells"
+   },
+   "description": "severe reduction of memory B cells"
+  },
+  {
+   "type": {
+    "id": "HP:0410293",
+    "label": "Absent isohemagglutinin level"
+   },
+   "description": "absence of isohemagglutinins"
+  },
+  {
+   "type": {
+    "id": "HP:0004315",
+    "label": "Decreased circulating IgG concentration"
+   },
+   "description": "low IgG levels"
+  },
+  {
+   "type": {
+    "id": "HP:0040238",
+    "label": "Impaired neutrophil chemotaxis"
+   },
+   "description": "absence of chemotaxis to fMLP"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_31071452-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_31071452-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_31071452-1-RAC2",
+        "geneContext": {
+         "valueId": "HGNC:9802",
+         "symbol": "RAC2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31071452",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31071452/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

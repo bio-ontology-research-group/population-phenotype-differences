@@ -1,0 +1,260 @@
+{
+ "id": "PMCP_5945832-1",
+ "subject": {
+  "id": "PMCP_5945832-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P22Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002828",
+     "label": "Brazil"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the Immunology Clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "22"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "X-HIGM syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no signs or symptoms of infection\", \"excluded\": true}, {\"text\": \"no changes upon physical examination\", \"excluded\": true}, {\"text\": \"no adverse reactions to vaccines\", \"excluded\": true}, {\"text\": \"no serious infections or hospitalizations up to his 7 years of age\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5945832-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:condino-neto a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002719",
+    "label": "Recurrent infections"
+   },
+   "description": "severe recurrent infections"
+  },
+  {
+   "type": {
+    "id": "HP:0002090",
+    "label": "Pneumonia"
+   },
+   "description": "treatment-resistant pneumonia"
+  },
+  {
+   "type": {
+    "id": "HP:0032160",
+    "label": "Cryptococcal meningitis"
+   },
+   "description": "meningitis caused by Cryptococcus neoformans"
+  },
+  {
+   "type": {
+    "id": "HP:0004313",
+    "label": "Decreased circulating immunoglobulin concentration"
+   },
+   "description": "decreases in IgA, IgE and IgG"
+  },
+  {
+   "type": {
+    "id": "HP:0025439",
+    "label": "Pharyngitis"
+   },
+   "description": "pharyngotonsillitis"
+  },
+  {
+   "type": {
+    "id": "HP:0000371",
+    "label": "Acute otitis media"
+   },
+   "description": "acute otitis media"
+  },
+  {
+   "type": {
+    "id": "HP:0000246",
+    "label": "Sinusitis"
+   },
+   "description": "rhinosinusitis"
+  },
+  {
+   "type": {
+    "id": "HP:0034640",
+    "label": "Skin infectious agent"
+   },
+   "description": "fungal dermatosis"
+  },
+  {
+   "type": {
+    "id": "HP:6001038",
+    "label": "Intestinal worm"
+   },
+   "description": "intestinal helminthiasis"
+  },
+  {
+   "type": {
+    "id": "HP:0003496",
+    "label": "Increased circulating IgM level"
+   },
+   "description": "very high levels of IgM"
+  },
+  {
+   "type": {
+    "id": "HP:0012203",
+    "label": "Onychomycosis"
+   },
+   "description": "onychomycosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5945832-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5945832-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5945832-1-CD40LG",
+        "geneContext": {
+         "valueId": "HGNC:11935",
+         "symbol": "CD40LG"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29780795",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29780795/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

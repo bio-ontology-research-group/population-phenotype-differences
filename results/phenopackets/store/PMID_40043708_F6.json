@@ -1,0 +1,223 @@
+{
+ "id": "PMID_40043708_F6",
+ "subject": {
+  "id": "F6",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P33Y"
+   }
+  },
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "publicationPatientOrigins",
+    "value": {
+     "text": "[{\"country\": \"United Kingdom\", \"ethnicity_or_ancestry\": \"British Pakistani\", \"n_patients\": 2, \"evidence\": \"A young British Pakistani woman and her sister (family 1 [F1])\"}, {\"country\": null, \"ethnicity_or_ancestry\": \"Pakistani\", \"n_patients\": 2, \"evidence\": \"This family was also of Pakistani ancestry\"}, {\"country\": \"India\", \"ethnicity_or_ancestry\": \"Indian\", \"n_patients\": 1, \"evidence\": \"In a consanguineous Indian family (F3)\"}, {\"country\": \"Turkey\", \"ethnicity_or_ancestry\": \"Turkish\", \"n_patients\": 2, \"evidence\": \"F4 is a consanguineous Turkish family of two affected sisters\"}, {\"country\": \"Turkey\", \"ethnicity_or_ancestry\": \"Turkish\", \"n_patients\": 1, \"evidence\": \"In F5 is a 12-year-old Turkish girl\"}, {\"country\": \"Iran\", \"ethnicity_or_ancestry\": \"Iranian\", \"n_patients\": 1, \"evidence\": \"F6 comprises a 33-year-old woman (F6:II-1) from a consanguineous Iranian family\"}, {\"country\": \"Pakistan\", \"ethnicity_or_ancestry\": \"Pakistani\", \"n_patients\": 1, \"evidence\": \"F7 comprises a 14-year-old male (F7:II-1) from a consanguineous Pakistani family\"}, {\"country\": \"Turkey\", \"ethnicity_or_ancestry\": \"Turkish\", \"n_patients\": 1, \"evidence\": \"Of note, for a 17-year-old Turkish female with intellectual disability\"}, {\"country\": \"Australia\", \"ethnicity_or_ancestry\": \"Northern European\", \"n_patients\": 1, \"evidence\": \"In F8, an Australian woman (of Northern European ancestry)\"}, {\"country\": \"Saudi Arabia\", \"ethnicity_or_ancestry\": \"Saudi Arabian\", \"n_patients\": 2, \"evidence\": \"In a consanguineous Saudi Arabian family (F9)\"}]"
+    }
+   },
+   {
+    "name": "originLevel",
+    "value": {
+     "text": "publication (several origins; not resolved to this patient)"
+    }
+   },
+   {
+    "name": "recruitmentCountries",
+    "value": {
+     "text": "United Kingdom"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MIXED"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": ""
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "store"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:newman wg"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000786",
+    "label": "Primary amenorrhea"
+   },
+   "excluded": true
+  },
+  {
+   "type": {
+    "id": "HP:0008209",
+    "label": "Premature ovarian insufficiency"
+   }
+  },
+  {
+   "type": {
+    "id": "HP:0000365",
+    "label": "Hearing impairment"
+   },
+   "excluded": true
+  },
+  {
+   "type": {
+    "id": "HP:0002342",
+    "label": "Moderate intellectual disability"
+   },
+   "excluded": true
+  },
+  {
+   "type": {
+    "id": "HP:0001328",
+    "label": "Specific learning disability"
+   }
+  },
+  {
+   "type": {
+    "id": "HP:0004322",
+    "label": "Short stature"
+   }
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "IKdS2YJpE5Fbg8bhCiVRLWc4",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "disease": {
+     "id": "OMIM:621195",
+     "label": "Combined oxidative phosphorylation deficiency 60"
+    },
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "F6",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "acmgPathogenicityClassification": "PATHOGENIC",
+       "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+       "variationDescriptor": {
+        "id": "c262CtoT_MRPL49_NM_004927v4",
+        "geneContext": {
+         "valueId": "HGNC:1176",
+         "symbol": "MRPL49"
+        },
+        "expressions": [
+         {
+          "syntax": "hgvs.c",
+          "value": "NM_004927.4:c.262C>T"
+         },
+         {
+          "syntax": "hgvs.g",
+          "value": "NC_000011.10:g.65125520C>T"
+         },
+         {
+          "syntax": "hgvs.p",
+          "value": "NP_004918.1:p.(Arg88Cys)"
+         }
+        ],
+        "vcfRecord": {
+         "genomeAssembly": "hg38",
+         "chrom": "chr11",
+         "pos": 65125520,
+         "ref": "C",
+         "alt": "T"
+        },
+        "moleculeContext": "genomic",
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "diseases": [
+  {
+   "term": {
+    "id": "OMIM:621195",
+    "label": "Combined oxidative phosphorylation deficiency 60"
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2025-12-31T19:22:28.933099Z",
+  "createdBy": "0000-0002-0736-9199",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "human phenotype ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2025-11-24",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "2025-07-25",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "so",
+    "name": "Sequence types and features ontology",
+    "url": "http://purl.obolibrary.org/obo/so.owl",
+    "version": "2024-11-18",
+    "namespacePrefix": "SO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+   },
+   {
+    "id": "omim",
+    "name": "An Online Catalog of Human Genes and Genetic Disorders",
+    "url": "https://www.omim.org",
+    "version": "06/01/25",
+    "namespacePrefix": "OMIM",
+    "iriPrefix": "https://www.omim.org/entry/"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "06/01/25",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0.2",
+  "externalReferences": [
+   {
+    "id": "PMID:40043708",
+    "description": "Bi-allelic variants in MRPL49 cause variable clinical presentations, including sensorineural hearing loss, leukodystrophy, and ovarian insufficiency."
+   },
+   {
+    "id": "pavs-population:store",
+    "description": "Phenopacket Store 0.1.26 (curated); origin labels extracted from the publication by Qwen3.8-27B"
+   }
+  ]
+ }
+}

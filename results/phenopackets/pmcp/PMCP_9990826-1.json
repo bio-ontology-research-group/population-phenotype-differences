@@ -1,0 +1,247 @@
+{
+ "id": "PMCP_9990826-1",
+ "subject": {
+  "id": "PMCP_9990826-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P21Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "21-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Birt-Hogg-Dub\u00e9 syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"trace mitral valve regurgitation\", \"excluded\": false}, {\"text\": \"trace tricuspid regurgitation\", \"excluded\": false}, {\"text\": \"trace aortic valve regurgitation\", \"excluded\": false}, {\"text\": \"renal cysts, which were found to be normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9990826-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:palmer b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002756",
+    "label": "Pathologic fracture"
+   },
+   "description": "multiple fractures occurring from minor traumas"
+  },
+  {
+   "type": {
+    "id": "HP:0030833",
+    "label": "Neck pain"
+   },
+   "description": "chronic neck pain"
+  },
+  {
+   "type": {
+    "id": "HP:0003401",
+    "label": "Paresthesia"
+   },
+   "description": "slight paresthesia in the upper extremities"
+  },
+  {
+   "type": {
+    "id": "HP:0008441",
+    "label": "Herniation of intervertebral nuclei"
+   },
+   "description": "multiple bulging discs from C3-C7"
+  },
+  {
+   "type": {
+    "id": "HP:0030436",
+    "label": "Fibrofolliculoma"
+   },
+   "description": "multiple fibrofolliculomas scattered diffusely around the cheeks and neck"
+  },
+  {
+   "type": {
+    "id": "HP:6001021",
+    "label": "Subcutaneous emphysema"
+   },
+   "description": "subcutaneous emphysema from a small pneumothorax leak"
+  },
+  {
+   "type": {
+    "id": "HP:0001647",
+    "label": "Bicuspid aortic valve"
+   },
+   "description": "bicuspid aortic valve"
+  },
+  {
+   "type": {
+    "id": "HP:0002616",
+    "label": "Aortic root aneurysm"
+   },
+   "description": "mild aortic root dilation of 4.6 cm"
+  },
+  {
+   "type": {
+    "id": "HP:0031295",
+    "label": "Left atrial enlargement"
+   },
+   "description": "mild left atrial enlargement"
+  },
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "hypertension"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9990826-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9990826-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9990826-1-FLCN",
+        "geneContext": {
+         "valueId": "HGNC:27310",
+         "symbol": "FLCN"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36895521",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36895521/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

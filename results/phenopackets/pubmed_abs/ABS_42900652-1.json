@@ -1,0 +1,211 @@
+{
+ "id": "ABS_42900652-1",
+ "subject": {
+  "id": "ABS_42900652-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "antenatally"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0030674",
+      "label": "Antenatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"mixed M\u00fcllerian and Wolffian structures\", \"excluded\": false}, {\"text\": \"ovarian primordial follicles\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:giri d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000811",
+    "label": "Abnormal external genitalia morphology"
+   },
+   "description": "atypical genital development"
+  },
+  {
+   "type": {
+    "id": "HP:0008665",
+    "label": "Clitoral hypertrophy"
+   },
+   "description": "clitoromegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0000063",
+    "label": "Fused labia minora"
+   },
+   "description": "posterior labioscrotal fusion"
+  },
+  {
+   "type": {
+    "id": "HP:0000051",
+    "label": "Perineal hypospadias"
+   },
+   "description": "perineal urethral opening"
+  },
+  {
+   "type": {
+    "id": "HP:0000148",
+    "label": "Vaginal atresia"
+   },
+   "description": "absent vaginal opening"
+  },
+  {
+   "type": {
+    "id": "HP:0000028",
+    "label": "Cryptorchidism"
+   },
+   "description": "palpable labioscrotal gonads"
+  },
+  {
+   "type": {
+    "id": "HP:0030088",
+    "label": "Increased serum testosterone level"
+   },
+   "description": "Testosterone, anti mullerian hormone (AMH), and inhibin B were elevated"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_42900652-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_42900652-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_42900652-1-NR5A1",
+        "geneContext": {
+         "valueId": "HGNC:7983",
+         "symbol": "NR5A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:42900652",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/42900652/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

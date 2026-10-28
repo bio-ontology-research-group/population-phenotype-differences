@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_10010727-1",
+ "subject": {
+  "id": "PMCP_10010727-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P30Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to our emergency department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "30-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Marfan syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"disproportionately long extremities\", \"excluded\": false}, {\"text\": \"no fetal distress\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10010727-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wang y"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "chest pain"
+  },
+  {
+   "type": {
+    "id": "HP:0003690",
+    "label": "Limb muscle weakness"
+   },
+   "description": "weakness of right limb"
+  },
+  {
+   "type": {
+    "id": "HP:0000622",
+    "label": "Blurred vision"
+   },
+   "description": "blurred vision in her right eye"
+  },
+  {
+   "type": {
+    "id": "HP:0001238",
+    "label": "Slender finger"
+   },
+   "description": "slender fingers"
+  },
+  {
+   "type": {
+    "id": "HP:0001635",
+    "label": "Congestive heart failure"
+   },
+   "description": "cardiac function NYHA class III"
+  },
+  {
+   "type": {
+    "id": "HP:0001659",
+    "label": "Aortic regurgitation"
+   },
+   "description": "aortic insufficiency (AI)"
+  },
+  {
+   "type": {
+    "id": "HP:0004942",
+    "label": "Aortic aneurysm"
+   },
+   "description": "enlarged ascending aorta (internal diameter of 52 mm)"
+  },
+  {
+   "type": {
+    "id": "HP:0002647",
+    "label": "Aortic dissection"
+   },
+   "description": "intimal structure floating in the lumen of ascending aorta and aortic arch"
+  },
+  {
+   "type": {
+    "id": "HP:0001679",
+    "label": "Abnormal aortic morphology"
+   },
+   "description": "defect about 59 mm away from the aortic valve"
+  },
+  {
+   "type": {
+    "id": "HP:0012418",
+    "label": "Hypoxemia"
+   },
+   "description": "hypoxemia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10010727-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10010727-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10010727-1-FBN1",
+        "geneContext": {
+         "valueId": "HGNC:3603",
+         "symbol": "FBN1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35675490",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35675490/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

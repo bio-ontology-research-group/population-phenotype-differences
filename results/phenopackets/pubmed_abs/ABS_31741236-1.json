@@ -1,0 +1,195 @@
+{
+ "id": "ABS_31741236-1",
+ "subject": {
+  "id": "ABS_31741236-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005246",
+     "label": "Pakistan"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Pakistani"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Australia; Denmark; Germany; Pakistan; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:khan ta"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0020086",
+    "label": "BCGitis"
+   },
+   "description": "severe bacille Calmette-Gu\u00e9rin (BCG) infection"
+  },
+  {
+   "type": {
+    "id": "HP:0011274",
+    "label": "Recurrent mycobacterial infections"
+   },
+   "description": "recurrent tuberculosis"
+  },
+  {
+   "type": {
+    "id": "HP:0033253",
+    "label": "Reduced circulating interferon gamma concentration"
+   },
+   "description": "significantly reduced IFN\u03b3 production"
+  },
+  {
+   "type": {
+    "id": "HP:0031383",
+    "label": "Abnormal lymphocyte surface marker expression"
+   },
+   "description": "no surface expression of IL-12R\u03b21 on PHA-activated T lymphocytes"
+  },
+  {
+   "type": {
+    "id": "HP:0031407",
+    "label": "Impaired cytokine signaling"
+   },
+   "description": "IL-12-induced impaired STAT4 phosphorylation"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_31741236-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_31741236-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_31741236-1-IL12RB1",
+        "geneContext": {
+         "valueId": "HGNC:5971",
+         "symbol": "IL12RB1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31741236",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31741236/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

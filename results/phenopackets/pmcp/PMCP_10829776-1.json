@@ -1,0 +1,259 @@
+{
+ "id": "PMCP_10829776-1",
+ "subject": {
+  "id": "PMCP_10829776-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P6M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Children\u2019s Hospital in Taif"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Children\u2019s Hospital in Taif"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "six-month-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Permanent Neonatal Diabetes"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no dysmorphic features\", \"excluded\": true}, {\"text\": \"no organomegaly\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10829776-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:al homaiani l"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002013",
+    "label": "Vomiting"
+   },
+   "description": "vomiting"
+  },
+  {
+   "type": {
+    "id": "HP:0000103",
+    "label": "Polyuria"
+   },
+   "description": "increased urine output"
+  },
+  {
+   "type": {
+    "id": "HP:0001944",
+    "label": "Dehydration"
+   },
+   "description": "severe dehydration"
+  },
+  {
+   "type": {
+    "id": "HP:0002883",
+    "label": "Hyperventilation"
+   },
+   "description": "Kussmaul breathing"
+  },
+  {
+   "type": {
+    "id": "HP:0001942",
+    "label": "Metabolic acidosis"
+   },
+   "description": "severe metabolic acidosis with a high anion gap"
+  },
+  {
+   "type": {
+    "id": "HP:0002919",
+    "label": "Ketonuria"
+   },
+   "description": "Urinary ketones and glucose were positive +3"
+  },
+  {
+   "type": {
+    "id": "HP:0003074",
+    "label": "Hyperglycemia"
+   },
+   "description": "Random Blood Sugar was 30 mmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0040217",
+    "label": "Elevated hemoglobin A1c"
+   },
+   "description": "hemoglobin A1C was 16.3%"
+  },
+  {
+   "type": {
+    "id": "HP:0030795",
+    "label": "Reduced C-peptide level"
+   },
+   "description": "fasting C-peptide was 0.7 ng/mL"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10829776-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10829776-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10829776-1-INS",
+        "geneContext": {
+         "valueId": "HGNC:6081",
+         "symbol": "INS"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38303767",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38303767/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

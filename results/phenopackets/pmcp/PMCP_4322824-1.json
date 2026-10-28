@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_4322824-1",
+ "subject": {
+  "id": "PMCP_4322824-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "5 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Blau syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no rash\", \"excluded\": true}, {\"text\": \"antinuclear antibody negative\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4322824-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:gok f"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0040186",
+    "label": "Maculopapular exanthema"
+   },
+   "description": "maculopapular erythematous rash over his entire body"
+  },
+  {
+   "type": {
+    "id": "HP:0007514",
+    "label": "Edema of the dorsum of hands"
+   },
+   "description": "swelling of the dorsum of the hands"
+  },
+  {
+   "type": {
+    "id": "HP:0046505",
+    "label": "Hand pain"
+   },
+   "description": "pain, limitation of movement, and increased warmth in both hands"
+  },
+  {
+   "type": {
+    "id": "HP:6000364",
+    "label": "Synovial cyst"
+   },
+   "description": "tenosynovial cysts"
+  },
+  {
+   "type": {
+    "id": "HP:0012098",
+    "label": "Edema of the dorsum of feet"
+   },
+   "description": "swelling of the dorsum of both feet"
+  },
+  {
+   "type": {
+    "id": "HP:0001369",
+    "label": "Arthritis"
+   },
+   "description": "symmetrical arthritis of both knees"
+  },
+  {
+   "type": {
+    "id": "HP:0012122",
+    "label": "Anterior uveitis"
+   },
+   "description": "granulomatous anterior uveitis in the patient's right eye"
+  },
+  {
+   "type": {
+    "id": "HP:0034819",
+    "label": "Iris nodule"
+   },
+   "description": "large precipitates in the anterior chamber and nodules in the iris"
+  },
+  {
+   "type": {
+    "id": "HP:0012220",
+    "label": "Non-caseating epithelioid cell granulomatosis"
+   },
+   "description": "noncaseating granulomatous disease"
+  },
+  {
+   "type": {
+    "id": "HP:0011227",
+    "label": "Elevated circulating C-reactive protein concentration"
+   },
+   "description": "C-reactive protein 4.2 mg/dL"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4322824-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4322824-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4322824-1-NOD2",
+        "geneContext": {
+         "valueId": "HGNC:5331",
+         "symbol": "NOD2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25692065",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25692065/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

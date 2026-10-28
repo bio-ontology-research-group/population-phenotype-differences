@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_10787082-1",
+ "subject": {
+  "id": "PMCP_10787082-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P11Y1M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "11 years and one month"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "von Hippel-Lindau disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no abnormalities were found on brain MRI\", \"excluded\": true}, {\"text\": \"no abnormalities were found on ... fundus examination\", \"excluded\": true}, {\"text\": \"no lesions other than the PGL were found in the patient\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10787082-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:niida y"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0002315",
+    "label": "Headache"
+   },
+   "description": "Headaches"
+  },
+  {
+   "type": {
+    "id": "HP:0000975",
+    "label": "Hyperhidrosis"
+   },
+   "description": "excessive sweating"
+  },
+  {
+   "type": {
+    "id": "HP:0003334",
+    "label": "Elevated circulating catecholamine level"
+   },
+   "description": "elevated catecholamines as plasma norepinephrine 1529 pg/ml"
+  },
+  {
+   "type": {
+    "id": "HP:0003345",
+    "label": "Elevated urinary norepinephrine level"
+   },
+   "description": "urinary norepinephrine 323.9 \u03bcg/day"
+  },
+  {
+   "type": {
+    "id": "HP:0011976",
+    "label": "Elevated urinary catecholamine level"
+   },
+   "description": "urinary normetanephrine 1.61 \u03bcg/mg\u00b7Cr"
+  },
+  {
+   "type": {
+    "id": "HP:0006729",
+    "label": "Retroperitoneal paraganglioma"
+   },
+   "description": "1.4 cm tumor with speckled high signal intensity on T2-weighted images near the right renal hilum"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10787082-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10787082-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10787082-1-VHL",
+        "geneContext": {
+         "valueId": "HGNC:12687",
+         "symbol": "VHL"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38222164",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38222164/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

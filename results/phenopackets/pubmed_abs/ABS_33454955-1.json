@@ -1,0 +1,222 @@
+{
+ "id": "ABS_33454955-1",
+ "subject": {
+  "id": "ABS_33454955-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:baert-desurmont s"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005266",
+    "label": "Intestinal polyp"
+   },
+   "description": "adenomatous polyps"
+  },
+  {
+   "type": {
+    "id": "HP:0003003",
+    "label": "Colon cancer"
+   },
+   "description": "colorectal cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0100833",
+    "label": "Neoplasm of the small intestine"
+   },
+   "description": "duodenal cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0002894",
+    "label": "Neoplasm of the pancreas"
+   },
+   "description": "pancreatic cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0100242",
+    "label": "Sarcoma"
+   },
+   "description": "sarcoma"
+  },
+  {
+   "type": {
+    "id": "HP:0002671",
+    "label": "Basal cell carcinoma"
+   },
+   "description": "basal cell carcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0003002",
+    "label": "Breast carcinoma"
+   },
+   "description": "breast cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0010786",
+    "label": "Urinary tract neoplasm"
+   },
+   "description": "urothelial carcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0002861",
+    "label": "Melanoma"
+   },
+   "description": "melanoma"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_33454955-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_33454955-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_33454955-1-NTHL1",
+        "geneContext": {
+         "valueId": "HGNC:8028",
+         "symbol": "NTHL1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33454955",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33454955/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

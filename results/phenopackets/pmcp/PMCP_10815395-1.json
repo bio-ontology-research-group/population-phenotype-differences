@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_10815395-1",
+ "subject": {
+  "id": "PMCP_10815395-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P1Y6M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002952",
+     "label": "Hungary"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Hungary"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "1.5 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Dent disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"cystically dilated rough endoplasmic reticulum profiles\", \"excluded\": false}, {\"text\": \"AEA was rudimentary\", \"excluded\": false}, {\"text\": \"GBM was normal\", \"excluded\": true}, {\"text\": \"brush border microvilli appeared normal\", \"excluded\": true}, {\"text\": \"cells of distal nephron segments did not have any abnormalities\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10815395-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:iv\u00e1nyi b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002907",
+    "label": "Microscopic hematuria"
+   },
+   "description": "microhematuria"
+  },
+  {
+   "type": {
+    "id": "HP:0004737",
+    "label": "Global glomerulosclerosis"
+   },
+   "description": "globally sclerotic"
+  },
+  {
+   "type": {
+    "id": "HP:0033495",
+    "label": "Segmental glomerulosclerosis"
+   },
+   "description": "segmental sclerosis"
+  },
+  {
+   "type": {
+    "id": "HP:0032599",
+    "label": "Abnormal renal tubular epithelial morphology"
+   },
+   "description": "Cytoplasmic granules had accumulated in 20% of PT profiles"
+  },
+  {
+   "type": {
+    "id": "HP:0032623",
+    "label": "Renal intratubular casts"
+   },
+   "description": "Eosinophilic casts were noted occasionally in medullary collecting ducts"
+  },
+  {
+   "type": {
+    "id": "HP:0000121",
+    "label": "Nephrocalcinosis"
+   },
+   "description": "intratubular and interstitial calcified deposits"
+  },
+  {
+   "type": {
+    "id": "HP:0031266",
+    "label": "Podocyte foot process effacement"
+   },
+   "description": "foot processes were effaced segmentally"
+  },
+  {
+   "type": {
+    "id": "HP:0031340",
+    "label": "Abnormal lysosomal morphology"
+   },
+   "description": "lysosomes were numerous and contained homogeneous electron-dense aggregates"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10815395-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10815395-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10815395-1-CLCN5",
+        "geneContext": {
+         "valueId": "HGNC:2023",
+         "symbol": "CLCN5"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38256038",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38256038/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

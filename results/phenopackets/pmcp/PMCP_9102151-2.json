@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_9102151-2",
+ "subject": {
+  "id": "PMCP_9102151-2",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P14Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "14 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Blue rubber bleb nevus syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"chronic intestinal bleeding\", \"excluded\": false}, {\"text\": \"severe anemia\", \"excluded\": false}, {\"text\": \"There were no ulcers on these lesions\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9102151-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:toledo jra"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011276",
+    "label": "Vascular skin abnormality"
+   },
+   "description": "Multiple bluish nodules on her lip, neck, shoulder, and back"
+  },
+  {
+   "type": {
+    "id": "HP:0031486",
+    "label": "Vascular malformation of the lip"
+   },
+   "description": "cyanotic elevated soft vascular lesion was present on the lower lip"
+  },
+  {
+   "type": {
+    "id": "HP:0025765",
+    "label": "Rubber-like lump"
+   },
+   "description": "The masses felt rubbery and could be compressible"
+  },
+  {
+   "type": {
+    "id": "HP:0004840",
+    "label": "Hypochromic microcytic anemia"
+   },
+   "description": "moderate anemia (Hb 65.0 g/L) characterized by microcyte and hypopigmentation"
+  },
+  {
+   "type": {
+    "id": "HP:6000221",
+    "label": "Positive stool occult blood test"
+   },
+   "description": "fecal occult blood test was performed three times with positive results"
+  },
+  {
+   "type": {
+    "id": "HP:0004296",
+    "label": "Abnormal gastrointestinal vascular morphology"
+   },
+   "description": "Many dark hyperemia strawberry-like masses in various sizes were found spreading on the esophagus, the entire stomach, the duodenal bulb, and the descending duodenum"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9102151-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9102151-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9102151-2-TEK",
+        "geneContext": {
+         "valueId": "HGNC:11724",
+         "symbol": "TEK"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35573101",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35573101/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

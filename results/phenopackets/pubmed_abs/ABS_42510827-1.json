@@ -1,0 +1,226 @@
+{
+ "id": "ABS_42510827-1",
+ "subject": {
+  "id": "ABS_42510827-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "ontologyClass": {
+    "id": "HP:0003593",
+    "label": "Infantile onset"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002478",
+     "label": "Lebanon"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "infant"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "de_novo"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Lebanon"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chebly a"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "local_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002611",
+    "label": "Cholestatic liver disease"
+   },
+   "description": "progressive cholestatic liver disease"
+  },
+  {
+   "type": {
+    "id": "HP:0001392",
+    "label": "Abnormality of the liver"
+   },
+   "description": "complex hepatobiliary malformations"
+  },
+  {
+   "type": {
+    "id": "HP:0011467",
+    "label": "Absent gallbladder"
+   },
+   "description": "absent gallbladder"
+  },
+  {
+   "type": {
+    "id": "HP:0006571",
+    "label": "Reduced number of intrahepatic bile ducts"
+   },
+   "description": "paucity of bile ducts"
+  },
+  {
+   "type": {
+    "id": "HP:0001433",
+    "label": "Hepatosplenomegaly"
+   },
+   "description": "hepatosplenomegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0012202",
+    "label": "Increased serum bile acid concentration"
+   },
+   "description": "markedly elevated total bile acids"
+  },
+  {
+   "type": {
+    "id": "HP:0001409",
+    "label": "Portal hypertension"
+   },
+   "description": "portal hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0002040",
+    "label": "Esophageal varix"
+   },
+   "description": "esophageal varices"
+  },
+  {
+   "type": {
+    "id": "HP:0001399",
+    "label": "Hepatic failure"
+   },
+   "description": "liver failure"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_42510827-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_42510827-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:11957",
+       "symbol": "MED12"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:42510827",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/42510827/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

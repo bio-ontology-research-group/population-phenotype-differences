@@ -1,0 +1,248 @@
+{
+ "id": "ABS_38365661-1",
+ "subject": {
+  "id": "ABS_38365661-1",
+  "sex": "UNKNOWN_SEX",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P23Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002721",
+     "label": "Russia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "23 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "13 years"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P13Y"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Belgium; Russia"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:deev rv"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003750",
+    "label": "Increased muscle fatiguability"
+   },
+   "description": "fatigue of the gastrocnemius muscles"
+  },
+  {
+   "type": {
+    "id": "HP:0001771",
+    "label": "Achilles tendon contracture"
+   },
+   "description": "pronounced contractures of the Achilles tendons"
+  },
+  {
+   "type": {
+    "id": "HP:0012785",
+    "label": "Flexion contracture of finger"
+   },
+   "description": "contractures of the flexors of the fingers"
+  },
+  {
+   "type": {
+    "id": "HP:0034676",
+    "label": "Extension contracture of toe"
+   },
+   "description": "contractures of the extensors of the toes"
+  },
+  {
+   "type": {
+    "id": "HP:0005781",
+    "label": "Contractures of the large joints"
+   },
+   "description": "involvement of large joints and the spine"
+  },
+  {
+   "type": {
+    "id": "HP:0003306",
+    "label": "Spinal rigidity"
+   },
+   "description": "rigid spine"
+  },
+  {
+   "type": {
+    "id": "HP:0012548",
+    "label": "Fatty replacement of skeletal muscle"
+   },
+   "description": "connective tissue and fatty replacement of the posterior muscles of the thighs and lower legs"
+  },
+  {
+   "type": {
+    "id": "HP:0100748",
+    "label": "Muscular edema"
+   },
+   "description": "Edema was noted in the anterior and medial muscle groups of the thighs, lower legs, and the multifidus muscle of the back"
+  },
+  {
+   "type": {
+    "id": "HP:0030114",
+    "label": "Absent muscle fiber dysferlin"
+   },
+   "description": "complete absence of dysferlin protein expression in the muscle fibers"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_38365661-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_38365661-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_38365661-1-DYSF",
+        "geneContext": {
+         "valueId": "HGNC:3097",
+         "symbol": "DYSF"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38365661",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38365661/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

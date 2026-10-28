@@ -1,0 +1,246 @@
+{
+ "id": "PMCP_7396012-1",
+ "subject": {
+  "id": "PMCP_7396012-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P24Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Beijing Zhiyin Oriental Transformational Medicine Research Center Co., Ltd."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "24-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Gordon syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no abnormal signs except elevated blood pressure\", \"excluded\": true}, {\"text\": \"normal serum creatinine and glomerular filtration rate\", \"excluded\": true}, {\"text\": \"normal cortisol circadian rhythm and levels\", \"excluded\": true}, {\"text\": \"normal levels of 24-hour urinary free cortisol, adrenocorticotropin, and serum catecholamine\", \"excluded\": true}, {\"text\": \"Her sex hormones, thyroid hormone, and parathyroid hormone were normal\", \"excluded\": true}, {\"text\": \"no obvious abnormality in the bilateral adrenal glands\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7396012-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chen t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002331",
+    "label": "Recurrent paroxysmal headache"
+   },
+   "description": "paroxysmal headache"
+  },
+  {
+   "type": {
+    "id": "HP:0032263",
+    "label": "Increased blood pressure"
+   },
+   "description": "elevated blood pressure"
+  },
+  {
+   "type": {
+    "id": "HP:0002153",
+    "label": "Hyperkalemia"
+   },
+   "description": "elevated levels of serum potassium"
+  },
+  {
+   "type": {
+    "id": "HP:0011423",
+    "label": "Hyperchloremia"
+   },
+   "description": "elevated levels of ... chloride"
+  },
+  {
+   "type": {
+    "id": "HP:0001941",
+    "label": "Acidosis"
+   },
+   "description": "decreased arterial blood pH"
+  },
+  {
+   "type": {
+    "id": "HP:0032066",
+    "label": "Decreased serum bicarbonate concentration"
+   },
+   "description": "decreased ... standard bicarbonate concentration"
+  },
+  {
+   "type": {
+    "id": "HP:0003351",
+    "label": "Decreased circulating renin concentration"
+   },
+   "description": "suppressed plasma renin activity"
+  },
+  {
+   "type": {
+    "id": "HP:0000859",
+    "label": "Increased circulating aldosterone concentration"
+   },
+   "description": "elevated plasma aldosterone concentration"
+  },
+  {
+   "type": {
+    "id": "HP:0000791",
+    "label": "Uric acid nephrolithiasis"
+   },
+   "description": "uric acid crystals in the right kidney"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7396012-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7396012-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7396012-1-KLHL3",
+        "geneContext": {
+         "valueId": "HGNC:6354",
+         "symbol": "KLHL3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32774943",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32774943/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

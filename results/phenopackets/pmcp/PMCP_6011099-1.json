@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_6011099-1",
+ "subject": {
+  "id": "PMCP_6011099-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "came to the attention of the immunology service"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "5 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "XLP1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no cytopenias\", \"excluded\": true}, {\"text\": \"no transaminitis\", \"excluded\": true}, {\"text\": \"normal inflammatory markers including C-reactive protein (CRP) and platelet count\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6011099-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wall la"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005425",
+    "label": "Recurrent sinopulmonary infections"
+   },
+   "description": "recurrent sinopulmonary infections"
+  },
+  {
+   "type": {
+    "id": "HP:0004313",
+    "label": "Decreased circulating immunoglobulin concentration"
+   },
+   "description": "Profound hypogammaglobulinemia"
+  },
+  {
+   "type": {
+    "id": "HP:0000718",
+    "label": "Aggressive behavior"
+   },
+   "description": "uncontrolled aggression"
+  },
+  {
+   "type": {
+    "id": "HP:0007042",
+    "label": "Focal white matter lesions"
+   },
+   "description": "multiple small nonenhancing foci on T2 FLAIR sequence, mostly in the frontal lobes and scattered throughout the subcortical white matter"
+  },
+  {
+   "type": {
+    "id": "HP:0020071",
+    "label": "Viremia"
+   },
+   "description": "presence of EBV in the blood (2300 copies/ml)"
+  },
+  {
+   "type": {
+    "id": "HP:0034747",
+    "label": "CSF infectious agent"
+   },
+   "description": "Cerebrospinal fluid (CSF) also demonstrated EBV (73 copies/ml)"
+  },
+  {
+   "type": {
+    "id": "HP:0012229",
+    "label": "CSF pleocytosis"
+   },
+   "description": "slightly elevated CSF WBC (8 cells/mm3)"
+  },
+  {
+   "type": {
+    "id": "HP:0005424",
+    "label": "Absent specific antibody response"
+   },
+   "description": "IgM to EBV was undetectable"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6011099-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6011099-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6011099-1-SH2D1A",
+        "geneContext": {
+         "valueId": "HGNC:10820",
+         "symbol": "SH2D1A"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29977631",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29977631/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

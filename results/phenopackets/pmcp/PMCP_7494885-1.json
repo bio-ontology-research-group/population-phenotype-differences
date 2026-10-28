@@ -1,0 +1,244 @@
+{
+ "id": "PMCP_7494885-1",
+ "subject": {
+  "id": "PMCP_7494885-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P32Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Saudi"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A Novel Intronic Variant in SLC2A1 Gene in a Saudi Patient"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Saudi Arabia"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "32 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Myoclonic Epilepsy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal developmental milestones\", \"excluded\": true}, {\"text\": \"normal general examination including vital signs, skin, and no organomegaly\", \"excluded\": true}, {\"text\": \"Cranial nerve examination from II to VII, motor, sensory, cerebellar, and gait examination were all normal\", \"excluded\": true}, {\"text\": \"brain magnetic resonance imaging (MRI), which was unremarkable\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7494885-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:naseer mi"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001336",
+    "label": "Myoclonus"
+   },
+   "description": "frequent myoclonic jerks involving his face, arms, and the whole body"
+  },
+  {
+   "type": {
+    "id": "HP:0025190",
+    "label": "Bilateral tonic-clonic seizure with generalized onset"
+   },
+   "description": "first generalized tonic-clonic seizure"
+  },
+  {
+   "type": {
+    "id": "HP:0002167",
+    "label": "Abnormal speech pattern"
+   },
+   "description": "speech was interrupted frequently by myoclonic jerks"
+  },
+  {
+   "type": {
+    "id": "HP:0001348",
+    "label": "Brisk reflexes"
+   },
+   "description": "brisk reflexes, which were symmetrical bilaterally"
+  },
+  {
+   "type": {
+    "id": "HP:0011182",
+    "label": "Interictal epileptiform activity"
+   },
+   "description": "epileptiform discharges in the form of polyspikes and myoclonic jerks"
+  },
+  {
+   "type": {
+    "id": "HP:0011972",
+    "label": "Hypoglycorrhachia"
+   },
+   "description": "hypoglycorrhachia (45.5% when compared to serum glucose level)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7494885-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7494885-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7494885-1-SLC2A1",
+        "geneContext": {
+         "valueId": "HGNC:11005",
+         "symbol": "SLC2A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32983954",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32983954/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

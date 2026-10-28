@@ -1,0 +1,251 @@
+{
+ "id": "PMCP_5903162-1",
+ "subject": {
+  "id": "PMCP_5903162-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P20Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Japanese"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 20-year-old Japanese female student"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to Toyonaka Municipal Hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "20-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Membranous Nephropathy-Like Apolipoprotein E Deposition Disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"chance proteinuria and hematuria\", \"excluded\": false}, {\"text\": \"Significant proteinuria and hematuria with hypoalbuminemia\", \"excluded\": false}, {\"text\": \"No abnormal finding was identified by physical examination\", \"excluded\": true}, {\"text\": \"criteria for nephrotic syndrome were not satisfied\", \"excluded\": true}, {\"text\": \"Neither mesangial cell proliferation nor mesangial matrix expansion was marked\", \"excluded\": true}, {\"text\": \"a granular pattern as seen in MN was not identified\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5903162-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:saito t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004737",
+    "label": "Global glomerulosclerosis"
+   },
+   "description": "global sclerotic change"
+  },
+  {
+   "type": {
+    "id": "HP:0033288",
+    "label": "Glomerular basement membrane spikes"
+   },
+   "description": "\u201cspike\u201d formation as seen in MN"
+  },
+  {
+   "type": {
+    "id": "HP:0032582",
+    "label": "Renal interstitial foam cells"
+   },
+   "description": "Foam cells were not found in any glomeruli, but in the interstitial area"
+  },
+  {
+   "type": {
+    "id": "HP:0030949",
+    "label": "Glomerular deposits"
+   },
+   "description": "very weak linear patterns were identified for IgG and C3 in glomeruli"
+  },
+  {
+   "type": {
+    "id": "HP:0012213",
+    "label": "Decreased glomerular filtration rate"
+   },
+   "description": "estimated glomerular filtration rate was slowly reduced"
+  },
+  {
+   "type": {
+    "id": "HP:0001903",
+    "label": "Anemia"
+   },
+   "description": "Mild anemia was observed initially"
+  },
+  {
+   "type": {
+    "id": "HP:0034912",
+    "label": "Elevated circulating apolipoprotein E concentration"
+   },
+   "description": "plasma ApoE concentration was high"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5903162-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5903162-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5903162-1-APOE",
+        "geneContext": {
+         "valueId": "HGNC:613",
+         "symbol": "APOE"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:29692990",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/29692990/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

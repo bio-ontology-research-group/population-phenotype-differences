@@ -1,0 +1,202 @@
+{
+ "id": "ABS_26789422-1",
+ "subject": {
+  "id": "ABS_26789422-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:windebank aj"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0045054",
+    "label": "Brachial plexus neuropathy"
+   },
+   "description": "progressive left brachial more than lumbosacral plexopathies"
+  },
+  {
+   "type": {
+    "id": "HP:0002493",
+    "label": "Upper motor neuron dysfunction"
+   },
+   "description": "central sensory and corticospinal tract involvement"
+  },
+  {
+   "type": {
+    "id": "HP:0012501",
+    "label": "Abnormal brainstem white matter morphology"
+   },
+   "description": "abnormal T2 signal within the ventral pons and medulla bilaterally, involving the pyramidal tracts and the medial leminisci"
+  },
+  {
+   "type": {
+    "id": "HP:0010873",
+    "label": "Cervical spinal cord atrophy"
+   },
+   "description": "medullary and cervical spine atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0034834",
+    "label": "Peripheral nerve polyglucosan inclusion bodies"
+   },
+   "description": "large polyglucosan bodies were noted in the endoneurium"
+  },
+  {
+   "type": {
+    "id": "HP:0012379",
+    "label": "Abnormal circulating enzyme concentration or activity"
+   },
+   "description": "Peripheral blood leukocyte GBE activity was markedly reduced to 7% of normal"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_26789422-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_26789422-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_26789422-1-GBE1",
+        "geneContext": {
+         "valueId": "HGNC:4180",
+         "symbol": "GBE1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:26789422",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/26789422/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

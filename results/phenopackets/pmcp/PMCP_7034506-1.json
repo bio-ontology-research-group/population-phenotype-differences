@@ -1,0 +1,221 @@
+{
+ "id": "PMCP_7034506-1",
+ "subject": {
+  "id": "PMCP_7034506-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P18Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "sub-Saharian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "arrival by plane in France from a sub-Saharian region"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "arrival by plane in France"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "18-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Riboflavin Transporter Deficiency (RTD)"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"respiratory distress with severe hypercapnia suggesting diaphragmatic dysfunction\", \"excluded\": false}, {\"text\": \"weakness of bilateral interossei muscles at 3/5 MRC score in upper limbs\", \"excluded\": false}, {\"text\": \"weakness of bilateral psoas-iliac and tibialis anterior muscles in lower limbs at 4/5\", \"excluded\": false}, {\"text\": \"Amyotrophy was observed in distal four limbs\", \"excluded\": false}, {\"text\": \"compound motor action potentials of decreased amplitude in four limbs\", \"excluded\": false}, {\"text\": \"needle examination showed spontaneous activity (i.e., fibrillation potentials and/or positive sharp waves) and neurogenic recruitment\", \"excluded\": false}, {\"text\": \"absence of compound action potentials on auditory brainstem response\", \"excluded\": false}, {\"text\": \"not associated with fasciculations\", \"excluded\": true}, {\"text\": \"There was no pyramidal syndrome\", \"excluded\": true}, {\"text\": \"There was no sensory disorder\", \"excluded\": true}, {\"text\": \"no cranial nerve involvement\", \"excluded\": true}, {\"text\": \"fasciculation potentials were absent\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7034506-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:nadjar y"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002875",
+    "label": "Exertional dyspnea"
+   },
+   "description": "exertional dyspnea"
+  },
+  {
+   "type": {
+    "id": "HP:0008619",
+    "label": "Bilateral sensorineural hearing impairment"
+   },
+   "description": "bilateral sensorineural hearing loss"
+  },
+  {
+   "type": {
+    "id": "HP:0000649",
+    "label": "Abnormality of visual evoked potentials"
+   },
+   "description": "Evoked visual potentials were also abnormal with low and delayed potentials"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7034506-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7034506-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7034506-1-SLC52A3",
+        "geneContext": {
+         "valueId": "HGNC:16187",
+         "symbol": "SLC52A3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32022482",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32022482/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "id": "ABS_33334800-1",
+ "subject": {
+  "id": "ABS_33334800-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P40Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "40 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wei l"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0034954",
+    "label": "Thymic carcinoid tumor"
+   },
+   "description": "thymic carcinoid"
+  },
+  {
+   "type": {
+    "id": "HP:0002894",
+    "label": "Neoplasm of the pancreas"
+   },
+   "description": "pancreatic cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0000843",
+    "label": "Hyperparathyroidism"
+   },
+   "description": "hyperparathyroidism"
+  },
+  {
+   "type": {
+    "id": "HP:0012197",
+    "label": "Insulinoma"
+   },
+   "description": "insulinoma with intrahepatic metastasis"
+  },
+  {
+   "type": {
+    "id": "HP:0030405",
+    "label": "Pancreatic endocrine tumor"
+   },
+   "description": "neuroendocrine tumor (NET) of the pancreas was characterized as 6 mitoses per 10 high-power fields (HPF), infiltration of adipose tissue, no intravascular tumor thrombus and nerve infiltration"
+  },
+  {
+   "type": {
+    "id": "HP:0002896",
+    "label": "Neoplasm of the liver"
+   },
+   "description": "NET of the liver was characterized as 4 mitoses per 10 HPF, no intravascular tumor thrombus and nerve infiltration"
+  },
+  {
+   "type": {
+    "id": "HP:0100634",
+    "label": "Neuroendocrine neoplasm"
+   },
+   "description": "Immunohistochemical staining showed Ckpan (+), Syn (+), CgA (+), CD 56 (+), PGP 9.5 (+), and Ki67-positive cells (8-10%) in NET"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_33334800-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_33334800-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_33334800-1-MEN1",
+        "geneContext": {
+         "valueId": "HGNC:7010",
+         "symbol": "MEN1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33334800",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33334800/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

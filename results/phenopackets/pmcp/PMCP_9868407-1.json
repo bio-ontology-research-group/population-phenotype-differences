@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9868407-1",
+ "subject": {
+  "id": "PMCP_9868407-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P8Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "first visited the ophthalmic clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "8 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Weill\u2013Marchesani syndrome 4"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"progressive decrease in binocular vision\", \"excluded\": false}, {\"text\": \"bilateral microspherophakia\", \"excluded\": false}, {\"text\": \"did not report hand joint stiffness\", \"excluded\": true}, {\"text\": \"No structural anomalies were found in the cardiovascular system or abdomen\", \"excluded\": true}, {\"text\": \"did not identify any characteristic changes in high myopia such as posterior staphyloma, myopic maculopathy, choroidal neovascularization, and retinal detachment\", \"excluded\": true}, {\"text\": \"corneal topography analyses excluded keratoconus\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9868407-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lv h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011003",
+    "label": "High myopia"
+   },
+   "description": "high myopia"
+  },
+  {
+   "type": {
+    "id": "HP:0020308",
+    "label": "Increased anteroposterior lens thickness"
+   },
+   "description": "lens thickness (right 4.38 mm, left 4.31 mm) was significantly greater than normal"
+  },
+  {
+   "type": {
+    "id": "HP:0012376",
+    "label": "Microphakia"
+   },
+   "description": "lens equatorial diameter (right 7.33 mm and left 7.17 mm) was seen to be smaller than that of normal control child"
+  },
+  {
+   "type": {
+    "id": "HP:0001156",
+    "label": "Brachydactyly"
+   },
+   "description": "brachydactyly (5.1 cm, \u22122.4 SD)"
+  },
+  {
+   "type": {
+    "id": "HP:0012632",
+    "label": "Abnormal intraocular pressure"
+   },
+   "description": "intraocular pressure of the patient was elevated to the upper limit of normal"
+  },
+  {
+   "type": {
+    "id": "HP:0100693",
+    "label": "Iridodonesis"
+   },
+   "description": "iridodonesis was observed"
+  },
+  {
+   "type": {
+    "id": "HP:0004322",
+    "label": "Short stature"
+   },
+   "description": "short stature (height 131.2 cm, \u22122.7 standard deviation)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9868407-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9868407-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9868407-1-ADAMTS17",
+        "geneContext": {
+         "valueId": "HGNC:17109",
+         "symbol": "ADAMTS17"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36698805",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36698805/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

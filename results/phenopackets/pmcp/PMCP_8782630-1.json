@@ -1,0 +1,240 @@
+{
+ "id": "PMCP_8782630-1",
+ "subject": {
+  "id": "PMCP_8782630-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Pleuropulmonary Blastoma"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"persistently increased metabolism adjacent to the surgical staple line\", \"excluded\": false}, {\"text\": \"no brain metastases\", \"excluded\": true}, {\"text\": \"no bone marrow involvement\", \"excluded\": true}, {\"text\": \"no other suspicious capitation sites on the PET scan\", \"excluded\": true}, {\"text\": \"no relapse of her PPB almost four years after resection\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8782630-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:pich\u00e9 n"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002098",
+    "label": "Respiratory distress"
+   },
+   "description": "respiratory distress"
+  },
+  {
+   "type": {
+    "id": "HP:0012418",
+    "label": "Hypoxemia"
+   },
+   "description": "desaturation"
+  },
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "fever"
+  },
+  {
+   "type": {
+    "id": "HP:0002202",
+    "label": "Pleural effusion"
+   },
+   "description": "moderate right pleural effusion"
+  },
+  {
+   "type": {
+    "id": "HP:6000012",
+    "label": "Mediastinal shift"
+   },
+   "description": "left mediastinal shift"
+  },
+  {
+   "type": {
+    "id": "HP:0033824",
+    "label": "Pleural mass"
+   },
+   "description": "voluminous multinodular mass measuring 13 \u00d7 10 \u00d7 10 cm with cystic areas in the right pleural space"
+  },
+  {
+   "type": {
+    "id": "HP:0002664",
+    "label": "Neoplasm"
+   },
+   "description": "malignant-appearing friable tumor"
+  },
+  {
+   "type": {
+    "id": "HP:0031457",
+    "label": "Pulmonary opacity"
+   },
+   "description": "persistent linear opacities in the right lower lung"
+  },
+  {
+   "type": {
+    "id": "HP:0002910",
+    "label": "Elevated circulating hepatic transaminase concentration"
+   },
+   "description": "slightly elevated liver enzymes"
+  },
+  {
+   "type": {
+    "id": "HP:0033628",
+    "label": "Bowel irritability"
+   },
+   "description": "diarrhea and constipation"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8782630-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8782630-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8782630-1-DICER1",
+        "geneContext": {
+         "valueId": "HGNC:17098",
+         "symbol": "DICER1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35103161",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35103161/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

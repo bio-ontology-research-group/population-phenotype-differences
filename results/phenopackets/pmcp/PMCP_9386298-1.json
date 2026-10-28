@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_9386298-1",
+ "subject": {
+  "id": "PMCP_9386298-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P4Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to her primary care provider"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "four-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Li-Fraumeni syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"not in any pain\", \"excluded\": true}, {\"text\": \"denied nausea\", \"excluded\": true}, {\"text\": \"denied vomiting\", \"excluded\": true}, {\"text\": \"denied diarrhea\", \"excluded\": true}, {\"text\": \"denied constipation\", \"excluded\": true}, {\"text\": \"denied... fever\", \"excluded\": true}, {\"text\": \"No osseous invasion or suspicious osseous lesions were seen\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9386298-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:galligan a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031500",
+    "label": "Abdominal mass"
+   },
+   "description": "right lower quadrant abdominal mass"
+  },
+  {
+   "type": {
+    "id": "HP:0011805",
+    "label": "Abnormal skeletal muscle morphology"
+   },
+   "description": "8.8 x 11.0 x 15.1 cm heterogeneous mass within the right iliopsoas muscle"
+  },
+  {
+   "type": {
+    "id": "HP:0003270",
+    "label": "Abdominal distention"
+   },
+   "description": "mass effect on intra-abdominal structures including the bowel and urinary bladder, which were largely distended"
+  },
+  {
+   "type": {
+    "id": "HP:0002624",
+    "label": "Abnormal venous morphology"
+   },
+   "description": "right iliac vessels and inferior vena cava (IVC) were effaced by the mass"
+  },
+  {
+   "type": {
+    "id": "HP:0034751",
+    "label": "Inguinal lymphadenopathy"
+   },
+   "description": "mildly enlarged right superficial inguinal lymph nodes"
+  },
+  {
+   "type": {
+    "id": "HP:0002859",
+    "label": "Rhabdomyosarcoma"
+   },
+   "description": "rhabdomyosarcoma"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9386298-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9386298-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9386298-1-TP53",
+        "geneContext": {
+         "valueId": "HGNC:11998",
+         "symbol": "TP53"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35989815",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35989815/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

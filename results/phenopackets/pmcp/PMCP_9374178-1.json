@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9374178-1",
+ "subject": {
+  "id": "PMCP_9374178-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P68Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "The patient was referred to us"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "68"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "RDEB with concomitant BP"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"absence of mucosal involvement\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9374178-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:castiglia d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0008066",
+    "label": "Abnormal blistering of the skin"
+   },
+   "description": "trauma-induced blisters mainly affecting the extremities"
+  },
+  {
+   "type": {
+    "id": "HP:0004334",
+    "label": "Dermal atrophy"
+   },
+   "description": "residual skin atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0001056",
+    "label": "Milia"
+   },
+   "description": "milia formation"
+  },
+  {
+   "type": {
+    "id": "HP:0001810",
+    "label": "Dystrophic toenail"
+   },
+   "description": "Mild toenail dystrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0000989",
+    "label": "Pruritus"
+   },
+   "description": "generalized severe itch"
+  },
+  {
+   "type": {
+    "id": "HP:0001075",
+    "label": "Atrophic scars"
+   },
+   "description": "atrophic skin scarring with milia over elbows, knees, hand, and foot dorsa"
+  },
+  {
+   "type": {
+    "id": "HP:0031540",
+    "label": "Linear IgG deposits along the epidermal basement membrane zone"
+   },
+   "description": "continuous linear deposition of IgG along the BMZ"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9374178-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9374178-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9374178-1-COL7A1",
+        "geneContext": {
+         "valueId": "HGNC:2214",
+         "symbol": "COL7A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35967298",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35967298/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

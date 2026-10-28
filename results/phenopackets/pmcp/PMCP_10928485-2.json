@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_10928485-2",
+ "subject": {
+  "id": "PMCP_10928485-2",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P53Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the ED"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "53 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "FLNC-related cardiomyopathy presenting as acute myocarditis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"invasive coronary angiogram was normal\", \"excluded\": true}, {\"text\": \"positron emission tomography (PET) scan and serum angiotensin-converting enzyme, both of which were normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10928485-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:savvatis k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031676",
+    "label": "Monomorphic ventricular tachycardia"
+   },
+   "description": "haemodynamically stable monomorphic ventricular tachycardia"
+  },
+  {
+   "type": {
+    "id": "HP:0025074",
+    "label": "Abnormal QRS complex"
+   },
+   "description": "QRS fragmentation in inferior leads"
+  },
+  {
+   "type": {
+    "id": "HP:0500020",
+    "label": "Abnormal cardiac biomarker test"
+   },
+   "description": "troponin on admission was 96 ng/L"
+  },
+  {
+   "type": {
+    "id": "HP:0011227",
+    "label": "Elevated circulating C-reactive protein concentration"
+   },
+   "description": "C-reactive protein 47 mg/L"
+  },
+  {
+   "type": {
+    "id": "HP:4000141",
+    "label": "Left ventricular dilatation"
+   },
+   "description": "moderately dilated LV"
+  },
+  {
+   "type": {
+    "id": "HP:0012664",
+    "label": "Reduced left ventricular ejection fraction"
+   },
+   "description": "moderately reduced EF of 42%"
+  },
+  {
+   "type": {
+    "id": "HP:4000004",
+    "label": "Myocardial late gadolinium enhancement"
+   },
+   "description": "extensive subepicardial LGE in basal to mid-anterior and lateral walls"
+  },
+  {
+   "type": {
+    "id": "HP:4000003",
+    "label": "Elevated myocardial native T2"
+   },
+   "description": "elevated myocardial native T2 values on T2 mapping"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10928485-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10928485-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10928485-2-FLNC",
+        "geneContext": {
+         "valueId": "HGNC:3756",
+         "symbol": "FLNC"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38476289",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38476289/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

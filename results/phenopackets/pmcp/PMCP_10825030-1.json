@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_10825030-1",
+ "subject": {
+  "id": "PMCP_10825030-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P1Y8M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Tamsulosin therapy was recommended by our pediatric urologist team"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "20 months"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "primary hyperoxaluria type 1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"No signs of systemic oxalosis were observed\", \"excluded\": true}, {\"text\": \"normal kidney function\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10825030-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:montini g"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003159",
+    "label": "Hyperoxaluria"
+   },
+   "description": "urinary oxalate levels were 318 mMol/Mol creatinine"
+  },
+  {
+   "type": {
+    "id": "HP:6000567",
+    "label": "Elevated circulating oxalate concentration"
+   },
+   "description": "plasma oxalate level was 68 \u03bcMol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0000121",
+    "label": "Nephrocalcinosis"
+   },
+   "description": "nephrocalcinosis at 3 months of age"
+  },
+  {
+   "type": {
+    "id": "HP:0012330",
+    "label": "Pyelonephritis"
+   },
+   "description": "acute pyelonephritis"
+  },
+  {
+   "type": {
+    "id": "HP:0000787",
+    "label": "Nephrolithiasis"
+   },
+   "description": "two hyperechogenic images with slight posterior acoustic shadowing of 6 and 5 mm, respectively, at the left lower renal pole"
+  },
+  {
+   "type": {
+    "id": "HP:0000069",
+    "label": "Abnormality of the ureter"
+   },
+   "description": "a stone of about 6 mm in the premural tract of the right ureter"
+  },
+  {
+   "type": {
+    "id": "HP:0000072",
+    "label": "Hydroureter"
+   },
+   "description": "modest dilation of the upstream ureter in the pelvic tract (5 mm)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10825030-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10825030-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10825030-1-AGXT",
+        "geneContext": {
+         "valueId": "HGNC:341",
+         "symbol": "AGXT"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38293660",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38293660/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

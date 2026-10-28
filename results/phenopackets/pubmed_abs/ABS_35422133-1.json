@@ -1,0 +1,233 @@
+{
+ "id": "ABS_35422133-1",
+ "subject": {
+  "id": "ABS_35422133-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P35Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "35 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:espa\u00f1a-contreras m"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000505",
+    "label": "Visual impairment"
+   },
+   "description": "poor vision"
+  },
+  {
+   "type": {
+    "id": "HP:0000551",
+    "label": "Color vision defect"
+   },
+   "description": "impaired color vision"
+  },
+  {
+   "type": {
+    "id": "HP:0007766",
+    "label": "Optic disc hypoplasia"
+   },
+   "description": "small optic discs"
+  },
+  {
+   "type": {
+    "id": "HP:0000546",
+    "label": "Retinal degeneration"
+   },
+   "description": "photoreceptor segment defects"
+  },
+  {
+   "type": {
+    "id": "HP:0000493",
+    "label": "Abnormal foveal morphology"
+   },
+   "description": "disruption of the ellipsoid layer in the foveal region"
+  },
+  {
+   "type": {
+    "id": "HP:0030469",
+    "label": "Abnormal dark-adapted electroretinogram"
+   },
+   "description": "scotopic responses: DA 0.01: normal amplitude, b-wave latency at upper limit of normal / slightly increased"
+  },
+  {
+   "type": {
+    "id": "HP:0000512",
+    "label": "Abnormal electroretinogram"
+   },
+   "description": "DA 3 and DA 10: slightly increased b-wave latency, asymmetry in b amplitude, being lower in the left eye"
+  },
+  {
+   "type": {
+    "id": "HP:0000550",
+    "label": "Undetectable electroretinogram"
+   },
+   "description": "Oscillatory potentials: no responses are obtained"
+  },
+  {
+   "type": {
+    "id": "HP:0008275",
+    "label": "Abnormal light-adapted electroretinogram"
+   },
+   "description": "Photopic responses: LA-3: greatly increased latencies, decreased amplitude"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_35422133-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_35422133-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_35422133-1-PDE6C",
+        "geneContext": {
+         "valueId": "HGNC:8787",
+         "symbol": "PDE6C"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35422133",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35422133/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

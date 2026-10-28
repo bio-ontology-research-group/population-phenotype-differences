@@ -1,0 +1,191 @@
+{
+ "id": "PMCP_10158305-1",
+ "subject": {
+  "id": "PMCP_10158305-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Cystic Fibrosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"dehydrated and mildly cachectic\", \"excluded\": false}, {\"text\": \"acute right upper quadrant abdominal pain\", \"excluded\": false}, {\"text\": \"new-onset jaundice\", \"excluded\": false}, {\"text\": \"body mass index (BMI) of 14 kg/m2 (4.5th percentile; z score \u20131.69)\", \"excluded\": false}, {\"text\": \"total bilirubin 1.8 mg/dL\", \"excluded\": false}, {\"text\": \"direct bilirubin 1.03 mg/dL\", \"excluded\": false}, {\"text\": \"\u03b3-glutamyl transpeptidase 250 U/L\", \"excluded\": false}, {\"text\": \"lipase 343 U/L\", \"excluded\": false}, {\"text\": \"aspartate aminotransferase 276 U/L\", \"excluded\": false}, {\"text\": \"alanine transaminase 522 U/L\", \"excluded\": false}, {\"text\": \"extrahepatic biliary dilation\", \"excluded\": false}, {\"text\": \"common bile duct dilated to 7 mm\", \"excluded\": false}, {\"text\": \"pancreatic duct dilated to 8.8 mm\", \"excluded\": false}, {\"text\": \"linear filling defect of 1.4 cm \u00d7 0.3 cm was observed in the pancreatic duct\", \"excluded\": false}, {\"text\": \"several pancreatic intraductal filling defects noted\", \"excluded\": false}, {\"text\": \"No digital clubbing noted\", \"excluded\": true}, {\"text\": \"no history of previous respiratory symptoms, including sinusitis, bronchitis, or chronic cough\", \"excluded\": true}, {\"text\": \"did not endorse diarrhea\", \"excluded\": true}, {\"text\": \"no evidence of gallstones\", \"excluded\": true}, {\"text\": \"no stones or strictures\", \"excluded\": true}, {\"text\": \"did not endorse diarrhea or steatorrhea\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10158305-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:wilsey m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002013",
+    "label": "Vomiting"
+   },
+   "description": "emesis"
+  },
+  {
+   "type": {
+    "id": "HP:0012090",
+    "label": "Abnormal pancreas morphology"
+   },
+   "description": "6 white pancreatic stones were successfully removed from the pancreatic duct"
+  },
+  {
+   "type": {
+    "id": "HP:0034469",
+    "label": "Decreased stool elastase level"
+   },
+   "description": "stool elastase was low at <15 \u00b5g/g stool"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10158305-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10158305-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10158305-1-CFTR",
+        "geneContext": {
+         "valueId": "HGNC:1884",
+         "symbol": "CFTR"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37168618",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37168618/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

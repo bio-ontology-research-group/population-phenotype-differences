@@ -1,0 +1,213 @@
+{
+ "id": "ABS_33766795-1",
+ "subject": {
+  "id": "ABS_33766795-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P5Y9M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "5 years and 9 months"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"secondary sexual characteristics of Tanner 2 stage\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China; India"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kumar sa"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0008207",
+    "label": "Primary adrenal insufficiency"
+   },
+   "description": "primary adrenal insufficiency symptoms"
+  },
+  {
+   "type": {
+    "id": "HP:0000826",
+    "label": "Precocious puberty"
+   },
+   "description": "precocious puberty"
+  },
+  {
+   "type": {
+    "id": "HP:0008163",
+    "label": "Decreased circulating cortisol level"
+   },
+   "description": "diminished cortisol concentrations at blood serum (25 ng/ml) and urine (3.55 \u03bcg/24 h) levels"
+  },
+  {
+   "type": {
+    "id": "HP:0000040",
+    "label": "Long penis"
+   },
+   "description": "increased penis length of 8.5 cm"
+  },
+  {
+   "type": {
+    "id": "HP:0005616",
+    "label": "Accelerated skeletal maturation"
+   },
+   "description": "bone age of 18 yrs old"
+  },
+  {
+   "type": {
+    "id": "HP:0003154",
+    "label": "Increased circulating ACTH level"
+   },
+   "description": "increased basal serum adrenocorticotropic hormone (110->2000 pg/ml)"
+  },
+  {
+   "type": {
+    "id": "HP:0008232",
+    "label": "Elevated circulating follicle stimulating hormone level"
+   },
+   "description": "increased ... follicle-stimulating hormone (18.4-22.3 mIU/ml) concentrations"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_33766795-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_33766795-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_33766795-1-NR0B1",
+        "geneContext": {
+         "valueId": "HGNC:7960",
+         "symbol": "NR0B1"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33766795",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33766795/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

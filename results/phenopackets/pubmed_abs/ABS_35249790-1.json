@@ -1,0 +1,224 @@
+{
+ "id": "ABS_35249790-1",
+ "subject": {
+  "id": "ABS_35249790-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "non-Amish"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "congenital"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003623",
+      "label": "Neonatal onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Ireland; United Kingdom"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:muntoni f"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002747",
+    "label": "Respiratory insufficiency due to muscle weakness"
+   },
+   "description": "respiratory muscle weakness"
+  },
+  {
+   "type": {
+    "id": "HP:0000765",
+    "label": "Abnormal thorax morphology"
+   },
+   "description": "chest wall stiffness"
+  },
+  {
+   "type": {
+    "id": "HP:0002791",
+    "label": "Hypoventilation"
+   },
+   "description": "early severe hypoventilation"
+  },
+  {
+   "type": {
+    "id": "HP:0002878",
+    "label": "Respiratory failure"
+   },
+   "description": "severe respiratory impairment"
+  },
+  {
+   "type": {
+    "id": "HP:0003803",
+    "label": "Type 1 muscle fiber predominance"
+   },
+   "description": "predominant involvement of type 1 fibres"
+  },
+  {
+   "type": {
+    "id": "HP:0003798",
+    "label": "Nemaline bodies"
+   },
+   "description": "abundant nemaline bodies"
+  },
+  {
+   "type": {
+    "id": "HP:0030951",
+    "label": "Skeletal muscle fibrosis"
+   },
+   "description": "marked fibrosis"
+  },
+  {
+   "type": {
+    "id": "HP:0030089",
+    "label": "Abnormal muscle fiber protein expression"
+   },
+   "description": "loss of TNNT1 protein"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_35249790-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_35249790-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_35249790-1-TNNT1",
+        "geneContext": {
+         "valueId": "HGNC:11948",
+         "symbol": "TNNT1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35249790",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35249790/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

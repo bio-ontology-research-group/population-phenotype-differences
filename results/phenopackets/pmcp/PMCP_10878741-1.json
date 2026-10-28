@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_10878741-1",
+ "subject": {
+  "id": "PMCP_10878741-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P12Y8M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005281",
+     "label": "Bahrain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the pediatric clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "12 years and eight months"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Neurofibromatosis type 1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"not any skin freckling\", \"excluded\": true}, {\"text\": \"not any cutaneous neurofibromas\", \"excluded\": true}, {\"text\": \"no optic nerve gliomas\", \"excluded\": true}, {\"text\": \"no focal space-occupying lesions\", \"excluded\": true}, {\"text\": \"no lesions in the cord\", \"excluded\": true}, {\"text\": \"no obvious sphenoid wing dysplasia was noted\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10878741-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:agab w"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001362",
+    "label": "Calvarial skull defect"
+   },
+   "description": "palpable posterior scalp defect"
+  },
+  {
+   "type": {
+    "id": "HP:0007565",
+    "label": "Multiple cafe-au-lait spots"
+   },
+   "description": "multiple caf\u00e9-au-lait macules with the size of >15 mm in greatest diameter, distributed over the trunk and thighs"
+  },
+  {
+   "type": {
+    "id": "HP:0009737",
+    "label": "Lisch nodules"
+   },
+   "description": "Lisch nodules in both eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0004322",
+    "label": "Short stature"
+   },
+   "description": "short stature, with a height of 139 cm, growing on the third centile"
+  },
+  {
+   "type": {
+    "id": "HP:0007183",
+    "label": "Focal T2 hyperintense basal ganglia lesion"
+   },
+   "description": "altered signal intensity focus bright on the T2 weighted image (T2WI) and the fluid-attenuated inversion recovery (FLAIR) images, and isointense on the T1WI noted at the globus pallidus on the left and involving the right middle cerebellar peduncle as well"
+  },
+  {
+   "type": {
+    "id": "HP:0009732",
+    "label": "Plexiform neurofibroma"
+   },
+   "description": "Altered signal-intensity plaque-like infiltrative lesions were noted at the level of the scalp in the parieto-occipital region... likely to represent plexiform neurofibromas"
+  },
+  {
+   "type": {
+    "id": "HP:0000929",
+    "label": "Abnormal skull morphology"
+   },
+   "description": "skull osseous changes on the left side"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10878741-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10878741-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10878741-1-NF1",
+        "geneContext": {
+         "valueId": "HGNC:7765",
+         "symbol": "NF1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38380111",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38380111/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

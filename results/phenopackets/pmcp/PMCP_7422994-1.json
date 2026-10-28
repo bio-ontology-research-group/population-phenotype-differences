@@ -1,0 +1,243 @@
+{
+ "id": "PMCP_7422994-1",
+ "subject": {
+  "id": "PMCP_7422994-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P7D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "Taiwan"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "National Taiwan University Hospital, Taipei, Taiwan"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Taiwan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "National Taiwan University Hospital, Taipei, Taiwan"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "7-days-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Infantile Onset Pompe Disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"facial folds decrease slightly\", \"excluded\": false}, {\"text\": \"normal muscle power\", \"excluded\": true}, {\"text\": \"normal reflex\", \"excluded\": true}, {\"text\": \"no macroglossia\", \"excluded\": true}, {\"text\": \"denied poor feeding\", \"excluded\": true}, {\"text\": \"denied poor activity\", \"excluded\": true}, {\"text\": \"denied ... weak crying\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7422994-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hwu wl"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031185",
+    "label": "Elevated circulating NT-proBNP concentration"
+   },
+   "description": "elevation of pro-BNP (8738 pg/mL)"
+  },
+  {
+   "type": {
+    "id": "HP:0003236",
+    "label": "Elevated circulating creatine kinase concentration"
+   },
+   "description": "CK (722 U/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0031964",
+    "label": "Elevated circulating alanine aminotransferase concentration"
+   },
+   "description": "alanine aminotransferase (ALT) (112 U/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0001640",
+    "label": "Cardiomegaly"
+   },
+   "description": "mild cardiomegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0200128",
+    "label": "Biventricular hypertrophy"
+   },
+   "description": "moderate left ventricle (LV) and right ventricle (RV) hypertrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0001712",
+    "label": "Left ventricular hypertrophy"
+   },
+   "description": "LV mass index (LVMI, measured by 2-D method) of 115.7 g/m2"
+  },
+  {
+   "type": {
+    "id": "HP:0034932",
+    "label": "Decreased circulating acid maltase activity"
+   },
+   "description": "deficient lymphocyte GAA activity (1.33 nmol/g pro/h, normal mean 66.7)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7422994-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7422994-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7422994-1-GAA",
+        "geneContext": {
+         "valueId": "HGNC:4065",
+         "symbol": "GAA"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33073026",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33073026/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

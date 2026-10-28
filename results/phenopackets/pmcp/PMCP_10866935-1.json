@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_10866935-1",
+ "subject": {
+  "id": "PMCP_10866935-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P56Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "IRB-approved protocol"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "56-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary breast and ovarian cancer syndrome (implied by BRCA2 germline mutation) / Prostate adenocarcinoma"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"high PSMA expression in the bone, lymph nodes, and pelvis\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10866935-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:schram am"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025020",
+    "label": "Elevated prostate-specific antigen level"
+   },
+   "description": "prostate-specific antigen (PSA) of 32 ng/ml"
+  },
+  {
+   "type": {
+    "id": "HP:0012125",
+    "label": "Prostate cancer"
+   },
+   "description": "Gleason 9 (5 + 4) prostate adenocarcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0002664",
+    "label": "Neoplasm"
+   },
+   "description": "metastatic to the bone and lymph nodes"
+  },
+  {
+   "type": {
+    "id": "HP:0002716",
+    "label": "Lymphadenopathy"
+   },
+   "description": "cancer in 3 of 9 lymph nodes"
+  },
+  {
+   "type": {
+    "id": "HP:0031796",
+    "label": "Recurrent"
+   },
+   "description": "biochemical relapse"
+  },
+  {
+   "type": {
+    "id": "HP:0031501",
+    "label": "Pelvic mass"
+   },
+   "description": "new pelvic soft tissue mass"
+  },
+  {
+   "type": {
+    "id": "HP:0010622",
+    "label": "Neoplasm of the skeletal system"
+   },
+   "description": "growth in osseous rib and spinal lesions"
+  },
+  {
+   "type": {
+    "id": "HP:0031029",
+    "label": "Elevated circulating CEA concentration"
+   },
+   "description": "carcinoembryonic antigen (CEA) declined from 36 ng/ml nadiring at 11 ng/ml"
+  },
+  {
+   "type": {
+    "id": "HP:0003678",
+    "label": "Rapidly progressive"
+   },
+   "description": "rapid progression in the liver, pelvis, lymph nodes, and bone"
+  },
+  {
+   "type": {
+    "id": "HP:0020162",
+    "label": "Abnormal neoplastic cell morphology"
+   },
+   "description": "poorly differentiated adenocarcinoma, PSA-negative"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10866935-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10866935-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10866935-1-BRCA2",
+        "geneContext": {
+         "valueId": "HGNC:1101",
+         "symbol": "BRCA2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38355834",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38355834/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

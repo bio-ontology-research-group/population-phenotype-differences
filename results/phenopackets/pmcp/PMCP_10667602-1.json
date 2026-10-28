@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_10667602-1",
+ "subject": {
+  "id": "PMCP_10667602-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P30Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002839",
+     "label": "India"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "visited us"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "30"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "catecholaminergic polymorphic ventricular tachycardia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no history of congenital or rheumatic heart disease\", \"excluded\": true}, {\"text\": \"no family history of sudden cardiac death\", \"excluded\": true}, {\"text\": \"no notable findings in the cardiovascular system\", \"excluded\": true}, {\"text\": \"normal sinus rhythm with a normal corrected QT interval\", \"excluded\": true}, {\"text\": \"structurally healthy heart\", \"excluded\": true}, {\"text\": \"did not detect any structural abnormalities\", \"excluded\": true}, {\"text\": \"normal coronary arteries\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10667602-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:acharya d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001962",
+    "label": "Palpitations"
+   },
+   "description": "palpitations"
+  },
+  {
+   "type": {
+    "id": "HP:0031972",
+    "label": "Presyncope"
+   },
+   "description": "presyncope"
+  },
+  {
+   "type": {
+    "id": "HP:0001279",
+    "label": "Syncope"
+   },
+   "description": "syncope symptoms during physical activities"
+  },
+  {
+   "type": {
+    "id": "HP:0006696",
+    "label": "Polymorphic and polytopic ventricular extrasystoles"
+   },
+   "description": "multiform ventricular premature complexes (VPCs)"
+  },
+  {
+   "type": {
+    "id": "HP:0031677",
+    "label": "Polymorphic ventricular tachycardia"
+   },
+   "description": "sudden onset of polymorphic ventricular tachycardia (PMVT)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10667602-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10667602-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10667602-1-RYR2",
+        "geneContext": {
+         "valueId": "HGNC:10484",
+         "symbol": "RYR2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38022086",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38022086/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_9351373-2",
+ "subject": {
+  "id": "PMCP_9351373-2",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P14Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to her primary care doctor... Further testing at a reproductive medicine unit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "14-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Primary ovarian insufficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"negative adrenal (adrenal cortex 21-hydroxylase) antibodies\", \"excluded\": true}, {\"text\": \"normal thyroid function\", \"excluded\": true}, {\"text\": \"negative fragile X screen\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9351373-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:conway gs"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000823",
+    "label": "Delayed puberty"
+   },
+   "description": "puberty had not yet started"
+  },
+  {
+   "type": {
+    "id": "HP:0025515",
+    "label": "Delayed thelarche"
+   },
+   "description": "no breast development (B1)"
+  },
+  {
+   "type": {
+    "id": "HP:0002225",
+    "label": "Sparse pubic hair"
+   },
+   "description": "sparse pubic hair (P2)"
+  },
+  {
+   "type": {
+    "id": "HP:0002221",
+    "label": "Absent axillary hair"
+   },
+   "description": "no axillary hair (A1)"
+  },
+  {
+   "type": {
+    "id": "HP:0000837",
+    "label": "Increased circulating gonadotropin level"
+   },
+   "description": "markedly raised gonadotropins (LH 42 IU/L; FSH 96 IU/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0008214",
+    "label": "Decreased serum estradiol"
+   },
+   "description": "undetectable serum estradiol concentration"
+  },
+  {
+   "type": {
+    "id": "HP:0025379",
+    "label": "Anti-thyroid peroxidase antibody positivity"
+   },
+   "description": "positive thyroid peroxidase (TPO) antibodies"
+  },
+  {
+   "type": {
+    "id": "HP:0000716",
+    "label": "Depression"
+   },
+   "description": "developed depression requiring medication"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9351373-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9351373-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9351373-2-STAG3",
+        "geneContext": {
+         "valueId": "HGNC:11356",
+         "symbol": "STAG3"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35935072",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35935072/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

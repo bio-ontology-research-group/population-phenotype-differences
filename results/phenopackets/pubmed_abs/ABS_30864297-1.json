@@ -1,0 +1,217 @@
+{
+ "id": "ABS_30864297-1",
+ "subject": {
+  "id": "ABS_30864297-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China; United Arab Emirates"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:scaglia f"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012758",
+    "label": "Neurodevelopmental delay"
+   },
+   "description": "neurodevelopmental delay and regression"
+  },
+  {
+   "type": {
+    "id": "HP:0011442",
+    "label": "Abnormal central motor function"
+   },
+   "description": "pyramidal and extrapyramidal signs"
+  },
+  {
+   "type": {
+    "id": "HP:0000967",
+    "label": "Petechiae"
+   },
+   "description": "recurrent petechiae"
+  },
+  {
+   "type": {
+    "id": "HP:0002028",
+    "label": "Chronic diarrhea"
+   },
+   "description": "chronic diarrhea"
+  },
+  {
+   "type": {
+    "id": "HP:0001063",
+    "label": "Acrocyanosis"
+   },
+   "description": "orthostatic acrocyanosis"
+  },
+  {
+   "type": {
+    "id": "HP:0002151",
+    "label": "Increased circulating lactate concentration"
+   },
+   "description": "elevated serum levels of lactate"
+  },
+  {
+   "type": {
+    "id": "HP:0045045",
+    "label": "Elevated circulating acylcarnitine concentration"
+   },
+   "description": "elevated serum levels of C4-C5 acylcarnitines"
+  },
+  {
+   "type": {
+    "id": "HP:0003219",
+    "label": "Ethylmalonic aciduria"
+   },
+   "description": "elevated urinary excretion of ethylmalonic acid"
+  },
+  {
+   "type": {
+    "id": "HP:0012073",
+    "label": "Abnormal urinary acylglycine profile"
+   },
+   "description": "elevated urinary excretion of C4-C6 acylglycines"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_30864297-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_30864297-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_30864297-1-ETHE1",
+        "geneContext": {
+         "valueId": "HGNC:23287",
+         "symbol": "ETHE1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30864297",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30864297/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

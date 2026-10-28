@@ -1,0 +1,251 @@
+{
+ "id": "PMCP_4563186-1",
+ "subject": {
+  "id": "PMCP_4563186-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P61D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Turkish"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 2-month-old Turkish male infant"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our pediatric clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "2-month-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "HDR syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"auditory function tests were normal\", \"excluded\": true}, {\"text\": \"Urinary ultrasonography, diethylenetriamine-pentaacetic acid... were normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4563186-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:d\u00f6nmez as"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001250",
+    "label": "Seizure"
+   },
+   "description": "afebrile seizure"
+  },
+  {
+   "type": {
+    "id": "HP:0002901",
+    "label": "Hypocalcemia"
+   },
+   "description": "low serum calcium (Ca) (6.4 mg/dL; normal range, 8.8-10.3 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0002905",
+    "label": "Hyperphosphatemia"
+   },
+   "description": "high serum phosphate (7.2 mg/dL; normal range, 3.8-6.5 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0031817",
+    "label": "Decreased circulating parathyroid hormone level"
+   },
+   "description": "inappropriately low serum parathyroid hormone (PTH) (7 pg/mL; normal range, 20-65 pg/mL)"
+  },
+  {
+   "type": {
+    "id": "HP:0000093",
+    "label": "Proteinuria"
+   },
+   "description": "trace proteinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0000790",
+    "label": "Hematuria"
+   },
+   "description": "haematuria"
+  },
+  {
+   "type": {
+    "id": "HP:0003259",
+    "label": "Elevated circulating creatinine concentration"
+   },
+   "description": "Serum creatinine (Cr) level was high with 1.3 mg/dL (normal range, 0.2-0.4 mg/dL)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4563186-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4563186-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4563186-1-GATA3",
+        "geneContext": {
+         "valueId": "HGNC:4172",
+         "symbol": "GATA3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:26316437",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/26316437/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

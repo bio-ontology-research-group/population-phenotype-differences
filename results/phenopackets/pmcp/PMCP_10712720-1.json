@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_10712720-1",
+ "subject": {
+  "id": "PMCP_10712720-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P26Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "In August 2022, he was referred to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "26 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Primary Familial Gastrointestinal Stromal Tumor"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Ki-67 index was 2%\", \"excluded\": false}, {\"text\": \"mitotic rate was 1 per 5 mm2\", \"excluded\": false}, {\"text\": \"no gastrointestinal signs or symptoms\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10712720-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:zhang x"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012378",
+    "label": "Fatigue"
+   },
+   "description": "postpartum dizziness and fatigue"
+  },
+  {
+   "type": {
+    "id": "HP:0100879",
+    "label": "Enlarged ovaries"
+   },
+   "description": "enlargement of the right ovaries"
+  },
+  {
+   "type": {
+    "id": "HP:0034881",
+    "label": "Uterine mass"
+   },
+   "description": "solid mass in the upper left and right region of the uterus and abdominal cavity"
+  },
+  {
+   "type": {
+    "id": "HP:0031501",
+    "label": "Pelvic mass"
+   },
+   "description": "multiple nodules and masses (measuring 19-66 mm in diameter) in the pelvis and lower abdomen"
+  },
+  {
+   "type": {
+    "id": "HP:0000995",
+    "label": "Melanocytic nevus"
+   },
+   "description": "pigmented nevi of varying sizes, clear boundaries, and smooth surfaces"
+  },
+  {
+   "type": {
+    "id": "HP:0100833",
+    "label": "Neoplasm of the small intestine"
+   },
+   "description": "10 tumors of various sizes (1.3 to 6.5 cm) were found on the serous surface of the jejunum"
+  },
+  {
+   "type": {
+    "id": "HP:0025043",
+    "label": "Enlarged mesenteric lymph node"
+   },
+   "description": "Lymph nodes of the mesojejunum were soft and enlarged"
+  },
+  {
+   "type": {
+    "id": "HP:0430091",
+    "label": "Marker expression"
+   },
+   "description": "CD117, DOG-1, and SDHB-positive spindle cells and partial CD34-positive spindle cells"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10712720-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10712720-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10712720-1-KIT",
+        "geneContext": {
+         "valueId": "HGNC:6342",
+         "symbol": "KIT"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37311038",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37311038/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

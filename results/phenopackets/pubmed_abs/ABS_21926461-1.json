@@ -1,0 +1,212 @@
+{
+ "id": "ABS_21926461-1",
+ "subject": {
+  "id": "ABS_21926461-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"reduced CD3D transcripts\", \"excluded\": false}, {\"text\": \"CD3\u03b4 proteins\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:regueiro jr"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004430",
+    "label": "Severe combined immunodeficiency"
+   },
+   "description": "SCID"
+  },
+  {
+   "type": {
+    "id": "HP:0011839",
+    "label": "Abnormal total T cell count"
+   },
+   "description": "selective block in \u03b1\u03b2 but not in \u03b3\u03b4 T cell development"
+  },
+  {
+   "type": {
+    "id": "HP:0031383",
+    "label": "Abnormal lymphocyte surface marker expression"
+   },
+   "description": "surface TCR"
+  },
+  {
+   "type": {
+    "id": "HP:0011840",
+    "label": "Abnormal T cell physiology"
+   },
+   "description": "early TCR signaling"
+  },
+  {
+   "type": {
+    "id": "HP:0005403",
+    "label": "Decreased total T cell count"
+   },
+   "description": "severe T cell depletion"
+  },
+  {
+   "type": {
+    "id": "HP:0031397",
+    "label": "Decreased naive T cell proportion"
+   },
+   "description": "recent thymus emigrants in peripheral blood were strongly decreased"
+  },
+  {
+   "type": {
+    "id": "HP:0031430",
+    "label": "Oligoclonal T cell expansion"
+   },
+   "description": "scant \u03b1\u03b2 T cells were oligoclonal"
+  },
+  {
+   "type": {
+    "id": "HP:0005372",
+    "label": "Abnormal B cell physiology"
+   },
+   "description": "T cell-dependent B cell functions were also impaired"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_21926461-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_21926461-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:1673",
+       "symbol": "CD3D"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:21926461",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/21926461/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

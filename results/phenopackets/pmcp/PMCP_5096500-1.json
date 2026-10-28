@@ -1,0 +1,230 @@
+{
+ "id": "PMCP_5096500-1",
+ "subject": {
+  "id": "PMCP_5096500-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P4M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002945",
+     "label": "Greece"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Greek"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 4.5-month-old female infant of Greek origin"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002945",
+     "label": "Greece"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "4.5-month-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Familial Hypocalciuric Hypercalcemia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"vitamin D levels were at the lowest range {25-hydroxyvitamin D [25(OH)D]: 21 ng/mL; normal range: 10-80 ng/mL}\", \"excluded\": false}, {\"text\": \"psychomotor development was normal\", \"excluded\": true}, {\"text\": \"normal phosphorus (P: 5.9 mg/dL; normal range: 4-7 mg/dL)\", \"excluded\": true}, {\"text\": \"normal... alkaline phosphatase (ALP: 360 U/L; normal range: 169-372 U/L)\", \"excluded\": true}, {\"text\": \"normal... albumin levels (Alb: 4.5 g/dL; normal range: 3.5-5 g/dL)\", \"excluded\": true}, {\"text\": \"PTH levels were normal (PTH: 40 pg/mL; normal range: 10-80 pg/mL)\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5096500-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:papadimitriou a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003072",
+    "label": "Hypercalcemia"
+   },
+   "description": "hypercalcemia (Ca2+: 11.8 mg/dL; normal range: 9-11 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0002918",
+    "label": "Hypermagnesemia"
+   },
+   "description": "magnesium levels were slightly elevated (Mg2+: 2.5 mg/dL; normal range: 1.4-1.7 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0003127",
+    "label": "Hypocalciuria"
+   },
+   "description": "24 h urinary Ca2+ excretion was reduced"
+  },
+  {
+   "type": {
+    "id": "HP:0003513",
+    "label": "Reduced ratio of renal calcium clearance to creatinine clearance"
+   },
+   "description": "significantly low Ca2+ to creatinine clearance ratio (CCCR) (urine Ca2+: 0.7 mg/kg/24 h; normal range: 2.8\u00b10.66 and CCCR: 0.003; <0.01 suggests FHH, while >0.02 primary hyperparathyroidism)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5096500-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5096500-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5096500-1-CASR",
+        "geneContext": {
+         "valueId": "HGNC:1514",
+         "symbol": "CASR"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:27087013",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/27087013/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

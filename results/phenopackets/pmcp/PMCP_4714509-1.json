@@ -1,0 +1,211 @@
+{
+ "id": "PMCP_4714509-1",
+ "subject": {
+  "id": "PMCP_4714509-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P56Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Colorectal cancer (CRC) is the third most common malignancy and third leading cause of cancer death in the USA"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "56 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary nonpolyposis colorectal cancer"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"80-pound weight loss\", \"excluded\": false}, {\"text\": \"firm, right upper quadrant mass\", \"excluded\": false}, {\"text\": \"hematocrit level of 32.7 %\", \"excluded\": false}, {\"text\": \"carcinoembryonic antigen (CEA) level of 50.28 ng/dL\", \"excluded\": false}, {\"text\": \"13.0 \u00d7 10.0 cm localized right upper quadrant mass arising from the ascending colon\", \"excluded\": false}, {\"text\": \"invading the right lateral abdominal wall\", \"excluded\": false}, {\"text\": \"large, nearly obstructing mass proximal to the hepatic flexure\", \"excluded\": false}, {\"text\": \"mass in the duodenum\", \"excluded\": false}, {\"text\": \"mucinous lesions suspicious but not diagnostic of adenocarcinoma\", \"excluded\": false}, {\"text\": \"focal invasion into a segment of the adjacent small bowel, peripancreatic soft tissues, and duodenum\", \"excluded\": false}, {\"text\": \"Neither the positron emission tomography (PET) nor the pre-operative laparoscopy showed evidence of metastatic disease\", \"excluded\": true}, {\"text\": \"Seventy-six lymph nodes and all surgical resection margins were negative for tumor\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4714509-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:khan sa"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0033842",
+    "label": "Early satiety"
+   },
+   "description": "early satiety"
+  },
+  {
+   "type": {
+    "id": "HP:0012378",
+    "label": "Fatigue"
+   },
+   "description": "fatigue"
+  },
+  {
+   "type": {
+    "id": "HP:0002625",
+    "label": "Deep venous thrombosis"
+   },
+   "description": "lower extremity deep vein thrombosis (DVT)"
+  },
+  {
+   "type": {
+    "id": "HP:0040276",
+    "label": "Adenocarcinoma of the colon"
+   },
+   "description": "moderately differentiated mucinous adenocarcinoma arising from the hepatic flexure of the colon"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4714509-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4714509-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4714509-1-MLH1",
+        "geneContext": {
+         "valueId": "HGNC:7127",
+         "symbol": "MLH1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:26769110",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/26769110/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

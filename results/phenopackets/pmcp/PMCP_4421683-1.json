@@ -1,0 +1,257 @@
+{
+ "id": "PMCP_4421683-1",
+ "subject": {
+  "id": "PMCP_4421683-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P53Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "53"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Fabry's disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"endothelial vacuolation\", \"excluded\": false}, {\"text\": \"angiokeratomas\", \"excluded\": true}, {\"text\": \"no left ventricular hypertrophy\", \"excluded\": true}, {\"text\": \"no ocular finding such as corneal changes\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4421683-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:inoue t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0000093",
+    "label": "Proteinuria"
+   },
+   "description": "proteinuria"
+  },
+  {
+   "type": {
+    "id": "HP:0000790",
+    "label": "Hematuria"
+   },
+   "description": "haematuria"
+  },
+  {
+   "type": {
+    "id": "HP:0002907",
+    "label": "Microscopic hematuria"
+   },
+   "description": "microhaematuria (50\u201399/high power field)"
+  },
+  {
+   "type": {
+    "id": "HP:0012615",
+    "label": "Cylindruria"
+   },
+   "description": "hyaline, epithelial and red blood cell casts"
+  },
+  {
+   "type": {
+    "id": "HP:0031361",
+    "label": "Zebra bodies"
+   },
+   "description": "lamellar inclusions, structures characteristic of Fabry\u2019s disease, were partially observed in epithelial cells"
+  },
+  {
+   "type": {
+    "id": "HP:6000040",
+    "label": "Neuropathic pain"
+   },
+   "description": "neuropathic pain",
+   "excluded": true
+  },
+  {
+   "type": {
+    "id": "HP:0003546",
+    "label": "Exercise intolerance"
+   },
+   "description": "exercise intolerance",
+   "excluded": true
+  },
+  {
+   "type": {
+    "id": "HP:0011024",
+    "label": "Abnormality of the gastrointestinal tract"
+   },
+   "description": "gastrointestinal symptoms",
+   "excluded": true
+  },
+  {
+   "type": {
+    "id": "HP:0000966",
+    "label": "Hypohidrosis"
+   },
+   "description": "hypohydrosis",
+   "excluded": true
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4421683-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4421683-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4421683-1-GLA",
+        "geneContext": {
+         "valueId": "HGNC:4296",
+         "symbol": "GLA"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25984048",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25984048/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

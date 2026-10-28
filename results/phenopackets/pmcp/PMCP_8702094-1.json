@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_8702094-1",
+ "subject": {
+  "id": "PMCP_8702094-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P23Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our cardiomyopathy clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "23-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "familiar left-dominant arrhythmogenic cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no other relevant symptoms\", \"excluded\": true}, {\"text\": \"never experienced syncope\", \"excluded\": true}, {\"text\": \"normal coronary arteries\", \"excluded\": true}, {\"text\": \"normal RV dimensions and function\", \"excluded\": true}, {\"text\": \"no evidence of myocardial edema\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8702094-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dellegrottaglie s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0006682",
+    "label": "Premature ventricular contraction"
+   },
+   "description": "repetitive ventricular ectopic beats"
+  },
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "chest pain"
+  },
+  {
+   "type": {
+    "id": "HP:0500020",
+    "label": "Abnormal cardiac biomarker test"
+   },
+   "description": "troponin rise"
+  },
+  {
+   "type": {
+    "id": "HP:0010872",
+    "label": "T-wave inversion"
+   },
+   "description": "T wave inversion in the inferolateral leads on ECG"
+  },
+  {
+   "type": {
+    "id": "HP:0000969",
+    "label": "Edema"
+   },
+   "description": "mid-wall myocardial edema involving the interventricular septum"
+  },
+  {
+   "type": {
+    "id": "HP:4000004",
+    "label": "Myocardial late gadolinium enhancement"
+   },
+   "description": "mid-wall late gadolinium enhancement (LGE)"
+  },
+  {
+   "type": {
+    "id": "HP:0034314",
+    "label": "Abnormal left ventricular ejection fraction"
+   },
+   "description": "low-normal ejection fraction (EF)"
+  },
+  {
+   "type": {
+    "id": "HP:0012664",
+    "label": "Reduced left ventricular ejection fraction"
+   },
+   "description": "initial reduction of LV EF"
+  },
+  {
+   "type": {
+    "id": "HP:0012667",
+    "label": "Regional left ventricular wall motion abnormality"
+   },
+   "description": "area of hypo-akinesia involving the lateral wall"
+  },
+  {
+   "type": {
+    "id": "HP:0012663",
+    "label": "Mildly reduced left ventricular ejection fraction"
+   },
+   "description": "mildly reduced LV EF"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8702094-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8702094-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8702094-1-DSP",
+        "geneContext": {
+         "valueId": "HGNC:3052",
+         "symbol": "DSP"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34946881",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34946881/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "id": "ABS_32610579-1",
+ "subject": {
+  "id": "ABS_32610579-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002939",
+     "label": "Poland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Poland"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:fichna m"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000140",
+    "label": "Abnormality of the menstrual cycle"
+   },
+   "description": "menstrual disorders"
+  },
+  {
+   "type": {
+    "id": "HP:0030347",
+    "label": "Abnormal circulating androgen level"
+   },
+   "description": "androgenization"
+  },
+  {
+   "type": {
+    "id": "HP:0001061",
+    "label": "Acne"
+   },
+   "description": "persistent acne"
+  },
+  {
+   "type": {
+    "id": "HP:0001007",
+    "label": "Hirsutism"
+   },
+   "description": "advanced hirsutism"
+  },
+  {
+   "type": {
+    "id": "HP:0034589",
+    "label": "Increased circulating dehydroepiandrosterone-sulfate concentration"
+   },
+   "description": "serum dehydroepiandrosterone sulfate and testosterone were only slightly elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0030348",
+    "label": "Increased circulating androgen concentration"
+   },
+   "description": "particularly high values for 5\u03b1-dihydrotestosterone"
+  },
+  {
+   "type": {
+    "id": "HP:0012029",
+    "label": "Abnormal urine hormone level"
+   },
+   "description": "increased excretion of 16\u03b1-OHDHEA-a dehydroepiandrosterone metabolite-and pregnanetriolone-a 17\u03b1-hydroxyprogesterone metabolite"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_32610579-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_32610579-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:2600",
+       "symbol": "CYP21A2"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32610579",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32610579/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

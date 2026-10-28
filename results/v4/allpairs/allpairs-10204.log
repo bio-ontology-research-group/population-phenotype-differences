@@ -1,0 +1,366 @@
+start Tue Oct 27 09:39:54 PM +03 2026
+cases 65702; regions [('EUR', 27285), ('EASIA', 15059), ('MENA', 9382), ('UNKNOWN', 9348), ('SASIA', 1724), ('LATAM', 1676), ('MIXED', 542), ('OTHER', 435), ('AFR', 251)]
+
+########## MENA vs AFR
+pairs 10527 in 140 genes; same-group pairs 153
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.688  [+0.269, +2.452]
+   author_region_n_r1                            -0.229  [-0.606, +0.100]
+   author_region_same                            +0.080  [-0.269, +0.387]
+   author_region_unknown                         +0.056  [-0.381, +0.369]
+   population_n_MENA                             +0.701  [+0.175, +1.288]
+   population_same                               +0.060  [-0.455, +0.505]
+   (without author-region terms: population_n_MENA +0.545, population_same +0.100)
+   MENAMENA_vs_MENAAFR                           +0.761  [+0.258, +1.249]
+   AFRAFR_vs_MENAAFR                             -0.640  [-1.543, +0.352]
+   [total          ] population_n_MENA        coef +0.545  null mean -0.023  excess +0.568  null 95% [-0.482, +0.496]  p=0.0240  units 691
+   [total          ] population_same          coef +0.100  null mean +0.015  excess +0.085  null 95% [-0.293, +0.359]  p=0.6004  units 691
+   [total          ] MENAMENA_vs_MENAAFR      coef +0.645  null mean -0.008  excess +0.653  null 95% [-0.314, +0.338]  p=0.0010
+   [total          ] AFRAFR_vs_MENAAFR        coef -0.446  null mean +0.038  excess -0.484  null 95% [-0.711, +0.790]  p=0.2248
+   [patient-carried] population_n_MENA        coef +0.701  null mean +0.095  excess +0.605  null 95% [-0.228, +0.427]  p=0.0010  units 135
+   [patient-carried] population_same          coef +0.060  null mean +0.072  excess -0.011  null 95% [-0.088, +0.229]  p=0.8881  units 135
+   [patient-carried] MENAMENA_vs_MENAAFR      coef +0.761  null mean +0.167  excess +0.594  null 95% [-0.158, +0.525]  p=0.0010
+   [patient-carried] AFRAFR_vs_MENAAFR        coef -0.640  null mean -0.024  excess -0.617  null 95% [-0.387, +0.385]  p=0.0010
+
+
+########## MENA vs LATAM
+pairs 30171 in 624 genes; same-group pairs 637
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.398  [-0.072, +1.561]
+   author_region_n_r1                            -0.185  [-0.523, +0.015]
+   author_region_same                            +0.107  [-0.116, +0.378]
+   author_region_unknown                         +0.116  [-0.129, +0.317]
+   population_n_MENA                             +0.188  [-0.019, +0.469]
+   population_same                               -0.082  [-0.319, +0.103]
+   (without author-region terms: population_n_MENA +0.044, population_same -0.016)
+   MENAMENA_vs_MENALATAM                         +0.106  [-0.102, +0.368]
+   LATAMLATAM_vs_MENALATAM                       -0.270  [-0.721, +0.054]
+   [total          ] population_n_MENA        coef +0.044  null mean +0.002  excess +0.042  null 95% [-0.129, +0.120]  p=0.5065  units 2745
+   [total          ] population_same          coef -0.016  null mean -0.010  excess -0.005  null 95% [-0.086, +0.065]  p=0.8981  units 2745
+   [total          ] MENAMENA_vs_MENALATAM    coef +0.028  null mean -0.008  excess +0.036  null 95% [-0.129, +0.115]  p=0.5814
+   [total          ] LATAMLATAM_vs_MENALATAM  coef -0.059  null mean -0.012  excess -0.047  null 95% [-0.169, +0.156]  p=0.5704
+   [patient-carried] population_n_MENA        coef +0.188  null mean +0.195  excess -0.008  null 95% [+0.135, +0.255]  p=0.8062  units 183
+   [patient-carried] population_same          coef -0.082  null mean -0.099  excess +0.016  null 95% [-0.142, -0.054]  p=0.4775  units 183
+   [patient-carried] MENAMENA_vs_MENALATAM    coef +0.106  null mean +0.097  excess +0.009  null 95% [+0.032, +0.164]  p=0.8192
+   [patient-carried] LATAMLATAM_vs_MENALATAM  coef -0.270  null mean -0.294  excess +0.024  null 95% [-0.373, -0.213]  p=0.5654
+
+
+########## MENA vs SASIA
+pairs 31247 in 746 genes; same-group pairs 765
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.301  [+0.016, +2.200]
+   author_region_n_r1                            -0.261  [-0.514, -0.092]
+   author_region_same                            +0.092  [-0.145, +0.324]
+   author_region_unknown                         +0.004  [-0.242, +0.206]
+   population_n_MENA                             +0.248  [+0.046, +0.500]
+   population_same                               -0.042  [-0.232, +0.165]
+   (without author-region terms: population_n_MENA +0.044, population_same +0.022)
+   MENAMENA_vs_MENASASIA                         +0.205  [+0.011, +0.434]
+   SASIASASIA_vs_MENASASIA                       -0.290  [-0.709, +0.026]
+   [total          ] population_n_MENA        coef +0.044  null mean -0.011  excess +0.054  null 95% [-0.132, +0.103]  p=0.3656  units 3240
+   [total          ] population_same          coef +0.022  null mean +0.013  excess +0.009  null 95% [-0.056, +0.084]  p=0.8122  units 3240
+   [total          ] MENAMENA_vs_MENASASIA    coef +0.066  null mean +0.003  excess +0.063  null 95% [-0.095, +0.108]  p=0.2547
+   [total          ] SASIASASIA_vs_MENASASIA  coef -0.021  null mean +0.024  excess -0.045  null 95% [-0.130, +0.193]  p=0.5814
+   [patient-carried] population_n_MENA        coef +0.248  null mean +0.097  excess +0.151  null 95% [+0.001, +0.212]  p=0.0020  units 133
+   [patient-carried] population_same          coef -0.042  null mean -0.006  excess -0.037  null 95% [-0.051, +0.042]  p=0.1209  units 133
+   [patient-carried] MENAMENA_vs_MENASASIA    coef +0.205  null mean +0.092  excess +0.114  null 95% [+0.018, +0.186]  p=0.0090
+   [patient-carried] SASIASASIA_vs_MENASASIA  coef -0.290  null mean -0.103  excess -0.187  null 95% [-0.250, +0.030]  p=0.0080
+
+
+########## EUR vs AFR
+pairs 238533 in 145 genes; same-group pairs 1080
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.385  [-0.079, +0.990]
+   author_region_n_r1                            -0.428  [-1.507, +0.109]
+   author_region_same                            +0.760  [+0.064, +1.965]
+   author_region_unknown                         +0.667  [-0.320, +1.087]
+   population_n_EUR                              +0.391  [-0.119, +1.019]
+   population_same                               -0.458  [-0.935, +0.088]
+   (without author-region terms: population_n_EUR +0.206, population_same -0.207)
+   EUREUR_vs_EURAFR                              -0.067  [-0.348, +0.636]
+   AFRAFR_vs_EURAFR                              -0.849  [-1.831, +0.146]
+   [total          ] population_n_EUR         coef +0.206  null mean -0.004  excess +0.210  null 95% [-0.666, +0.695]  p=0.4935  units 2506
+   [total          ] population_same          coef -0.207  null mean -0.013  excess -0.195  null 95% [-0.582, +0.591]  p=0.4176  units 2506
+   [total          ] EUREUR_vs_EURAFR         coef -0.001  null mean -0.017  excess +0.016  null 95% [-0.389, +0.344]  p=0.9171
+   [total          ] AFRAFR_vs_EURAFR         coef -0.414  null mean -0.009  excess -0.405  null 95% [-1.172, +1.235]  p=0.4336
+   [patient-carried] population_n_EUR         coef +0.391  null mean -0.030  excess +0.421  null 95% [-0.376, +0.282]  p=0.0110  units 1064
+   [patient-carried] population_same          coef -0.458  null mean -0.190  excess -0.268  null 95% [-0.418, +0.073]  p=0.0340  units 1064
+   [patient-carried] EUREUR_vs_EURAFR         coef -0.067  null mean -0.220  excess +0.153  null 95% [-0.325, -0.101]  p=0.0070
+   [patient-carried] AFRAFR_vs_EURAFR         coef -0.849  null mean -0.160  excess -0.689  null 95% [-0.701, +0.448]  p=0.0180
+
+
+########## EASIA vs SASIA
+pairs 149427 in 753 genes; same-group pairs 773
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.591  [+0.232, +0.937]
+   author_region_n_r1                            -0.081  [-0.356, +0.182]
+   author_region_same                            +0.010  [-0.165, +0.215]
+   author_region_unknown                         +0.023  [-0.285, +0.340]
+   population_n_EASIA                            +0.165  [-0.063, +0.408]
+   population_same                               +0.076  [-0.106, +0.261]
+   (without author-region terms: population_n_EASIA +0.089, population_same +0.084)
+   EASIAEASIA_vs_EASIASASIA                      +0.241  [-0.029, +0.503]
+   SASIASASIA_vs_EASIASASIA                      -0.090  [-0.439, +0.296]
+   [total          ] population_n_EASIA       coef +0.089  null mean -0.015  excess +0.104  null 95% [-0.145, +0.108]  p=0.1039  units 6909
+   [total          ] population_same          coef +0.084  null mean +0.012  excess +0.072  null 95% [-0.070, +0.107]  p=0.1049  units 6909
+   [total          ] EASIAEASIA_vs_EASIASASIA coef +0.173  null mean -0.003  excess +0.176  null 95% [-0.095, +0.097]  p=0.0020
+   [total          ] SASIASASIA_vs_EASIASASIA coef -0.005  null mean +0.027  excess -0.031  null 95% [-0.157, +0.224]  p=0.7592
+   [patient-carried] population_n_EASIA       coef +0.165  null mean -0.080  excess +0.246  null 95% [-0.267, +0.105]  p=0.0050  units 188
+   [patient-carried] population_same          coef +0.076  null mean +0.043  excess +0.032  null 95% [-0.007, +0.096]  p=0.2338  units 188
+   [patient-carried] EASIAEASIA_vs_EASIASASIA coef +0.241  null mean -0.037  excess +0.278  null 95% [-0.222, +0.146]  p=0.0010
+   [patient-carried] SASIASASIA_vs_EASIASASIA coef -0.090  null mean +0.124  excess -0.213  null 95% [-0.070, +0.333]  p=0.0350
+
+
+########## MENA vs EASIA
+pairs 266579 in 1613 genes; same-group pairs 2180
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.489  [+0.268, +0.969]
+   author_region_n_r1                            -0.080  [-0.269, +0.078]
+   author_region_same                            +0.018  [-0.130, +0.155]
+   author_region_unknown                         +0.150  [+0.029, +0.267]
+   population_n_MENA                             -0.062  [-0.201, +0.091]
+   population_same                               +0.032  [-0.086, +0.168]
+   (without author-region terms: population_n_MENA -0.119, population_same +0.047)
+   MENAMENA_vs_MENAEASIA                         -0.030  [-0.205, +0.127]
+   EASIAEASIA_vs_MENAEASIA                       +0.094  [-0.120, +0.282]
+   [total          ] population_n_MENA        coef -0.119  null mean -0.010  excess -0.109  null 95% [-0.069, +0.056]  p=0.0010  units 11841
+   [total          ] population_same          coef +0.047  null mean +0.004  excess +0.043  null 95% [-0.032, +0.042]  p=0.0260  units 11841
+   [total          ] MENAMENA_vs_MENAEASIA    coef -0.072  null mean -0.005  excess -0.066  null 95% [-0.076, +0.086]  p=0.1109
+   [total          ] EASIAEASIA_vs_MENAEASIA  coef +0.166  null mean +0.014  excess +0.152  null 95% [-0.049, +0.081]  p=0.0010
+   [patient-carried] population_n_MENA        coef -0.062  null mean -0.006  excess -0.057  null 95% [-0.064, +0.052]  p=0.0569  units 511
+   [patient-carried] population_same          coef +0.032  null mean +0.003  excess +0.029  null 95% [-0.041, +0.049]  p=0.2248  units 511
+   [patient-carried] MENAMENA_vs_MENAEASIA    coef -0.030  null mean -0.003  excess -0.028  null 95% [-0.033, +0.030]  p=0.0849
+   [patient-carried] EASIAEASIA_vs_MENAEASIA  coef +0.094  null mean +0.009  excess +0.085  null 95% [-0.090, +0.109]  p=0.0919
+
+
+########## EASIA vs AFR
+pairs 50375 in 130 genes; same-group pairs 264
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.759  [+0.084, +1.717]
+   author_region_n_r1                            -0.153  [-0.503, +0.310]
+   author_region_same                            +0.012  [-0.359, +0.349]
+   author_region_unknown                         +0.185  [-0.219, +0.730]
+   population_n_EASIA                            +0.747  [+0.180, +1.246]
+   population_same                               +0.047  [-0.416, +0.510]
+   (without author-region terms: population_n_EASIA +0.586, population_same +0.055)
+   EASIAEASIA_vs_EASIAAFR                        +0.794  [+0.290, +1.344]
+   AFRAFR_vs_EASIAAFR                            -0.701  [-1.473, +0.122]
+   [total          ] population_n_EASIA       coef +0.586  null mean -0.007  excess +0.593  null 95% [-0.432, +0.417]  p=0.0060  units 1575
+   [total          ] population_same          coef +0.055  null mean +0.002  excess +0.053  null 95% [-0.258, +0.300]  p=0.7223  units 1575
+   [total          ] EASIAEASIA_vs_EASIAAFR   coef +0.641  null mean -0.005  excess +0.646  null 95% [-0.228, +0.254]  p=0.0010
+   [total          ] AFRAFR_vs_EASIAAFR       coef -0.531  null mean +0.008  excess -0.540  null 95% [-0.641, +0.700]  p=0.1219
+   [patient-carried] population_n_EASIA       coef +0.747  null mean +0.153  excess +0.594  null 95% [-0.263, +0.516]  p=0.0010  units 46
+   [patient-carried] population_same          coef +0.047  null mean -0.016  excess +0.062  null 95% [-0.130, +0.094]  p=0.4925  units 46
+   [patient-carried] EASIAEASIA_vs_EASIAAFR   coef +0.794  null mean +0.137  excess +0.657  null 95% [-0.267, +0.495]  p=0.0020
+   [patient-carried] AFRAFR_vs_EASIAAFR       coef -0.701  null mean -0.168  excess -0.532  null 95% [-0.568, +0.284]  p=0.0140
+
+
+########## SASIA vs LATAM
+pairs 6437 in 370 genes; same-group pairs 52
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +1.014  [-0.282, +2.152]
+   author_region_n_r1                            +0.360  [-0.065, +0.886]
+   author_region_same                            -0.106  [-0.449, +0.212]
+   author_region_unknown                         +0.084  [-0.330, +0.435]
+   population_n_SASIA                            -0.236  [-0.738, +0.206]
+   population_same                               +0.080  [-0.161, +0.361]
+   (without author-region terms: population_n_SASIA +0.057, population_same +0.003)
+   SASIASASIA_vs_SASIALATAM                      -0.156  [-0.751, +0.365]
+   LATAMLATAM_vs_SASIALATAM                      +0.316  [-0.249, +0.775]
+   [total          ] population_n_SASIA       coef +0.057  null mean +0.023  excess +0.033  null 95% [-0.134, +0.189]  p=0.7013  units 1388
+   [total          ] population_same          coef +0.003  null mean -0.010  excess +0.013  null 95% [-0.125, +0.116]  p=0.8202  units 1388
+   [total          ] SASIASASIA_vs_SASIALATAM coef +0.059  null mean +0.013  excess +0.047  null 95% [-0.174, +0.243]  p=0.6633
+   [total          ] LATAMLATAM_vs_SASIALATAM coef -0.054  null mean -0.034  excess -0.020  null 95% [-0.222, +0.171]  p=0.8362
+   [patient-carried] population_n_SASIA       coef -0.236  null mean +0.004  excess -0.240  null 95% [-0.243, +0.262]  p=0.0769  units 43
+   [patient-carried] population_same          coef +0.080  null mean +0.081  excess -0.001  null 95% [+0.046, +0.120]  p=0.9760  units 43
+   [patient-carried] SASIASASIA_vs_SASIALATAM coef -0.156  null mean +0.085  excess -0.241  null 95% [-0.177, +0.372]  p=0.1219
+   [patient-carried] LATAMLATAM_vs_SASIALATAM coef +0.316  null mean +0.077  excess +0.239  null 95% [-0.164, +0.311]  p=0.0529
+
+
+########## SASIA vs AFR
+pairs 1478 in 86 genes; same-group pairs 5
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.586  [-4.048, +20.273]
+   author_region_n_r1                            +0.608  [-0.358, +1.556]
+   author_region_same                            +0.002  [-0.637, +0.737]
+   author_region_unknown                         +0.461  [-0.528, +1.371]
+   population_n_SASIA                            +0.086  [-0.823, +1.079]
+   population_same                               +0.101  [-0.360, +0.590]
+   (without author-region terms: population_n_SASIA +0.546, population_same +0.096)
+   SASIASASIA_vs_SASIAAFR                        +0.187  [-0.741, +1.109]
+   AFRAFR_vs_SASIAAFR                            +0.015  [-1.148, +0.993]
+   [total          ] population_n_SASIA       coef +0.546  null mean -0.031  excess +0.577  null 95% [-0.476, +0.405]  p=0.0120  units 295
+   [total          ] population_same          coef +0.096  null mean -0.022  excess +0.118  null 95% [-0.268, +0.238]  p=0.3846  units 295
+   [total          ] SASIASASIA_vs_SASIAAFR   coef +0.641  null mean -0.054  excess +0.695  null 95% [-0.422, +0.410]  p=0.0040
+   [total          ] AFRAFR_vs_SASIAAFR       coef -0.450  null mean +0.009  excess -0.459  null 95% [-0.559, +0.606]  p=0.1279
+   [patient-carried] population_n_SASIA       coef +0.086  null mean -0.001  excess +0.087  null 95% [-0.575, +0.547]  p=0.7602  units 34
+   [patient-carried] population_same          coef +0.101  null mean +0.083  excess +0.018  null 95% [-0.043, +0.234]  p=0.8052  units 34
+   [patient-carried] SASIASASIA_vs_SASIAAFR   coef +0.187  null mean +0.082  excess +0.105  null 95% [-0.531, +0.731]  p=0.7792
+   [patient-carried] AFRAFR_vs_SASIAAFR       coef +0.015  null mean +0.084  excess -0.068  null 95% [-0.407, +0.624]  p=0.8182
+
+
+########## LATAM vs AFR
+pairs 1458 in 82 genes; same-group pairs 7
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.622  [-0.832, +2.367]
+   author_region_n_r1                            -0.207  [-0.618, +0.368]
+   author_region_same                            +0.117  [-0.580, +0.750]
+   author_region_unknown                         +0.302  [-0.310, +0.936]
+   population_n_LATAM                            +0.540  [+0.036, +1.129]
+   population_same                               -0.118  [-0.502, +0.428]
+   (without author-region terms: population_n_LATAM +0.414, population_same -0.063)
+   LATAMLATAM_vs_LATAMAFR                        +0.422  [-0.182, +1.171]
+   AFRAFR_vs_LATAMAFR                            -0.658  [-1.253, +0.085]
+   [total          ] population_n_LATAM       coef +0.414  null mean +0.041  excess +0.373  null 95% [-0.453, +0.528]  p=0.1349  units 275
+   [total          ] population_same          coef -0.063  null mean -0.008  excess -0.055  null 95% [-0.375, +0.392]  p=0.7932  units 275
+   [total          ] LATAMLATAM_vs_LATAMAFR   coef +0.351  null mean +0.034  excess +0.318  null 95% [-0.331, +0.439]  p=0.1049
+   [total          ] AFRAFR_vs_LATAMAFR       coef -0.477  null mean -0.049  excess -0.428  null 95% [-0.812, +0.760]  p=0.2867
+   [patient-carried] population_n_LATAM       coef +0.540  null mean +0.060  excess +0.481  null 95% [-0.377, +0.437]  p=0.0200  units 50
+   [patient-carried] population_same          coef -0.118  null mean -0.065  excess -0.053  null 95% [-0.218, +0.087]  p=0.5465  units 50
+   [patient-carried] LATAMLATAM_vs_LATAMAFR   coef +0.422  null mean -0.006  excess +0.428  null 95% [-0.406, +0.419]  p=0.0440
+   [patient-carried] AFRAFR_vs_LATAMAFR       coef -0.658  null mean -0.125  excess -0.533  null 95% [-0.518, +0.379]  p=0.0200
+
+
+########## EASIA vs LATAM
+pairs 162198 in 673 genes; same-group pairs 867
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.637  [+0.330, +1.062]
+   author_region_n_r1                            +0.040  [-0.181, +0.274]
+   author_region_same                            +0.133  [-0.077, +0.329]
+   author_region_unknown                         +0.259  [+0.054, +0.450]
+   population_n_EASIA                            +0.025  [-0.198, +0.239]
+   population_same                               -0.046  [-0.211, +0.152]
+   (without author-region terms: population_n_EASIA +0.059, population_same +0.047)
+   EASIAEASIA_vs_EASIALATAM                      -0.021  [-0.280, +0.221]
+   LATAMLATAM_vs_EASIALATAM                      -0.071  [-0.389, +0.226]
+   [total          ] population_n_EASIA       coef +0.059  null mean +0.012  excess +0.047  null 95% [-0.094, +0.115]  p=0.3776  units 6623
+   [total          ] population_same          coef +0.047  null mean +0.011  excess +0.036  null 95% [-0.055, +0.083]  p=0.3027  units 6623
+   [total          ] EASIAEASIA_vs_EASIALATAM coef +0.105  null mean +0.023  excess +0.082  null 95% [-0.064, +0.113]  p=0.0729
+   [total          ] LATAMLATAM_vs_EASIALATAM coef -0.012  null mean -0.001  excess -0.011  null 95% [-0.147, +0.152]  p=0.8661
+   [patient-carried] population_n_EASIA       coef +0.025  null mean +0.026  excess -0.001  null 95% [-0.076, +0.138]  p=0.9890  units 244
+   [patient-carried] population_same          coef -0.046  null mean -0.003  excess -0.043  null 95% [-0.050, +0.044]  p=0.0869  units 244
+   [patient-carried] EASIAEASIA_vs_EASIALATAM coef -0.021  null mean +0.023  excess -0.044  null 95% [-0.075, +0.134]  p=0.4406
+   [patient-carried] LATAMLATAM_vs_EASIALATAM coef -0.071  null mean -0.029  excess -0.042  null 95% [-0.157, +0.094]  p=0.5315
+
+
+########## EUR vs SASIA
+pairs 436332 in 822 genes; same-group pairs 2529
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.806  [+0.379, +1.447]
+   author_region_n_r1                            -0.508  [-0.962, -0.187]
+   author_region_same                            +0.720  [+0.072, +1.316]
+   author_region_unknown                         +0.291  [-0.486, +0.607]
+   population_n_EUR                              +0.330  [+0.002, +0.790]
+   population_same                               -0.499  [-1.003, +0.035]
+   (without author-region terms: population_n_EUR -0.077, population_same +0.055)
+   EUREUR_vs_EURSASIA                            -0.169  [-0.470, +0.644]
+   SASIASASIA_vs_EURSASIA                        -0.829  [-1.693, -0.129]
+   [total          ] population_n_EUR         coef -0.077  null mean -0.027  excess -0.050  null 95% [-0.157, +0.094]  p=0.4386  units 9955
+   [total          ] population_same          coef +0.055  null mean +0.005  excess +0.049  null 95% [-0.119, +0.119]  p=0.4286  units 9955
+   [total          ] EUREUR_vs_EURSASIA       coef -0.022  null mean -0.022  excess -0.000  null 95% [-0.162, +0.103]  p=0.9970
+   [total          ] SASIASASIA_vs_EURSASIA   coef +0.131  null mean +0.032  excess +0.099  null 95% [-0.159, +0.244]  p=0.3526
+   [patient-carried] population_n_EUR         coef +0.330  null mean +0.227  excess +0.103  null 95% [+0.091, +0.354]  p=0.1449  units 1074
+   [patient-carried] population_same          coef -0.499  null mean -0.452  excess -0.047  null 95% [-0.529, -0.354]  p=0.3037  units 1074
+   [patient-carried] EUREUR_vs_EURSASIA       coef -0.169  null mean -0.224  excess +0.055  null 95% [-0.287, -0.153]  p=0.1019
+   [patient-carried] SASIASASIA_vs_EURSASIA   coef -0.829  null mean -0.679  excess -0.150  null 95% [-0.878, -0.447]  p=0.1828
+
+
+########## EUR vs LATAM
+pairs 486873 in 715 genes; same-group pairs 3102
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.647  [+0.258, +1.258]
+   author_region_n_r1                            -0.262  [-0.656, +0.107]
+   author_region_same                            +0.506  [-0.045, +1.125]
+   author_region_unknown                         +0.376  [-0.118, +0.717]
+   population_n_EUR                              +0.120  [-0.194, +0.406]
+   population_same                               -0.354  [-0.782, +0.080]
+   (without author-region terms: population_n_EUR -0.063, population_same -0.019)
+   EUREUR_vs_EURLATAM                            -0.234  [-0.598, +0.256]
+   LATAMLATAM_vs_EURLATAM                        -0.473  [-1.135, +0.128]
+   [total          ] population_n_EUR         coef -0.063  null mean -0.034  excess -0.028  null 95% [-0.147, +0.076]  p=0.6294  units 10066
+   [total          ] population_same          coef -0.019  null mean +0.018  excess -0.036  null 95% [-0.088, +0.126]  p=0.4835  units 10066
+   [total          ] EUREUR_vs_EURLATAM       coef -0.081  null mean -0.017  excess -0.064  null 95% [-0.136, +0.113]  p=0.2897
+   [total          ] LATAMLATAM_vs_EURLATAM   coef +0.044  null mean +0.052  excess -0.008  null 95% [-0.130, +0.233]  p=0.9271
+   [patient-carried] population_n_EUR         coef +0.120  null mean +0.168  excess -0.048  null 95% [+0.065, +0.280]  p=0.3696  units 1573
+   [patient-carried] population_same          coef -0.354  null mean -0.324  excess -0.030  null 95% [-0.389, -0.255]  p=0.3846  units 1573
+   [patient-carried] EUREUR_vs_EURLATAM       coef -0.234  null mean -0.156  excess -0.078  null 95% [-0.234, -0.075]  p=0.0569
+   [patient-carried] LATAMLATAM_vs_EURLATAM   coef -0.473  null mean -0.492  excess +0.018  null 95% [-0.662, -0.334]  p=0.8462
+
+
+########## MENA vs EUR
+pairs 680145 in 1920 genes; same-group pairs 5218
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.723  [+0.392, +1.214]
+   author_region_n_r1                            +0.021  [-0.202, +0.257]
+   author_region_same                            +0.085  [-0.326, +0.377]
+   author_region_unknown                         +0.216  [-0.145, +0.454]
+   population_n_MENA                             +0.055  [-0.109, +0.221]
+   population_same                               +0.044  [-0.122, +0.327]
+   (without author-region terms: population_n_MENA +0.071, population_same +0.097)
+   MENAMENA_vs_MENAEUR                           +0.100  [-0.162, +0.529]
+   EUREUR_vs_MENAEUR                             -0.011  [-0.165, +0.169]
+   [total          ] population_n_MENA        coef +0.071  null mean -0.005  excess +0.077  null 95% [-0.065, +0.053]  p=0.0110  units 17167
+   [total          ] population_same          coef +0.097  null mean +0.002  excess +0.095  null 95% [-0.053, +0.054]  p=0.0020  units 17167
+   [total          ] MENAMENA_vs_MENAEUR      coef +0.168  null mean -0.004  excess +0.172  null 95% [-0.072, +0.062]  p=0.0010
+   [total          ] EUREUR_vs_MENAEUR        coef +0.025  null mean +0.007  excess +0.018  null 95% [-0.081, +0.096]  p=0.6973
+   [patient-carried] population_n_MENA        coef +0.055  null mean -0.008  excess +0.063  null 95% [-0.103, +0.084]  p=0.1918  units 4636
+   [patient-carried] population_same          coef +0.044  null mean -0.008  excess +0.052  null 95% [-0.043, +0.026]  p=0.0010  units 4636
+   [patient-carried] MENAMENA_vs_MENAEUR      coef +0.100  null mean -0.016  excess +0.115  null 95% [-0.116, +0.082]  p=0.0230
+   [patient-carried] EUREUR_vs_MENAEUR        coef -0.011  null mean -0.000  excess -0.011  null 95% [-0.099, +0.104]  p=0.8352
+
+
+########## EUR vs EASIA
+pairs 1140700 in 2041 genes; same-group pairs 4706
+
+Decomposition (OLS, gene FE; all layers in one model). Coefficients in z-similarity units;
+95% CI from 200 group-cluster bootstraps. Curation baseline = pubmed_abs|pubmed_abs.
+   same_group                                    +0.792  [+0.500, +1.151]
+   author_region_n_r1                            -0.053  [-0.387, +0.179]
+   author_region_same                            +0.076  [-0.096, +0.336]
+   author_region_unknown                         +0.156  [-0.116, +0.358]
+   population_n_EUR                              -0.090  [-0.315, +0.222]
+   population_same                               +0.011  [-0.248, +0.195]
+   (without author-region terms: population_n_EUR -0.141, population_same +0.076)
+   EUREUR_vs_EUREASIA                            -0.079  [-0.406, +0.311]
+   EASIAEASIA_vs_EUREASIA                        +0.101  [-0.211, +0.410]
+   [total          ] population_n_EUR         coef -0.141  null mean +0.009  excess -0.151  null 95% [-0.044, +0.061]  p=0.0010  units 26841
+   [total          ] population_same          coef +0.076  null mean +0.000  excess +0.076  null 95% [-0.044, +0.049]  p=0.0020  units 26841
+   [total          ] EUREUR_vs_EUREASIA       coef -0.065  null mean +0.010  excess -0.075  null 95% [-0.072, +0.089]  p=0.0729
+   [total          ] EASIAEASIA_vs_EUREASIA   coef +0.217  null mean -0.009  excess +0.226  null 95% [-0.078, +0.041]  p=0.0010
+   [patient-carried] population_n_EUR         coef -0.090  null mean -0.029  excess -0.061  null 95% [-0.123, +0.106]  p=0.3377  units 2237
+   [patient-carried] population_same          coef +0.011  null mean +0.008  excess +0.003  null 95% [-0.027, +0.047]  p=0.8242  units 2237
+   [patient-carried] EUREUR_vs_EUREASIA       coef -0.079  null mean -0.021  excess -0.058  null 95% [-0.112, +0.109]  p=0.3816
+   [patient-carried] EASIAEASIA_vs_EUREASIA   coef +0.101  null mean +0.037  excess +0.064  null 95% [-0.115, +0.141]  p=0.3487
+
+end Tue Oct 27 10:24:22 PM +03 2026
+ALLDONE
+
+[exited with code 0]

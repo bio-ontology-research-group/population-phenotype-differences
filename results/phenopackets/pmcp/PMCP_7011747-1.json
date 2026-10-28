@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_7011747-1",
+ "subject": {
+  "id": "PMCP_7011747-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P4Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the emergency room at our tertiary care facility"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "4-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Leber's Congenital Amaurosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no retinal detachment in either eye\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7011747-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:awad a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000639",
+    "label": "Nystagmus"
+   },
+   "description": "wandering eye movements"
+  },
+  {
+   "type": {
+    "id": "HP:0030551",
+    "label": "Visual acuity light perception with projection"
+   },
+   "description": "estimated visual acuity (VA) of \u201clight perception\u201d in all quadrants"
+  },
+  {
+   "type": {
+    "id": "HP:0007957",
+    "label": "Corneal opacity"
+   },
+   "description": "slight corneal haze"
+  },
+  {
+   "type": {
+    "id": "HP:0000517",
+    "label": "Abnormal lens morphology"
+   },
+   "description": "completely dislocated single-piece IOL with the capsular bag in the AC"
+  },
+  {
+   "type": {
+    "id": "HP:6001382",
+    "label": "Posterior capsule opacification"
+   },
+   "description": "whitish fibrous material behind it"
+  },
+  {
+   "type": {
+    "id": "HP:0001089",
+    "label": "Iris atrophy"
+   },
+   "description": "areas of surgically induced iris atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0000518",
+    "label": "Cataract"
+   },
+   "description": "moderately cataractous lens"
+  },
+  {
+   "type": {
+    "id": "HP:0012795",
+    "label": "Abnormal optic disc morphology"
+   },
+   "description": "mild optic nerve head elevation"
+  },
+  {
+   "type": {
+    "id": "HP:0030498",
+    "label": "Macular thickening"
+   },
+   "description": "thickened macular area"
+  },
+  {
+   "type": {
+    "id": "HP:0000550",
+    "label": "Undetectable electroretinogram"
+   },
+   "description": "electroretinogram was flat and non-recordable"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7011747-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7011747-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7011747-1-GUCY2D",
+        "geneContext": {
+         "valueId": "HGNC:4689",
+         "symbol": "GUCY2D"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32095132",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32095132/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

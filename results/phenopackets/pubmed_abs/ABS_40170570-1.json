@@ -1,0 +1,216 @@
+{
+ "id": "ABS_40170570-1",
+ "subject": {
+  "id": "ABS_40170570-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"poor graft function (PGF)\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:xu jw"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004430",
+    "label": "Severe combined immunodeficiency"
+   },
+   "description": "severe combined immunodeficiency"
+  },
+  {
+   "type": {
+    "id": "HP:0020090",
+    "label": "Post-vaccination polio"
+   },
+   "description": "excreting Sabin-like type 3 (SL3) poliovirus"
+  },
+  {
+   "type": {
+    "id": "HP:0010978",
+    "label": "Abnormality of immune system physiology"
+   },
+   "description": "Graft versus host disease (GVHD)"
+  },
+  {
+   "type": {
+    "id": "HP:0001871",
+    "label": "Abnormality of blood and blood-forming tissues"
+   },
+   "description": "failure of hematopoiesis"
+  },
+  {
+   "type": {
+    "id": "HP:0002715",
+    "label": "Abnormality of the immune system"
+   },
+   "description": "immune system reconstitution"
+  },
+  {
+   "type": {
+    "id": "HP:0002721",
+    "label": "Immunodeficiency"
+   },
+   "description": "deficient innate and adaptive immunity"
+  },
+  {
+   "type": {
+    "id": "HP:0004386",
+    "label": "Gastrointestinal inflammation"
+   },
+   "description": "immune-mediated destruction of gastrointestinal (GI) tract"
+  },
+  {
+   "type": {
+    "id": "HP:0002014",
+    "label": "Diarrhea"
+   },
+   "description": "inflammatory diarrheal illness"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40170570-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40170570-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40170570-1-RAG1",
+        "geneContext": {
+         "valueId": "HGNC:9831",
+         "symbol": "RAG1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40170570",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40170570/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

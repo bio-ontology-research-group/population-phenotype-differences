@@ -1,0 +1,222 @@
+{
+ "id": "ABS_31541281-1",
+ "subject": {
+  "id": "ABS_31541281-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"high fever\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Turkey"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:do\u011fanay l"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "local_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0033260",
+    "label": "Livedo racemosa"
+   },
+   "description": "livedo racemose"
+  },
+  {
+   "type": {
+    "id": "HP:0001297",
+    "label": "Stroke"
+   },
+   "description": "early-onset stroke"
+  },
+  {
+   "type": {
+    "id": "HP:0002721",
+    "label": "Immunodeficiency"
+   },
+   "description": "mild immunodeficiency"
+  },
+  {
+   "type": {
+    "id": "HP:0002633",
+    "label": "Vasculitis"
+   },
+   "description": "clinically polyarteritis nodosa (PAN)-like symptoms"
+  },
+  {
+   "type": {
+    "id": "HP:0032325",
+    "label": "Lacunar stroke"
+   },
+   "description": "lacunar infarct due to involvement in small vessel of the central nervous system"
+  },
+  {
+   "type": {
+    "id": "HP:0009830",
+    "label": "Peripheral neuropathy"
+   },
+   "description": "peripheral neuropathy"
+  },
+  {
+   "type": {
+    "id": "HP:0031917",
+    "label": "Digital ulcer"
+   },
+   "description": "digital ulcers"
+  },
+  {
+   "type": {
+    "id": "HP:0001167",
+    "label": "Abnormal finger morphology"
+   },
+   "description": "loss of fingers"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_31541281-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_31541281-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_31541281-1-ADA2",
+        "geneContext": {
+         "valueId": "HGNC:1839",
+         "symbol": "ADA2"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31541281",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31541281/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

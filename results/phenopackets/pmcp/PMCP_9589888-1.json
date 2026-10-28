@@ -1,0 +1,252 @@
+{
+ "id": "PMCP_9589888-1",
+ "subject": {
+  "id": "PMCP_9589888-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P4Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to the hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "4-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "C3 deficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no clinical or laboratory evidence of organ damage\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9589888-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:neves jf"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001287",
+    "label": "Meningitis"
+   },
+   "description": "serogroup B Neisseria meningitidis septic shock and meningitis"
+  },
+  {
+   "type": {
+    "id": "HP:0005429",
+    "label": "Recurrent systemic pyogenic infections"
+   },
+   "description": "recurrent pyogenic infections since birth"
+  },
+  {
+   "type": {
+    "id": "HP:6000614",
+    "label": "Orbital inflammation"
+   },
+   "description": "orbital cellulitis"
+  },
+  {
+   "type": {
+    "id": "HP:0002090",
+    "label": "Pneumonia"
+   },
+   "description": "Streptococcus pneumoniae lobar pneumonia"
+  },
+  {
+   "type": {
+    "id": "HP:0000403",
+    "label": "Recurrent otitis media"
+   },
+   "description": "recurrent acute otitis media"
+  },
+  {
+   "type": {
+    "id": "HP:0100765",
+    "label": "Abnormality of the tonsils"
+   },
+   "description": "tonsillitis"
+  },
+  {
+   "type": {
+    "id": "HP:0025434",
+    "label": "Reduced circulating CH50 activity"
+   },
+   "description": "undetectable classical complement pathway activity (CH50)"
+  },
+  {
+   "type": {
+    "id": "HP:0005421",
+    "label": "Decreased circulating complement C3 concentration"
+   },
+   "description": "undetectable ... C3 levels"
+  },
+  {
+   "type": {
+    "id": "HP:0005339",
+    "label": "Abnormality of complement system"
+   },
+   "description": "reduced alternative pathway activity"
+  },
+  {
+   "type": {
+    "id": "HP:6000474",
+    "label": "Elevated circulating complement component concentration"
+   },
+   "description": "increased complement B, H and I factors"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9589888-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9589888-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9589888-1-C3",
+        "geneContext": {
+         "valueId": "HGNC:1318",
+         "symbol": "C3"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36299691",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36299691/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

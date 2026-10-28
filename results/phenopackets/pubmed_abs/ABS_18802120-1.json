@@ -1,0 +1,262 @@
+{
+ "id": "ABS_18802120-1",
+ "subject": {
+  "id": "ABS_18802120-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P2Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "2 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "early infancy"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003593",
+      "label": "Infantile onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "France"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:drouet c"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002718",
+    "label": "Recurrent bacterial infections"
+   },
+   "description": "recurrent pyogenic infections"
+  },
+  {
+   "type": {
+    "id": "HP:0025434",
+    "label": "Reduced circulating CH50 activity"
+   },
+   "description": "undetectable total complement hemolytic activity (CH50)"
+  },
+  {
+   "type": {
+    "id": "HP:0005421",
+    "label": "Decreased circulating complement C3 concentration"
+   },
+   "description": "undetectable ... C3 values"
+  },
+  {
+   "type": {
+    "id": "HP:0032140",
+    "label": "Decreased specific antibody response to vaccination"
+   },
+   "description": "did not induce a long-term Ab response"
+  },
+  {
+   "type": {
+    "id": "HP:0030388",
+    "label": "Decreased class-switched memory B cell proportion"
+   },
+   "description": "switched memory IgD(-)CD27(+) B cells were barely detected"
+  },
+  {
+   "type": {
+    "id": "HP:0031402",
+    "label": "Reduced antigen-specific T cell proliferation"
+   },
+   "description": "Cells were significantly defective in stimulating alloreactive responses"
+  },
+  {
+   "type": {
+    "id": "HP:0010978",
+    "label": "Abnormality of immune system physiology"
+   },
+   "description": "in vitro development of immature dendritic cells and their maturation capacity were greatly impaired"
+  },
+  {
+   "type": {
+    "id": "HP:0031383",
+    "label": "Abnormal lymphocyte surface marker expression"
+   },
+   "description": "decreased CD1a expression"
+  },
+  {
+   "type": {
+    "id": "HP:0011113",
+    "label": "Abnormality of cytokine secretion"
+   },
+   "description": "IL-12p70 secretion ability"
+  },
+  {
+   "type": {
+    "id": "HP:0031380",
+    "label": "Abnormal B cell proliferation"
+   },
+   "description": "unable to induce autologous B cell proliferation and Ig secretion"
+  },
+  {
+   "type": {
+    "id": "HP:0011840",
+    "label": "Abnormal T cell physiology"
+   },
+   "description": "regulatory T cell development ability ... was significantly impaired"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_18802120-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_18802120-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_18802120-1-C3",
+        "geneContext": {
+         "valueId": "HGNC:1318",
+         "symbol": "C3"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:18802120",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/18802120/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

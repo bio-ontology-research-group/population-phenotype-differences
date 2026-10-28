@@ -1,0 +1,219 @@
+{
+ "id": "ABS_42640348-1",
+ "subject": {
+  "id": "ABS_42640348-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P50Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Norway"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "50 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Norway"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:berget e"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007418",
+    "label": "Alopecia totalis"
+   },
+   "description": "alopecia totalis"
+  },
+  {
+   "type": {
+    "id": "HP:0000872",
+    "label": "Hashimoto thyroiditis"
+   },
+   "description": "autoimmune thyroiditis"
+  },
+  {
+   "type": {
+    "id": "HP:0012189",
+    "label": "Hodgkin lymphoma"
+   },
+   "description": "Epstein-Barr virus (EBV)-associated gastric Hodgkin lymphoma"
+  },
+  {
+   "type": {
+    "id": "HP:0006739",
+    "label": "Squamous cell carcinoma of the skin"
+   },
+   "description": "cutaneous squamous cell carcinoma (SCC)"
+  },
+  {
+   "type": {
+    "id": "HP:0100649",
+    "label": "Neoplasm of the oral cavity"
+   },
+   "description": "HPV16-positive SCCs involving the oral cavity"
+  },
+  {
+   "type": {
+    "id": "HP:0032186",
+    "label": "Anal neoplasm"
+   },
+   "description": "HPV16-positive SCCs involving the anus"
+  },
+  {
+   "type": {
+    "id": "HP:0100850",
+    "label": "Neoplasm of the penis"
+   },
+   "description": "HPV16-positive SCCs involving the penis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_42640348-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_42640348-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_42640348-1-CTLA4",
+        "geneContext": {
+         "valueId": "HGNC:2505",
+         "symbol": "CTLA4"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:42640348",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/42640348/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_9289382-1",
+ "subject": {
+  "id": "PMCP_9289382-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P50Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the neurology clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "50 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Epilepsy and Hearing Loss"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no history of urine or stool incontinence\", \"excluded\": true}, {\"text\": \"no organomegaly\", \"excluded\": true}, {\"text\": \"no epileptiform discharges or electrographic seizures\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9289382-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:alhazmi a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000365",
+    "label": "Hearing impairment"
+   },
+   "description": "hearing loss since the age of 4 years"
+  },
+  {
+   "type": {
+    "id": "HP:0001250",
+    "label": "Seizure"
+   },
+   "description": "seizures that started 18 years prior"
+  },
+  {
+   "type": {
+    "id": "HP:0011165",
+    "label": "Focal sensory seizure with visual features"
+   },
+   "description": "aura before most of the attacks in the form of flashing lights"
+  },
+  {
+   "type": {
+    "id": "HP:0007185",
+    "label": "Loss of consciousness"
+   },
+   "description": "loss of consciousness"
+  },
+  {
+   "type": {
+    "id": "HP:0002533",
+    "label": "Abnormal posturing"
+   },
+   "description": "tonic posturing"
+  },
+  {
+   "type": {
+    "id": "HP:0020221",
+    "label": "Clonic seizure"
+   },
+   "description": "clonic movements"
+  },
+  {
+   "type": {
+    "id": "HP:0012169",
+    "label": "Self-biting"
+   },
+   "description": "tongue biting"
+  },
+  {
+   "type": {
+    "id": "HP:0001289",
+    "label": "Confusion"
+   },
+   "description": "confused with old memory flashbacks and muscle pain for 20\u201330 minutes after the attacks"
+  },
+  {
+   "type": {
+    "id": "HP:0001513",
+    "label": "Obesity"
+   },
+   "description": "obese lady"
+  },
+  {
+   "type": {
+    "id": "HP:0008619",
+    "label": "Bilateral sensorineural hearing impairment"
+   },
+   "description": "bilateral profound sensorineural hearing loss"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9289382-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9289382-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9289382-1-CACNA1H",
+        "geneContext": {
+         "valueId": "HGNC:1395",
+         "symbol": "CACNA1H"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35910327",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35910327/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

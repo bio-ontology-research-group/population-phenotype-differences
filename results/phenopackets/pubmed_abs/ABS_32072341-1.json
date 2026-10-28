@@ -1,0 +1,220 @@
+{
+ "id": "ABS_32072341-1",
+ "subject": {
+  "id": "ABS_32072341-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P11Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "11 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Surface expression of IL2RG was reduced on his lymphocytes\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Finland; Norway; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sepp\u00e4nen mrj"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0200117",
+    "label": "Recurrent upper and lower respiratory tract infections"
+   },
+   "description": "recurrent upper and lower respiratory tract infections"
+  },
+  {
+   "type": {
+    "id": "HP:0002110",
+    "label": "Bronchiectasis"
+   },
+   "description": "bronchiectasis"
+  },
+  {
+   "type": {
+    "id": "HP:0001369",
+    "label": "Arthritis"
+   },
+   "description": "reactive arthritis"
+  },
+  {
+   "type": {
+    "id": "HP:0040088",
+    "label": "Abnormal lymphocyte count"
+   },
+   "description": "skewed T and B cells subpopulations"
+  },
+  {
+   "type": {
+    "id": "HP:0020178",
+    "label": "Abnormal dendritic cell count"
+   },
+   "description": "very low numbers of plasmacytoid dendritic cells"
+  },
+  {
+   "type": {
+    "id": "HP:0031407",
+    "label": "Impaired cytokine signaling"
+   },
+   "description": "impaired STAT tyrosine phosphorylation in response to IL-2 and IL-21"
+  },
+  {
+   "type": {
+    "id": "HP:0020053",
+    "label": "Abnormal marker expression"
+   },
+   "description": "reduced expression of IL-2 target genes in patient CD4+ T cells"
+  },
+  {
+   "type": {
+    "id": "HP:0031378",
+    "label": "Abnormal lymphocyte proliferation"
+   },
+   "description": "reduced cell proliferation in response to IL-2 stimulation"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_32072341-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_32072341-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_32072341-1-IL2RG",
+        "geneContext": {
+         "valueId": "HGNC:6010",
+         "symbol": "IL2RG"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32072341",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32072341/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,240 @@
+{
+ "id": "PMCP_10849180-1",
+ "subject": {
+  "id": "PMCP_10849180-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P46Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "the patient consulted our department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "46 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary Breast and Ovarian Cancer (HBOC) / Pancreatic cancer"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10849180-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:shibata h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002027",
+    "label": "Abdominal pain"
+   },
+   "description": "lower abdominal pain"
+  },
+  {
+   "type": {
+    "id": "HP:0003270",
+    "label": "Abdominal distention"
+   },
+   "description": "abdominal distension"
+  },
+  {
+   "type": {
+    "id": "HP:0002894",
+    "label": "Neoplasm of the pancreas"
+   },
+   "description": "multiple tumors in the pancreas and liver"
+  },
+  {
+   "type": {
+    "id": "HP:0002716",
+    "label": "Lymphadenopathy"
+   },
+   "description": "multiple swollen lymph nodes"
+  },
+  {
+   "type": {
+    "id": "HP:0003573",
+    "label": "Increased total bilirubin"
+   },
+   "description": "total-bilirubin (T-Bil): 1.6 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0034603",
+    "label": "Elevated circulating CA19-9 concentration"
+   },
+   "description": "carbohydrate antigen 19-9 (CA19-9): 906 U/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0001875",
+    "label": "Decreased total neutrophil count"
+   },
+   "description": "grade 4 neutropenia"
+  },
+  {
+   "type": {
+    "id": "HP:0004396",
+    "label": "Poor appetite"
+   },
+   "description": "slight anorexia"
+  },
+  {
+   "type": {
+    "id": "HP:0006725",
+    "label": "Pancreatic adenocarcinoma"
+   },
+   "description": "moderately to poorly differentiated adenocarcinoma of invasive ductal pancreatic carcinoma"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10849180-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10849180-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10849180-1-BRCA2",
+        "geneContext": {
+         "valueId": "HGNC:1101",
+         "symbol": "BRCA2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37956396",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37956396/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

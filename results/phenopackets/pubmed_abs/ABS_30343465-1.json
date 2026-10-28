@@ -1,0 +1,222 @@
+{
+ "id": "ABS_30343465-1",
+ "subject": {
+  "id": "ABS_30343465-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002721",
+     "label": "Russia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"decreased \u00df-tubulin expression\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Russia"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:deev r"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002613",
+    "label": "Biliary cirrhosis"
+   },
+   "description": "biliary cirrhosis"
+  },
+  {
+   "type": {
+    "id": "HP:0033149",
+    "label": "Intrahepatic bile duct dilatation"
+   },
+   "description": "numerous dilated bile ducts of various sizes"
+  },
+  {
+   "type": {
+    "id": "HP:0030986",
+    "label": "Biliary epithelial hyperplasia"
+   },
+   "description": "hyperplastic cholangiocytes containing a large amount of acid mucopolysaccharides"
+  },
+  {
+   "type": {
+    "id": "HP:0006560",
+    "label": "Biliary hyperplasia"
+   },
+   "description": "increased proliferation of cholangiocytes"
+  },
+  {
+   "type": {
+    "id": "HP:0005209",
+    "label": "Intrahepatic bile duct cysts"
+   },
+   "description": "giant cysts lined with a single layer of cholangiocytes, containing pus and bile in its lumen and surrounded by granulation tissue"
+  },
+  {
+   "type": {
+    "id": "HP:0030987",
+    "label": "Suppurative cholangitis"
+   },
+   "description": "accumulation of neutrophils in the lumen of the bile ducts"
+  },
+  {
+   "type": {
+    "id": "HP:0030989",
+    "label": "Lymphoid cholangitis"
+   },
+   "description": "infiltration of the ducts and cysts surrounding connective tissue by CD4+ and to a lesser extent CD8+ lymphocytes"
+  },
+  {
+   "type": {
+    "id": "HP:0000092",
+    "label": "Renal tubular atrophy"
+   },
+   "description": "Atrophy and desquamation of the epithelium of collecting tubules with the formation of microcysts"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_30343465-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_30343465-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_30343465-1-PKHD1",
+        "geneContext": {
+         "valueId": "HGNC:9016",
+         "symbol": "PKHD1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30343465",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30343465/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

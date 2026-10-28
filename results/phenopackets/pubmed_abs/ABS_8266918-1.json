@@ -1,0 +1,226 @@
+{
+ "id": "ABS_8266918-1",
+ "subject": {
+  "id": "ABS_8266918-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P28Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Japanese"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "28 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yamaguchi m"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EASIAanc_EASIAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0008069",
+    "label": "Neoplasm of the skin"
+   },
+   "description": "skin tumor derived from variant type xeroderma pigmentosum (XP)"
+  },
+  {
+   "type": {
+    "id": "HP:0006298",
+    "label": "Prolonged bleeding after dental extraction"
+   },
+   "description": "abnormal bleeding history on tooth extraction"
+  },
+  {
+   "type": {
+    "id": "HP:0001929",
+    "label": "Reduced factor XI activity"
+   },
+   "description": "FXI clotting activity (FXI:C) and antigen (FXI:Ag) were remarkably decreased (< 0.01 U/ml, < 0.02 U/ml, respectively)"
+  },
+  {
+   "type": {
+    "id": "HP:0003125",
+    "label": "Reduced factor VIII activity"
+   },
+   "description": "Factor VIII (FVIII) clotting activity, von Willebrand factor antigen (vWf:Ag), and ristocetin cofactor (RCoF) were 0.43 U/ml, 45%, and 57%, respectively"
+  },
+  {
+   "type": {
+    "id": "HP:0040241",
+    "label": "Increased RIPA"
+   },
+   "description": "Ristocetin-induced platelet agglutination (RIPA) revealed hyper-aggregation compared with a normal control"
+  },
+  {
+   "type": {
+    "id": "HP:0040225",
+    "label": "Decrease in high molecular weight von Willebrand factor Multimers"
+   },
+   "description": "Multimeric composition of vWf in plasma showed a reduction in high molecular weight forms"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_8266918-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_8266918-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_8266918-1-VWF",
+        "geneContext": {
+         "valueId": "HGNC:12726",
+         "symbol": "VWF"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:8266918",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/8266918/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

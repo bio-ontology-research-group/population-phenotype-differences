@@ -1,0 +1,236 @@
+{
+ "id": "PMCP_4247974-1",
+ "subject": {
+  "id": "PMCP_4247974-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P56Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "Netherlands"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Maxima Medical Centre"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Netherlands"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to the Department of Cardiology of the Maxima Medical Centre"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "56-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hypertrophic cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no complaints of dyspnea, shortness of breath, chest pain, fatigue, sensation of palpitations, dizziness, or edema\", \"excluded\": true}, {\"text\": \"Physical examination revealed no abnormalities\", \"excluded\": true}, {\"text\": \"no evidence of contraction abnormalities or outflow obstruction\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4247974-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:theunissen lj"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005135",
+    "label": "Abnormal T-wave"
+   },
+   "description": "modest repolarization abnormalities in leads aVL and V6"
+  },
+  {
+   "type": {
+    "id": "HP:0031295",
+    "label": "Left atrial enlargement"
+   },
+   "description": "slight enlargement of the left atrium"
+  },
+  {
+   "type": {
+    "id": "HP:0005144",
+    "label": "Ventricular septal hypertrophy"
+   },
+   "description": "interventricular septum, especially the basal part, was thickened with a thickness of 16 millimeters"
+  },
+  {
+   "type": {
+    "id": "HP:0001637",
+    "label": "Abnormal myocardium morphology"
+   },
+   "description": "thickened anteroseptal myocardium with a thickness of 23 mm"
+  },
+  {
+   "type": {
+    "id": "HP:0001685",
+    "label": "Myocardial fibrosis"
+   },
+   "description": "focal delayed enhancement within the basal anteroseptal segment with mid wall fibrosis"
+  },
+  {
+   "type": {
+    "id": "HP:0001627",
+    "label": "Abnormal heart morphology"
+   },
+   "description": "marked enlargement of both of the atria"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4247974-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4247974-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4247974-1-MYH7",
+        "geneContext": {
+         "valueId": "HGNC:7577",
+         "symbol": "MYH7"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25478240",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25478240/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

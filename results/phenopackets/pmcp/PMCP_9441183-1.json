@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_9441183-1",
+ "subject": {
+  "id": "PMCP_9441183-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P9Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "we have opted to follow with serial MRIs at this time"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "nine-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Noonan syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"bitemporal seizure foci\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9441183-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:iantosca m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001250",
+    "label": "Seizure"
+   },
+   "description": "seizures"
+  },
+  {
+   "type": {
+    "id": "HP:0030746",
+    "label": "Intraventricular hemorrhage"
+   },
+   "description": "intraventricular hemorrhage"
+  },
+  {
+   "type": {
+    "id": "HP:0001305",
+    "label": "Dandy-Walker malformation"
+   },
+   "description": "Dandy-Walker variant"
+  },
+  {
+   "type": {
+    "id": "HP:0001627",
+    "label": "Abnormal heart morphology"
+   },
+   "description": "congenital heart defects"
+  },
+  {
+   "type": {
+    "id": "HP:0002144",
+    "label": "Tethered cord"
+   },
+   "description": "tethered cord syndrome"
+  },
+  {
+   "type": {
+    "id": "HP:0002566",
+    "label": "Intestinal malrotation"
+   },
+   "description": "intestinal malrotation"
+  },
+  {
+   "type": {
+    "id": "HP:0030692",
+    "label": "Brain neoplasm"
+   },
+   "description": "flair hyperintense lesion with nodular enhancement in the left medial temporal lobe"
+  },
+  {
+   "type": {
+    "id": "HP:0002350",
+    "label": "Cerebellar cyst"
+   },
+   "description": "small cystic lesion in the cerebellar vermis"
+  },
+  {
+   "type": {
+    "id": "HP:0033703",
+    "label": "Dysembryoplastic neuroepithelial tumor"
+   },
+   "description": "multinodular tumor with focal cortical dysplasia consistent with a DNET"
+  },
+  {
+   "type": {
+    "id": "HP:0002334",
+    "label": "Abnormal cerebellar vermis morphology"
+   },
+   "description": "ring enhancement in the mass in the cerebellar vermis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9441183-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9441183-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9441183-1-PTPN11",
+        "geneContext": {
+         "valueId": "HGNC:9644",
+         "symbol": "PTPN11"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36081972",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36081972/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

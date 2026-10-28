@@ -1,0 +1,309 @@
+{
+ "id": "PMCP_9139298-1",
+ "subject": {
+  "id": "PMCP_9139298-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P1Y7M"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "The text describes care at 'our institution' (implied by 'our hospital/clinic' context in similar reports, though here it says 'The parents brought her to the pediatrician' and 'On admission', but the prompt instruction for 'our_institution' applies when the text implies the authors' setting. However, looking closely, the text does NOT explicitly say 'our hospital'. It says 'The parents brought her to the pediatrician' and 'On admission'. Wait, the prompt says: use 'our_institution' if the text only says 'our hospital/clinic/department' or similar. This text does NOT use 'our hospital'. It uses 'the pediatrician', 'On admission', 'discharged home'. It does not explicitly name the country or city. It does not say 'our hospital'. Therefore, strictly following the prompt: 'explicit' if names country/city/hospital. 'our_institution' if says 'our hospital'. 'none' if neither. The text does not name the country, city, or hospital. It does not say 'our hospital'. Thus, care_basis should be 'none' and care_country 'null'. Let me re-read carefully. 'A three-week-old female presented... The parents brought her to the pediatrician... On admission...'. No mention of 'our hospital'. No mention of USA, New York, etc. The author affiliation is USA, but the text itself does not state the location of care. The prompt says: 'Do not infer ancestry from the hospital location alone.' and for care_country: 'Use \"explicit\" if the text names the country, city or hospital; use \"our_institution\" if the text only says \"our hospital/clinic/department\" or similar... use \"none\" if neither applies.' Since the text does not say 'our hospital' and does not name the location, it is 'none'."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "19 months"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Pulmonary Vein Stenosis Associated with Germline PIK3CA Mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"indirect hyperbilirubinemia\", \"excluded\": false}, {\"text\": \"urosepsis\", \"excluded\": false}, {\"text\": \"no cortical malformations\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9139298-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:mirzaa g"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002098",
+    "label": "Respiratory distress"
+   },
+   "description": "respiratory distress"
+  },
+  {
+   "type": {
+    "id": "HP:0001252",
+    "label": "Hypotonia"
+   },
+   "description": "hypotonia"
+  },
+  {
+   "type": {
+    "id": "HP:0004481",
+    "label": "Progressive macrocephaly"
+   },
+   "description": "rapid head growth"
+  },
+  {
+   "type": {
+    "id": "HP:0001640",
+    "label": "Cardiomegaly"
+   },
+   "description": "cardiomegaly on chest X-ray"
+  },
+  {
+   "type": {
+    "id": "HP:0001943",
+    "label": "Hypoglycemia"
+   },
+   "description": "hypoglycemia"
+  },
+  {
+   "type": {
+    "id": "HP:0011968",
+    "label": "Feeding difficulties"
+   },
+   "description": "poor feeding"
+  },
+  {
+   "type": {
+    "id": "HP:0001254",
+    "label": "Lethargy"
+   },
+   "description": "lethargy"
+  },
+  {
+   "type": {
+    "id": "HP:0011682",
+    "label": "Perimembranous ventricular septal defect"
+   },
+   "description": "large perimembranous ventricular septal defect (VSD)"
+  },
+  {
+   "type": {
+    "id": "HP:0010576",
+    "label": "Intracranial cystic lesion"
+   },
+   "description": "multiple small bilateral ventricular cysts"
+  },
+  {
+   "type": {
+    "id": "HP:0001355",
+    "label": "Megalencephaly"
+   },
+   "description": "megalencephaly"
+  },
+  {
+   "type": {
+    "id": "HP:0002415",
+    "label": "Leukodystrophy"
+   },
+   "description": "diffuse hypo/dysmyelination consistent with megalencephalic leukodystrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0033131",
+    "label": "Renal medullary hyperechogenicity"
+   },
+   "description": "scattered echogenic foci in the upper and interpolar medullary pyramids"
+  },
+  {
+   "type": {
+    "id": "HP:0025491",
+    "label": "Venous stenosis"
+   },
+   "description": "left lower pulmonary vein (LLPV) stenosis"
+  },
+  {
+   "type": {
+    "id": "HP:0004890",
+    "label": "Elevated pulmonary artery pressure"
+   },
+   "description": "pulmonary hypertension with bidirectional shunting"
+  },
+  {
+   "type": {
+    "id": "HP:0002835",
+    "label": "Aspiration"
+   },
+   "description": "aspiration"
+  },
+  {
+   "type": {
+    "id": "HP:0002870",
+    "label": "Obstructive sleep apnea"
+   },
+   "description": "obstructive sleep apnea"
+  },
+  {
+   "type": {
+    "id": "HP:0031649",
+    "label": "Aortic rupture"
+   },
+   "description": "perforation of her descending aorta"
+  },
+  {
+   "type": {
+    "id": "HP:0100806",
+    "label": "Sepsis"
+   },
+   "description": "culture negative sepsis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9139298-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9139298-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9139298-1-PIK3CA",
+        "geneContext": {
+         "valueId": "HGNC:8975",
+         "symbol": "PIK3CA"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35626846",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35626846/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

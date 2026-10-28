@@ -1,0 +1,165 @@
+{
+ "id": "ABS_6603477-1",
+ "subject": {
+  "id": "ABS_6603477-1",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "white"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal immune function\", \"excluded\": false}, {\"text\": \"0.9% of normal in lymphocytes\", \"excluded\": false}, {\"text\": \"4% in cultured lymphoblasts\", \"excluded\": false}, {\"text\": \"14% in skin fibroblasts\", \"excluded\": false}, {\"text\": \"deoxy ATP levels are only slightly elevated in lymphocytes and in erythrocytes\", \"excluded\": false}, {\"text\": \"abnormal isoelectric pH\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:koller ca"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:4000209",
+    "label": "Abnormal erythrocyte adenosine deaminase activity"
+   },
+   "description": "markedly deficient erythrocyte and lymphocyte adenosine deaminase activity"
+  },
+  {
+   "type": {
+    "id": "HP:0030273",
+    "label": "Reduced red cell adenosine deaminase level"
+   },
+   "description": "adenosine deaminase activity and immunoreactive protein are undetectable in erythrocytes"
+  },
+  {
+   "type": {
+    "id": "HP:0004369",
+    "label": "Decreased circulating purine concentration"
+   },
+   "description": "plasma adenosine and deoxyadenosine levels are undetectable"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_6603477-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_6603477-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:186",
+       "symbol": "ADA"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:6603477",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/6603477/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

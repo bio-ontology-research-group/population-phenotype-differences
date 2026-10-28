@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_10855578-1",
+ "subject": {
+  "id": "PMCP_10855578-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P58Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "normal value of our laboratory"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "58"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Charcot\u2013Marie\u2013Tooth Disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"intermittent migrant pain and dysesthesias, mainly in the feet and legs but also in the thighs and arms\", \"excluded\": false}, {\"text\": \"tenderness or myalgias\", \"excluded\": false}, {\"text\": \"burning pain and shock-like sensations\", \"excluded\": false}, {\"text\": \"Nocturnal cramps\", \"excluded\": false}, {\"text\": \"no muscle wasting or weakness\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10855578-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:uliana v"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012452",
+    "label": "Restless legs"
+   },
+   "description": "urge to move the legs when in bed"
+  },
+  {
+   "type": {
+    "id": "HP:0008981",
+    "label": "Calf muscle hypertrophy"
+   },
+   "description": "hypertrophy of the calves"
+  },
+  {
+   "type": {
+    "id": "HP:0001761",
+    "label": "Pes cavus"
+   },
+   "description": "slight pes cavus"
+  },
+  {
+   "type": {
+    "id": "HP:0002600",
+    "label": "Hyporeflexia of lower limbs"
+   },
+   "description": "deep tendon reflexes in the lower limbs were evoked after facilitation maneuvers"
+  },
+  {
+   "type": {
+    "id": "HP:0003431",
+    "label": "Decreased motor nerve conduction velocity"
+   },
+   "description": "reduced MNCVs of 38 m/s (left) and 37 m/s (right) in the peroneal nerves"
+  },
+  {
+   "type": {
+    "id": "HP:0003448",
+    "label": "Decreased sensory nerve conduction velocity"
+   },
+   "description": "Sensory nerve-conduction velocities (SNCV) were reduced in the sural nerves"
+  },
+  {
+   "type": {
+    "id": "HP:0034997",
+    "label": "Reduced intraepidermal small nerve fiber density"
+   },
+   "description": "reduced IENF density"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10855578-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10855578-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10855578-1-MPZ",
+        "geneContext": {
+         "valueId": "HGNC:7225",
+         "symbol": "MPZ"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38338934",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38338934/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

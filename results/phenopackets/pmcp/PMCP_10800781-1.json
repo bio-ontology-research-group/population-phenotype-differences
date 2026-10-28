@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_10800781-1",
+ "subject": {
+  "id": "PMCP_10800781-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Wilson's disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"facial and limb edema\", \"excluded\": false}, {\"text\": \"hemoglobin level of 80 g/L\", \"excluded\": false}, {\"text\": \"platelet count of 100 \u00d7 109 /L\", \"excluded\": false}, {\"text\": \"35% dysmorphic red blood cells (RBCs)\", \"excluded\": false}, {\"text\": \"diminutive liver volume\", \"excluded\": false}, {\"text\": \"Kayser\u2013Fleischer (K\u2013F) rings in both eyes\", \"excluded\": false}, {\"text\": \"serum ceruloplasmin level was 5.3 mg/dl\", \"excluded\": false}, {\"text\": \"24-h urine copper level was 460 \u03bcg/24 h\", \"excluded\": false}, {\"text\": \"did not exhibit any oral ulcers\", \"excluded\": true}, {\"text\": \"did not exhibit any ... rash\", \"excluded\": true}, {\"text\": \"did not exhibit any ... arthralgia\", \"excluded\": true}, {\"text\": \"did not exhibit any ... fever\", \"excluded\": true}, {\"text\": \"did not exhibit any ... jaundice\", \"excluded\": true}, {\"text\": \"did not exhibit any ... neurological symptoms\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10800781-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lin w"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003270",
+    "label": "Abdominal distention"
+   },
+   "description": "abdominal distension"
+  },
+  {
+   "type": {
+    "id": "HP:0001541",
+    "label": "Ascites"
+   },
+   "description": "ascites"
+  },
+  {
+   "type": {
+    "id": "HP:0001744",
+    "label": "Splenomegaly"
+   },
+   "description": "splenomegaly"
+  },
+  {
+   "type": {
+    "id": "HP:0002202",
+    "label": "Pleural effusion"
+   },
+   "description": "right pleural effusion"
+  },
+  {
+   "type": {
+    "id": "HP:0001394",
+    "label": "Cirrhosis"
+   },
+   "description": "liver cirrhosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10800781-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10800781-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10800781-1-ATP7B",
+        "geneContext": {
+         "valueId": "HGNC:870",
+         "symbol": "ATP7B"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38259603",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38259603/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

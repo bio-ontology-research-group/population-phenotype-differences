@@ -1,0 +1,216 @@
+{
+ "id": "ABS_25927242-1",
+ "subject": {
+  "id": "ABS_25927242-1",
+  "sex": "FEMALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Germany"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hiort o"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012244",
+    "label": "Abnormal sex determination"
+   },
+   "description": "46,XY disorders of sex development"
+  },
+  {
+   "type": {
+    "id": "HP:0010785",
+    "label": "Gonadal neoplasm"
+   },
+   "description": "gonadal tumor formation"
+  },
+  {
+   "type": {
+    "id": "HP:0000133",
+    "label": "Gonadal dysgenesis"
+   },
+   "description": "partial gonadal dysgenesis"
+  },
+  {
+   "type": {
+    "id": "HP:0010789",
+    "label": "Abnormality of the Leydig cells"
+   },
+   "description": "loss of Leydig cells in tubular areas"
+  },
+  {
+   "type": {
+    "id": "HP:0100617",
+    "label": "Testicular seminoma"
+   },
+   "description": "seminoma in situ"
+  },
+  {
+   "type": {
+    "id": "HP:0010791",
+    "label": "Hyperplasia of the Leydig cells"
+   },
+   "description": "hyperplasia of Leydig cell-like cells"
+  },
+  {
+   "type": {
+    "id": "HP:0001271",
+    "label": "Polyneuropathy"
+   },
+   "description": "polyneuropathy"
+  },
+  {
+   "type": {
+    "id": "HP:0031001",
+    "label": "Minifascicle formation"
+   },
+   "description": "structural change of peripheral nerve structure that fits well to a minifascicle formation of peripheral nerves"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_25927242-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_25927242-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_25927242-1-DHH",
+        "geneContext": {
+         "valueId": "HGNC:2865",
+         "symbol": "DHH"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25927242",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25927242/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

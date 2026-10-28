@@ -1,0 +1,260 @@
+{
+ "id": "PMCP_8498102-1",
+ "subject": {
+  "id": "PMCP_8498102-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P28D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "He was transferred to our department due to RDS."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "4 weeks"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Cleidocranial Dysplasia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"positive three concave sign\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8498102-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:ye x"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002883",
+    "label": "Hyperventilation"
+   },
+   "description": "rapid breathing"
+  },
+  {
+   "type": {
+    "id": "HP:0000767",
+    "label": "Pectus excavatum"
+   },
+   "description": "obvious pectus excavatum"
+  },
+  {
+   "type": {
+    "id": "HP:0000309",
+    "label": "Abnormal midface morphology"
+   },
+   "description": "abnormal midfacial features"
+  },
+  {
+   "type": {
+    "id": "HP:0000239",
+    "label": "Large fontanelles"
+   },
+   "description": "large fontanelle"
+  },
+  {
+   "type": {
+    "id": "HP:0004492",
+    "label": "Widely patent fontanelles and sutures"
+   },
+   "description": "wide open fontanelles and sutures"
+  },
+  {
+   "type": {
+    "id": "HP:0000894",
+    "label": "Short clavicles"
+   },
+   "description": "hypoplastic clavicles"
+  },
+  {
+   "type": {
+    "id": "HP:0001547",
+    "label": "Abnormal rib cage morphology"
+   },
+   "description": "cone-shaped chest"
+  },
+  {
+   "type": {
+    "id": "HP:0003037",
+    "label": "Enlarged joints"
+   },
+   "description": "enlarged shoulder joint space"
+  },
+  {
+   "type": {
+    "id": "HP:0004331",
+    "label": "Decreased skull ossification"
+   },
+   "description": "large ossification defects in the skull"
+  },
+  {
+   "type": {
+    "id": "HP:0001385",
+    "label": "Hip dysplasia"
+   },
+   "description": "Hip ultrasound showed dysplasia"
+  },
+  {
+   "type": {
+    "id": "HP:0002789",
+    "label": "Tachypnea"
+   },
+   "description": "minor tachypnea"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8498102-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8498102-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8498102-1-RUNX2",
+        "geneContext": {
+         "valueId": "HGNC:10472",
+         "symbol": "RUNX2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34630510",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34630510/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

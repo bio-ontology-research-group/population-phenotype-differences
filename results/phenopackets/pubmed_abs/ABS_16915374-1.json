@@ -1,0 +1,245 @@
+{
+ "id": "ABS_16915374-1",
+ "subject": {
+  "id": "ABS_16915374-1",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "6 months"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P6M"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kumagai m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002090",
+    "label": "Pneumonia"
+   },
+   "description": "interstitial pneumonia caused by Aspergillus species"
+  },
+  {
+   "type": {
+    "id": "HP:0001974",
+    "label": "Increased total leukocyte count"
+   },
+   "description": "white cell count of 12,840/microL"
+  },
+  {
+   "type": {
+    "id": "HP:0001888",
+    "label": "Decreased total lymphocyte count"
+   },
+   "description": "only 10% lymphocytes"
+  },
+  {
+   "type": {
+    "id": "HP:0010702",
+    "label": "Increased circulating immunoglobulin concentration"
+   },
+   "description": "IgG, 991 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0003261",
+    "label": "Increased circulating IgA concentration"
+   },
+   "description": "IgA, 65 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0003496",
+    "label": "Increased circulating IgM level"
+   },
+   "description": "IgM, 472 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0005403",
+    "label": "Decreased total T cell count"
+   },
+   "description": "only 6.3% CD3"
+  },
+  {
+   "type": {
+    "id": "HP:0032218",
+    "label": "Decreased CD4+ T cell proportion"
+   },
+   "description": "2.1% CD4"
+  },
+  {
+   "type": {
+    "id": "HP:0005415",
+    "label": "Decreased CD8+ T cell proportion"
+   },
+   "description": "0.7% CD8"
+  },
+  {
+   "type": {
+    "id": "HP:0005404",
+    "label": "Increased total B cell count"
+   },
+   "description": "92% CD19"
+  },
+  {
+   "type": {
+    "id": "HP:0040218",
+    "label": "Reduced total natural killer cell count"
+   },
+   "description": "0.1% CD16+CD56+ (NK cells)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_16915374-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_16915374-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_16915374-1-IL2RG",
+        "geneContext": {
+         "valueId": "HGNC:6010",
+         "symbol": "IL2RG"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:16915374",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/16915374/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

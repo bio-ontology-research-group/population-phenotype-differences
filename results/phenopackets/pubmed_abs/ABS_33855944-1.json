@@ -1,0 +1,211 @@
+{
+ "id": "ABS_33855944-1",
+ "subject": {
+  "id": "ABS_33855944-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P31Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "31 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "de_novo"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Germany; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:barthel h"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0007272",
+    "label": "Progressive psychomotor deterioration"
+   },
+   "description": "progressive worsening of memory and motor function"
+  },
+  {
+   "type": {
+    "id": "HP:0011034",
+    "label": "Amyloid deposition"
+   },
+   "description": "Widespread \u03b2-amyloid depositions were found in cortical regions, and striatum (Thal stage III)"
+  },
+  {
+   "type": {
+    "id": "HP:0002185",
+    "label": "Neurofibrillary tangles"
+   },
+   "description": "tau pathology restricted to the mesial-temporal structures (Braak stage III/IV)"
+  },
+  {
+   "type": {
+    "id": "HP:0410170",
+    "label": "Hippocampal atrophy"
+   },
+   "description": "atrophy of the hippocampal-amygdala complex"
+  },
+  {
+   "type": {
+    "id": "HP:0007112",
+    "label": "Temporal cortical atrophy"
+   },
+   "description": "cortical thinning was detected in the right middle temporal pole"
+  },
+  {
+   "type": {
+    "id": "HP:0002500",
+    "label": "Abnormal cerebral white matter morphology"
+   },
+   "description": "Alterations of multiple DTI indices were noted in the major white matter fiber bundles"
+  },
+  {
+   "type": {
+    "id": "HP:0012638",
+    "label": "Abnormal nervous system physiology"
+   },
+   "description": "disruption of default mode and sensory-motor network functional connectivity"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_33855944-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_33855944-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:9508",
+       "symbol": "PSEN1"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33855944",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33855944/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

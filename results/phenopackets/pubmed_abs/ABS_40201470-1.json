@@ -1,0 +1,221 @@
+{
+ "id": "ABS_40201470-1",
+ "subject": {
+  "id": "ABS_40201470-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P51Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "51 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"symptomatic hypoglycemia\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:gigliotti bj"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003072",
+    "label": "Hypercalcemia"
+   },
+   "description": "incidental hypercalcemia"
+  },
+  {
+   "type": {
+    "id": "HP:0003162",
+    "label": "Fasting hypoglycemia"
+   },
+   "description": "fasting plasma glucose level of 41 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:6000419",
+    "label": "Elevated circulating proinsulin concentration"
+   },
+   "description": "proinsulin level of 84.3 pmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:0000842",
+    "label": "Hyperinsulinemia"
+   },
+   "description": "insulin level of 24 uIU/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0030796",
+    "label": "Increased C-peptide level"
+   },
+   "description": "c-peptide level of 5.2 ng/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0033419",
+    "label": "Elevated circulating 3-hydroxybutyric acid concentration"
+   },
+   "description": "\u03b2-hydroxybutyrate level of 0.34 mmol/L"
+  },
+  {
+   "type": {
+    "id": "HP:6000409",
+    "label": "Pancreatic mass"
+   },
+   "description": "1.5 \u00d7 1.1 \u00d7 1.0 cm pancreatic head nodule"
+  },
+  {
+   "type": {
+    "id": "HP:0100634",
+    "label": "Neuroendocrine neoplasm"
+   },
+   "description": "well-differentiated neuroendocrine tumor"
+  },
+  {
+   "type": {
+    "id": "HP:0008200",
+    "label": "Primary hyperparathyroidism"
+   },
+   "description": "primary hyperparathyroidism"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40201470-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40201470-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40201470-1-CDKN1B",
+        "geneContext": {
+         "valueId": "HGNC:1785",
+         "symbol": "CDKN1B"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40201470",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40201470/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

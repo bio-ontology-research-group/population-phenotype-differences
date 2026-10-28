@@ -1,0 +1,210 @@
+{
+ "id": "PMCP_3487308-1",
+ "subject": {
+  "id": "PMCP_3487308-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P24Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Netherlands"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Netherlands"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "24-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hereditary PAH"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"tricuspid regurgitation velocity of 3.7 m/s\", \"excluded\": false}, {\"text\": \"estimated systolic pulmonary artery pressure of 56 mmHg\", \"excluded\": false}, {\"text\": \"mean pulmonary artery pressure (mPAP) of 45 mmHg\", \"excluded\": false}, {\"text\": \"pulmonary vascular resistance of 624 dyn-s-cm-5\", \"excluded\": false}, {\"text\": \"moderately increased NT-proBNP (351 ng/L)\", \"excluded\": false}, {\"text\": \"moderately-to-severely reduced right ventricular ejection fraction of 37%\", \"excluded\": false}, {\"text\": \"low peak oxygen consumption (VO2)\", \"excluded\": false}, {\"text\": \"low ... oxygen-pulse (O2-pulse)\", \"excluded\": false}, {\"text\": \"low ... anaerobic threshold (AT)\", \"excluded\": false}, {\"text\": \"increased minute ventilation (VE) for a given workload\", \"excluded\": false}, {\"text\": \"increased ... (VE/VCO2-slope)\", \"excluded\": false}, {\"text\": \"no physical complaints\", \"excluded\": true}, {\"text\": \"no signs of pulmonary hypertension\", \"excluded\": true}, {\"text\": \"cardiopulmonary exercise testing (CPET) was normal\", \"excluded\": true}, {\"text\": \"Right ventricular systolic function was normal\", \"excluded\": true}, {\"text\": \"a septal shift was not seen\", \"excluded\": true}, {\"text\": \"normal right ventricular end-diastolic volume (158 mL)\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3487308-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:bogaard hj"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003546",
+    "label": "Exercise intolerance"
+   },
+   "description": "complaints of a deteriorated physical performance"
+  },
+  {
+   "type": {
+    "id": "HP:0005133",
+    "label": "Right ventricular dilatation"
+   },
+   "description": "moderate increase in right atrial and ventricular size"
+  },
+  {
+   "type": {
+    "id": "HP:0012417",
+    "label": "Hypocapnia"
+   },
+   "description": "decreased end-tidal CO2 tension (PET-CO2)"
+  },
+  {
+   "type": {
+    "id": "HP:0030874",
+    "label": "Oxygen desaturation on exertion"
+   },
+   "description": "arterial oxygen saturation during exercise decreased further to 91%"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3487308-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3487308-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3487308-1-BMPR2",
+        "geneContext": {
+         "valueId": "HGNC:1078",
+         "symbol": "BMPR2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:23130108",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/23130108/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,231 @@
+{
+ "id": "PMCP_10400739-1",
+ "subject": {
+  "id": "PMCP_10400739-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P35Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Netherlands"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to a tertiary centre"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "35 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Desmoplakin cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"symptomatic polymorphic premature ventricular contractions\", \"excluded\": false}, {\"text\": \"regional right ventricular dyskinesia of the basal free wall\", \"excluded\": false}, {\"text\": \"localised LGE suggestive for an inherited cardiomyopathy\", \"excluded\": false}, {\"text\": \"Coronary angiogram excluded coronary artery disease\", \"excluded\": true}, {\"text\": \"18F\u2011FDG positron emission tomography/computed tomography scan was normal, ruling out active sarcoidosis or myocarditis\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10400739-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:michels m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "acute chest pain"
+  },
+  {
+   "type": {
+    "id": "HP:0500020",
+    "label": "Abnormal cardiac biomarker test"
+   },
+   "description": "elevated cardiac markers (creatinine kinase [CK] 1991 U/l ... and high-sensitivity cardiac troponin T [hs-cTnT] 5510 ng/l)"
+  },
+  {
+   "type": {
+    "id": "HP:0025077",
+    "label": "Decreased QRS voltage"
+   },
+   "description": "low-voltage QRS complexes"
+  },
+  {
+   "type": {
+    "id": "HP:0012251",
+    "label": "ST segment elevation"
+   },
+   "description": "subtle inferolateral ST-segment elevations"
+  },
+  {
+   "type": {
+    "id": "HP:0012663",
+    "label": "Mildly reduced left ventricular ejection fraction"
+   },
+   "description": "mildly reduced left ventricular systolic function"
+  },
+  {
+   "type": {
+    "id": "HP:0031483",
+    "label": "Reduced contraction of the left ventricular apex"
+   },
+   "description": "apical hypokinesia"
+  },
+  {
+   "type": {
+    "id": "HP:4000004",
+    "label": "Myocardial late gadolinium enhancement"
+   },
+   "description": "extensive epicardial late gadolinium enhancement (LGE) in the inferior and lateral wall"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10400739-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10400739-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10400739-1-DSP",
+        "geneContext": {
+         "valueId": "HGNC:3052",
+         "symbol": "DSP"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36434384",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36434384/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

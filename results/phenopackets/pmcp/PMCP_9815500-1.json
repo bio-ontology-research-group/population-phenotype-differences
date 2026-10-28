@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_9815500-1",
+ "subject": {
+  "id": "PMCP_9815500-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P32Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): United Kingdom"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "32 years-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Lynch syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"moderately active colitis\", \"excluded\": false}, {\"text\": \"multiple rectal and sigmoid tubular adenomas with low grade dysplasia\", \"excluded\": false}, {\"text\": \"left pelvic wall abscess\", \"excluded\": false}, {\"text\": \"grossly thickened sigmoid colon mass\", \"excluded\": false}, {\"text\": \"extensive disease of rectum down to anorectal junction\", \"excluded\": false}, {\"text\": \"moderately differentiated adenocarcinoma arising from tubulovillous adenoma\", \"excluded\": false}, {\"text\": \"extensive adenomatous transformation with areas of low and high-grade dysplasia\", \"excluded\": false}, {\"text\": \"Multiple foci (at least 21) of carcinomatous transformation\", \"excluded\": false}, {\"text\": \"mucoid discharge from a perineal sinus\", \"excluded\": false}, {\"text\": \"pelvic cystic lesion\", \"excluded\": false}, {\"text\": \"no extra-intestinal manifestations\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9815500-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:akingboye a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002014",
+    "label": "Diarrhea"
+   },
+   "description": "non-bloody loose stool about 8-12 episodes per day"
+  },
+  {
+   "type": {
+    "id": "HP:0001903",
+    "label": "Anemia"
+   },
+   "description": "anemia"
+  },
+  {
+   "type": {
+    "id": "HP:0005266",
+    "label": "Intestinal polyp"
+   },
+   "description": "caecal low grade dysplastic tubulo-villous adenoma"
+  },
+  {
+   "type": {
+    "id": "HP:0002583",
+    "label": "Colitis"
+   },
+   "description": "active colitis"
+  },
+  {
+   "type": {
+    "id": "HP:0040275",
+    "label": "Adenocarcinoma of the large intestine"
+   },
+   "description": "metastatic adenocarcinoma of colorectal origin"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9815500-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9815500-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9815500-1-MSH2",
+        "geneContext": {
+         "valueId": "HGNC:7325",
+         "symbol": "MSH2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36620534",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36620534/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

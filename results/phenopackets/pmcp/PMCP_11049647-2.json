@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_11049647-2",
+ "subject": {
+  "id": "PMCP_11049647-2",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P12Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002939",
+     "label": "Poland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to the outpatient Pediatric and Adolescent Endocrinology Department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "12-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "DICER1 Syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"vocal cord mobility was found to be normal\", \"excluded\": true}, {\"text\": \"lymph nodes were unremarkable\", \"excluded\": true}, {\"text\": \"levels of thyroid hormones (TSH at 1.2 uIU/mL, and fT4 at 17.4 pmol/L) and calcitonin were within normal limits\", \"excluded\": true}, {\"text\": \"TPOAb, TgAb, and TRAbs tests were negative\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "11049647-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:starzyk jb"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025668",
+    "label": "Abnormal neck morphology"
+   },
+   "description": "palpable nodule in his neck"
+  },
+  {
+   "type": {
+    "id": "HP:0001609",
+    "label": "Hoarse voice"
+   },
+   "description": "hoarseness"
+  },
+  {
+   "type": {
+    "id": "HP:0025388",
+    "label": "Thyroid nodule"
+   },
+   "description": "multiple isoechogenic cystic\u2013solid lesions in both lobes"
+  },
+  {
+   "type": {
+    "id": "HP:0000098",
+    "label": "Tall stature"
+   },
+   "description": "tall stature of 192 cm (+2.25 SDS)"
+  },
+  {
+   "type": {
+    "id": "HP:0000256",
+    "label": "Macrocephaly"
+   },
+   "description": "macrocephaly with a head circumference of 60 cm (+2.56 SDS)"
+  },
+  {
+   "type": {
+    "id": "HP:0025423",
+    "label": "Abnormal larynx morphology"
+   },
+   "description": "mild compression of the larynx from the left side"
+  },
+  {
+   "type": {
+    "id": "HP:0000820",
+    "label": "Abnormality of the thyroid gland"
+   },
+   "description": "atypical cells in all samples, categorized as Bethesda III"
+  },
+  {
+   "type": {
+    "id": "HP:0011774",
+    "label": "Thyroid follicular adenoma"
+   },
+   "description": "benign follicular cell-derived neoplasms, indicating thyroid follicular nodular disease bilaterally"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_11049647-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_11049647-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_11049647-2-DICER1",
+        "geneContext": {
+         "valueId": "HGNC:17098",
+         "symbol": "DICER1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38671620",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38671620/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

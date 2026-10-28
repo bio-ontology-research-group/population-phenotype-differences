@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_7325212-1",
+ "subject": {
+  "id": "PMCP_7325212-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P76Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002560",
+     "label": "Canada"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our neuromuscular clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "76-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "myofibrillar myopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"ankle dorsiflexion was MRC grade 2/5 on the right, 4\u2013/5 on the left\", \"excluded\": false}, {\"text\": \"ankle inversion and eversion were 4/5\", \"excluded\": false}, {\"text\": \"ankle plantar flexion weakness was mostly revealed by difficulty standing on toes\", \"excluded\": false}, {\"text\": \"length-dependent sensory impairment for pinprick/pain and light touch\", \"excluded\": false}, {\"text\": \"absent bilaterally at the knees and ankles\", \"excluded\": false}, {\"text\": \"serum CK was mildly elevated at 508 U/L\", \"excluded\": false}, {\"text\": \"abnormal spontaneous activity (fibrillations, positive sharp waves)\", \"excluded\": false}, {\"text\": \"polyphasic, long-duration motor unit potentials with decreased recruitment\", \"excluded\": false}, {\"text\": \"Prominent myotonic discharges were also noted in several muscles\", \"excluded\": false}, {\"text\": \"prominent fatty infiltration in paraspinal and lower limb muscles\", \"excluded\": false}, {\"text\": \"no impairment in the bulbar territory or the upper limbs\", \"excluded\": true}, {\"text\": \"no significant muscular atrophy\", \"excluded\": true}, {\"text\": \"normal perception of vibration and proprioception\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7325212-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:warman-chardon j"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003323",
+    "label": "Progressive muscle weakness"
+   },
+   "description": "insidiously progressive leg weakness"
+  },
+  {
+   "type": {
+    "id": "HP:0009027",
+    "label": "Foot dorsiflexor weakness"
+   },
+   "description": "increasing tendency to slap his right foot on the ground"
+  },
+  {
+   "type": {
+    "id": "HP:0003551",
+    "label": "Difficulty climbing stairs"
+   },
+   "description": "mild difficulty going up stairs or rising from a low chair"
+  },
+  {
+   "type": {
+    "id": "HP:0002936",
+    "label": "Distal sensory impairment"
+   },
+   "description": "sensory loss in both feet up to the mid-shin level"
+  },
+  {
+   "type": {
+    "id": "HP:0012534",
+    "label": "Dysesthesia"
+   },
+   "description": "mild superficial dysesthesia"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7325212-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7325212-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7325212-1-MYOT",
+        "geneContext": {
+         "valueId": "HGNC:12399",
+         "symbol": "MYOT"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32647524",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32647524/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

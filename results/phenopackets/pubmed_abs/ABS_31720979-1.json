@@ -1,0 +1,262 @@
+{
+ "id": "ABS_31720979-1",
+ "subject": {
+  "id": "ABS_31720979-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P3Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002560",
+     "label": "Canada"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "3 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "6 months"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P6M"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Canada"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:vincent a"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002133",
+    "label": "Status epilepticus"
+   },
+   "description": "status epilepticus"
+  },
+  {
+   "type": {
+    "id": "HP:0001662",
+    "label": "Bradycardia"
+   },
+   "description": "bradycardia"
+  },
+  {
+   "type": {
+    "id": "HP:0001263",
+    "label": "Global developmental delay"
+   },
+   "description": "global developmental delay"
+  },
+  {
+   "type": {
+    "id": "HP:0001252",
+    "label": "Hypotonia"
+   },
+   "description": "hypotonia"
+  },
+  {
+   "type": {
+    "id": "HP:0000543",
+    "label": "Optic disc pallor"
+   },
+   "description": "mild optic disk pallor"
+  },
+  {
+   "type": {
+    "id": "HP:0030471",
+    "label": "Abnormal dark-adapted dim flash electroretinogram"
+   },
+   "description": "non-detectable dim flash DA ERGs"
+  },
+  {
+   "type": {
+    "id": "HP:0030474",
+    "label": "Undetectable dark-adapted electroretinogram"
+   },
+   "description": "no rod component"
+  },
+  {
+   "type": {
+    "id": "HP:0007984",
+    "label": "Electronegative electroretinogram"
+   },
+   "description": "electronegative configuration"
+  },
+  {
+   "type": {
+    "id": "HP:0008275",
+    "label": "Abnormal light-adapted electroretinogram"
+   },
+   "description": "severely reduced but detectable for the initial 0.5 s; this became non-detectable after 5 s of averaging"
+  },
+  {
+   "type": {
+    "id": "HP:0000654",
+    "label": "Decreased light- and dark-adapted electroretinogram amplitude"
+   },
+   "description": "markedly reduced a- and b-wave amplitudes and a reduced b:a ratio"
+  },
+  {
+   "type": {
+    "id": "HP:0030465",
+    "label": "Undetectable light-adapted electroretinogram"
+   },
+   "description": "LA ON-OFF ERGs were non-detectable"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_31720979-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_31720979-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_31720979-1-GNB5",
+        "geneContext": {
+         "valueId": "HGNC:4401",
+         "symbol": "GNB5"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31720979",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31720979/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

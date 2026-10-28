@@ -1,0 +1,220 @@
+{
+ "id": "ABS_10971458-1",
+ "subject": {
+  "id": "ABS_10971458-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P30Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "30 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no adrenal crisis despite poor drug compliance\", \"excluded\": false}, {\"text\": \"well-developed breasts (Tanner stage 5)\", \"excluded\": false}, {\"text\": \"regular menstrual cycles\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:matsuo n"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031074",
+    "label": "Abnormal response to ACTH stimulation test"
+   },
+   "description": "adrenal unresponsiveness to ACTH"
+  },
+  {
+   "type": {
+    "id": "HP:0002225",
+    "label": "Sparse pubic hair"
+   },
+   "description": "poor pubic hair development (Tanner stage 2)"
+  },
+  {
+   "type": {
+    "id": "HP:0003154",
+    "label": "Increased circulating ACTH level"
+   },
+   "description": "blood ACTH 1500 pmol/l"
+  },
+  {
+   "type": {
+    "id": "HP:0008163",
+    "label": "Decreased circulating cortisol level"
+   },
+   "description": "cortisol 18 nmol/l"
+  },
+  {
+   "type": {
+    "id": "HP:0031215",
+    "label": "Decreased circulating dehydroepiandrosterone-sulfate concentration"
+   },
+   "description": "dehydroepiandrosterone sulphate below 0.26 micromol/l"
+  },
+  {
+   "type": {
+    "id": "HP:0003351",
+    "label": "Decreased circulating renin concentration"
+   },
+   "description": "activated renin 0.37 pmol/l"
+  },
+  {
+   "type": {
+    "id": "HP:0004319",
+    "label": "Decreased circulating aldosterone concentration"
+   },
+   "description": "aldosterone 3.4 nmol/l"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_10971458-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_10971458-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_10971458-1-MC2R",
+        "geneContext": {
+         "valueId": "HGNC:6930",
+         "symbol": "MC2R"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:10971458",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/10971458/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

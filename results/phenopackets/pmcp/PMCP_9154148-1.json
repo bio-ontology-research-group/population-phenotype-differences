@@ -1,0 +1,210 @@
+{
+ "id": "PMCP_9154148-1",
+ "subject": {
+  "id": "PMCP_9154148-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P9Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Department of Pediatrics, Guangzhou First People's Hospital"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Department of Pediatrics, Guangzhou First People's Hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "nine-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "PAPA syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"multiple joints swelling and pain\", \"excluded\": false}, {\"text\": \"limited mobility in the whole body\", \"excluded\": false}, {\"text\": \"painful swelling of left ankle and knee\", \"excluded\": false}, {\"text\": \"low-degree fever\", \"excluded\": false}, {\"text\": \"skin pustules, mostly on the left lower extremity, waist, and right cheeks\", \"excluded\": false}, {\"text\": \"itching and suppuration\", \"excluded\": false}, {\"text\": \"left ankle swelled again\", \"excluded\": false}, {\"text\": \"right ankle began to swell\", \"excluded\": false}, {\"text\": \"elevated CRP 6.2 mg/L\", \"excluded\": false}, {\"text\": \"IL-6: 5.97 Pg/ml\", \"excluded\": false}, {\"text\": \"MRP8/14 was 890.2 ng/mL\", \"excluded\": false}, {\"text\": \"normal white blood cell count 8.7 \u00d7 109/L\", \"excluded\": true}, {\"text\": \"normal neutrophil ratio 65.6%\", \"excluded\": true}, {\"text\": \"negative anti-nuclear antibody\", \"excluded\": true}, {\"text\": \"negative anti-dsDNA antibody\", \"excluded\": true}, {\"text\": \"negative anti-keratin antibody\", \"excluded\": true}, {\"text\": \"negative anti-perinuclear factor antibody\", \"excluded\": true}, {\"text\": \"serum zinc level of this patient was 4.5 mg/L (normal, for children aged 0\u201316: 3.7-7.3 mg/L)\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9154148-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yu s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0025021",
+    "label": "Abnormal erythrocyte sedimentation rate"
+   },
+   "description": "ESR: 13 mm/h"
+  },
+  {
+   "type": {
+    "id": "HP:0011117",
+    "label": "Abnormal circulating interleukin concentration"
+   },
+   "description": "levels of TNF-a, IL-1, IL-2, and IL-4 were slightly elevated"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9154148-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9154148-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9154148-1-PSTPIP1",
+        "geneContext": {
+         "valueId": "HGNC:9580",
+         "symbol": "PSTPIP1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35656258",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35656258/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,246 @@
+{
+ "id": "PMCP_10972702-1",
+ "subject": {
+  "id": "PMCP_10972702-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P46Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "previously we found to be associated with mucosal neuroma syndrome and CNT"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "46 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Multiple endocrine neoplasia type 2A syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no other phenotypic features of MEN2B\", \"excluded\": true}, {\"text\": \"no palpable goitre\", \"excluded\": true}, {\"text\": \"no lymphadenopathy\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10972702-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:vaidya b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001097",
+    "label": "Keratoconjunctivitis sicca"
+   },
+   "description": "gritty eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0010726",
+    "label": "Prominent corneal nerve fibers"
+   },
+   "description": "corneal nerve thickening"
+  },
+  {
+   "type": {
+    "id": "HP:0000872",
+    "label": "Hashimoto thyroiditis"
+   },
+   "description": "Hashimoto\u2019s thyroiditis"
+  },
+  {
+   "type": {
+    "id": "HP:0000218",
+    "label": "High palate"
+   },
+   "description": "high-arched palate"
+  },
+  {
+   "type": {
+    "id": "HP:0003528",
+    "label": "Elevated circulating calcitonin concentration"
+   },
+   "description": "elevated calcitonin"
+  },
+  {
+   "type": {
+    "id": "HP:0025388",
+    "label": "Thyroid nodule"
+   },
+   "description": "heterogenous hypoechoic appearance with multiple small nodules"
+  },
+  {
+   "type": {
+    "id": "HP:0011772",
+    "label": "Abnormal thyroid morphology"
+   },
+   "description": "microcalcification"
+  },
+  {
+   "type": {
+    "id": "HP:0002865",
+    "label": "Medullary thyroid carcinoma"
+   },
+   "description": "bilateral MTC with lympho-vascular invasion and multiple central node metastases"
+  },
+  {
+   "type": {
+    "id": "HP:0002895",
+    "label": "Papillary thyroid carcinoma"
+   },
+   "description": "incidental sub-centimetre papillary carcinoma"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10972702-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10972702-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10972702-1-RET",
+        "geneContext": {
+         "valueId": "HGNC:9967",
+         "symbol": "RET"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37966915",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37966915/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

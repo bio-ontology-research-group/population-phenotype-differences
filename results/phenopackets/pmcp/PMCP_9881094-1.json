@@ -1,0 +1,240 @@
+{
+ "id": "PMCP_9881094-1",
+ "subject": {
+  "id": "PMCP_9881094-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P58Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "58 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary Hemochromatosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"No active synovitis was noted on MCP joints or interphalangeal joints of the hands or wrists\", \"excluded\": true}, {\"text\": \"no abnormalities in hands, elbows, and feet respectively\", \"excluded\": true}, {\"text\": \"no evidence of recent or historic vertebral fracturing\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9881094-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:putchakayala k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0030833",
+    "label": "Neck pain"
+   },
+   "description": "increasing pain in the neck and low back pain"
+  },
+  {
+   "type": {
+    "id": "HP:0001376",
+    "label": "Limitation of joint mobility"
+   },
+   "description": "lumbar spine movement was restricted significantly"
+  },
+  {
+   "type": {
+    "id": "HP:0004626",
+    "label": "Lumbar scoliosis"
+   },
+   "description": "mild scoliosis of the lumbar spine convex to the left"
+  },
+  {
+   "type": {
+    "id": "HP:0000925",
+    "label": "Abnormality of the vertebral column"
+   },
+   "description": "anomalous articulation of L5 and S1 on the right"
+  },
+  {
+   "type": {
+    "id": "HP:0002945",
+    "label": "Intervertebral space narrowing"
+   },
+   "description": "marked intervertebral space narrowing at L3-L4 and moderate disc space narrowing at L4-L5"
+  },
+  {
+   "type": {
+    "id": "HP:0004610",
+    "label": "Lumbar spinal canal stenosis"
+   },
+   "description": "L3/L4 and L4/L5 spondylotic changes with central high-grade stenosis with transiting neural impingement"
+  },
+  {
+   "type": {
+    "id": "HP:0003281",
+    "label": "Increased circulating ferritin concentration"
+   },
+   "description": "Ferritin 1507 micrograms per liter (mcg/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0012463",
+    "label": "Elevated transferrin saturation"
+   },
+   "description": "transferrin saturation 93 percent (%)"
+  },
+  {
+   "type": {
+    "id": "HP:0001397",
+    "label": "Hepatic steatosis"
+   },
+   "description": "liver appears mildly, and uniformly increased in echogenicity consistent with fatty infiltration"
+  },
+  {
+   "type": {
+    "id": "HP:0001395",
+    "label": "Hepatic fibrosis"
+   },
+   "description": "increased acoustic radiation force impulse (ARFI) reading of 1.88 meters per second(m/s) which indicates F2 fibrosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9881094-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9881094-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9881094-1-HFE",
+        "geneContext": {
+         "valueId": "HGNC:4886",
+         "symbol": "HFE"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36721599",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36721599/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

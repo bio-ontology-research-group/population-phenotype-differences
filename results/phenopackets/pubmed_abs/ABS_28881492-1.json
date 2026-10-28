@@ -1,0 +1,218 @@
+{
+ "id": "ABS_28881492-1",
+ "subject": {
+  "id": "ABS_28881492-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P38Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002945",
+     "label": "Greece"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "38 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Greece"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:niewold tb"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001369",
+    "label": "Arthritis"
+   },
+   "description": "inflammatory arthritis"
+  },
+  {
+   "type": {
+    "id": "HP:0000988",
+    "label": "Skin rash"
+   },
+   "description": "rash"
+  },
+  {
+   "type": {
+    "id": "HP:0033087",
+    "label": "Quotidian fever"
+   },
+   "description": "daily fevers"
+  },
+  {
+   "type": {
+    "id": "HP:0031035",
+    "label": "Chronic infection"
+   },
+   "description": "chronic parvovirus infection"
+  },
+  {
+   "type": {
+    "id": "HP:0032248",
+    "label": "Persistent viremia"
+   },
+   "description": "persistently detectable viral titers"
+  },
+  {
+   "type": {
+    "id": "HP:0011990",
+    "label": "Abnormal neutrophil physiology"
+   },
+   "description": "significantly decreased ability to form NETs"
+  },
+  {
+   "type": {
+    "id": "HP:0034858",
+    "label": "Abnormal leukocyte enzyme concentration or activity"
+   },
+   "description": "defects in neutrophil elastase activity"
+  },
+  {
+   "type": {
+    "id": "HP:0011117",
+    "label": "Abnormal circulating interleukin concentration"
+   },
+   "description": "altered levels of interleukin-12 (IL-12) and IL-8"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_28881492-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_28881492-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:3309",
+       "symbol": "ELANE"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28881492",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28881492/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

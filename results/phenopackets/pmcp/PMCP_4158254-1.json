@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_4158254-1",
+ "subject": {
+  "id": "PMCP_4158254-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P42Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our stroke clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "42-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Bilateral Jugular Vein and Sigmoid Sinus Thrombosis Related to an Inherited Coagulopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"nausea or vomiting\", \"excluded\": true}, {\"text\": \"neurological examination was normal\", \"excluded\": true}, {\"text\": \"hyperemia or local heat\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4158254-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:asil t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0004936",
+    "label": "Venous thrombosis"
+   },
+   "description": "right-sided IJVT"
+  },
+  {
+   "type": {
+    "id": "HP:0012228",
+    "label": "Tension-type headache"
+   },
+   "description": "tension-type headache"
+  },
+  {
+   "type": {
+    "id": "HP:0033505",
+    "label": "Livedo reticularis"
+   },
+   "description": "livedo reticularis on her limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0005268",
+    "label": "Miscarriage"
+   },
+   "description": "spontaneous first-trimester abortion"
+  },
+  {
+   "type": {
+    "id": "HP:0033724",
+    "label": "Cerebral venous sinus thrombosis"
+   },
+   "description": "bilateral internal jugular vein and sigmoid sinus thrombosis"
+  },
+  {
+   "type": {
+    "id": "HP:0005543",
+    "label": "Reduced protein C activity"
+   },
+   "description": "protein C activity (49, normal range > 60) and level (20, normal range > 20) were lower than normal"
+  },
+  {
+   "type": {
+    "id": "HP:0012514",
+    "label": "Lower limb pain"
+   },
+   "description": "pain and swelling of the lower limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0002625",
+    "label": "Deep venous thrombosis"
+   },
+   "description": "left deep vein thrombosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4158254-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4158254-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4158254-1-MTHFR",
+        "geneContext": {
+         "valueId": "HGNC:7436",
+         "symbol": "MTHFR"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:25221687",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/25221687/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

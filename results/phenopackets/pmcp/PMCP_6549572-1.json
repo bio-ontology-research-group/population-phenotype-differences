@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_6549572-1",
+ "subject": {
+  "id": "PMCP_6549572-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P55Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): USA"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "55-yr-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary breast and ovarian cancer syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Perineural invasion was present\", \"excluded\": false}, {\"text\": \"denied any nausea\", \"excluded\": true}, {\"text\": \"denied any... anorexia symptoms\", \"excluded\": true}, {\"text\": \"denied any... early satiety\", \"excluded\": true}, {\"text\": \"no symptoms of pancreatic exocrine insufficiency\", \"excluded\": true}, {\"text\": \"no symptoms of... pancreatitis\", \"excluded\": true}, {\"text\": \"No lymphadenopathy was seen\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6549572-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:liu x"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003270",
+    "label": "Abdominal distention"
+   },
+   "description": "feeling bloated"
+  },
+  {
+   "type": {
+    "id": "HP:0001737",
+    "label": "Pancreatic cysts"
+   },
+   "description": "cyst in the body of the pancreas"
+  },
+  {
+   "type": {
+    "id": "HP:0030992",
+    "label": "Abnormal pancreatic duct morphology"
+   },
+   "description": "proximal pancreatic ductal dilation"
+  },
+  {
+   "type": {
+    "id": "HP:0001081",
+    "label": "Cholelithiasis"
+   },
+   "description": "8-mm stone in the gallbladder"
+  },
+  {
+   "type": {
+    "id": "HP:0410281",
+    "label": "Dyspepsia"
+   },
+   "description": "dyspepsia-like symptoms"
+  },
+  {
+   "type": {
+    "id": "HP:0001824",
+    "label": "Weight loss"
+   },
+   "description": "lost nearly 10 pounds"
+  },
+  {
+   "type": {
+    "id": "HP:6000657",
+    "label": "Pancreatic intraductal papillary mucinous neoplasm"
+   },
+   "description": "intraductal papillary mucinous neoplasm (IPMN) with an associated invasive carcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0002894",
+    "label": "Neoplasm of the pancreas"
+   },
+   "description": "tumor invaded peripancreatic soft tissues"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6549572-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6549572-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6549572-1-BRCA2",
+        "geneContext": {
+         "valueId": "HGNC:1101",
+         "symbol": "BRCA2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30936197",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30936197/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

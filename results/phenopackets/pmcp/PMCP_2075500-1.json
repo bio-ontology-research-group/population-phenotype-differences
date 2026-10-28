@@ -1,0 +1,230 @@
+{
+ "id": "PMCP_2075500-1",
+ "subject": {
+  "id": "PMCP_2075500-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P64Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 33-year old Caucasian woman"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): United Kingdom"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "64 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hereditary breast and ovarian cancer syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"adenocarcinoma of the right breast\", \"excluded\": false}, {\"text\": \"change in bowel habit\", \"excluded\": false}, {\"text\": \"faecal leakage\", \"excluded\": false}, {\"text\": \"urgency\", \"excluded\": false}, {\"text\": \"left-sided abdominal discomfort\", \"excluded\": false}, {\"text\": \"tender, palpable fullness in the left iliac fossa\", \"excluded\": false}, {\"text\": \"haemoglobin of 11.7 g/dl\", \"excluded\": false}, {\"text\": \"necrotic lesion was seen in the proximal sigmoid colon\", \"excluded\": false}, {\"text\": \"poorly differentiated papillary adenocarcinoma of the sigmoid\", \"excluded\": false}, {\"text\": \"no abnormalities of electrolytes, liver or kidney function\", \"excluded\": true}, {\"text\": \"no associated pathological lymphadenopathy\", \"excluded\": true}, {\"text\": \"no evidence of tumour nor Fallopian tube remnants\", \"excluded\": true}, {\"text\": \"no metastatic lymph nodes\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "2075500-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hickisk t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003418",
+    "label": "Back pain"
+   },
+   "description": "back pain"
+  },
+  {
+   "type": {
+    "id": "HP:0031500",
+    "label": "Abdominal mass"
+   },
+   "description": "large bowel-related mass measuring 68 mm by 67 mm"
+  },
+  {
+   "type": {
+    "id": "HP:0031501",
+    "label": "Pelvic mass"
+   },
+   "description": "bulky tumour adherent to the left pelvic brim and pelvic side-wall"
+  },
+  {
+   "type": {
+    "id": "HP:0034971",
+    "label": "Peritoneal mass"
+   },
+   "description": "two separate peritoneal deposits"
+  },
+  {
+   "type": {
+    "id": "HP:0030406",
+    "label": "Primary peritoneal carcinoma"
+   },
+   "description": "primary peritoneal carcinoma of high grade"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_2075500-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_2075500-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_2075500-1-BRCA1",
+        "geneContext": {
+         "valueId": "HGNC:1100",
+         "symbol": "BRCA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:17850658",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/17850658/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,223 @@
+{
+ "id": "PMCP_4006458-1",
+ "subject": {
+  "id": "PMCP_4006458-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P50Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 50-year-old Caucasian woman"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to the emergency department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "50-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "acute myeloid leukemia with heritable GATA2 mutations associated with familial AML-MDS"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"high fever\", \"excluded\": false}, {\"text\": \"bilateral multilobar Legionella pneumonia\", \"excluded\": false}, {\"text\": \"multiorgan failure\", \"excluded\": false}, {\"text\": \"circulating blasts in the peripheral blood\", \"excluded\": false}, {\"text\": \"normochromic normocytic anemia with hemoglobin of 9.5 g/dL\", \"excluded\": false}, {\"text\": \"thrombocytopenia (55,000/uL)\", \"excluded\": false}, {\"text\": \"white blood cells of 8700/\u03bcL, including 25% of blasts\", \"excluded\": false}, {\"text\": \"scattered blasts with high nuclear to cytoplasmic ratio, some with cytoplasmic granules\", \"excluded\": false}, {\"text\": \"Occasional dysplastic neutrophils with hyposegmented nuclei\", \"excluded\": false}, {\"text\": \"Some of the platelets were large and irregular\", \"excluded\": false}, {\"text\": \"blasts with fine chromatin, round nuclei and scant cytoplasm\", \"excluded\": false}, {\"text\": \"markedly hypercelluar marrow with increased blasts\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4006458-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:peterson lc"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001873",
+    "label": "Thrombocytopenia"
+   },
+   "description": "25 year history of thrombocytopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0012735",
+    "label": "Cough"
+   },
+   "description": "worsening cough"
+  },
+  {
+   "type": {
+    "id": "HP:0020053",
+    "label": "Abnormal marker expression"
+   },
+   "description": "myeloid blast population that was partial CD34+, CD117+, with dim expression of myeloperoxidase, CD13 and CD33, and aberrant expression of CD7"
+  },
+  {
+   "type": {
+    "id": "HP:0031411",
+    "label": "Abnormal chromosome morphology"
+   },
+   "description": "46,XX,del(7)(q22q36)[20]"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4006458-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4006458-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4006458-1-GATA2",
+        "geneContext": {
+         "valueId": "HGNC:4171",
+         "symbol": "GATA2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24754962",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24754962/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,212 @@
+{
+ "id": "PMCP_10635578-2",
+ "subject": {
+  "id": "PMCP_10635578-2",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P61Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "61"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Filamin-C arrhythmogenic left ventricular cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no history of syncope, palpitations, or dizziness\", \"excluded\": true}, {\"text\": \"no signs of lower limb oedema\", \"excluded\": true}, {\"text\": \"Right ventricular size and systolic function were normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10635578-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:felice t"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:4000141",
+    "label": "Left ventricular dilatation"
+   },
+   "description": "dilated LV (indexed end-diastolic volume 118 mL/m2)"
+  },
+  {
+   "type": {
+    "id": "HP:0012663",
+    "label": "Mildly reduced left ventricular ejection fraction"
+   },
+   "description": "mildly impaired LV systolic function (LVEF 50%)"
+  },
+  {
+   "type": {
+    "id": "HP:0001685",
+    "label": "Myocardial fibrosis"
+   },
+   "description": "Fairly extensive mid-myocardial and subepicardial LGE in the basal to mid-inferior and infero-lateral segments of the LV"
+  },
+  {
+   "type": {
+    "id": "HP:0001688",
+    "label": "Sinus bradycardia"
+   },
+   "description": "sinus bradycardia at 53 b.p.m."
+  },
+  {
+   "type": {
+    "id": "HP:0025077",
+    "label": "Decreased QRS voltage"
+   },
+   "description": "low QRS voltages in the limb leads"
+  },
+  {
+   "type": {
+    "id": "HP:0006682",
+    "label": "Premature ventricular contraction"
+   },
+   "description": "isolated VE with RBBB morphology"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10635578-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10635578-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10635578-2-FLNC",
+        "geneContext": {
+         "valueId": "HGNC:3756",
+         "symbol": "FLNC"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37954562",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37954562/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

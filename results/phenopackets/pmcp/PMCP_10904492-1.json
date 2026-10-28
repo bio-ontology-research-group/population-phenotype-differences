@@ -1,0 +1,253 @@
+{
+ "id": "PMCP_10904492-1",
+ "subject": {
+  "id": "PMCP_10904492-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P59Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our Renal Services Department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "59"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Senior-L\u00f8ken syndrome type 1"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Brain MRI did not reveal any cerebellar vermis hypoplasia\", \"excluded\": true}, {\"text\": \"plain X-rays of the chest and long bones also showed no abnormalities\", \"excluded\": true}, {\"text\": \"There was no clinical evidence of oculomotor apraxia\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10904492-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sayer ja"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001254",
+    "label": "Lethargy"
+   },
+   "description": "lethargy"
+  },
+  {
+   "type": {
+    "id": "HP:0001959",
+    "label": "Polydipsia"
+   },
+   "description": "increased thirst"
+  },
+  {
+   "type": {
+    "id": "HP:0000083",
+    "label": "Renal insufficiency"
+   },
+   "description": "reduced kidney function"
+  },
+  {
+   "type": {
+    "id": "HP:0008659",
+    "label": "Multiple small medullary renal cysts"
+   },
+   "description": "bilateral small medullary cysts"
+  },
+  {
+   "type": {
+    "id": "HP:0004743",
+    "label": "Chronic tubulointerstitial nephritis"
+   },
+   "description": "chronic damage with tubulointerstitial nephritis"
+  },
+  {
+   "type": {
+    "id": "HP:0003774",
+    "label": "Stage 5 chronic kidney disease"
+   },
+   "description": "progressive chronic kidney disease resulting in kidney failure"
+  },
+  {
+   "type": {
+    "id": "HP:0000662",
+    "label": "Nyctalopia"
+   },
+   "description": "difficulty seeing in the dark"
+  },
+  {
+   "type": {
+    "id": "HP:0500087",
+    "label": "Peripapillary atrophy"
+   },
+   "description": "loss of retinal pigment around his optic discs"
+  },
+  {
+   "type": {
+    "id": "HP:0025158",
+    "label": "Hyperautofluorescent retinal lesion"
+   },
+   "description": "increase in localised fundus autofluorescence signal"
+  },
+  {
+   "type": {
+    "id": "HP:0000510",
+    "label": "Rod-cone dystrophy"
+   },
+   "description": "widespread retinal photoreceptor dysfunction in a pattern consistent with a rod-cone dystrophy"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10904492-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10904492-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10904492-1-NPHP1",
+        "geneContext": {
+         "valueId": "HGNC:7905",
+         "symbol": "NPHP1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38433745",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38433745/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

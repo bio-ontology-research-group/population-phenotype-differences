@@ -1,0 +1,261 @@
+{
+ "id": "ABS_42460955-1",
+ "subject": {
+  "id": "ABS_42460955-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P21Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "21 years"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "21 years"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P21Y"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:pl\u00e1cido r"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003401",
+    "label": "Paresthesia"
+   },
+   "description": "hemifacial and arm paresthesia"
+  },
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "chest discomfort"
+  },
+  {
+   "type": {
+    "id": "HP:0025722",
+    "label": "Cerebral infarct"
+   },
+   "description": "parietal ischemic lesions"
+  },
+  {
+   "type": {
+    "id": "HP:0410173",
+    "label": "Increased circulating troponin I concentration"
+   },
+   "description": "elevated high-sensitivity I troponin"
+  },
+  {
+   "type": {
+    "id": "HP:4000141",
+    "label": "Left ventricular dilatation"
+   },
+   "description": "left ventricle (LV) dilation"
+  },
+  {
+   "type": {
+    "id": "HP:0031483",
+    "label": "Reduced contraction of the left ventricular apex"
+   },
+   "description": "apical hypokinesia"
+  },
+  {
+   "type": {
+    "id": "HP:0040412",
+    "label": "Left ventricular thrombus"
+   },
+   "description": "apical thrombus"
+  },
+  {
+   "type": {
+    "id": "HP:4000004",
+    "label": "Myocardial late gadolinium enhancement"
+   },
+   "description": "multifocal nonischemic late gadolinium enhancement with edema"
+  },
+  {
+   "type": {
+    "id": "HP:0001711",
+    "label": "Abnormal left ventricle morphology"
+   },
+   "description": "progressive LV remodeling"
+  },
+  {
+   "type": {
+    "id": "HP:0012819",
+    "label": "Myocarditis"
+   },
+   "description": "low-grade inflammation"
+  },
+  {
+   "type": {
+    "id": "HP:0001663",
+    "label": "Ventricular fibrillation"
+   },
+   "description": "exercise-triggered ventricular fibrillation"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_42460955-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_42460955-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_42460955-1-MYBPC3",
+        "geneContext": {
+         "valueId": "HGNC:7551",
+         "symbol": "MYBPC3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:42460955",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/42460955/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

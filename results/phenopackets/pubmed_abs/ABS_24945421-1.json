@@ -1,0 +1,240 @@
+{
+ "id": "ABS_24945421-1",
+ "subject": {
+  "id": "ABS_24945421-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P17Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "text": "Norway"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "primarily Norwegian descent"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "17 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"autoimmune hypothyroidism\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:connor el"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005401",
+    "label": "Recurrent candida infections"
+   },
+   "description": "chronic candidiasis"
+  },
+  {
+   "type": {
+    "id": "HP:0000829",
+    "label": "Hypoparathyroidism"
+   },
+   "description": "hypoparathyroidism"
+  },
+  {
+   "type": {
+    "id": "HP:0000846",
+    "label": "Adrenal insufficiency"
+   },
+   "description": "autoimmune adrenocortical insufficiency"
+  },
+  {
+   "type": {
+    "id": "HP:0001045",
+    "label": "Vitiligo"
+   },
+   "description": "vitiligo"
+  },
+  {
+   "type": {
+    "id": "HP:0002024",
+    "label": "Malabsorption"
+   },
+   "description": "intestinal malabsorption"
+  },
+  {
+   "type": {
+    "id": "HP:0012115",
+    "label": "Hepatitis"
+   },
+   "description": "autoimmune hepatitis"
+  },
+  {
+   "type": {
+    "id": "HP:0100614",
+    "label": "Myositis"
+   },
+   "description": "myositis"
+  },
+  {
+   "type": {
+    "id": "HP:0003326",
+    "label": "Myalgia"
+   },
+   "description": "myalgias"
+  },
+  {
+   "type": {
+    "id": "HP:0012432",
+    "label": "Chronic fatigue"
+   },
+   "description": "chronic fatigue"
+  },
+  {
+   "type": {
+    "id": "HP:0001508",
+    "label": "Failure to thrive"
+   },
+   "description": "failure to thrive"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_24945421-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_24945421-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_24945421-1-AIRE",
+        "geneContext": {
+         "valueId": "HGNC:360",
+         "symbol": "AIRE"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:24945421",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/24945421/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_6444777-1",
+ "subject": {
+  "id": "PMCP_6444777-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P34Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000463",
+     "label": "Australia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "referred to our service from the endocrinology department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "34-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "functioning intrapericardial paraganglioma associated with succinate dehydrogenase B mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"daily palpitations\", \"excluded\": false}, {\"text\": \"central chest pain\", \"excluded\": false}, {\"text\": \"Plasma metanephrines were elevated\", \"excluded\": false}, {\"text\": \"normetanephrine at 3587 pmol/L\", \"excluded\": false}, {\"text\": \"3-methoxytyramine 1075 pmol/L\", \"excluded\": false}, {\"text\": \"The capsule was seen to be infiltrated by tumour cells\", \"excluded\": false}, {\"text\": \"electrocardiographic, troponin studies, and stress testing being unremarkable\", \"excluded\": true}, {\"text\": \"Transthoracic echocardiography was negative for impedance of this lesion on cardiac function or great vessel flow\", \"excluded\": true}, {\"text\": \"Whole-body metaiodobenzylguanidine (mIBG) scintigraphy did not reveal any metabolic lesion suspicious for metastasis\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6444777-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hardikar a"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002315",
+    "label": "Headache"
+   },
+   "description": "headache"
+  },
+  {
+   "type": {
+    "id": "HP:0000975",
+    "label": "Hyperhidrosis"
+   },
+   "description": "diaphoresis"
+  },
+  {
+   "type": {
+    "id": "HP:0000739",
+    "label": "Anxiety"
+   },
+   "description": "anxiety"
+  },
+  {
+   "type": {
+    "id": "HP:0003334",
+    "label": "Elevated circulating catecholamine level"
+   },
+   "description": "noradrenaline and dopamine were markedly elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0033823",
+    "label": "Mediastinal mass"
+   },
+   "description": "mediastinal mass"
+  },
+  {
+   "type": {
+    "id": "HP:0033829",
+    "label": "Posterior mediastinal mass"
+   },
+   "description": "35 mm \u00d7 34 mm \u00d7 29 mm mass adjacent to the aortic root posterior to the pulmonary artery"
+  },
+  {
+   "type": {
+    "id": "HP:0002668",
+    "label": "Paraganglioma"
+   },
+   "description": "Pathological examination was typical of PGL"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6444777-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6444777-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6444777-1-SDHB",
+        "geneContext": {
+         "valueId": "HGNC:10681",
+         "symbol": "SDHB"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:30967954",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/30967954/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

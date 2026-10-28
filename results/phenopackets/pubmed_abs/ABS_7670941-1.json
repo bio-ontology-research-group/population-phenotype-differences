@@ -1,0 +1,222 @@
+{
+ "id": "ABS_7670941-1",
+ "subject": {
+  "id": "ABS_7670941-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002937",
+     "label": "Finland"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Finnish"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002937",
+     "label": "Finland"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Finland"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:taskinen mr"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005181",
+    "label": "Premature coronary artery atherosclerosis"
+   },
+   "description": "premature coronary heart disease"
+  },
+  {
+   "type": {
+    "id": "HP:0003233",
+    "label": "Decreased HDL cholesterol concentration"
+   },
+   "description": "decreased HDL cholesterol levels"
+  },
+  {
+   "type": {
+    "id": "HP:0031799",
+    "label": "Decreased circulating apolipoprotein A-I concentration"
+   },
+   "description": "Mean serum apoA-I and apoA-II concentrations in heterozygotes were reduced by 18% and 22%, respectively"
+  },
+  {
+   "type": {
+    "id": "HP:0033459",
+    "label": "Decreased circulating apolipoprotein concentration"
+   },
+   "description": "mean concentration of lipoprotein containing both apoA-I and apoA-II (LpA-I:A-II) was 31% lower"
+  },
+  {
+   "type": {
+    "id": "HP:0032423",
+    "label": "Decreased HDL2b concentration"
+   },
+   "description": "lack of HDL2 and small dense HDL3 in heterozygotes"
+  },
+  {
+   "type": {
+    "id": "HP:0032421",
+    "label": "Decreased HDL2a concentration"
+   },
+   "description": "absence of HDL2b and HDL2a peaks"
+  },
+  {
+   "type": {
+    "id": "HP:0012379",
+    "label": "Abnormal circulating enzyme concentration or activity"
+   },
+   "description": "Cholesteryl ester transfer protein activity in heterozygotes was reduced by 25%"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_7670941-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_7670941-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_7670941-1-APOA1",
+        "geneContext": {
+         "valueId": "HGNC:600",
+         "symbol": "APOA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:7670941",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/7670941/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

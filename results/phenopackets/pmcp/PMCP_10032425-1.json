@@ -1,0 +1,246 @@
+{
+ "id": "PMCP_10032425-1",
+ "subject": {
+  "id": "PMCP_10032425-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P11Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "our patient was started on a low dose of oral mannose"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "11 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Mannose phosphate isomerase\u2013congenital disorder of glycosylation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"without dysmorphic features\", \"excluded\": true}, {\"text\": \"normal pulmonary function tests\", \"excluded\": true}, {\"text\": \"normal sweat chloride test\", \"excluded\": true}, {\"text\": \"aspartate transaminase (AST), alkaline phosphate (AP), glucose, antithrombin III, and factor XI activity were all within normal range\", \"excluded\": true}, {\"text\": \"Both ultrasound of the abdomen and liver elastography were normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10032425-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:morava e"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002086",
+    "label": "Abnormality of the respiratory system"
+   },
+   "description": "respiratory symptoms at 5 years of age"
+  },
+  {
+   "type": {
+    "id": "HP:0006532",
+    "label": "Recurrent pneumonia"
+   },
+   "description": "20 confirmed cases of pneumonia, both bacterial and viral"
+  },
+  {
+   "type": {
+    "id": "HP:0012418",
+    "label": "Hypoxemia"
+   },
+   "description": "recurrent hypoxemia"
+  },
+  {
+   "type": {
+    "id": "HP:0100750",
+    "label": "Atelectasis"
+   },
+   "description": "atelectasis on imaging"
+  },
+  {
+   "type": {
+    "id": "HP:0002779",
+    "label": "Tracheomalacia"
+   },
+   "description": "tracheomalacia"
+  },
+  {
+   "type": {
+    "id": "HP:0002850",
+    "label": "Decreased circulating total IgM"
+   },
+   "description": "decreased immunoglobin M (IgM) level at 32 mg/dl"
+  },
+  {
+   "type": {
+    "id": "HP:0031964",
+    "label": "Elevated circulating alanine aminotransferase concentration"
+   },
+   "description": "Alanine transaminase (ALT) was increased at 94 U/l"
+  },
+  {
+   "type": {
+    "id": "HP:0003160",
+    "label": "Abnormal isoelectric focusing of serum transferrin"
+   },
+   "description": "elevation of the mono-oligo/di-oligo ratio at 0.26"
+  },
+  {
+   "type": {
+    "id": "HP:6000782",
+    "label": "Reduced tissue phosphomannose isomerase activity"
+   },
+   "description": "Phosphomannoisomerase (MPI) enzyme activity in leukocytes was 370 nmol/h/mg"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10032425-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10032425-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10032425-1-MPI",
+        "geneContext": {
+         "valueId": "HGNC:7216",
+         "symbol": "MPI"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37180423",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37180423/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

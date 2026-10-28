@@ -1,0 +1,234 @@
+{
+ "id": "ABS_42445192-1",
+ "subject": {
+  "id": "ABS_42445192-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P6Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002942",
+     "label": "Austria"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "6 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Austria; Italy"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:miano m"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "EURorlocal_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001317",
+    "label": "Abnormal cerebellum morphology"
+   },
+   "description": "abnormal orientation of the cerebellar folia"
+  },
+  {
+   "type": {
+    "id": "HP:0031160",
+    "label": "Myelokathexis"
+   },
+   "description": "myelokathexis"
+  },
+  {
+   "type": {
+    "id": "HP:0025826",
+    "label": "Severely decreased neutrophil count"
+   },
+   "description": "severe neutropenia"
+  },
+  {
+   "type": {
+    "id": "HP:0001888",
+    "label": "Decreased total lymphocyte count"
+   },
+   "description": "lymphopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0033221",
+    "label": "Increased CD4:CD8 ratio"
+   },
+   "description": "elevated CD4/CD8 T-cell ratio"
+  },
+  {
+   "type": {
+    "id": "HP:0010976",
+    "label": "Decreased total B cell count"
+   },
+   "description": "B lymphopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0030381",
+    "label": "Increased transitional B cell proportion"
+   },
+   "description": "shift in circulating B-cell populations towards transitional stages"
+  },
+  {
+   "type": {
+    "id": "HP:4000056",
+    "label": "Abnormal apoptosis"
+   },
+   "description": "increased apoptosis"
+  },
+  {
+   "type": {
+    "id": "HP:0010978",
+    "label": "Abnormality of immune system physiology"
+   },
+   "description": "reduced capacity for plasmablast differentiation in vitro"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_42445192-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_42445192-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_42445192-1-CXCR4",
+        "geneContext": {
+         "valueId": "HGNC:2561",
+         "symbol": "CXCR4"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:42445192",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/42445192/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

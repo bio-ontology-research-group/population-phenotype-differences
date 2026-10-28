@@ -1,0 +1,244 @@
+{
+ "id": "PMCP_7747047-1",
+ "subject": {
+  "id": "PMCP_7747047-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P22Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00003744",
+     "label": "Thailand"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Thai"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 22-year-old Thai man"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00003744",
+     "label": "Thailand"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "our in-house Thai exome database"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "22 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Nagashima-Type Palmoplantar Keratosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"extending to the dorsal hands, fingers, toes, and Achilles tendons\", \"excluded\": false}, {\"text\": \"iodine starch test and water immersion of his palms were done and exhibited positive results\", \"excluded\": false}, {\"text\": \"Neither pain nor itch was observed\", \"excluded\": true}, {\"text\": \"other physical examinations were within normal limits\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7747047-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:shotelersuk v"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000982",
+    "label": "Palmoplantar keratoderma"
+   },
+   "description": "bilateral reddish, hyperkeratotic skin on the palms and soles"
+  },
+  {
+   "type": {
+    "id": "HP:0200041",
+    "label": "Skin erosion"
+   },
+   "description": "occasionally peel off resulting in maceration, erosion, and tenderness"
+  },
+  {
+   "type": {
+    "id": "HP:0010765",
+    "label": "Palmar hyperkeratosis"
+   },
+   "description": "white spongy lesions would develop on his palms only to resolve a few hours later"
+  },
+  {
+   "type": {
+    "id": "HP:0007410",
+    "label": "Palmoplantar hyperhidrosis"
+   },
+   "description": "excessive sweating on both palms and soles"
+  },
+  {
+   "type": {
+    "id": "HP:0007390",
+    "label": "Hyperkeratosis with erythema"
+   },
+   "description": "symmetrical, well-demarcated diffuse erythema and hyperkeratosis over the palms and soles"
+  },
+  {
+   "type": {
+    "id": "HP:0011121",
+    "label": "Abnormal skin morphology"
+   },
+   "description": "Similar lesions were also observed on both elbows and knees"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7747047-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7747047-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7747047-1-SERPINB7",
+        "geneContext": {
+         "valueId": "HGNC:13902",
+         "symbol": "SERPINB7"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33362511",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33362511/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

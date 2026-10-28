@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_10868093-1",
+ "subject": {
+  "id": "PMCP_10868093-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P65Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to our hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "65-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Primary fallopian tube cancer followed by primary breast cancer in RAD51C mutation carrier"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"serum cancer antigen-125 (CA-125) levels were 352.4 U/mL\", \"excluded\": false}, {\"text\": \"primary high-grade serous carcinoma of the fallopian tube\", \"excluded\": false}, {\"text\": \"palpable mass in the left breast\", \"excluded\": false}, {\"text\": \"presumed regional lymph nodes in the left axilla were palpable\", \"excluded\": false}, {\"text\": \"fine pleomorphic calcifications in the left breast\", \"excluded\": false}, {\"text\": \"1.1 cm \u00d7 3.0 cm sized irregular, segmental contrast-enhanced mass in the lower quadrant of the left breast\", \"excluded\": false}, {\"text\": \"grade II invasive ductal carcinoma (IDC)\", \"excluded\": false}, {\"text\": \"left axillary lymph node metastasis (1/21)\", \"excluded\": false}, {\"text\": \"no family history of breast or ovarian cancers\", \"excluded\": true}, {\"text\": \"no signs of recurrence of TOC\", \"excluded\": true}, {\"text\": \"no distant metastases\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10868093-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yao h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002027",
+    "label": "Abdominal pain"
+   },
+   "description": "abdominal pain"
+  },
+  {
+   "type": {
+    "id": "HP:0002039",
+    "label": "Anorexia"
+   },
+   "description": "anorexia"
+  },
+  {
+   "type": {
+    "id": "HP:0000822",
+    "label": "Hypertension"
+   },
+   "description": "hypertension"
+  },
+  {
+   "type": {
+    "id": "HP:0003270",
+    "label": "Abdominal distention"
+   },
+   "description": "distended abdomen"
+  },
+  {
+   "type": {
+    "id": "HP:0031501",
+    "label": "Pelvic mass"
+   },
+   "description": "palpable 4.0 \u00d7 4.0 cm solid mass in the left adnexal area with poor mobility"
+  },
+  {
+   "type": {
+    "id": "HP:0002585",
+    "label": "Abnormal peritoneum morphology"
+   },
+   "description": "thickened greater omentum, mesentery, and peritoneum with variable nodules"
+  },
+  {
+   "type": {
+    "id": "HP:0001541",
+    "label": "Ascites"
+   },
+   "description": "large amount of ascites"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10868093-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10868093-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10868093-1-RAD51C",
+        "geneContext": {
+         "valueId": "HGNC:9820",
+         "symbol": "RAD51C"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38360632",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38360632/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

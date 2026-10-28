@@ -1,0 +1,219 @@
+{
+ "id": "ABS_16037832-1",
+ "subject": {
+  "id": "ABS_16037832-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P18Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Taiwan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "18 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Operative cholangiography revealed poor opacification of the hepatic duct and proximal common bile duct; the upstream intrahepatic bile ducts were not visualized\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Taiwan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lee wi"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001082",
+    "label": "Cholecystitis"
+   },
+   "description": "recurrent episodes of acalculous cholecystitis (AC)"
+  },
+  {
+   "type": {
+    "id": "HP:0030991",
+    "label": "Sclerosing cholangitis"
+   },
+   "description": "sclerosing cholangitis (SC)"
+  },
+  {
+   "type": {
+    "id": "HP:0002908",
+    "label": "Conjugated hyperbilirubinemia"
+   },
+   "description": "direct hyperbilirubinemia (direct bilirubin 5.5 mg/dL, total bilirubin 8.7 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0001396",
+    "label": "Cholestasis"
+   },
+   "description": "cholestasis (alkaline phosphatase 1133 U/L, gamma-glutamyl transferase 1019 U/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0002910",
+    "label": "Elevated circulating hepatic transaminase concentration"
+   },
+   "description": "elevated transaminases (aspartate aminotransferase 70 U/L, alanine aminotransferase 101 U/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0006580",
+    "label": "Portal fibrosis"
+   },
+   "description": "The biopsy specimen showed marked fibrosis of the portal areas"
+  },
+  {
+   "type": {
+    "id": "HP:0430030",
+    "label": "Positive infectious agent test"
+   },
+   "description": "Enterococcus species was cultured from the bile"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_16037832-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_16037832-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_16037832-1-CD40LG",
+        "geneContext": {
+         "valueId": "HGNC:11935",
+         "symbol": "CD40LG"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:16037832",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/16037832/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

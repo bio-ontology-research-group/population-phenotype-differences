@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_9171309-1",
+ "subject": {
+  "id": "PMCP_9171309-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P66Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002560",
+     "label": "Canada"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Canada"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "66 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "CANVAS"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"cerebellar atrophy largely restricted to Crus 1 and 2 of the cerebellum\", \"excluded\": false}, {\"text\": \"sensory and motor examination was normal\", \"excluded\": true}, {\"text\": \"reflexes were preserved\", \"excluded\": true}, {\"text\": \"Bedside testing for autonomic functions was normal\", \"excluded\": true}, {\"text\": \"nerve conduction studies (including sensory nerve action potentials) were normal\", \"excluded\": true}, {\"text\": \"the \u2018hot cross bun\u2019 and the \u2018putaminal rim sign\u2019 of multiple system atrophy (MSA) were absent\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9171309-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:jog m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002317",
+    "label": "Unsteady gait"
+   },
+   "description": "progressive gait unsteadiness"
+  },
+  {
+   "type": {
+    "id": "HP:0002131",
+    "label": "Episodic ataxia"
+   },
+   "description": "episodic imbalance and dizziness"
+  },
+  {
+   "type": {
+    "id": "HP:0002070",
+    "label": "Limb ataxia"
+   },
+   "description": "upper limb incoordination"
+  },
+  {
+   "type": {
+    "id": "HP:0001350",
+    "label": "Slurred speech"
+   },
+   "description": "slurring of speech"
+  },
+  {
+   "type": {
+    "id": "HP:0100543",
+    "label": "Cognitive impairment"
+   },
+   "description": "Montreal Cognitive Assessment (MoCA) score of 25/30"
+  },
+  {
+   "type": {
+    "id": "HP:0000640",
+    "label": "Gaze-evoked nystagmus"
+   },
+   "description": "gaze-evoked nystagmus"
+  },
+  {
+   "type": {
+    "id": "HP:0007338",
+    "label": "Hypermetric saccades"
+   },
+   "description": "mild saccadic overshoot"
+  },
+  {
+   "type": {
+    "id": "HP:0001251",
+    "label": "Ataxia"
+   },
+   "description": "Axial and appendicular cerebellar signs were present"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9171309-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9171309-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9171309-1-RFC1",
+        "geneContext": {
+         "valueId": "HGNC:9969",
+         "symbol": "RFC1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35306791",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35306791/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,221 @@
+{
+ "id": "PMCP_10754223-1",
+ "subject": {
+  "id": "PMCP_10754223-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P13Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "13-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "oral psoriasis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"non-scrapable\", \"excluded\": true}, {\"text\": \"non-tender\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10754223-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:subadra k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002745",
+    "label": "Oral leukoplakia"
+   },
+   "description": "white patch on his cheeks and tongue"
+  },
+  {
+   "type": {
+    "id": "HP:0010832",
+    "label": "Abnormality of pain sensation"
+   },
+   "description": "constant burning sensation"
+  },
+  {
+   "type": {
+    "id": "HP:0003212",
+    "label": "Increased circulating IgE concentration"
+   },
+   "description": "increased IgE levels of over 30,000 IU/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0000086",
+    "label": "Ectopic kidney"
+   },
+   "description": "ectopic left kidney"
+  },
+  {
+   "type": {
+    "id": "HP:0040189",
+    "label": "Scaling skin"
+   },
+   "description": "multiple extraoral scaly papules were seen over his arms, torso, and face"
+  },
+  {
+   "type": {
+    "id": "HP:0000989",
+    "label": "Pruritus"
+   },
+   "description": "continuous itching over the affected area"
+  },
+  {
+   "type": {
+    "id": "HP:0000962",
+    "label": "Hyperkeratosis"
+   },
+   "description": "thick, hyperkeratotic plaque was evident bilaterally over the lateral borders and the dorsum of the tongue"
+  },
+  {
+   "type": {
+    "id": "HP:0034418",
+    "label": "Erythematous oral mucosa"
+   },
+   "description": "Similar lesions were also seen bilaterally in the buccal mucosa accompanied by an erythematous component"
+  },
+  {
+   "type": {
+    "id": "HP:0025818",
+    "label": "Intraepidermal microabscess formation"
+   },
+   "description": "keratotic squamous epithelium with elongated rete ridges and plenty of intraepithelial microabscesses with neutrophils"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10754223-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10754223-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10754223-1-IL17RA",
+        "geneContext": {
+         "valueId": "HGNC:5985",
+         "symbol": "IL17RA"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38156126",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38156126/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

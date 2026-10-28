@@ -1,0 +1,209 @@
+{
+ "id": "PMCP_10763246-4",
+ "subject": {
+  "id": "PMCP_10763246-4",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P28Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented at our clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "28-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Arrhythmogenic Cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"exercise-induced syncope\", \"excluded\": false}, {\"text\": \"loss of consciousness during intensive physical activity\", \"excluded\": false}, {\"text\": \"right ventricular enlargement\", \"excluded\": false}, {\"text\": \"regional dyssynchrony\", \"excluded\": false}, {\"text\": \"moderately decreased right ventricular ejection fraction of 42%\", \"excluded\": false}, {\"text\": \"RV end-diastolic volume index was measured at 130 ml/m2\", \"excluded\": false}, {\"text\": \"extracardiac sarcoidosis was found in multiple organs including the lungs, pleura, spleen, liver, lymph nodes, and pelvis\", \"excluded\": false}, {\"text\": \"clinical examination, blood testing, and 12-lead ECG were unremarkable\", \"excluded\": true}, {\"text\": \"without dyskinesia\", \"excluded\": true}, {\"text\": \"Exercise testing and signal-averaged ECG were normal\", \"excluded\": true}, {\"text\": \"no evidence of cardiac involvement in the samples examined\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10763246-4"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dinov b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001962",
+    "label": "Palpitations"
+   },
+   "description": "palpitations"
+  },
+  {
+   "type": {
+    "id": "HP:0005133",
+    "label": "Right ventricular dilatation"
+   },
+   "description": "dilated right ventricle"
+  },
+  {
+   "type": {
+    "id": "HP:0001695",
+    "label": "Cardiac arrest"
+   },
+   "description": "cardiac arrest"
+  },
+  {
+   "type": {
+    "id": "HP:0001663",
+    "label": "Ventricular fibrillation"
+   },
+   "description": "ventricular fibrillation"
+  },
+  {
+   "type": {
+    "id": "HP:0002181",
+    "label": "Cerebral edema"
+   },
+   "description": "cerebral edema"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10763246-4",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10763246-4",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:9024",
+       "symbol": "PKP2"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38173816",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38173816/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

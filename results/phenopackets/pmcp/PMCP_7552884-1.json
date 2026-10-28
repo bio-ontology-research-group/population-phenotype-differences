@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_7552884-1",
+ "subject": {
+  "id": "PMCP_7552884-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P7D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "per institutional protocol"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "1-week-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Atypical SCID"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no detectable CMV viral load by PCR\", \"excluded\": true}, {\"text\": \"undetectable serum viral loads of HIV, EBV, and adenovirus by PCR\", \"excluded\": true}, {\"text\": \"lymphocyte proliferation to the mitogens phytohemagglutinin (PHA) and pokeweed mitogen (PWM)... were normal\", \"excluded\": true}, {\"text\": \"NK cell cytotoxicity performed at 2 months of age was normal\", \"excluded\": true}, {\"text\": \"These anti-cytokine antibodies were not detected in our patient\", \"excluded\": true}, {\"text\": \"has developed no signs of autoimmunity or immune dysregulation\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7552884-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:walter je"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031545",
+    "label": "Abnormally low T cell receptor excision circle level"
+   },
+   "description": "undetectable TREC on NBS"
+  },
+  {
+   "type": {
+    "id": "HP:0005403",
+    "label": "Decreased total T cell count"
+   },
+   "description": "T\u2212/B+/NK+ immune phenotype"
+  },
+  {
+   "type": {
+    "id": "HP:0410378",
+    "label": "Decreased naive CD4+ T cell proportion"
+   },
+   "description": "proportion of na\u00efve CD45RA+CD4+ T-cells was below normal (60%, normal >90%)"
+  },
+  {
+   "type": {
+    "id": "HP:0002720",
+    "label": "Decreased circulating IgA concentration"
+   },
+   "description": "IgA level was consistently low (<7 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0025845",
+    "label": "Abnormal TCR repertoire"
+   },
+   "description": "TCR V\u03b2 spectratyping was abnormal... 8/28 (29%) demonstrated oligoclonality"
+  },
+  {
+   "type": {
+    "id": "HP:0005372",
+    "label": "Abnormal B cell physiology"
+   },
+   "description": "dramatic decline in usage of the distal IGHJ5 and IGHJ6 gene elements (BCR)"
+  },
+  {
+   "type": {
+    "id": "HP:0500271",
+    "label": "Decreased gamma-delta T cell proportion"
+   },
+   "description": "decrease in CD3+ TCRV\u03b17.2+ lymphocytes compared to controls"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7552884-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7552884-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7552884-1-RAG1",
+        "geneContext": {
+         "valueId": "HGNC:9831",
+         "symbol": "RAG1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33117328",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33117328/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

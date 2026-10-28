@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_9593511-1",
+ "subject": {
+  "id": "PMCP_9593511-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P12Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "The text describes the patient's presentation and treatment without naming a specific hospital or city, implying care at the authors' institution in the USA."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "12-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "X-linked hyper-IgM syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"focally ulcerated gastric mucosa\", \"excluded\": false}, {\"text\": \"inflammatory polyps arising within the second and third portions of the duodenum\", \"excluded\": false}, {\"text\": \"patchy moderate inflammation characterized by erythema and numerous pseudopolyps involving the terminal ileum, cecum, and ascending colon\", \"excluded\": false}, {\"text\": \"shallow ulcers\", \"excluded\": false}, {\"text\": \"CD8 lymphopenia\", \"excluded\": false}, {\"text\": \"calcified left lower lobe lung nodule\", \"excluded\": false}, {\"text\": \"diffuse colitis with wall thickening of the distal small bowel through the cecum\", \"excluded\": false}, {\"text\": \"abdominal lymphadenopathy\", \"excluded\": false}, {\"text\": \"abnormal-appearing adrenal glands\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9593511-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:collins k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002027",
+    "label": "Abdominal pain"
+   },
+   "description": "abdominal pain"
+  },
+  {
+   "type": {
+    "id": "HP:0001824",
+    "label": "Weight loss"
+   },
+   "description": "weight loss"
+  },
+  {
+   "type": {
+    "id": "HP:0025085",
+    "label": "Bloody diarrhea"
+   },
+   "description": "bloody diarrhea"
+  },
+  {
+   "type": {
+    "id": "HP:0031246",
+    "label": "Nonproductive cough"
+   },
+   "description": "non-productive cough"
+  },
+  {
+   "type": {
+    "id": "HP:0033805",
+    "label": "Non-necrotizing granuloma"
+   },
+   "description": "non-necrotizing granulomas"
+  },
+  {
+   "type": {
+    "id": "HP:0004313",
+    "label": "Decreased circulating immunoglobulin concentration"
+   },
+   "description": "profound hypogammaglobulinemia"
+  },
+  {
+   "type": {
+    "id": "HP:0034388",
+    "label": "Hilar lymph node enlargement"
+   },
+   "description": "hilar lymphadenopathy"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9593511-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9593511-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9593511-1-CD40LG",
+        "geneContext": {
+         "valueId": "HGNC:11935",
+         "symbol": "CD40LG"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36303809",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36303809/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

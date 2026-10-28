@@ -1,0 +1,224 @@
+{
+ "id": "ABS_32282878-1",
+ "subject": {
+  "id": "ABS_32282878-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "first 2 months of life"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "age": {
+      "iso8601duration": "P61D"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Belgium; Brazil; Egypt; France; Germany; Iran; Luxembourg; Netherlands; Sweden; Turkey; United Kingdom"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:tajsharghi h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0032807",
+    "label": "Neonatal seizure"
+   },
+   "description": "seizure onset in the first month of life"
+  },
+  {
+   "type": {
+    "id": "HP:0011097",
+    "label": "Epileptic spasm"
+   },
+   "description": "epileptic spasms"
+  },
+  {
+   "type": {
+    "id": "HP:0032794",
+    "label": "Myoclonic seizure"
+   },
+   "description": "myoclonic seizures"
+  },
+  {
+   "type": {
+    "id": "HP:0010851",
+    "label": "EEG with burst suppression"
+   },
+   "description": "suppression-burst"
+  },
+  {
+   "type": {
+    "id": "HP:0002521",
+    "label": "Hypsarrhythmia"
+   },
+   "description": "hypsarrhythmia"
+  },
+  {
+   "type": {
+    "id": "HP:0034392",
+    "label": "Joint contracture"
+   },
+   "description": "joint contractures"
+  },
+  {
+   "type": {
+    "id": "HP:0001762",
+    "label": "Talipes equinovarus"
+   },
+   "description": "pes equinovarus"
+  },
+  {
+   "type": {
+    "id": "HP:0000175",
+    "label": "Cleft palate"
+   },
+   "description": "cleft palate"
+  },
+  {
+   "type": {
+    "id": "HP:0001539",
+    "label": "Omphalocele"
+   },
+   "description": "omphalocele"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_32282878-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_32282878-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_32282878-1-GAD1",
+        "geneContext": {
+         "valueId": "HGNC:4092",
+         "symbol": "GAD1"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32282878",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32282878/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

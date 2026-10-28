@@ -1,0 +1,254 @@
+{
+ "id": "PMCP_10352934-1",
+ "subject": {
+  "id": "PMCP_10352934-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P21Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002828",
+     "label": "Brazil"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "21-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "MUTYH-Associated Polyposis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"strong immune infiltration\", \"excluded\": false}, {\"text\": \"no family history of cancer\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10352934-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:dienstmann r"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000716",
+    "label": "Depression"
+   },
+   "description": "depression"
+  },
+  {
+   "type": {
+    "id": "HP:0000821",
+    "label": "Hypothyroidism"
+   },
+   "description": "hypothyroidism"
+  },
+  {
+   "type": {
+    "id": "HP:0100834",
+    "label": "Neoplasm of the large intestine"
+   },
+   "description": "stage 3 CRC"
+  },
+  {
+   "type": {
+    "id": "HP:0033608",
+    "label": "Pulmonary nodule"
+   },
+   "description": "pulmonary nodule finding on routine thoracic imaging"
+  },
+  {
+   "type": {
+    "id": "HP:0030078",
+    "label": "Lung adenocarcinoma"
+   },
+   "description": "early-stage primary lung adenocarcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0005214",
+    "label": "Intestinal obstruction"
+   },
+   "description": "intestinal sub-occlusion"
+  },
+  {
+   "type": {
+    "id": "HP:0002576",
+    "label": "Intussusception"
+   },
+   "description": "intestinal intussusception"
+  },
+  {
+   "type": {
+    "id": "HP:0005266",
+    "label": "Intestinal polyp"
+   },
+   "description": "intramucosal adenocarcinoma of a hamartomatous dysplastic lesion"
+  },
+  {
+   "type": {
+    "id": "HP:0033770",
+    "label": "Gastric adenocarcinoma"
+   },
+   "description": "poorly cohesive gastric adenocarcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0002585",
+    "label": "Abnormal peritoneum morphology"
+   },
+   "description": "diffuse peritoneal involvement"
+  },
+  {
+   "type": {
+    "id": "HP:0002015",
+    "label": "Dysphagia"
+   },
+   "description": "incapacity of any oral ingestion"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10352934-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10352934-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10352934-1-MUTYH",
+        "geneContext": {
+         "valueId": "HGNC:7527",
+         "symbol": "MUTYH"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37469678",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37469678/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

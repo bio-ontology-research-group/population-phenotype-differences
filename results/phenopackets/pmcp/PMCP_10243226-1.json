@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_10243226-1",
+ "subject": {
+  "id": "PMCP_10243226-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P48Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "The patient was accepted into the coronary care unit... (implied by author affiliation USA and standard case report structure)"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "48-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hereditary hemochromatosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"total iron level of 275 ug/dL\", \"excluded\": false}, {\"text\": \"no evidence of segmental wall motion abnormalities\", \"excluded\": true}, {\"text\": \"no late gadolinium enhancement to suggest ischemia, scar tissue, or fibrosis\", \"excluded\": true}, {\"text\": \"no epileptiform pattern or evidence of seizure activity\", \"excluded\": true}, {\"text\": \"no evidence of Brugada syndrome\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10243226-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:pierce m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001279",
+    "label": "Syncope"
+   },
+   "description": "syncopal episode"
+  },
+  {
+   "type": {
+    "id": "HP:0004756",
+    "label": "Ventricular tachycardia"
+   },
+   "description": "ventricular tachycardia"
+  },
+  {
+   "type": {
+    "id": "HP:0410173",
+    "label": "Increased circulating troponin I concentration"
+   },
+   "description": "Troponin I high sensitivity assay of 140 ng/L with a peak of 1489.6 ng/L"
+  },
+  {
+   "type": {
+    "id": "HP:0011712",
+    "label": "Complete right bundle branch block"
+   },
+   "description": "right bundle branch block"
+  },
+  {
+   "type": {
+    "id": "HP:0011711",
+    "label": "Left anterior fascicular block"
+   },
+   "description": "left axis deviation consistent with the left anterior fascicular block"
+  },
+  {
+   "type": {
+    "id": "HP:0025074",
+    "label": "Abnormal QRS complex"
+   },
+   "description": "fragmented QRS notable in the inferior leads"
+  },
+  {
+   "type": {
+    "id": "HP:0001712",
+    "label": "Left ventricular hypertrophy"
+   },
+   "description": "left ventricular hypertrophy with concentric left ventricular remodeling"
+  },
+  {
+   "type": {
+    "id": "HP:0003281",
+    "label": "Increased circulating ferritin concentration"
+   },
+   "description": "ferritin level of 3068 ng/mL"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10243226-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10243226-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10243226-1-HFE",
+        "geneContext": {
+         "valueId": "HGNC:4886",
+         "symbol": "HFE"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37288212",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37288212/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

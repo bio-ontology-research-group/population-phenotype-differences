@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_7092568-1",
+ "subject": {
+  "id": "PMCP_7092568-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P39Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our ward"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "39 year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "atypical hemolytic uremic syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"severe abdominal pain\", \"excluded\": false}, {\"text\": \"intussusception of the small intestine\", \"excluded\": false}, {\"text\": \"inflammatory wall thickening of the small intestine\", \"excluded\": false}, {\"text\": \"fresh blood in the small intestine\", \"excluded\": false}, {\"text\": \"thrombotic microangiopathy with fibrin insudations in vascular walls, endothelial swelling and fresh microthrombi leading to lumen obliteration\", \"excluded\": false}, {\"text\": \"slightly elevated lactate dehydrogenase values\", \"excluded\": false}, {\"text\": \"repeated subfebrile temperature\", \"excluded\": false}, {\"text\": \"severe chronic tissue scarring with more than 90% interstitial fibrosis and tubular atrophy\", \"excluded\": false}, {\"text\": \"No evidence of infectious gastroenteritis was found\", \"excluded\": true}, {\"text\": \"absence of fragmented erythrocytes\", \"excluded\": true}, {\"text\": \"normal bilirubin and haptoglobin values\", \"excluded\": true}, {\"text\": \"no systemic sign of activation of the complement system\", \"excluded\": true}, {\"text\": \"Both biopsies did not show any signs of cytomegalovirus infection or any other infectious agent\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7092568-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:buchholz b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002014",
+    "label": "Diarrhea"
+   },
+   "description": "diarrhea"
+  },
+  {
+   "type": {
+    "id": "HP:0002013",
+    "label": "Vomiting"
+   },
+   "description": "emesis"
+  },
+  {
+   "type": {
+    "id": "HP:0003774",
+    "label": "Stage 5 chronic kidney disease"
+   },
+   "description": "end-stage renal disease"
+  },
+  {
+   "type": {
+    "id": "HP:0032945",
+    "label": "Renal interstitial inflammation"
+   },
+   "description": "severe inflammation with lymphoplasmacellular and granulocytic purulent interstitial nephritis and pyelitis"
+  },
+  {
+   "type": {
+    "id": "HP:0032589",
+    "label": "Renal lymphocytic tubulitis"
+   },
+   "description": "acute cellular rejection"
+  },
+  {
+   "type": {
+    "id": "HP:0033835",
+    "label": "Abnormal renal vascular morphology"
+   },
+   "description": "preglomerular arterial alterations"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7092568-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7092568-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7092568-1-CAPG",
+        "geneContext": {
+         "valueId": "HGNC:1474",
+         "symbol": "CAPG"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32204691",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32204691/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

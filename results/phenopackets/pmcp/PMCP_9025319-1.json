@@ -1,0 +1,258 @@
+{
+ "id": "PMCP_9025319-1",
+ "subject": {
+  "id": "PMCP_9025319-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P27Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "a 27-year-old male Caucasian was evaluated for kidney donation"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Seen twice in the nephrology clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "27"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "autosomal dominant tubulointerstitial disease"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no proteinuria\", \"excluded\": true}, {\"text\": \"no hematuria\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9025319-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:anand pm"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001997",
+    "label": "Gout"
+   },
+   "description": "gout"
+  },
+  {
+   "type": {
+    "id": "HP:0003259",
+    "label": "Elevated circulating creatinine concentration"
+   },
+   "description": "serum creatinine was rising slowly and was up to 2.4 mg/dL"
+  },
+  {
+   "type": {
+    "id": "HP:0000096",
+    "label": "Glomerular sclerosis"
+   },
+   "description": "focal global glomerulosclerosis"
+  },
+  {
+   "type": {
+    "id": "HP:0002634",
+    "label": "Arteriosclerosis"
+   },
+   "description": "arteriosclerosis"
+  },
+  {
+   "type": {
+    "id": "HP:0000092",
+    "label": "Renal tubular atrophy"
+   },
+   "description": "tubular atrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0032948",
+    "label": "Renal interstitial fibrosis"
+   },
+   "description": "interstitial fibrosis"
+  },
+  {
+   "type": {
+    "id": "HP:0005583",
+    "label": "Tubular basement membrane disintegration"
+   },
+   "description": "Tubular basement membrane showed rupture"
+  },
+  {
+   "type": {
+    "id": "HP:0032581",
+    "label": "Abnormal renal insterstitial morphology"
+   },
+   "description": "interstitial Tamm\u2013Horsfall protein extravasation"
+  },
+  {
+   "type": {
+    "id": "HP:0032645",
+    "label": "Renal interstitial mononuclear cell infiltration"
+   },
+   "description": "mononuclear cell infiltration"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9025319-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9025319-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9025319-1-UMOD",
+        "geneContext": {
+         "valueId": "HGNC:12559",
+         "symbol": "UMOD"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35456398",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35456398/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

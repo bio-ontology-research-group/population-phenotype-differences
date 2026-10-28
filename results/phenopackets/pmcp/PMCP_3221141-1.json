@@ -1,0 +1,223 @@
+{
+ "id": "PMCP_3221141-1",
+ "subject": {
+  "id": "PMCP_3221141-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P15Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00000562",
+     "label": "Tunisia"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Tunisian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "15-year-old girl of Tunisian origin"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000562",
+     "label": "Tunisia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "ingredient of Unidex in Tunisia"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "15-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Cerebral venous thrombosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"increasing chronic holocranial headache\", \"excluded\": false}, {\"text\": \"paroxysmal hallucinations\", \"excluded\": false}, {\"text\": \"visual acuity was reduced, and she was not able to count fingers\", \"excluded\": false}, {\"text\": \"platelet count at the time of the diagnosis of this venous thrombosis, 544 000/mm3\", \"excluded\": false}, {\"text\": \"D-dimers of 1227 ng/mL (normal, <500)\", \"excluded\": false}, {\"text\": \"neither nausea nor vomiting\", \"excluded\": true}, {\"text\": \"No pulmonary, urinary, gastrointestinal, or inflammatory disease was present\", \"excluded\": true}, {\"text\": \"no history of cancer, bleeding problems, or thrombotic disease in her family\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3221141-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:mrissa r"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000622",
+    "label": "Blurred vision"
+   },
+   "description": "visual blurring"
+  },
+  {
+   "type": {
+    "id": "HP:0001085",
+    "label": "Papilledema"
+   },
+   "description": "bilateral papilledema"
+  },
+  {
+   "type": {
+    "id": "HP:0033724",
+    "label": "Cerebral venous sinus thrombosis"
+   },
+   "description": "magnetic resonance imaging with gadolinium revealed a linear filling defect in the superior sagittal sinus"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3221141-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3221141-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3221141-1-F5",
+        "geneContext": {
+         "valueId": "HGNC:3542",
+         "symbol": "F5"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22048515",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22048515/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

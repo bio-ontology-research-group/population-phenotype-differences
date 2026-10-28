@@ -1,0 +1,218 @@
+{
+ "id": "PMCP_11069615-1",
+ "subject": {
+  "id": "PMCP_11069615-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P49Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "The text describes the patient's care without naming a specific hospital, implying the authors' institution in the USA."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "49"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Paraganglioma"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"benign paragangliomas in her neck (bilateral carotid body tumors)\", \"excluded\": false}, {\"text\": \"Hashimoto's disease\", \"excluded\": false}, {\"text\": \"occasional mild pressure sensations in her neck\", \"excluded\": false}, {\"text\": \"very large, heterogeneous hypoechoic right lobe nodule measuring 3.3 x 2.15 x 2.11 cm\", \"excluded\": false}, {\"text\": \"1.0 x 0.7 x 0.6 cm solid, that appears very hypoechoic, smoothly marginated nodule\", \"excluded\": false}, {\"text\": \"mild complaints of fatigue\", \"excluded\": false}, {\"text\": \"atypia of undetermined significance\", \"excluded\": false}, {\"text\": \"no difficulties with swallowing\", \"excluded\": true}, {\"text\": \"no sensations of choking\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "11069615-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:rubinstein w"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0005994",
+    "label": "Nodular goiter"
+   },
+   "description": "thyroid was very firm, nodular, and hypervascular"
+  },
+  {
+   "type": {
+    "id": "HP:0001609",
+    "label": "Hoarse voice"
+   },
+   "description": "mild hoarseness"
+  },
+  {
+   "type": {
+    "id": "HP:0001621",
+    "label": "Weak voice"
+   },
+   "description": "mild difficulty raising her voice"
+  },
+  {
+   "type": {
+    "id": "HP:0002864",
+    "label": "Paraganglioma of head and neck"
+   },
+   "description": "2.8 cm paraganglioma on the right recurrent laryngeal nerve"
+  },
+  {
+   "type": {
+    "id": "HP:0002895",
+    "label": "Papillary thyroid carcinoma"
+   },
+   "description": "incidental 0.1 cm papillary thyroid microcarcinoma confined on the left thyroid lobe"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_11069615-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_11069615-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_11069615-1-SDHD",
+        "geneContext": {
+         "valueId": "HGNC:10683",
+         "symbol": "SDHD"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38707130",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38707130/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

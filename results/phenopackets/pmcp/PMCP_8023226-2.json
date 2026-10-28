@@ -1,0 +1,238 @@
+{
+ "id": "PMCP_8023226-2",
+ "subject": {
+  "id": "PMCP_8023226-2",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P54Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "Patient 2 is a 54-year-old Caucasian woman"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "54"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "SAVI"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"never recalled fever\", \"excluded\": true}, {\"text\": \"never recalled lymphadenopathy\", \"excluded\": true}, {\"text\": \"never recalled hepatosplenomegaly\", \"excluded\": true}, {\"text\": \"never recalled respiratory symptoms\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8023226-2"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:goldbach-mansky r"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0009710",
+    "label": "Chilblains"
+   },
+   "description": "chilblains"
+  },
+  {
+   "type": {
+    "id": "HP:0001041",
+    "label": "Facial erythema"
+   },
+   "description": "erythematous skin lesions over ears, nose, and cheeks"
+  },
+  {
+   "type": {
+    "id": "HP:0001742",
+    "label": "Nasal congestion"
+   },
+   "description": "chronic upper respiratory congestion"
+  },
+  {
+   "type": {
+    "id": "HP:0006262",
+    "label": "Aplasia/Hypoplasia of the 5th finger"
+   },
+   "description": "right fifth finger was amputated"
+  },
+  {
+   "type": {
+    "id": "HP:0001182",
+    "label": "Tapered finger"
+   },
+   "description": "finger and toe tapering"
+  },
+  {
+   "type": {
+    "id": "HP:0001000",
+    "label": "Abnormality of skin pigmentation"
+   },
+   "description": "dyschromic skin changes"
+  },
+  {
+   "type": {
+    "id": "HP:0025179",
+    "label": "Ground-glass opacification"
+   },
+   "description": "reticular ground-glass opacities in the lower lobes"
+  },
+  {
+   "type": {
+    "id": "HP:0004324",
+    "label": "Increased body weight"
+   },
+   "description": "weight was above the 97th percentile"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8023226-2",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8023226-2",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8023226-2-STING1",
+        "geneContext": {
+         "valueId": "HGNC:27962",
+         "symbol": "STING1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33833757",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33833757/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

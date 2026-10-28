@@ -1,0 +1,221 @@
+{
+ "id": "ABS_32625199-1",
+ "subject": {
+  "id": "ABS_32625199-1",
+  "sex": "MALE",
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00005279",
+     "label": "Saudi Arabia"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Saudi Arabian"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "reported"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"CD28 expression was substantially reduced in the proband's T cells\", \"excluded\": false}, {\"text\": \"CD25 expression within the Treg subset was substantially reduced\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Saudi Arabia; USA"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:abraham rs"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0031460",
+    "label": "Benign muscle neoplasm"
+   },
+   "description": "EBV-SMTs"
+  },
+  {
+   "type": {
+    "id": "HP:0031383",
+    "label": "Abnormal lymphocyte surface marker expression"
+   },
+   "description": "CARMIL2 protein expression was significantly reduced in CD4+ T cells and CD8+ T cells"
+  },
+  {
+   "type": {
+    "id": "HP:0031382",
+    "label": "Decreased anti-CD3/28-induced T-cell proliferation"
+   },
+   "description": "T cell proliferation on stimulation with soluble (s) anti-CD3 or (s) anti-CD3 plus anti-CD28 antibodies was close to absent"
+  },
+  {
+   "type": {
+    "id": "HP:0410389",
+    "label": "Decreased central memory CD8+ T cell proportion"
+   },
+   "description": "absent central memory CD8+ T cells"
+  },
+  {
+   "type": {
+    "id": "HP:0030374",
+    "label": "Decreased proportion of memory B cells"
+   },
+   "description": "decreased frequencies of total and class-switched memory B cells"
+  },
+  {
+   "type": {
+    "id": "HP:6000473",
+    "label": "Decreased FOXP3-expressing T cell count"
+   },
+   "description": "FOXP3+ regulatory T cells (Treg) were also quantitatively decreased"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_32625199-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_32625199-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_32625199-1-CARMIL2",
+        "geneContext": {
+         "valueId": "HGNC:27089",
+         "symbol": "CARMIL2"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32625199",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32625199/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

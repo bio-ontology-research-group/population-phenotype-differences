@@ -1,0 +1,222 @@
+{
+ "id": "ABS_8621763-1",
+ "subject": {
+  "id": "ABS_8621763-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "bovine"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002747",
+     "label": "Japan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"lack of band 3 protein\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Japan"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:maede y"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001903",
+    "label": "Anemia"
+   },
+   "description": "moderate uncompensated anemia"
+  },
+  {
+   "type": {
+    "id": "HP:0004444",
+    "label": "Spherocytosis"
+   },
+   "description": "hereditary spherocytosis"
+  },
+  {
+   "type": {
+    "id": "HP:0001510",
+    "label": "Growth delay"
+   },
+   "description": "retarded growth"
+  },
+  {
+   "type": {
+    "id": "HP:0001877",
+    "label": "Abnormal erythrocyte morphology"
+   },
+   "description": "deficient in spectrin, ankyrin, actin, and protein 4.2"
+  },
+  {
+   "type": {
+    "id": "HP:0005502",
+    "label": "Increased red cell osmotic fragility"
+   },
+   "description": "extremely unstable red cell membranes"
+  },
+  {
+   "type": {
+    "id": "HP:0020054",
+    "label": "Abnormal erythrocyte physiology"
+   },
+   "description": "defective Cl-/HCO3- exchange"
+  },
+  {
+   "type": {
+    "id": "HP:0001941",
+    "label": "Acidosis"
+   },
+   "description": "mild acidosis"
+  },
+  {
+   "type": {
+    "id": "HP:0032066",
+    "label": "Decreased serum bicarbonate concentration"
+   },
+   "description": "decreases in the HCO3- concentration and total CO2"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_8621763-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_8621763-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_8621763-1-SLC4A1",
+        "geneContext": {
+         "valueId": "HGNC:11027",
+         "symbol": "SLC4A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:8621763",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/8621763/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

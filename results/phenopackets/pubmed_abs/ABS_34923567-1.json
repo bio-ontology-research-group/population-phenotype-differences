@@ -1,0 +1,266 @@
+{
+ "id": "ABS_34923567-1",
+ "subject": {
+  "id": "ABS_34923567-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002474",
+     "label": "Syria"
+    }
+   },
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Syrian"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "yes"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"mild thrombocytosis\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Spain"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:corripio r"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "MENAanc_EURcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003510",
+    "label": "Severe short stature"
+   },
+   "description": "short stature (-11.1 standard deviations)"
+  },
+  {
+   "type": {
+    "id": "HP:0000692",
+    "label": "Tooth malposition"
+   },
+   "description": "dental malposition"
+  },
+  {
+   "type": {
+    "id": "HP:0003228",
+    "label": "Hypernatremia"
+   },
+   "description": "hypernatremia"
+  },
+  {
+   "type": {
+    "id": "HP:0000824",
+    "label": "Decreased response to growth hormone stimulation test"
+   },
+   "description": "growth hormone levels peaked at 30 minutes below 1 ng/ml"
+  },
+  {
+   "type": {
+    "id": "HP:0001249",
+    "label": "Intellectual disability"
+   },
+   "description": "moderate to severe intellectual disability"
+  },
+  {
+   "type": {
+    "id": "HP:0000939",
+    "label": "Osteoporosis"
+   },
+   "description": "osteoporosis"
+  },
+  {
+   "type": {
+    "id": "HP:0002812",
+    "label": "Coxa vara"
+   },
+   "description": "bilateral coxa vara"
+  },
+  {
+   "type": {
+    "id": "HP:0000926",
+    "label": "Platyspondyly"
+   },
+   "description": "diffuse platyspondyly without scoliosis"
+  },
+  {
+   "type": {
+    "id": "HP:0004712",
+    "label": "Renal malrotation"
+   },
+   "description": "malrotation of the left kidney"
+  },
+  {
+   "type": {
+    "id": "HP:0000252",
+    "label": "Microcephaly"
+   },
+   "description": "severe microcephaly with simplified convolution pattern"
+  },
+  {
+   "type": {
+    "id": "HP:0011834",
+    "label": "Moyamoya phenomenon"
+   },
+   "description": "moyamoya features with secondary brain atrophy"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_34923567-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_34923567-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_34923567-1-PCNT",
+        "geneContext": {
+         "valueId": "HGNC:16068",
+         "symbol": "PCNT"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34923567",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34923567/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

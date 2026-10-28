@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_10059978-1",
+ "subject": {
+  "id": "PMCP_10059978-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P2Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Germany"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "2 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Tuberous Sclerosis"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"left frontal tuber\", \"excluded\": false}, {\"text\": \"small subdural hematoma\", \"excluded\": false}, {\"text\": \"epileptiform discharges in the EEG\", \"excluded\": false}, {\"text\": \"asymptomatic ventricular preexcitation\", \"excluded\": false}, {\"text\": \"motor and mental development was retarded\", \"excluded\": false}, {\"text\": \"achieved unaided walking only at the age of 19 months\", \"excluded\": false}, {\"text\": \"several bouts of bronchitis and pneumonia\", \"excluded\": false}, {\"text\": \"no clinical signs of an autistic spectrum disorder\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10059978-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:weschke b"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0009729",
+    "label": "Cardiac rhabdomyoma"
+   },
+   "description": "cardiac rhabdomyoma"
+  },
+  {
+   "type": {
+    "id": "HP:0031651",
+    "label": "Abnormal tricuspid valve physiology"
+   },
+   "description": "stenosis and an insufficiency of the tricuspid valve"
+  },
+  {
+   "type": {
+    "id": "HP:0033118",
+    "label": "Abnormal right ventricular function"
+   },
+   "description": "reduced contractility of the right ventricle"
+  },
+  {
+   "type": {
+    "id": "HP:0001698",
+    "label": "Pericardial effusion"
+   },
+   "description": "mild\u2013moderate pericardial effusion"
+  },
+  {
+   "type": {
+    "id": "HP:0009716",
+    "label": "Subependymal nodules"
+   },
+   "description": "Ventricular subependymal nodules"
+  },
+  {
+   "type": {
+    "id": "HP:0002384",
+    "label": "Focal impaired awareness seizure"
+   },
+   "description": "complex partial seizures"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10059978-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10059978-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10059978-1-TSC2",
+        "geneContext": {
+         "valueId": "HGNC:12363",
+         "symbol": "TSC2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:36976727",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/36976727/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

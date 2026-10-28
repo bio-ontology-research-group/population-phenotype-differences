@@ -1,0 +1,265 @@
+{
+ "id": "PMCP_3243082-1",
+ "subject": {
+  "id": "PMCP_3243082-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P44Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Caucasian"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 44 year-old Caucasian male"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002637",
+     "label": "United Kingdom"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "evaluated in our centre"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "44 year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Hypertrophic cardiomyopathy"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no evidence of systolic anterior motion of the mitral valve leaflet or LV outflow tract obstruction\", \"excluded\": true}, {\"text\": \"no evidence of cardiac dysrhythmias\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3243082-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sharma s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0030148",
+    "label": "Heart murmur"
+   },
+   "description": "cardiac murmur"
+  },
+  {
+   "type": {
+    "id": "HP:0031664",
+    "label": "Systolic heart murmur"
+   },
+   "description": "soft ejection systolic murmur"
+  },
+  {
+   "type": {
+    "id": "HP:0011705",
+    "label": "First degree atrioventricular block"
+   },
+   "description": "first-degree heart block"
+  },
+  {
+   "type": {
+    "id": "HP:0033567",
+    "label": "Right axis deviation"
+   },
+   "description": "right axis deviation"
+  },
+  {
+   "type": {
+    "id": "HP:0001627",
+    "label": "Abnormal heart morphology"
+   },
+   "description": "voltage criteria for bi-atrial enlargement"
+  },
+  {
+   "type": {
+    "id": "HP:0001712",
+    "label": "Left ventricular hypertrophy"
+   },
+   "description": "LVH"
+  },
+  {
+   "type": {
+    "id": "HP:0012250",
+    "label": "ST segment depression"
+   },
+   "description": "ST-segment depression in leads II, III and AVF"
+  },
+  {
+   "type": {
+    "id": "HP:0010872",
+    "label": "T-wave inversion"
+   },
+   "description": "deep T-wave inversions in leads V5 and V6"
+  },
+  {
+   "type": {
+    "id": "HP:0001670",
+    "label": "Asymmetric septal hypertrophy"
+   },
+   "description": "asymmetric septal hypertrophy of the basal and mid-septum"
+  },
+  {
+   "type": {
+    "id": "HP:0001685",
+    "label": "Myocardial fibrosis"
+   },
+   "description": "regions of focal intramyocardial fibrosis in the anterior and inferior basal LV-RV insertion points"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3243082-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3243082-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3243082-1-MYBPC3",
+        "geneContext": {
+         "valueId": "HGNC:7551",
+         "symbol": "MYBPC3"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22122802",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22122802/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

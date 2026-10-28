@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_7674281-1",
+ "subject": {
+  "id": "PMCP_7674281-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P10Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002650",
+     "label": "Italy"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to our primary immunodeficiency disease (PID) outpatient service"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "10 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "X-Linked Agammaglobulinemia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"never suffered severe infections\", \"excluded\": true}, {\"text\": \"normal levels of eosinophils in peripheral blood\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7674281-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:duse m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002257",
+    "label": "Chronic rhinitis"
+   },
+   "description": "persistent rhinitis"
+  },
+  {
+   "type": {
+    "id": "HP:0003212",
+    "label": "Increased circulating IgE concentration"
+   },
+   "description": "total serum IgE levels were above the normal range"
+  },
+  {
+   "type": {
+    "id": "HP:0410324",
+    "label": "Dust mite allergy"
+   },
+   "description": "sensitization to dust mites"
+  },
+  {
+   "type": {
+    "id": "HP:0010975",
+    "label": "Abnormal B cell count"
+   },
+   "description": "CD19+ B cell percentage of 6%"
+  },
+  {
+   "type": {
+    "id": "HP:0003139",
+    "label": "Panhypogammaglobulinemia"
+   },
+   "description": "reduced serum Ig levels: IgG 430 mg/dl... IgA <1 mg/dl, IgM <1 mg/dl"
+  },
+  {
+   "type": {
+    "id": "HP:0005357",
+    "label": "Defective B cell differentiation"
+   },
+   "description": "impaired plasma cell differentiation"
+  },
+  {
+   "type": {
+    "id": "HP:0004433",
+    "label": "Secretory IgA deficiency"
+   },
+   "description": "absence of IgA class antibodies in the supernatants"
+  },
+  {
+   "type": {
+    "id": "HP:0025618",
+    "label": "Reduced plasma cell count"
+   },
+   "description": "immunoglobulin-secreting cells (ISC) (CD38+++CD27++CD20-) were below the normal range"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7674281-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7674281-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7674281-1-BTK",
+        "geneContext": {
+         "valueId": "HGNC:1133",
+         "symbol": "BTK"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33224144",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33224144/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "id": "PMCP_10141575-1",
+ "subject": {
+  "id": "PMCP_10141575-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P48Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00003902",
+     "label": "Malaysia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "S-ICD was unavailable in our centre at the time"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "48-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "malignant mitral valve prolapse with CACNB2 gene mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"suddenly collapsed in his clinic\", \"excluded\": false}, {\"text\": \"pansystolic murmur best heard over the mitral area radiating to the axilla\", \"excluded\": false}, {\"text\": \"bileaflet MVP\", \"excluded\": false}, {\"text\": \"MAD measuring 1.2 cm\", \"excluded\": false}, {\"text\": \"moderate mitral regurgitation\", \"excluded\": false}, {\"text\": \"dilated mitral valve annulus measuring 4.5 cm\", \"excluded\": false}, {\"text\": \"thickened valves\", \"excluded\": false}, {\"text\": \"inferior and inferolateral ventricular wall fibrosis\", \"excluded\": false}, {\"text\": \"no symptoms of angina\", \"excluded\": true}, {\"text\": \"no symptoms of palpitation\", \"excluded\": true}, {\"text\": \"no symptoms of fever\", \"excluded\": true}, {\"text\": \"no symptoms of respiratory tract infection\", \"excluded\": true}, {\"text\": \"no symptoms of syncopal/pre-syncopal attacks\", \"excluded\": true}, {\"text\": \"no evidence of pseudo-right bundle branch block\", \"excluded\": true}, {\"text\": \"no evidence of prolonged QT\", \"excluded\": true}, {\"text\": \"no evidence of delta\", \"excluded\": true}, {\"text\": \"no evidence of epsilon waves\", \"excluded\": true}, {\"text\": \"normal left ventricular size\", \"excluded\": true}, {\"text\": \"normal systolic function\", \"excluded\": true}, {\"text\": \"no gross regional wall abnormality\", \"excluded\": true}, {\"text\": \"no evidence of acute myocardial inflammation or oedema\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10141575-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:sani h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001663",
+    "label": "Ventricular fibrillation"
+   },
+   "description": "ventricular fibrillation"
+  },
+  {
+   "type": {
+    "id": "HP:0006682",
+    "label": "Premature ventricular contraction"
+   },
+   "description": "premature ventricular contraction"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10141575-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10141575-1",
+      "interpretationStatus": "CAUSATIVE",
+      "gene": {
+       "valueId": "HGNC:1402",
+       "symbol": "CACNB2"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37123658",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37123658/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

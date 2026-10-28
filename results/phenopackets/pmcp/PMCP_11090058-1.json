@@ -1,0 +1,228 @@
+{
+ "id": "PMCP_11090058-1",
+ "subject": {
+  "id": "PMCP_11090058-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P18Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "18 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Clericuzio-type poikiloderma"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"Bacterial swabs from the ulcer showed no growth\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "11090058-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:basu tn"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0200042",
+    "label": "Skin ulcer"
+   },
+   "description": "painful, enlarging ulcer on the right lower portion of the leg"
+  },
+  {
+   "type": {
+    "id": "HP:0000135",
+    "label": "Hypogonadism"
+   },
+   "description": "hypogonadism"
+  },
+  {
+   "type": {
+    "id": "HP:0007380",
+    "label": "Facial telangiectasia"
+   },
+   "description": "facial telangiectasia"
+  },
+  {
+   "type": {
+    "id": "HP:0004322",
+    "label": "Short stature"
+   },
+   "description": "short stature"
+  },
+  {
+   "type": {
+    "id": "HP:0005280",
+    "label": "Depressed nasal bridge"
+   },
+   "description": "depressed nasal bridge"
+  },
+  {
+   "type": {
+    "id": "HP:0001029",
+    "label": "Poikiloderma"
+   },
+   "description": "widespread poikiloderma with reticulated hypo/hyperpigmentation, atrophy, and telangiectasia, involving the face, trunk, and limbs"
+  },
+  {
+   "type": {
+    "id": "HP:0000972",
+    "label": "Palmoplantar hyperkeratosis"
+   },
+   "description": "palmoplantar hyperkeratosis"
+  },
+  {
+   "type": {
+    "id": "HP:0008404",
+    "label": "Nail dystrophy"
+   },
+   "description": "nail dystrophy"
+  },
+  {
+   "type": {
+    "id": "HP:0001875",
+    "label": "Decreased total neutrophil count"
+   },
+   "description": "neutropenia"
+  },
+  {
+   "type": {
+    "id": "HP:0001058",
+    "label": "Poor wound healing"
+   },
+   "description": "skin heals poorly after minor injury (pathergy)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_11090058-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_11090058-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_11090058-1-USB1",
+        "geneContext": {
+         "valueId": "HGNC:25792",
+         "symbol": "USB1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38741660",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38741660/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

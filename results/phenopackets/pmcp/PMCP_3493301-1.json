@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_3493301-1",
+ "subject": {
+  "id": "PMCP_3493301-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P48Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "In September 2009, the patient established her cancer surveillance at our institution."
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "48"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Lynch syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"physical examination was unremarkable\", \"excluded\": true}, {\"text\": \"Laboratory studies at that time were all within normal limits\", \"excluded\": true}, {\"text\": \"Full colonoscopy with intensive inspection was performed and was negative\", \"excluded\": true}, {\"text\": \"mammography, upper endoscopy, CT enteroclysis and urine cytology were all negative or normal\", \"excluded\": true}, {\"text\": \"no symptoms referable to her lower GI tract\", \"excluded\": true}, {\"text\": \"multiple (49) lymph nodes were negative\", \"excluded\": true}, {\"text\": \"no other mucosal lesions\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "3493301-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:smyrk tc"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002076",
+    "label": "Migraine"
+   },
+   "description": "migraine headaches"
+  },
+  {
+   "type": {
+    "id": "HP:0000821",
+    "label": "Hypothyroidism"
+   },
+   "description": "hypothyroidism"
+  },
+  {
+   "type": {
+    "id": "HP:0030127",
+    "label": "Endometriosis"
+   },
+   "description": "endometriosis"
+  },
+  {
+   "type": {
+    "id": "HP:0001935",
+    "label": "Microcytic anemia"
+   },
+   "description": "hemoglobin of 11.8 g/dL with a mean corpuscular volume of 81.5 fL"
+  },
+  {
+   "type": {
+    "id": "HP:0100273",
+    "label": "Neoplasm of the colon"
+   },
+   "description": "a 1.2 cm, malignant-appearing flat lesion on top of a fold"
+  },
+  {
+   "type": {
+    "id": "HP:0040276",
+    "label": "Adenocarcinoma of the colon"
+   },
+   "description": "tubular adenoma adjacent to a moderately differentiated adenocarcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:0020055",
+    "label": "Diminished MLH1 expression"
+   },
+   "description": "loss of expression in both the adenoma and the carcinoma"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_3493301-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_3493301-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_3493301-1-MLH1",
+        "geneContext": {
+         "valueId": "HGNC:7127",
+         "symbol": "MLH1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:22624972",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/22624972/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

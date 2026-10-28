@@ -1,0 +1,232 @@
+{
+ "id": "PMCP_10439695-1",
+ "subject": {
+  "id": "PMCP_10439695-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P16Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "transferred to a pediatric specialty hospital"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "16 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Catecholaminergic Polymorphic Ventricular Tachycardia"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"elevated lactate (3.45 mmol/L)\", \"excluded\": false}, {\"text\": \"elevated... troponin I (0.07 ng/mL)\", \"excluded\": false}, {\"text\": \"stress-induced hyperglycemia (256 mg/dL)\", \"excluded\": false}, {\"text\": \"anxiety and depression\", \"excluded\": false}, {\"text\": \"two prior syncopal episodes\", \"excluded\": false}, {\"text\": \"prominent U waves\", \"excluded\": false}, {\"text\": \"paradoxical prolongation of the QTc interval\", \"excluded\": false}, {\"text\": \"Multiform-triggered ventricular ectopy\", \"excluded\": false}, {\"text\": \"frequent PVCs with increasing exercise\", \"excluded\": false}, {\"text\": \"head computed tomography scan was negative for acute pathology\", \"excluded\": true}, {\"text\": \"No epileptiform activity or signs of anoxia were detected on the EEG\", \"excluded\": true}, {\"text\": \"Echocardiography was also normal\", \"excluded\": true}, {\"text\": \"CMR revealed no structural defects within the patient\u2019s heart\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10439695-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chan d"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001279",
+    "label": "Syncope"
+   },
+   "description": "suddenly collapsed"
+  },
+  {
+   "type": {
+    "id": "HP:0001695",
+    "label": "Cardiac arrest"
+   },
+   "description": "cardiac arrest"
+  },
+  {
+   "type": {
+    "id": "HP:0001250",
+    "label": "Seizure"
+   },
+   "description": "seizure-like symptoms"
+  },
+  {
+   "type": {
+    "id": "HP:0001663",
+    "label": "Ventricular fibrillation"
+   },
+   "description": "coarse ventricular fibrillation"
+  },
+  {
+   "type": {
+    "id": "HP:0002533",
+    "label": "Abnormal posturing"
+   },
+   "description": "tonic posturing"
+  },
+  {
+   "type": {
+    "id": "HP:0002098",
+    "label": "Respiratory distress"
+   },
+   "description": "worsening respiratory effort"
+  },
+  {
+   "type": {
+    "id": "HP:0001941",
+    "label": "Acidosis"
+   },
+   "description": "acidotic (pH = 7.235)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10439695-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10439695-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10439695-1-RYR2",
+        "geneContext": {
+         "valueId": "HGNC:10484",
+         "symbol": "RYR2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37602051",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37602051/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

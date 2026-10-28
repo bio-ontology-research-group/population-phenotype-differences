@@ -1,0 +1,54 @@
+851 cases (93 AFR) in 73 strata; corpora {'store': 403, 'pmcp': 30, 'pubmed_abs': 418}; groups 423
+case-level outcomes (AFR minus EUR, MH within strata; group-permutation p):
+   share of findings needing a test     -0.0633  null 95% [-0.0604, +0.0589]  p=0.0395
+   log(1+ test-based findings)          +0.1002  null 95% [-0.1587, +0.1559]  p=0.2479
+   log(1+ bedside/history findings)     +0.3177  null 95% [-0.1493, +0.1546]  p=0.0005
+   log(1+ laboratory)                   +0.0412  null 95% [-0.0736, +0.0757]  p=0.2679
+   log(1+ imaging)                      +0.0661  null 95% [-0.1020, +0.1176]  p=0.2639
+   log(1+ physiological_test)           +0.0805  null 95% [-0.0881, +0.0723]  p=0.0510
+   log(1+ pathology)                    -0.0397  null 95% [-0.0598, +0.0595]  p=0.1809
+   log(1+ clinical_exam)                +0.3004  null 95% [-0.1472, +0.1451]  p=0.0005
+   log(1+ symptom_history)              +0.0582  null 95% [-0.0662, +0.0701]  p=0.0835
+   organ[head or neck] log(1+ findings) +0.0958  null 95% [-0.1022, +0.1167]  p=0.1009
+   organ[head or neck] log(1+ test-based) +0.0037  null 95% [-0.0875, +0.0685]  p=0.9395
+   organ[head or neck] log(1+ bedside)  +0.0762  null 95% [-0.0551, +0.0913]  p=0.0510
+   organ[nervous system] log(1+ findings) +0.1384  null 95% [-0.2320, +0.1881]  p=0.2824
+   organ[nervous system] log(1+ test-based) +0.0451  null 95% [-0.1028, +0.1193]  p=0.5097
+   organ[nervous system] log(1+ bedside) +0.1341  null 95% [-0.1686, +0.1196]  p=0.1049
+   organ[integument] log(1+ findings)   +0.1112  null 95% [-0.1400, +0.1434]  p=0.1684
+   organ[integument] log(1+ test-based) -0.0048  null 95% [-0.0377, +0.0582]  p=0.7951
+   organ[integument] log(1+ bedside)    +0.1132  null 95% [-0.1255, +0.1200]  p=0.0905
+   organ[blood and blood-forming tissues] log(1+ findings) -0.0144  null 95% [-0.0683, +0.0654]  p=0.6462
+   organ[blood and blood-forming tissues] log(1+ test-based) -0.0087  null 95% [-0.0654, +0.0633]  p=0.7451
+   organ[blood and blood-forming tissues] log(1+ bedside) -0.0026  null 95% [-0.0293, +0.0303]  p=0.8866
+   organ[metabolism/homeostasis] log(1+ findings) +0.0240  null 95% [-0.0699, +0.0686]  p=0.4633
+   organ[metabolism/homeostasis] log(1+ test-based) -0.0053  null 95% [-0.0648, +0.0641]  p=0.8726
+   organ[metabolism/homeostasis] log(1+ bedside) +0.0324  null 95% [-0.0304, +0.0327]  p=0.0460
+   organ[Neoplasm] log(1+ findings)     +0.0298  null 95% [-0.2574, +0.1990]  p=0.9115
+   organ[Neoplasm] log(1+ test-based)   -0.0270  null 95% [-0.1454, +0.1418]  p=0.7031
+   organ[Neoplasm] log(1+ bedside)      +0.0560  null 95% [-0.1598, +0.0991]  p=0.5527
+   organ[Abnormal cellular phenotype] log(1+ findings) -0.0545  null 95% [-0.0797, +0.0835]  p=0.2444
+   organ[Abnormal cellular phenotype] log(1+ test-based) -0.0404  null 95% [-0.0791, +0.0840]  p=0.4038
+   organ[Abnormal cellular phenotype] log(1+ bedside) -0.0165  null 95% [-0.0136, +0.0148]  p=0.0235
+   organ[musculoskeletal system] log(1+ findings) +0.0501  null 95% [-0.0780, +0.0885]  p=0.2639
+   organ[musculoskeletal system] log(1+ test-based) -0.0295  null 95% [-0.0639, +0.0573]  p=0.3258
+   organ[musculoskeletal system] log(1+ bedside) +0.0884  null 95% [-0.0596, +0.0751]  p=0.0130
+depth diff +0.403 (null 95% [-0.240, +0.238])
+terms 324; p<0.05 53 (exp 16); FDR<0.1 7; FWER<0.05 3; global sum z^2 674 vs null 324, p=0.0070
+organ-system branches (mean term z; group-permutation p; FWER over 18 branches):
+  HP:0025031 Abnormality of the digestive system                terms   33 mean z +1.655 p 0.0005 fwer 0.0075
+  HP:0040064 Abnormality of limbs                               terms    9 mean z +2.298 p 0.0015 fwer 0.0105
+  HP:0002086 Abnormality of the respiratory system              terms    7 mean z +1.392 p 0.0540 fwer 0.4673
+  HP:0025354 Abnormal cellular phenotype                        terms   29 mean z -0.717 p 0.0460 fwer 0.4783
+  HP:0001574 Abnormality of the integument                      terms   22 mean z +0.993 p 0.0435 fwer 0.5152
+  HP:0025033 Abnormal digestive system morphology             diff +0.130 z +5.11 p 0.0005 q 0.081 fwer 0.008 n 59
+  HP:0012718 Abnormal gastrointestinal tract morphology       diff +0.059 z +6.18 p 0.0010 q 0.081 fwer 0.002 n 12
+  HP:0025031 Abnormality of the digestive system              diff +0.116 z +3.87 p 0.0010 q 0.081 fwer 0.088 n 123
+  HP:0031826 Abnormal reflex                                  diff +0.047 z +4.02 p 0.0010 q 0.081 fwer 0.072 n 11
+  HP:0001438 Abnormal abdomen morphology                      diff +0.084 z +3.52 p 0.0015 q 0.081 fwer 0.159 n 31
+  HP:0002242 Abnormal intestine morphology                    diff +0.048 z +4.80 p 0.0015 q 0.081 fwer 0.016 n 11
+  HP:0040064 Abnormality of limbs                             diff +0.077 z +3.93 p 0.0020 q 0.093 fwer 0.082 n 49
+  HP:0011968 Feeding difficulties                             diff -0.018 z -2.97 p 0.0030 q 0.103 fwer 0.342 n 10
+  HP:0032101 Unusual infection                                diff +0.048 z +3.49 p 0.0030 q 0.103 fwer 0.165 n 21
+  HP:0003474 Somatic sensory dysfunction                      diff +0.035 z +3.22 p 0.0035 q 0.103 fwer 0.244 n 10
+TASKDONE adjage_AFR

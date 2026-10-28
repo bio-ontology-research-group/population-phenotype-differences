@@ -1,0 +1,225 @@
+{
+ "id": "PMCP_6491679-1",
+ "subject": {
+  "id": "PMCP_6491679-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P44Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000463",
+     "label": "Australia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "in the context of a research study"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "44"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "STAT1 Gain-of-Function Mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"mediastinitis\", \"excluded\": false}, {\"text\": \"severe mucositis\", \"excluded\": false}, {\"text\": \"progressive hypogammaglobulinemia\", \"excluded\": false}, {\"text\": \"poor vaccine responses\", \"excluded\": false}, {\"text\": \"bacterial infections, including salmonella gastroenteritis\", \"excluded\": false}, {\"text\": \"severe reduction in CD27+ memory B cells\", \"excluded\": false}, {\"text\": \"low circulating numbers of Th17 cells\", \"excluded\": false}, {\"text\": \"increased levels of pSTAT1\", \"excluded\": false}, {\"text\": \"lower levels of CD25 expression\", \"excluded\": false}, {\"text\": \"did not have typical clinical associations of APS-1\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6491679-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cameron pu"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002728",
+    "label": "Chronic mucocutaneous candidiasis"
+   },
+   "description": "history of CMC"
+  },
+  {
+   "type": {
+    "id": "HP:0000992",
+    "label": "Cutaneous photosensitivity"
+   },
+   "description": "allergic drug reaction of troublesome and persistent photodermatitis"
+  },
+  {
+   "type": {
+    "id": "HP:0002043",
+    "label": "Esophageal stricture"
+   },
+   "description": "esophageal strictures"
+  },
+  {
+   "type": {
+    "id": "HP:0005203",
+    "label": "Spontaneous esophageal perforation"
+   },
+   "description": "esophageal rupture"
+  },
+  {
+   "type": {
+    "id": "HP:0011459",
+    "label": "Esophageal carcinoma"
+   },
+   "description": "esophageal cancer"
+  },
+  {
+   "type": {
+    "id": "HP:0002783",
+    "label": "Recurrent lower respiratory tract infections"
+   },
+   "description": "recurrent lower respiratory tract infections"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6491679-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6491679-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6491679-1-STAT1",
+        "geneContext": {
+         "valueId": "HGNC:11362",
+         "symbol": "STAT1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31068927",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31068927/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

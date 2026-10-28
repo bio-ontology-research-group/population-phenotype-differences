@@ -1,0 +1,252 @@
+{
+ "id": "PMCP_4651413-1",
+ "subject": {
+  "id": "PMCP_4651413-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P47Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Portugal"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented at the emergency department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "47-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Long QT Syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no other cardiovascular risk factors were identified\", \"excluded\": true}, {\"text\": \"no further episodes of loss of consciousness had occurred\", \"excluded\": true}, {\"text\": \"no family history of sudden death\", \"excluded\": true}, {\"text\": \"Physical exam, chest X-ray and cranial computed tomography were unremarkable\", \"excluded\": true}, {\"text\": \"Complete blood count, serum electrolytes, renal function parameters, glycemia and thyroid hormones were normal\", \"excluded\": true}, {\"text\": \"no significant coronary stenosis\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "4651413-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:pinto f"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001279",
+    "label": "Syncope"
+   },
+   "description": "recurrent syncope"
+  },
+  {
+   "type": {
+    "id": "HP:0100749",
+    "label": "Chest pain"
+   },
+   "description": "short-duration chest pain"
+  },
+  {
+   "type": {
+    "id": "HP:0001250",
+    "label": "Seizure"
+   },
+   "description": "treated with phenytoin for two years for what was thought to be a seizure disorder"
+  },
+  {
+   "type": {
+    "id": "HP:0005184",
+    "label": "Prolonged QTc interval"
+   },
+   "description": "marked QTc interval prolongation (640 ms)"
+  },
+  {
+   "type": {
+    "id": "HP:0010872",
+    "label": "T-wave inversion"
+   },
+   "description": "T-wave inversion in the precordial, lateral and inferior leads"
+  },
+  {
+   "type": {
+    "id": "HP:0004751",
+    "label": "Paroxysmal ventricular tachycardia"
+   },
+   "description": "frequent episodes of nonsustained PVT"
+  },
+  {
+   "type": {
+    "id": "HP:0031483",
+    "label": "Reduced contraction of the left ventricular apex"
+   },
+   "description": "anterior apical hypokinesia"
+  },
+  {
+   "type": {
+    "id": "HP:0410173",
+    "label": "Increased circulating troponin I concentration"
+   },
+   "description": "Troponin I was mildly elevated"
+  },
+  {
+   "type": {
+    "id": "HP:0031560",
+    "label": "Coronary cameral fistula"
+   },
+   "description": "fistulas from the diagonal arteries to the left ventricle cavity"
+  },
+  {
+   "type": {
+    "id": "HP:0001627",
+    "label": "Abnormal heart morphology"
+   },
+   "description": "lower apical activity and a small area of lower radiotracer uptake in the apical segment of the anterior wall"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_4651413-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_4651413-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_4651413-1-KCNH2",
+        "geneContext": {
+         "valueId": "HGNC:6251",
+         "symbol": "KCNH2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:26577721",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/26577721/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

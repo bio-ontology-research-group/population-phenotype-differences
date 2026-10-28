@@ -1,0 +1,211 @@
+{
+ "id": "PMCP_10824150-1",
+ "subject": {
+  "id": "PMCP_10824150-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P12Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Upon arrival at our emergency department"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "12-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Vascular Ehlers-Danlos Syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"sudden and intense pain near the right scapula following a sneeze\", \"excluded\": false}, {\"text\": \"tendency for bruising\", \"excluded\": false}, {\"text\": \"respiratory rate was 27 breaths per minute\", \"excluded\": false}, {\"text\": \"blood pressure was 121/82 mmHg and 106/56 mmHg in his left and right upper arms, respectively\", \"excluded\": false}, {\"text\": \"mass in the right supraclavicular fossa\", \"excluded\": false}, {\"text\": \"pain radiating from the right neck to the scapula\", \"excluded\": false}, {\"text\": \"hypermobility of the wrist and finger joints\", \"excluded\": false}, {\"text\": \"enlarged superior mediastinum\", \"excluded\": false}, {\"text\": \"active bleeding from the proximal portion of the right subclavian artery\", \"excluded\": false}, {\"text\": \"hematoma in the mediastinum\", \"excluded\": false}, {\"text\": \"recurrence of hypotension, leading to shock\", \"excluded\": false}, {\"text\": \"sizable, right extra-pleural hematoma\", \"excluded\": false}, {\"text\": \"persistent poor oxygenation with a P/F ratio of 50-60\", \"excluded\": false}, {\"text\": \"sudden abdominal pain\", \"excluded\": false}, {\"text\": \"aortic dissection extending from the descending thoracic aorta to the abdominal aorta\", \"excluded\": false}, {\"text\": \"no familial history of similar complaints\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10824150-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:yoshizawa k"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001288",
+    "label": "Gait disturbance"
+   },
+   "description": "difficulty moving"
+  },
+  {
+   "type": {
+    "id": "HP:0001649",
+    "label": "Tachycardia"
+   },
+   "description": "heart rate was 120 beats per minute"
+  },
+  {
+   "type": {
+    "id": "HP:0031274",
+    "label": "Hypovolemic shock"
+   },
+   "description": "hemorrhagic shock"
+  },
+  {
+   "type": {
+    "id": "HP:0012151",
+    "label": "Hemothorax"
+   },
+   "description": "right hemothorax"
+  },
+  {
+   "type": {
+    "id": "HP:0031649",
+    "label": "Aortic rupture"
+   },
+   "description": "ruptured thoracic aortic aneurysm"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10824150-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10824150-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10824150-1-COL3A1",
+        "geneContext": {
+         "valueId": "HGNC:2201",
+         "symbol": "COL3A1"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38288180",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38288180/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

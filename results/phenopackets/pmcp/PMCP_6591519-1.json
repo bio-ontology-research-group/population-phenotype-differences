@@ -1,0 +1,246 @@
+{
+ "id": "PMCP_6591519-1",
+ "subject": {
+  "id": "PMCP_6591519-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P19Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "presented to outside clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "19 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "DCX mutation"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"large low-set ears\", \"excluded\": false}, {\"text\": \"Fragile-X at the time which was negative\", \"excluded\": true}, {\"text\": \"Karyotype was also performed at the age of 5 years but yielded no positive findings\", \"excluded\": true}, {\"text\": \"Comparative Genomic Hybridization Assay performed at age 13 years was negative as well\", \"excluded\": true}, {\"text\": \"methylation studies for Angelman syndrome and Prader-Willi syndrome were found to be normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "6591519-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:moody s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0000717",
+    "label": "Autism"
+   },
+   "description": "autistic features including lack of social interaction, repetitive behaviors, and sound hypersensitivity"
+  },
+  {
+   "type": {
+    "id": "HP:0006872",
+    "label": "Cerebral hypoplasia"
+   },
+   "description": "decreased topographic development of the temporal, parietal, and frontal lobes"
+  },
+  {
+   "type": {
+    "id": "HP:0001302",
+    "label": "Pachygyria"
+   },
+   "description": "diffuse pachygyria"
+  },
+  {
+   "type": {
+    "id": "HP:0002334",
+    "label": "Abnormal cerebellar vermis morphology"
+   },
+   "description": "involvement of the cerebellar vermis"
+  },
+  {
+   "type": {
+    "id": "HP:0007187",
+    "label": "Focal lissencephaly"
+   },
+   "description": "partial lissencephaly"
+  },
+  {
+   "type": {
+    "id": "HP:0000316",
+    "label": "Hypertelorism"
+   },
+   "description": "widely spaced eyes"
+  },
+  {
+   "type": {
+    "id": "HP:0001256",
+    "label": "Mild intellectual disability"
+   },
+   "description": "mild Intellectual disability disorder"
+  },
+  {
+   "type": {
+    "id": "HP:0025190",
+    "label": "Bilateral tonic-clonic seizure with generalized onset"
+   },
+   "description": "generalized tonic\u2013clonic seizure"
+  },
+  {
+   "type": {
+    "id": "HP:0010843",
+    "label": "EEG with focal slow activity"
+   },
+   "description": "frontal predominant intermittent slowing"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_6591519-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_6591519-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_6591519-1-DCX",
+        "geneContext": {
+         "valueId": "HGNC:2714",
+         "symbol": "DCX"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:31259193",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/31259193/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

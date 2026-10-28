@@ -1,0 +1,252 @@
+{
+ "id": "PMCP_11063871-1",
+ "subject": {
+  "id": "PMCP_11063871-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P15Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "ancestry",
+    "value": {
+     "text": "Hispanic"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "A 7-year-old Hispanic girl"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "15"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "ETV6 thrombocytopenia and leukemia predisposition syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"intraparenchymal juvenile xanthogranuloma (JXG)\", \"excluded\": false}, {\"text\": \"normal complete blood count, including normal platelet count of 180x109/L\", \"excluded\": true}, {\"text\": \"no evidence of recurrent leukemia\", \"excluded\": true}, {\"text\": \"no bony disease\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "11063871-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hunger sp"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001945",
+    "label": "Fever"
+   },
+   "description": "fever and leg pain"
+  },
+  {
+   "type": {
+    "id": "HP:0004812",
+    "label": "B Acute Lymphoblastic Leukemia"
+   },
+   "description": "standard-risk B-ALL"
+  },
+  {
+   "type": {
+    "id": "HP:0001909",
+    "label": "Leukemia"
+   },
+   "description": "combined bone marrow and central nervous system relapse"
+  },
+  {
+   "type": {
+    "id": "HP:0002315",
+    "label": "Headache"
+   },
+   "description": "2 weeks of headache and right eye pain"
+  },
+  {
+   "type": {
+    "id": "HP:0003326",
+    "label": "Myalgia"
+   },
+   "description": "fever and myalgias"
+  },
+  {
+   "type": {
+    "id": "HP:0007695",
+    "label": "Abnormal pupillary light reflex"
+   },
+   "description": "baseline non-reactive right pupil"
+  },
+  {
+   "type": {
+    "id": "HP:0000549",
+    "label": "Abnormal conjugate eye movement"
+   },
+   "description": "disconjugate gaze"
+  },
+  {
+   "type": {
+    "id": "HP:0030692",
+    "label": "Brain neoplasm"
+   },
+   "description": "well-circumscribed area of hyperattenuation within the left temporal lobe"
+  },
+  {
+   "type": {
+    "id": "HP:0002181",
+    "label": "Cerebral edema"
+   },
+   "description": "surrounding edema and regional mass effect"
+  },
+  {
+   "type": {
+    "id": "HP:0100727",
+    "label": "Histiocytosis"
+   },
+   "description": "sheets of histiocytic cells, including frequent giant cell forms with occasional Touton-type giant cells"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_11063871-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_11063871-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_11063871-1-ETV6",
+        "geneContext": {
+         "valueId": "HGNC:3495",
+         "symbol": "ETV6"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:38031764",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/38031764/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

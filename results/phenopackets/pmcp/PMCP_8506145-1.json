@@ -1,0 +1,252 @@
+{
+ "id": "PMCP_8506145-1",
+ "subject": {
+  "id": "PMCP_8506145-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P13Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "admitted to the neonatal intensive care unit (NICU) at Heidelberg University"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002646",
+     "label": "Germany"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "admitted to the neonatal intensive care unit (NICU) at Heidelberg University"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "13 years"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Compound Heterozygous Protein C Deficiency"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"normal ophthalmic examination\", \"excluded\": true}, {\"text\": \"normal ultrasound of the brain\", \"excluded\": true}, {\"text\": \"no signs of purpura\", \"excluded\": true}, {\"text\": \"no episodes of purpura fulminans occurred\", \"excluded\": true}, {\"text\": \"without any thrombotic events\", \"excluded\": true}, {\"text\": \"no bleeding or thrombotic events occurred\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "8506145-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:kuss n"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0001622",
+    "label": "Premature birth"
+   },
+   "description": "preterm infant was delivered (1,680 g"
+  },
+  {
+   "type": {
+    "id": "HP:0002643",
+    "label": "Neonatal respiratory distress"
+   },
+   "description": "respiratory distress syndrome"
+  },
+  {
+   "type": {
+    "id": "HP:0005543",
+    "label": "Reduced protein C activity"
+   },
+   "description": "protein C activity was 0.9%"
+  },
+  {
+   "type": {
+    "id": "HP:0008151",
+    "label": "Prolonged prothrombin time"
+   },
+   "description": "elevated international normalized ratio (INR), 2.02"
+  },
+  {
+   "type": {
+    "id": "HP:0003645",
+    "label": "Prolonged partial thromboplastin time"
+   },
+   "description": "partial thromboplastin time, 55.7 s"
+  },
+  {
+   "type": {
+    "id": "HP:0001976",
+    "label": "Reduced antithrombin III activity"
+   },
+   "description": "antithrombin activity, 31%"
+  },
+  {
+   "type": {
+    "id": "HP:0010783",
+    "label": "Erythema"
+   },
+   "description": "occasional minor reddening of the skin at the injection site"
+  },
+  {
+   "type": {
+    "id": "HP:0012387",
+    "label": "Bronchitis"
+   },
+   "description": "febrile obstructive bronchitis episode"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_8506145-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_8506145-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_8506145-1-PROC",
+        "geneContext": {
+         "valueId": "HGNC:9451",
+         "symbol": "PROC"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:34650936",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/34650936/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,240 @@
+{
+ "id": "PMCP_7842840-1",
+ "subject": {
+  "id": "PMCP_7842840-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P23Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "23-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "autosomal dominant PGL-PCC syndrome 4"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"denied headaches\", \"excluded\": true}, {\"text\": \"denied excessive diaphoresis\", \"excluded\": true}, {\"text\": \"denied palpitations\", \"excluded\": true}, {\"text\": \"denied paroxysmal hypertension\", \"excluded\": true}, {\"text\": \"no evidence of metastasis to lymph nodes, bone, liver, or lung\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "7842840-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:cher ml"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002910",
+    "label": "Elevated circulating hepatic transaminase concentration"
+   },
+   "description": "elevated liver enzymes"
+  },
+  {
+   "type": {
+    "id": "HP:0031500",
+    "label": "Abdominal mass"
+   },
+   "description": "large, vascular mid-abdominal mass"
+  },
+  {
+   "type": {
+    "id": "HP:6000285",
+    "label": "Retroperitoneal mass"
+   },
+   "description": "large, right retroperitoneal mass measuring 16 x 10 x 13.7 cm"
+  },
+  {
+   "type": {
+    "id": "HP:6000417",
+    "label": "Inferior vena cava obstruction"
+   },
+   "description": "encasing the vena cava inferior"
+  },
+  {
+   "type": {
+    "id": "HP:0001679",
+    "label": "Abnormal aortic morphology"
+   },
+   "description": "leftward displacement of the abdominal aorta"
+  },
+  {
+   "type": {
+    "id": "HP:0005345",
+    "label": "Abnormal vena cava morphology"
+   },
+   "description": "anterior displacement of the vena cava"
+  },
+  {
+   "type": {
+    "id": "HP:0025633",
+    "label": "Abnormal ureter morphology"
+   },
+   "description": "lateral displacement of the right ureter"
+  },
+  {
+   "type": {
+    "id": "HP:0002668",
+    "label": "Paraganglioma"
+   },
+   "description": "PGL"
+  },
+  {
+   "type": {
+    "id": "HP:0100634",
+    "label": "Neuroendocrine neoplasm"
+   },
+   "description": "synaptophysin and chromogranin positive"
+  },
+  {
+   "type": {
+    "id": "HP:6001022",
+    "label": "Elevated bone scintigraphy uptake"
+   },
+   "description": "uptake was seen in several bone areas"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_7842840-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_7842840-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_7842840-1-SDHB",
+        "geneContext": {
+         "valueId": "HGNC:10681",
+         "symbol": "SDHB"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:33564614",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/33564614/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_9207625-1",
+ "subject": {
+  "id": "PMCP_9207625-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P31Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "text": "Taiwan"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "Author affiliation countries (first author first): Taiwan"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "31-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Autosomal Recessive Epidermolysis Bullosa Simplex"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "compound_heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"no clinical muscle weakness\", \"excluded\": true}, {\"text\": \"ocular lesions\", \"excluded\": true}, {\"text\": \"other extracutaneous manifestations\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9207625-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:hsu ck"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0008066",
+    "label": "Abnormal blistering of the skin"
+   },
+   "description": "painful generalized blistering and erosions since birth"
+  },
+  {
+   "type": {
+    "id": "HP:0000953",
+    "label": "Hyperpigmentation of the skin"
+   },
+   "description": "hyperpigmented patches on the trunk and extremities"
+  },
+  {
+   "type": {
+    "id": "HP:0008404",
+    "label": "Nail dystrophy"
+   },
+   "description": "dystrophy of all 20 nails"
+  },
+  {
+   "type": {
+    "id": "HP:0031446",
+    "label": "Erosion of oral mucosa"
+   },
+   "description": "a few small erosions in the oral cavity"
+  },
+  {
+   "type": {
+    "id": "HP:0007556",
+    "label": "Plantar hyperkeratosis"
+   },
+   "description": "multiple hyperkeratotic plaques on the soles"
+  },
+  {
+   "type": {
+    "id": "HP:0020117",
+    "label": "Hypoplastic dermoepidermal hemidesmosomes"
+   },
+   "description": "hypoplastic hemidesmosomes and focal reduplication of the lamina densa"
+  },
+  {
+   "type": {
+    "id": "HP:0034580",
+    "label": "Reduced epidermal plectin protein expression"
+   },
+   "description": "Plectin labelling was greatly diminished at the dermo-epidermal junction"
+  },
+  {
+   "type": {
+    "id": "HP:0001609",
+    "label": "Hoarse voice"
+   },
+   "description": "hoarseness",
+   "excluded": true
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9207625-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9207625-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9207625-1-PLEC",
+        "geneContext": {
+         "valueId": "HGNC:9069",
+         "symbol": "PLEC"
+        },
+        "allelicState": {
+         "id": "GENO:0000402",
+         "label": "compound heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:32725257",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/32725257/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

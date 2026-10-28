@@ -1,0 +1,239 @@
+{
+ "id": "PMCP_5316440-1",
+ "subject": {
+  "id": "PMCP_5316440-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P61D"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002929",
+     "label": "Colombia"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "brought to our outpatient clinic"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "denied"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "two months old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Ornithine transcarbamylase defect"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "hemizygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"high glutamine-to-citrulline ratio\", \"excluded\": false}, {\"text\": \"physical examination and neurodevelopmental milestones were normal by his age\", \"excluded\": true}, {\"text\": \"Clotting studies, liver enzymes, and renal function tests were normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "5316440-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "OTHER"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:su\u00e1rez-obando f"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003572",
+    "label": "Low plasma citrulline"
+   },
+   "description": "low citrulline levels"
+  },
+  {
+   "type": {
+    "id": "HP:0001987",
+    "label": "Hyperammonemia"
+   },
+   "description": "hyperammonemia (138.1 \u03bcmol/L, normal value: 27.2\u2013102 \u03bcmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0001950",
+    "label": "Respiratory alkalosis"
+   },
+   "description": "partially compensated respiratory alkalosis"
+  },
+  {
+   "type": {
+    "id": "HP:0002154",
+    "label": "Hyperglycinemia"
+   },
+   "description": "high levels of glycine (559 mmol/L; normal value up to 426 \u03bcmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0003348",
+    "label": "Hyperalaninemia"
+   },
+   "description": "alanine (1090 \u03bcmol/L; normal value up to 474 \u03bcmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0012026",
+    "label": "Hyperornithinemia"
+   },
+   "description": "ornithine (132 \u03bcmol/L; normal value up to 130 \u03bcmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0003217",
+    "label": "Hyperglutaminemia"
+   },
+   "description": "glutamine (1464 \u03bcmol/L; normal value up to 426 \u03bcmol/L)"
+  },
+  {
+   "type": {
+    "id": "HP:0003218",
+    "label": "Oroticaciduria"
+   },
+   "description": "higher urine orotic acid at 4.7 mmol/mol and creatinine (normal value: 1.0\u20133.2 mmol/mol creatinine)"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_5316440-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_5316440-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_5316440-1-OTC",
+        "geneContext": {
+         "valueId": "HGNC:8512",
+         "symbol": "OTC"
+        },
+        "allelicState": {
+         "id": "GENO:0000134",
+         "label": "hemizygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:28261508",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/28261508/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

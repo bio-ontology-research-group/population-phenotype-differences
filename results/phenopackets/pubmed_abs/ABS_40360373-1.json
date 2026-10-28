@@ -1,0 +1,241 @@
+{
+ "id": "ABS_40360373-1",
+ "subject": {
+  "id": "ABS_40360373-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P34Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00000558",
+     "label": "Turkey"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "34 years"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "homozygous"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "Turkey"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "MENA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:akturk m"
+    }
+   },
+   {
+    "name": "ancestryCareSetting",
+    "value": {
+     "text": "local_MENAcare"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0003233",
+    "label": "Decreased HDL cholesterol concentration"
+   },
+   "description": "extremely low concentrations of HDL cholesterol (0.7 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0003563",
+    "label": "Decreased LDL cholesterol concentration"
+   },
+   "description": "low-density lipoprotein cholesterol (5 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0031799",
+    "label": "Decreased circulating apolipoprotein A-I concentration"
+   },
+   "description": "apolipoprotein A1 (0.02 mg/dL)"
+  },
+  {
+   "type": {
+    "id": "HP:0011024",
+    "label": "Abnormality of the gastrointestinal tract"
+   },
+   "description": "gastrointestinal involvement"
+  },
+  {
+   "type": {
+    "id": "HP:0001873",
+    "label": "Thrombocytopenia"
+   },
+   "description": "mild thrombocytopenia"
+  },
+  {
+   "type": {
+    "id": "HP:0000141",
+    "label": "Amenorrhea"
+   },
+   "description": "amennorrhea"
+  },
+  {
+   "type": {
+    "id": "HP:0008232",
+    "label": "Elevated circulating follicle stimulating hormone level"
+   },
+   "description": "follicle stimulating hormone: 58.7 mIU/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0011969",
+    "label": "Elevated circulating luteinizing hormone level"
+   },
+   "description": "luteinizing hormone: 37.1 mIU/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0008214",
+    "label": "Decreased serum estradiol"
+   },
+   "description": "estradiol: 34.8 pg/mL"
+  },
+  {
+   "type": {
+    "id": "HP:0031103",
+    "label": "Decreased circulating antimullerian hormone circulation"
+   },
+   "description": "anti-Mullerian hormone: 0.08 ng/mL"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_40360373-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_40360373-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_40360373-1-ABCA1",
+        "geneContext": {
+         "valueId": "HGNC:29",
+         "symbol": "ABCA1"
+        },
+        "allelicState": {
+         "id": "GENO:0000136",
+         "label": "homozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:40360373",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/40360373/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

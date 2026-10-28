@@ -1,0 +1,245 @@
+{
+ "id": "PMCP_9128403-1",
+ "subject": {
+  "id": "PMCP_9128403-1",
+  "sex": "MALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P81Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "geographicOrigin",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "ancestryEvidence",
+    "value": {
+     "text": "living in Hangzhou, Zhejiang Province"
+    }
+   },
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002845",
+     "label": "China"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "explicit"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "living in Hangzhou, Zhejiang Province"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "81 years old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "Lynch Syndrome"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"left colon carcinoma\", \"excluded\": false}, {\"text\": \"carcinoma of the rectum\", \"excluded\": false}, {\"text\": \"gastric carcinoma\", \"excluded\": false}, {\"text\": \"transverse colonic carcinoma\", \"excluded\": false}, {\"text\": \"nasal borderline tumor\", \"excluded\": false}, {\"text\": \"skin carcinoma\", \"excluded\": false}, {\"text\": \"abdominal discomfort\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "9128403-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "patient"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:lin s"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0012125",
+    "label": "Prostate cancer"
+   },
+   "description": "prostatic carcinoma"
+  },
+  {
+   "type": {
+    "id": "HP:6000913",
+    "label": "Swelling of inguinal region"
+   },
+   "description": "right inguinal mass"
+  },
+  {
+   "type": {
+    "id": "HP:0100697",
+    "label": "Neurofibrosarcoma"
+   },
+   "description": "malignant peripheral nerve sheath tumor"
+  },
+  {
+   "type": {
+    "id": "HP:0001742",
+    "label": "Nasal congestion"
+   },
+   "description": "poor nasal ventilation"
+  },
+  {
+   "type": {
+    "id": "HP:0011355",
+    "label": "Localized skin lesion"
+   },
+   "description": "rough protrusion of the abdominal skin with pigment changes"
+  },
+  {
+   "type": {
+    "id": "HP:0000019",
+    "label": "Urinary hesitancy"
+   },
+   "description": "poor urination"
+  },
+  {
+   "type": {
+    "id": "HP:0010741",
+    "label": "Pedal edema"
+   },
+   "description": "significant edema of the left lower extremity"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_9128403-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_9128403-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_9128403-1-MSH2",
+        "geneContext": {
+         "valueId": "HGNC:7325",
+         "symbol": "MSH2"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:35619908",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/35619908/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

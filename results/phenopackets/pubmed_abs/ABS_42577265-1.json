@@ -1,0 +1,224 @@
+{
+ "id": "ABS_42577265-1",
+ "subject": {
+  "id": "ABS_42577265-1",
+  "sex": "UNKNOWN_SEX",
+  "extensions": [
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "none"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "unknown"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAtOnsetAsReported",
+    "value": {
+     "text": "adolescent"
+    }
+   },
+   {
+    "name": "ageAtOnset",
+    "value": {
+     "ontologyClass": {
+      "id": "HP:0003621",
+      "label": "Juvenile onset"
+     }
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"multisystem comorbidities\", \"excluded\": false}, {\"text\": \"decreased CTLA4 expression\", \"excluded\": false}, {\"text\": \"T cell-predominant infiltration\", \"excluded\": false}]"
+    }
+   },
+   {
+    "name": "authorAffiliationCountries",
+    "value": {
+     "text": "China; Germany"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "care"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EASIA"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pubmed_abs"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:chen m"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0002242",
+    "label": "Abnormal intestine morphology"
+   },
+   "description": "autoimmune enteropathy"
+  },
+  {
+   "type": {
+    "id": "HP:0012126",
+    "label": "Stomach cancer"
+   },
+   "description": "early-onset gastric malignancy"
+  },
+  {
+   "type": {
+    "id": "HP:0100280",
+    "label": "Crohn's disease"
+   },
+   "description": "misdiagnosed with Crohn's disease"
+  },
+  {
+   "type": {
+    "id": "HP:0020174",
+    "label": "Refractory drug response"
+   },
+   "description": "refractory to multiple biologics"
+  },
+  {
+   "type": {
+    "id": "HP:0020113",
+    "label": "Decreased regulatory T cell proportion"
+   },
+   "description": "depletion of regulatory T cells (Tregs)"
+  },
+  {
+   "type": {
+    "id": "HP:0500271",
+    "label": "Decreased gamma-delta T cell proportion"
+   },
+   "description": "depletion of \u03b3\u03b4 T cells"
+  },
+  {
+   "type": {
+    "id": "HP:0005415",
+    "label": "Decreased CD8+ T cell proportion"
+   },
+   "description": "depletion of CD161+ cytotoxic-like CD8+ T cells"
+  },
+  {
+   "type": {
+    "id": "HP:4000056",
+    "label": "Abnormal apoptosis"
+   },
+   "description": "crypt apoptosis"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-ABS_42577265-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "ABS_42577265-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "ABS_42577265-1-CTLA4",
+        "geneContext": {
+         "valueId": "HGNC:2505",
+         "symbol": "CTLA4"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:42577265",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/42577265/"
+   },
+   {
+    "id": "pavs-population:pubmed_abs",
+    "description": "PubMed abstract, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}

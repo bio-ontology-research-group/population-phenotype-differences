@@ -1,0 +1,197 @@
+{
+ "id": "PMCP_10545456-1",
+ "subject": {
+  "id": "PMCP_10545456-1",
+  "sex": "FEMALE",
+  "timeAtLastEncounter": {
+   "age": {
+    "iso8601duration": "P27Y"
+   }
+  },
+  "extensions": [
+   {
+    "name": "placeOfCare",
+    "value": {
+     "id": "GAZ:00002459",
+     "label": "United States of America"
+    }
+   },
+   {
+    "name": "placeOfCareBasis",
+    "value": {
+     "text": "our_institution"
+    }
+   },
+   {
+    "name": "placeOfCareEvidence",
+    "value": {
+     "text": "On initial evaluation in our office"
+    }
+   },
+   {
+    "name": "migrant",
+    "value": {
+     "text": "no"
+    }
+   },
+   {
+    "name": "consanguinity",
+    "value": {
+     "text": "not_mentioned"
+    }
+   },
+   {
+    "name": "ageAsReported",
+    "value": {
+     "text": "27-year-old"
+    }
+   },
+   {
+    "name": "diagnosisAsReported",
+    "value": {
+     "text": "hereditary Pelger-Hu\u00ebt anomaly"
+    }
+   },
+   {
+    "name": "zygosityAsReported",
+    "value": {
+     "text": "heterozygous"
+    }
+   },
+   {
+    "name": "unmappedPhenotypeText",
+    "value": {
+     "text": "[{\"text\": \"history of chronic sinusitis\", \"excluded\": false}, {\"text\": \"asymptomatic neutropenia\", \"excluded\": false}, {\"text\": \"mild leukopenia with a white blood cell (WBC) count of 3300/\u03bcL\", \"excluded\": false}, {\"text\": \"absolute neutrophil count (ANC) of 1500/\u03bcL\", \"excluded\": false}, {\"text\": \"WBC count was slightly decreased at 3600/\u03bcL\", \"excluded\": false}, {\"text\": \"mild neutropenia with an ANC of 1100/\u03bcL\", \"excluded\": false}, {\"text\": \"no history of smoking, illicit drug, or alcohol use\", \"excluded\": true}, {\"text\": \"no history of viral infections, including Epstein\u2013Barr virus, hepatitis, or human immunodeficiency virus\", \"excluded\": true}, {\"text\": \"not experiencing any weight loss, chest pain, or shortness of breath\", \"excluded\": true}, {\"text\": \"no family history of a blood disorder\", \"excluded\": true}, {\"text\": \"liver and the spleen were not palpable\", \"excluded\": true}, {\"text\": \"Peripheral flow cytometry was normal\", \"excluded\": true}]"
+    }
+   },
+   {
+    "name": "pmcPatientsUid",
+    "value": {
+     "text": "10545456-1"
+    }
+   },
+   {
+    "name": "populationRegion",
+    "value": {
+     "text": "UNKNOWN"
+    }
+   },
+   {
+    "name": "populationRegionSource",
+    "value": {
+     "text": "article"
+    }
+   },
+   {
+    "name": "reportingAuthorRegion",
+    "value": {
+     "text": "EUR"
+    }
+   },
+   {
+    "name": "curationCorpus",
+    "value": {
+     "text": "pmcp"
+    }
+   },
+   {
+    "name": "reportingGroup",
+    "value": {
+     "text": "LA:staszewski h"
+    }
+   }
+  ]
+ },
+ "phenotypicFeatures": [
+  {
+   "type": {
+    "id": "HP:0011447",
+    "label": "Hyposegmentation of neutrophil nuclei"
+   },
+   "description": "numerous Pelger\u2013Huet anomalous neutrophils with characteristic \u201cpince-nez\u201d nuclei"
+  },
+  {
+   "type": {
+    "id": "HP:0012148",
+    "label": "Multiple lineage myelodysplasia"
+   },
+   "description": "dysplastic changes to other cell lines including the megakaryocytes and erythroid precursors"
+  }
+ ],
+ "interpretations": [
+  {
+   "id": "interp-PMCP_10545456-1",
+   "progressStatus": "SOLVED",
+   "diagnosis": {
+    "genomicInterpretations": [
+     {
+      "subjectOrBiosampleId": "PMCP_10545456-1",
+      "interpretationStatus": "CAUSATIVE",
+      "variantInterpretation": {
+       "variationDescriptor": {
+        "id": "PMCP_10545456-1-LBR",
+        "geneContext": {
+         "valueId": "HGNC:6518",
+         "symbol": "LBR"
+        },
+        "allelicState": {
+         "id": "GENO:0000135",
+         "label": "heterozygous"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "metaData": {
+  "created": "2026-10-27T00:00:00Z",
+  "createdBy": "pavs-saudi-specific-phenotypes/to_phenopackets.py",
+  "resources": [
+   {
+    "id": "hp",
+    "name": "Human Phenotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/hp.owl",
+    "version": "2026-01-08",
+    "namespacePrefix": "HP",
+    "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+   },
+   {
+    "id": "hgnc",
+    "name": "HUGO Gene Nomenclature Committee",
+    "url": "https://www.genenames.org",
+    "version": "",
+    "namespacePrefix": "HGNC",
+    "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+   },
+   {
+    "id": "geno",
+    "name": "Genotype Ontology",
+    "url": "http://purl.obolibrary.org/obo/geno.owl",
+    "version": "",
+    "namespacePrefix": "GENO",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+   },
+   {
+    "id": "gaz",
+    "name": "Gazetteer",
+    "url": "http://purl.obolibrary.org/obo/gaz.obo",
+    "version": "",
+    "namespacePrefix": "GAZ",
+    "iriPrefix": "http://purl.obolibrary.org/obo/GAZ_"
+   }
+  ],
+  "phenopacketSchemaVersion": "2.0",
+  "externalReferences": [
+   {
+    "id": "PMID:37790742",
+    "reference": "https://pubmed.ncbi.nlm.nih.gov/37790742/"
+   },
+   {
+    "id": "pavs-population:pmcp",
+    "description": "PMC-Patients V2 patient summary, extracted by Qwen3.8-27B, HPO by RAG-style candidate selection"
+   }
+  ]
+ }
+}
