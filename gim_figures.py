@@ -265,32 +265,32 @@ def fig3(res, termclass):
 
 
 def figS_decomp(res):
-    terms = [("curation[store|store]", "Store / Store"), ("curation[pmcp|store]", "PMC-Patients / Store"),
-             ("curation[pmcp|pmcp]", "PMC-Patients / PMC-Patients"),
-             ("curation[pavs_clin|pubmed_abs]", "Saudi clinical / abstract"),
-             ("same_group", "same reporting group"), ("author_region_same", "same author region"),
-             ("population_same", "same population"), ("population_n_{A}", "number of {A} cases")]
-    fig, axes = plt.subplots(1, 2, figsize=(178 * MM, 62 * MM))
-    for ax, (A, B), lab in zip(axes, [("MENA", "EUR"), ("EUR", "EASIA")], "ab"):
-        d = {r["term"]: r for r in read_tsv(os.path.join(res, "allpairs", f"popmodel_fine_{A}_{B}_decomposition.csv"), ",")}
-        for i, (t, name) in enumerate(terms):
-            r = d.get(t.format(A=A))
-            y = len(terms) - 1 - i
-            if r is None:
-                continue
+    """Selected coefficients of the pair-similarity model for all 15 population pairs (patient-carried model)."""
+    import glob, re
+    terms = [("curation[store|store]", "Store/Store", (-1, 6)), ("curation[pmcp|store]", "PMC-Patients/Store", (-1, 4)),
+             ("same_group", "same group", (-1, 3)), ("author_region_same", "same author region", (-1.5, 2)),
+             ("population_same", "same population", (-1.5, 1.5))]
+    files = sorted(glob.glob(os.path.join(res, "allpairs", "popmodel_fine_*_decomposition.csv")))
+    pairs = []
+    for f in files:
+        m = re.search(r"popmodel_fine_([A-Z]+)_([A-Z]+)_decomposition", f)
+        pairs.append((m.group(1), m.group(2), {r["term"]: r for r in read_tsv(f, ",")}))
+    order = ["EUR", "MENA", "SASIA", "LATAM", "AFR", "EASIA"]
+    pairs.sort(key=lambda x: (order.index(x[0]), order.index(x[1])))
+    fig, axes = plt.subplots(1, len(terms), figsize=(178 * MM, 95 * MM), sharey=True)
+    for ax, (t, name, xl) in zip(axes, terms):
+        col = OI["blue"] if t.startswith("curation") else (OI["red"] if "group" in t or "region" in t else OI["green"])
+        for y, (A, B, d) in enumerate(pairs):
+            r = d.get(t)
+            if r is None: continue
             c, lo, hi = float(r["coef"]), float(r["lo"]), float(r["hi"])
-            col = OI["blue"] if t.startswith("curation") else (OI["red"] if "group" in t or "region" in t else OI["green"])
-            ax.plot([lo, hi], [y, y], color=col, lw=1.2, alpha=0.6)
-            ax.plot(c, y, "o", color=col, ms=3.8)
-        ax.axvline(0, color="grey", lw=0.6)
-        ax.set_yticks(range(len(terms)))
-        ax.set_yticklabels([n.format(A=A) if "{A}" in n else n for _, n in terms][::-1])
-        ax.set_xlabel("Coefficient (z-similarity)")
-        ax.set_title(f"{A}–{B}")
-        panel_label(ax, lab)
-    axes[1].set_yticklabels([n.format(A="EUR") if "{A}" in n else n for _, n in terms][::-1])
-    axes[1].tick_params(labelleft=True)
-    fig.tight_layout(w_pad=1.5)
+            ax.plot([max(lo, xl[0]), min(hi, xl[1])], [y, y], color=col, lw=1.1, alpha=0.6); ax.plot(c, y, "o", color=col, ms=3.4)
+            if hi > xl[1]: ax.plot(xl[1], y, ">", color=col, ms=3)
+            if lo < xl[0]: ax.plot(xl[0], y, "<", color=col, ms=3)
+        ax.set_xlim(*xl); ax.axvline(0, color="grey", lw=0.6); ax.set_title(name, fontsize=7); ax.set_xlabel("z-similarity")
+    axes[0].set_yticks(range(len(pairs)))
+    axes[0].set_yticklabels([f"{POPNAME[A]} / {POPNAME[B]}" for A, B, _ in pairs]); axes[0].invert_yaxis()
+    fig.tight_layout(w_pad=0.8)
     save(fig, res, "gim_figS_decomp")
 
 
