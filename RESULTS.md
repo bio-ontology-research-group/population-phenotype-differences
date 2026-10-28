@@ -456,3 +456,51 @@ other Gulf states spend like southern Europe but sit ~5 points below (fig_health
 - fig_dag_<POP>: terms with BH q < 0.05 and their is_a links after transitive reduction, radial from the root
   (MENA 150 terms, SASIA 107, EASIA 231, LATAM and AFR none).
 - fig_healthspend: country means of within-stratum residual test share vs health expenditure per capita.
+
+## Within-population vs outside similarity (2026-10-28, unimatrix job 10491; `population_model.py allpairs --vs-rest`)
+
+Each population P against all other populations pooled (REST); contrast P-P vs P-REST pairs, same decomposition and
+permutations as the all-pairs analysis. `results/v4/within/contrasts.tsv`; BH q over the 12 tests in
+`results/v4/qvalues.tsv` (family within_vs_outside).
+
+| P | total excess | q | patient-carried excess | q |
+|---|---|---|---|---|
+| EASIA | +0.216 | 0.012 | +0.071 | 0.35 |
+| MENA | +0.058 | 0.19 | +0.078 | 0.19 |
+| LATAM | +0.004 | 0.96 | +0.168 | 0.13 |
+| SASIA | +0.040 | 0.72 | -0.208 | 0.19 |
+| AFR | -0.500 | 0.46 | -0.747 | 0.066 |
+| EUR | -0.038 | 0.46 | -0.024 | 0.60 |
+
+Only East Asian cases are more alike among themselves than to cases from elsewhere, and only in the total version
+(provenance included). Against the pooled rest, the MENA within-population similarity seen against EUR alone
+(+0.17, q=0.008) shrinks to +0.06 to +0.08 and is not significant.
+
+## Ancestry vs place of care, all populations (2026-10-28, unimatrix jobs 10488_1, 10492; `results/v4/setting_all/`)
+
+Share of findings needing a test, difference in percentage points (r1 minus r2), total strata, 2,000 permutations;
+BH q over the 15 contrasts (`results/v4/setting_all/test_share_q.tsv`).
+
+| Contrast | diff | q | cases (r1) |
+|---|---|---|---|
+| MENA ancestry, MENA care vs EUR | -8.0 | 0.004 | 11,944 (1,673) |
+| MENA ancestry, EUR care vs EUR | -0.3 | 0.81 | 5,017 (581) |
+| MENA ancestry: MENA care vs EUR care | -7.2 | 0.019 | 824 (507) |
+| SASIA ancestry, SASIA care vs EUR | -9.4 | 0.004 | 5,367 (512) |
+| SASIA ancestry, EUR care vs EUR | -3.7 | 0.36 | 1,345 (83) |
+| SASIA ancestry: SASIA care vs EUR care | -14.3 | 0.16 | 81 (51) |
+| AFR ancestry, AFR care vs EUR | -12.5 | 0.015 | 1,528 (62) |
+| AFR ancestry, EUR care vs EUR | -2.5 | 0.42 | 3,235 (202) |
+| AFR ancestry: AFR care vs EUR care | -5.3 | 0.66 | 53 (20) |
+| LATAM ancestry, LATAM care vs EUR | -2.0 | 0.36 | 7,164 (529) |
+| LATAM ancestry, EUR care vs EUR | -6.1 | 0.029 | 2,299 (205) |
+| LATAM ancestry: LATAM care vs EUR care | +2.3 | 0.81 | 110 (72) |
+| EASIA ancestry, EASIA care vs EUR | -1.4 | 0.029 | 22,906 (5,810) |
+| EASIA ancestry, EUR care vs EUR | -4.8 | 0.27 | 1,950 (91) |
+| EASIA ancestry: EASIA care vs EUR care | +4.7 | 0.34 | 680 (600) |
+
+The lower test share follows the place of care, not ancestry: patients of MENA, South Asian or African ancestry
+cared for in Europe or North America are reported like European patients, while the same ancestries cared for at
+home are reported with fewer test-based findings. The direct within-ancestry comparison is significant for MENA
+(-7.2 points, q=0.019) and points the same way for SASIA (-14.3) and AFR (-5.3) with few cases. LATAM is the
+exception: the gap appears for LATAM-ancestry patients cared for in Europe/North America.
