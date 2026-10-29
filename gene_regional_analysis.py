@@ -49,6 +49,7 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--root',type=Path,default=Path(__file__).resolve().parent)
     ap.add_argument('--metadata',type=Path,required=True);ap.add_argument('--out',type=Path,required=True)
+    ap.add_argument('--versions',help='Comma-separated analysis versions; default: original four versions')
     ap.add_argument('--perms',type=int,default=4999);ap.add_argument('--min-cases',type=int,default=10)
     ap.add_argument('--min-publications',type=int,default=3);ap.add_argument('--seed',type=int,default=20261030)
     a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True)
@@ -69,7 +70,11 @@ def main():
       'corpus':(lambda c:True,lambda c:(c['corpus'],)),
       'author_region':(lambda c:c['author'] not in ('UNKNOWN',''),lambda c:(c['corpus'],c['author'])),
       'care_stated_origin':(lambda c:bool(c['care_country'] and (c['ancestry'] or c['origin_country'])) and c['region_source']!='care',lambda c:(c['corpus'],c['care_country'])),
-      'disease_allelic_state':(lambda c:bool(c['disease_ids'] and c['allelic_states']) and 'unknown' not in c['allelic_states'].lower(),lambda c:(c['corpus'],c['disease_ids'],c['allelic_states']))}
+      'disease_allelic_state':(lambda c:bool(c['disease_ids'] and c['allelic_states']) and 'unknown' not in c['allelic_states'].lower(),lambda c:(c['corpus'],c['disease_ids'],c['allelic_states'])),
+      'disease_inheritance':(lambda c:bool(c.get('disease_inheritance_ids') and c['disease_ids']),lambda c:(c['corpus'],c['disease_ids'],c['disease_inheritance_ids'])),
+      'protein_consequence_allelic':(lambda c:c.get('protein_class_complete')=='yes' and bool(c['allelic_states']) and 'unknown' not in c['allelic_states'].lower(),lambda c:(c['corpus'],c['protein_consequences'],c['allelic_states']))}
+    chosen=a.versions.split(',') if a.versions else ['corpus','author_region','care_stated_origin','disease_allelic_state']
+    versions={v:versions[v] for v in chosen}
     support=[];out=[];rng=np.random.default_rng(a.seed)
     for version,(select,key) in versions.items():
         for gene,allcs in sorted(by.items()):

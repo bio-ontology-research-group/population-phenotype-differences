@@ -30,7 +30,7 @@ def write(path, rows):
     if not rows:
         return
     with Path(path).open('w') as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
+        w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator='\n'); w.writeheader(); w.writerows(rows)
 
 
 def cluster_boot(values, clusters, rng, repetitions):

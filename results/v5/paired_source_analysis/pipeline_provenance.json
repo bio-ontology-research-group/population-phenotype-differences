@@ -1,0 +1,31 @@
+{
+  "model": "qwen3.8-27b",
+  "temperature": 0,
+  "enable_thinking": false,
+  "extraction_max_tokens": 16000,
+  "mapping_batch_size": 10,
+  "mapping_max_tokens": "200 + 40 * batch_size",
+  "mapping_exact_text_bypass": true,
+  "pilot_cache_reused": 232,
+  "mapping_phrases": 1407,
+  "new_term_classes": 9,
+  "hpo_release": "2026-01-08",
+  "prompts": {
+    "extract_system": "7ed5a6c2777c579a3b49cc0d9960177db3a2a12f141eb4347284eb77c06cb023",
+    "extract": "452a3a46047cf9f9f19414c6f8632625f1fb21a1e647f3469d264e98da60d0e6",
+    "mapping_system": "a21108d3cc3a71d45528284da3a3aef7c1903bbbc604630fda7a9f859e768b14",
+    "mapping": "cf47a374a73e99ecaa61595ccab8c7fa2d570d7e5ad8eaf54424872873e72499",
+    "classification": "290c8ccb217a91a4c83453ae6aa408409047face79e172e9a4c00c954aed757e"
+  },
+  "files": {
+    "analysis/data/hpo/hp.obo": "a6c4852adb6402c1de7d12de8f2a4c652e2f016b6e33b0cbe647b6d35c46f86b",
+    "analysis/data/v5_private/hpoidx_bge.npz": "a0d063557b5acf996ce19bbd816eca4709155e28a6dfcafba1439a5aec127006",
+    "analysis/data/v5_private/paired_mapping_final/candidates.jsonl": "eebef5a06202a62e46676bd0ed191f9d574853779c8434f327033b281a44db85",
+    "analysis/data/v5_private/paired_mapping_final/selected.jsonl": "4be9ae3c8e878599c11df46d79b763521781748877a3644331574fdb96f10d7f",
+    "analysis/qwen_tasks.py": "358160294bb2e5dbf3022fbe1535d663ed5eb6f68690128f0b926b35078e351e",
+    "analysis/hpo_map2.py": "392b4da18c3f46cf0f949ec000a36bb580667c92d2f01cbe60411f6f363e5273",
+    "analysis/data/v5_private/paired_extraction.jsonl": "fcba4f75e3d33e65713d987c7599883fb85a60ebb03cae6667ef6761e029fcfa",
+    "analysis/data/v5_private/paired_mapping_final/termclass_extra.jsonl": "fca3307fcf6833a7853654ad59bee442e548eb1a114e698384e990953ff24673"
+  },
+  "mapping_audit_limitation": "Legacy candidate selector saves final identifiers and parse success, but not raw responses or finish reasons; clinician mapping audit pending."
+}

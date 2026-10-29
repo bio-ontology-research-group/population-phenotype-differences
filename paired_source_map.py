@@ -20,10 +20,10 @@ def main():
         for i,p in enumerate(d['result']['patients']):
             for status,field in [('present','observed_phenotypes'),('absent','excluded_phenotypes')]:
                 for j,f in enumerate(p[field]):
-                    if not isinstance(f,dict) or not isinstance(f.get('text'),str) or not isinstance(f.get('hpo_label'),str):
+                    if not isinstance(f,dict) or not isinstance(f.get('text'),str) or (f.get('hpo_label') is not None and not isinstance(f.get('hpo_label'),str)):
                         qc.append(dict(key=key,patient_index=i,finding_index=j,status=status,error='invalid_phrase_schema'))
                         continue
-                    text=f['text'].strip();label=f['hpo_label'].strip()
+                    text=f['text'].strip();label=(f.get('hpo_label') or '').strip()
                     if not text:
                         qc.append(dict(key=key,patient_index=i,finding_index=j,status=status,error='empty_phrase'));continue
                     k=hashlib.sha256(json.dumps([text,label],ensure_ascii=False).encode()).hexdigest()

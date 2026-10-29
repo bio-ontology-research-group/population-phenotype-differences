@@ -36,5 +36,25 @@ def main():
     fig.legend(handles=[Line2D([],[],marker=m,color=c,ls='',label=l) for _,l,c,m in sources],loc='lower center',ncol=3,frameon=False)
     fig.subplots_adjust(left=.22,right=.98,bottom=.24,top=.94,wspace=.12)
     fig.savefig(out/'source_specific_ranking.pdf',bbox_inches='tight');fig.savefig(out/'source_specific_ranking.png',dpi=180,bbox_inches='tight')
+    plt.close(fig)
+    paired=a.res/'paired_source_analysis/paired_summary.csv'
+    if paired.exists():
+        rows=list(csv.DictReader(paired.open()))
+        data={(r['subset'],r['outcome']):r for r in rows if r['region']=='ALL'}
+        fig,axes=plt.subplots(1,2,figsize=(7.1,2.25),gridspec_kw={'width_ratios':[1,1]})
+        subsets=['all_publications','one_individual_each_output']
+        for ax,outcome,scale,title,letter in zip(axes,['delta_n_terms','delta_test_share'],[1,100],
+                ['Additional HPO terms','Change in test share (percentage points)'],['a','b']):
+            for y,subset in enumerate(subsets[::-1]):
+                r=data[subset,outcome];m,lo,hi=[float(r[k])*scale for k in ['mean','lo','hi']]
+                ax.errorbar(m,y,xerr=[[m-lo],[hi-m]],fmt='o',ms=5,color='#0072B2',capsize=3,lw=1.2)
+                ax.annotate('n = '+r['publications'],(m,y),xytext=(0,10),textcoords='offset points',ha='center',fontsize=7)
+            ax.axvline(0,color='#888888',ls='--',lw=.7);ax.set_ylim(-.5,1.6)
+            ax.set_xlabel(title);ax.text(-.04,1.02,letter,transform=ax.transAxes,fontweight='bold',fontsize=11)
+        axes[0].set_yticks([0,1],['One individual\nin each output','All publications'])
+        axes[1].set_yticks([0,1],[])
+        fig.text(.54,.02,'Full text minus abstract; publication bootstrap 95% intervals. Clinical validation pending.',ha='center',fontsize=7)
+        fig.subplots_adjust(left=.2,right=.98,bottom=.3,top=.86,wspace=.3)
+        fig.savefig(out/'paired_source_effects.pdf',bbox_inches='tight');fig.savefig(out/'paired_source_effects.png',dpi=180,bbox_inches='tight')
 
 if __name__=='__main__':main()
