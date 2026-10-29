@@ -23,12 +23,6 @@
     }
    },
    {
-    "name": "placeOfCareEvidence",
-    "value": {
-     "text": "The text describes care at 'our institution' (implied by 'our hospital/clinic' context in similar reports, though here it says 'The parents brought her to the pediatrician' and 'On admission', but the prompt instruction for 'our_institution' applies when the text implies the authors' setting. However, looking closely, the text does NOT explicitly say 'our hospital'. It says 'The parents brought her to the pediatrician' and 'On admission'. Wait, the prompt says: use 'our_institution' if the text only says 'our hospital/clinic/department' or similar. This text does NOT use 'our hospital'. It uses 'the pediatrician', 'On admission', 'discharged home'. It does not explicitly name the country or city. It does not say 'our hospital'. Therefore, strictly following the prompt: 'explicit' if names country/city/hospital. 'our_institution' if says 'our hospital'. 'none' if neither. The text does not name the country, city, or hospital. It does not say 'our hospital'. Thus, care_basis should be 'none' and care_country 'null'. Let me re-read carefully. 'A three-week-old female presented... The parents brought her to the pediatrician... On admission...'. No mention of 'our hospital'. No mention of USA, New York, etc. The author affiliation is USA, but the text itself does not state the location of care. The prompt says: 'Do not infer ancestry from the hospital location alone.' and for care_country: 'Use \"explicit\" if the text names the country, city or hospital; use \"our_institution\" if the text only says \"our hospital/clinic/department\" or similar... use \"none\" if neither applies.' Since the text does not say 'our hospital' and does not name the location, it is 'none'."
-    }
-   },
-   {
     "name": "migrant",
     "value": {
      "text": "unknown"

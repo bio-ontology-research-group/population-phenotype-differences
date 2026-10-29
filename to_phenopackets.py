@@ -148,10 +148,9 @@ class Builder:
         e = []
         if anc_c: e.append(ext("geographicOrigin", self.country(anc_c)))
         if anc: e.append(ext("ancestry", {"text": anc}))
-        if anc_ev: e.append(ext("ancestryEvidence", {"text": anc_ev}))
+        # supporting quotes (anc_ev, care_ev) are article text and are not written to the packets
         if care_c: e.append(ext("placeOfCare", self.country(care_c)))
         if care_basis: e.append(ext("placeOfCareBasis", {"text": care_basis}))
-        if care_ev: e.append(ext("placeOfCareEvidence", {"text": care_ev}))
         if migrant: e.append(ext("migrant", {"text": migrant}))
         if cons == "yes": e.append(ext("consanguinity", {"ontologyClass": oc("HP:0025820", self.lab.get("HP:0025820", ""))}))
         elif cons: e.append(ext("consanguinity", {"text": cons}))
@@ -263,7 +262,6 @@ def main():
         if len(po) == 1:
             if po[0].get("country"): e.append(ext("geographicOrigin", B.country(po[0]["country"])))
             if po[0].get("ethnicity_or_ancestry"): e.append(ext("ancestry", {"text": po[0]["ethnicity_or_ancestry"]}))
-            if po[0].get("evidence"): e.append(ext("ancestryEvidence", {"text": po[0]["evidence"]}))
             e.append(ext("originLevel", {"text": "publication (single origin stated for the paper's patients)"}))
         elif po:
             e.append(ext("publicationPatientOrigins", {"text": json.dumps(po, ensure_ascii=False)}))
