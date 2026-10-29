@@ -2,8 +2,10 @@
 """Figures for the Genetics in Medicine manuscript (population differences in recorded phenotypes).
 
 Writes PDFs (and PNG previews) to results/v4/figures/:
-  gim_fig1_testshare   share of test-based findings vs EUR across analysis versions, and
-                       log(1+n) test-based and bedside counts (terms_all/all_outcomes.tsv, qvalues.tsv)
+  gim_fig1_testshare   share of test-based findings vs EUR across analysis versions,
+                       log(1+n) test-based and bedside counts, and corpus replication
+                       (terms_all/all_outcomes.tsv, qvalues.tsv, validation/replication_corpus.csv)
+  gim_fig3_ranking    paired rank ratios and top-10 recovery (gda/gda_stats.csv)
   gim_fig2_shift       (a) MH z-scores of all tested HPO classes by finding class and population
                        (terms_all/main_*_total_terms.csv, termclass.jsonl); (b) dot matrix of the grouping classes with
                        the largest shifts (figures/fig_shift_network_nodes.csv from network_figs.py shift)
@@ -17,7 +19,8 @@ Writes PDFs (and PNG previews) to results/v4/figures/:
 
 Usage: python3 gim_figures.py [--res results/v4]
 Points are the observed Mantel-Haenszel difference minus the permutation mean ("excess");
-bars are the central 95% of the permutation distribution, shifted by the same mean.
+null-distribution bars are the central 95% of the permutations, shifted by the same mean.
+The paired-ranking figure instead shows bootstrap intervals for the rank ratio.
 """
 import argparse
 import csv
@@ -84,7 +87,9 @@ def fig1(res, q):
                 ("age-adjusted", "adjage_{p}", "outcomes:adjage", OI["orange"], "D"),
                 ("sex-adjusted", "adjsex_{p}", "outcomes:adjsex", OI["purple"], "^")]
     share = "share of findings needing a test"
-    fig, (a, b) = plt.subplots(1, 2, figsize=(178 * MM, 72 * MM), gridspec_kw={"width_ratios": [1.25, 1]})
+    fig = plt.figure(figsize=(178 * MM, 147 * MM))
+    grid = fig.add_gridspec(2, 2, height_ratios=[1, 1.05], width_ratios=[1.25, 1], hspace=0.62)
+    a, b = fig.add_subplot(grid[0, 0]), fig.add_subplot(grid[0, 1])
     off = [0.27, 0.09, -0.09, -0.27]
     for i, p in enumerate(POPS):
         y0 = len(POPS) - 1 - i
@@ -97,10 +102,10 @@ def fig1(res, q):
     a.axvline(0, color="grey", lw=0.6, zorder=0)
     a.set_yticks(range(len(POPS)))
     a.set_yticklabels([POPNAME[p] for p in POPS[::-1]])
-    a.set_xlabel("Share of test-based findings, population minus EUR (percentage points)")
+    a.set_xlabel("Test share, population minus EUR\n(percentage points)")
     a.set_ylim(-0.6, len(POPS) - 0.4)
     a.legend(handles=[Line2D([], [], color=c, marker=m, ls="", ms=4.2, label=l) for l, _, _, c, m in versions],
-             loc="upper center", bbox_to_anchor=(0.45, -0.17), ncol=4, frameon=False, handletextpad=0.2,
+             loc="upper center", bbox_to_anchor=(0.45, -0.28), ncol=2, frameon=False, handletextpad=0.2,
              columnspacing=0.8)
     panel_label(a, "a")
 
@@ -118,12 +123,76 @@ def fig1(res, q):
     b.set_yticks(range(len(POPS)))
     b.set_yticklabels([])
     b.set_ylim(-0.6, len(POPS) - 0.4)
-    b.set_xlabel("log(1 + number of findings), population minus EUR")
+    b.set_xlabel("log(1 + number of findings),\npopulation minus EUR")
     b.legend(handles=[Line2D([], [], color=c, marker=m, ls="", ms=4.2, label=l) for _, l, c, m in outs],
-             loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2, frameon=False, handletextpad=0.2)
+             loc="upper center", bbox_to_anchor=(0.5, -0.28), ncol=2, frameon=False, handletextpad=0.2)
     panel_label(b, "b")
-    fig.tight_layout(w_pad=1.0)
+    c = fig.add_subplot(grid[1, :])
+    replication = read_tsv(os.path.join(res, "validation", "replication_corpus.csv"), ",")
+    sources = ["Store", "PMC-Patients", "Store + PMC-Patients", "abstracts"]
+    lookup = {(r["population"], r["corpus"]): r for r in replication}
+    values = np.array([[float(lookup[(p, s)]["diff_points"]) for s in sources] for p in POPS])
+    c.imshow(values, cmap="RdBu_r", vmin=-12, vmax=12, aspect="auto")
+    for i, p in enumerate(POPS):
+        for j, s in enumerate(sources):
+            r = lookup[(p, s)]
+            color = "white" if abs(values[i, j]) > 8 else "#202020"
+            c.text(j, i - 0.13, f"{values[i, j]:+.1f} pp", ha="center", va="center", color=color)
+            c.text(j, i + 0.20, f"n = {int(r['n_pop']):,}", ha="center", va="center", color=color, fontsize=5.8)
+    c.set_xticks(range(4), ["Store", "PMC-Patients", "Combined full text", "Abstracts"])
+    c.xaxis.tick_top()
+    c.set_yticks(range(5), [POPNAME[p] for p in POPS])
+    c.tick_params(length=0, pad=6)
+    c.set_xticks(np.arange(-0.5, 4), minor=True)
+    c.set_yticks(np.arange(-0.5, 5), minor=True)
+    c.grid(which="minor", color="white", linewidth=2)
+    c.tick_params(which="minor", length=0)
+    c.set_xlabel("Corpus-specific test-share difference from EUR; n = cases of the indicated population", labelpad=8)
+    for spine in c.spines.values():
+        spine.set_visible(False)
+    panel_label(c, "c", x=-0.02, y=1.12)
+    fig.subplots_adjust(left=0.20, right=0.99, top=0.98, bottom=0.09, wspace=0.16)
     save(fig, res, "gim_fig1_testshare")
+
+
+def fig_ranking(res):
+    """Paired bedside restriction, from archived gene-annotation benchmark statistics."""
+    rows = {r["population"]: r for r in read_tsv(os.path.join(res, "gda", "gda_stats.csv"), ",")
+            if r["analysis"] == "paired"}
+    order = ["EUR"] + POPS
+    fig, (a, b) = plt.subplots(1, 2, figsize=(178 * MM, 82 * MM), gridspec_kw={"width_ratios": [1, 1.15]})
+    for i, p in enumerate(order):
+        y = len(order) - 1 - i
+        r = rows[p]
+        estimate, lo, hi = [2 ** float(r[k]) for k in ("estimate", "lo", "hi")]
+        a.errorbar(estimate, y, xerr=[[estimate - lo], [hi - estimate]], fmt="o", color=POPCOL[p],
+                   markersize=4.5, linewidth=1.2, capsize=2)
+        # The archived descriptive field stores both percentages to one decimal place.
+        all_pct, bed_pct = r["extra"].replace("top-10 all ", "").replace("%", "").split(" -> bedside-only ")
+        all_pct, bed_pct = float(all_pct), float(bed_pct)
+        b.plot([bed_pct, all_pct], [y, y], color="#aaaaaa", lw=1.5)
+        b.plot(all_pct, y, "o", color=OI["blue"], ms=4.5)
+        b.plot(bed_pct, y, "s", color=OI["red"], ms=4.5)
+        b.text(bed_pct - 1.2, y, f"{bed_pct:.1f}", ha="right", va="center", fontsize=6.5)
+        b.text(all_pct + 1.2, y, f"{all_pct:.1f}", ha="left", va="center", fontsize=6.5)
+    labels = [f"{POPNAME[p]}  (n = {int(rows[p]['n_cases']):,})" for p in order[::-1]]
+    a.set_yticks(range(6), labels)
+    b.set_yticks(range(6), [])
+    for ax in (a, b):
+        ax.set_ylim(-0.6, 5.6)
+    a.axvline(1, color="grey", lw=0.7, ls="--")
+    a.set_xlim(0.75, 5.8)
+    a.set_xticks([1, 2, 3, 4, 5])
+    a.set_xlabel("Geometric mean rank ratio\n(bedside-only / full profile)")
+    b.set_xlim(10, 58)
+    b.set_xlabel("Causative gene in top 10 (%)")
+    b.legend(handles=[Line2D([], [], marker="o", ls="", color=OI["blue"], label="Full profile"),
+                      Line2D([], [], marker="s", ls="", color=OI["red"], label="Bedside only")],
+             loc="upper center", bbox_to_anchor=(0.5, -0.23), ncol=2, frameon=False)
+    panel_label(a, "a")
+    panel_label(b, "b")
+    fig.subplots_adjust(left=0.30, right=0.98, bottom=0.29, top=0.95, wspace=0.18)
+    save(fig, res, "gim_fig3_ranking")
 
 
 def fig_setting(res):
@@ -132,8 +201,8 @@ def fig_setting(res):
     share = "share of findings needing a test"
     fig, (a, b) = plt.subplots(1, 2, figsize=(178 * MM, 78 * MM), gridspec_kw={"width_ratios": [1, 1.15]})
     contrasts = [("{p}anc_{p}care_vs_EUR", "own-region care vs reference", OI["red"], "o"),
-                 ("{p}anc_EURcare_vs_EUR", "EUR/N. America care vs reference", OI["blue"], "s"),
-                 ("{p}anc_{p}care_vs_{p}anc_EURcare", "own-region vs EUR/N. America care", OI["black"], "D")]
+                 ("{p}anc_EURcare_vs_EUR", "EUR-group care vs reference", OI["blue"], "s"),
+                 ("{p}anc_{p}care_vs_{p}anc_EURcare", "own-region vs EUR-group care", OI["black"], "D")]
     order = ["MENA", "SASIA", "AFR", "LATAM", "EASIA"]
     for i, p in enumerate(order):
         y0 = len(order) - 1 - i
@@ -503,6 +572,7 @@ def main():
     a = ap.parse_args()
     q = qlookup(a.res)
     fig1(a.res, q)
+    fig_ranking(a.res)
     fig_shift(a.res, os.path.join(os.path.dirname(a.res.rstrip("/")), "termclass.jsonl"))
     fig_setting(a.res)
     if a.shapes: fig_map(a.res, a.shapes)

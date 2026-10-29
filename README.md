@@ -158,9 +158,12 @@ job scripts in `jobs/` used the same layout under the job directory.
     symptom_sign, age_sex, setting_pooled, gda, comorbidity and validation
     families are computed inside those scripts), `summaries.py` (descriptive
     counts), `network_figs.py` (`shift`, `dag`, `spend`, `popnet`;
-    `popnet --print-layout` reports the node layout), `gim_figures.py` (all
-    main and supplementary figures except Figure 4, which is
-    `network_figs.py popnet`).
+    `popnet --print-layout` reports the node layout), `gim_figures.py` (the three main figures, including corpus replication
+    and paired bedside-restriction ranking, and supplementary plots), and
+    `network_figs.py popnet` / `dag` (the supplementary population network
+    and HPO subgraphs). The main ranking figure reads the archived paired
+    estimates and intervals in `results/v4/gda/gda_stats.csv`; no ranking
+    computations are repeated when plotting.
 
 Earlier stages of the project (PAVS benchmark re-analysis, Store-only origin
 models) are `run_analyses.py`, `followup_analyses.py`, `rank_engine.py`,
