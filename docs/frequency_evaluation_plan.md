@@ -69,3 +69,55 @@ improves. Avoid tuning the update or scoring rule on these test outcomes.
 
 Current status: source retrieval complete for accessible articles; source curation,
 patient-overlap verification, frequency model specification and evaluation pending.
+
+
+## Frozen scoring specification (before first rank evaluation)
+
+Use disease profiles for positive phenotypic HPO annotations attached to OMIM
+identifiers with gene mappings in the frozen HPO release. Remove annotations whose
+references include a held-out clinical publication or a known matching last-author
+reporting group. Exclude NOT annotations and the excluded-frequency category.
+Preserve the remaining phenotype support in every frequency-only comparison.
+Use the verified KMT2D mapping for Kabuki syndrome 1 (OMIM:147920); the frozen
+cross-gene mapping of that identifier to KDM6A is removed in every arm. Other
+mapped OMIM disease profiles remain available as candidates.
+
+Reuse Resnik best-match-average similarity. The query-to-disease direction remains
+an unweighted mean of each query term's best match. In the reverse direction,
+weight each disease term's best query match by its phenotype-frequency weight and
+normalize by the sum of weights. Average the two directions. A gene receives the
+maximum score of its mapped disease profiles. Rank all genes with eligible
+profiles; use midranks for ties and also report the best and worst rank in a tie.
+Information content is computed from gene frequencies in the filtered, unweighted
+reference and held fixed across all arms. With equal weights this reduces to the
+unweighted BMA comparator.
+
+For existing HPOA frequencies, use unqualified age/sex/modifier-independent
+annotations only. A single count value uses (affected + 0.5)/(assessed + 1), a
+Jeffreys-smoothed proportion. Duplicate identical frequency values count once;
+conflicting values are left unresolved rather than pooled without cohort identity.
+Category intervals are those defined in the frozen ontology (100%, 80–99%, 30–79%,
+5–29%, 1–4%, 0%); their midpoints are scoring representatives, not inferred exact
+frequencies. Percentage values retain their stated values. Missing or unresolved
+frequency has a neutral weight of one. Sensitivities use both category endpoints
+and a missing-frequency weight of 0.5. These settings are all reported, never
+selected by the test ranking.
+
+Updated frequencies replace the existing weight for the same disorder and exact
+HPO identifier using the source-checked cohort counts, after overlap checks.
+Within the update, pool assessed counts only for compatible, nonoverlapping source
+cohorts. Do not add the HPOA counts to the new counts because their source patients
+may overlap. A sensitivity gives each family equal contribution to affected and
+assessed totals, preserving unknown assessments. Another uses only the source's
+reported truncating KMT2D subset from PMID 25896430. Report association-only and
+association-plus-frequency expansion separately, with unchanged information
+content and candidates, so a new term cannot masquerade as a frequency benefit.
+
+The eligibility audit retains 12 of the 18 frozen candidate queries. Five have
+unsolved/undetermined source status; one is a solved MPV17 neuropathy case outside
+the hepatocerebral annotation target. The five US queries have consistent KMT2D
+gene targets but discrepancies in within-gene patient/variant linkage across the
+original supplementary tables and prose. Report a prespecified sensitivity
+restricted to the one US query with concordant ID, age and gene, leaving eight
+queries overall. Do not repair patient identity by guessing from phenotype
+similarity. Source-derived query phenotypes remain frozen.

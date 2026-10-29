@@ -1,0 +1,136 @@
+{
+  "counts": {
+    "eligible_before_reference_filter": 128178,
+    "retained_rows": 127379,
+    "excluded_reference_rows": 799,
+    "n_genes": 4891,
+    "n_disease_profiles": 6550,
+    "n_queries": 12,
+    "curated_source_rows": 62,
+    "curated_unique_disease_terms": 52,
+    "fixed_support_updates": 40,
+    "new_positive_associations": 12
+  },
+  "heldout_pmids": [
+    "28454995",
+    "28600779",
+    "31130284",
+    "31618753"
+  ],
+  "heldout_reporting_groups": [
+    "LA:alkuraya fs",
+    "LA:martin dm",
+    "LA:zada aap"
+  ],
+  "kabuki1_kdm6a_mapping_removed": true,
+  "specifications": [
+    {
+      "name": "unweighted",
+      "weighted": false
+    },
+    {
+      "name": "existing",
+      "weighted": true
+    },
+    {
+      "name": "updated",
+      "weighted": true,
+      "update": "standard"
+    },
+    {
+      "name": "association_only",
+      "weighted": false,
+      "expand": true
+    },
+    {
+      "name": "association_and_frequency",
+      "weighted": true,
+      "expand": true,
+      "update": "standard"
+    },
+    {
+      "name": "updated_family",
+      "weighted": true,
+      "update": "family"
+    },
+    {
+      "name": "updated_truncating",
+      "weighted": true,
+      "update": "truncating"
+    },
+    {
+      "name": "existing_category_low",
+      "weighted": true,
+      "endpoint": "low",
+      "update": null
+    },
+    {
+      "name": "updated_category_low",
+      "weighted": true,
+      "endpoint": "low",
+      "update": "standard"
+    },
+    {
+      "name": "existing_category_high",
+      "weighted": true,
+      "endpoint": "high",
+      "update": null
+    },
+    {
+      "name": "updated_category_high",
+      "weighted": true,
+      "endpoint": "high",
+      "update": "standard"
+    },
+    {
+      "name": "existing_missing_half",
+      "weighted": true,
+      "missing": 0.5,
+      "update": null
+    },
+    {
+      "name": "updated_missing_half",
+      "weighted": true,
+      "missing": 0.5,
+      "update": "standard"
+    },
+    {
+      "name": "updated_omit_25896430",
+      "weighted": true,
+      "update": "omit_25896430"
+    },
+    {
+      "name": "updated_omit_27536553",
+      "weighted": true,
+      "update": "omit_27536553"
+    },
+    {
+      "name": "updated_omit_29482518",
+      "weighted": true,
+      "update": "omit_29482518"
+    },
+    {
+      "name": "updated_omit_31666973",
+      "weighted": true,
+      "update": "omit_31666973"
+    }
+  ],
+  "status": "exploratory_source_checked_clinician_review_pending",
+  "limitations": [
+    "Source-level variant/country checks found no curated-query overlap; private identity resolution unavailable.",
+    "Only three query publications and three reporting groups; cluster intervals are descriptive and unstable.",
+    "Curated cohorts have different ages and ascertainment; pooled weights are exploratory, with source-deletion sensitivities.",
+    "Within each curated disorder, population/care country has no contrasting group; population effects are not identifiable.",
+    "Novel support uses at least one explicit positive; all-zero annotations can change existing weights but never add positive associations.",
+    "This evaluates this weighted BMA rule, not all frequency-aware diagnostic methods."
+  ],
+  "hashes": {
+    "frequency_benchmark.py": "133f18bd43144c1472a6d4548447c6ac21e2364776808d5130dc13fc042764cf",
+    "docs/frequency_evaluation_plan.md": "5b59da01dd48ca57de5c0e92aee901b0687eb3469874c82073373d2daaebe26b",
+    "data/hpo/phenotype.hpoa": "506d358590b0f0367cd09332bba73a95cd753cd281a9ecaee00a655ced82e422",
+    "data/hpo/genes_to_phenotype.txt": "e913c803a3b1f3cd511ba4b63281bd3c1e91573e8abab8fa92b2f0fbeb940888",
+    "results/v5/frequency_curation_combined/frequency_annotations.csv": "0830217170bab4eca15f3c650364df6da845a48fc82cbd9536342330971b3d81",
+    "results/v5/frequency_curation_combined/patient_assessments.csv": "68874ef01e4fce9c82ae0226683f6cce136feb51cc13fb7e1ddc304c09d364eb",
+    "results/v5/clinical_evaluation_audit/query_eligibility.csv": "7b884f970e1c87309bfb5660eecb39b70c553cce1cbf5c38ab432b73e7040696"
+  }
+}

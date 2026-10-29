@@ -1,6 +1,6 @@
 # Extension results: source, genetics and phenotype frequency
 
-Work in progress. New outputs use the original HPO release (2026-01-08). Human review by Paul and Marwa is pending.
+New outputs use the original HPO release (2026-01-08). Source, genetic and exploratory frequency analyses are complete at the available evidence resolution and are incorporated in the manuscript draft. Independent review by Paul and Marwa, adjudication and human-validation scores remain pending. Model-output concordance and source checks are not labelled clinician validation.
 
 ## Source-specific bedside restriction
 
@@ -45,9 +45,9 @@ A deterministic sample was drawn from the 400 archived single-patient comparison
 
 All 118 document views have now been extracted with the same source-neutral prompt; all 1,407 phrase mappings and nine additional observation-type classifications are complete. Existing abstract/full-text mapping results mix extraction and curation processes and are not being relabelled as this new controlled experiment. Human identity alignment, source-text extraction review and denominator verification remain outstanding.
 
-## Pending completion
+## Outstanding validation
 
-Gene-specific adjusted analyses are complete at the available metadata resolution. Paired-source descriptive comparisons are complete; Paul/Marwa review and adjudication, verified frequency-denominator curation, independent frequency-aware ranking evaluation, and manuscript integration remain in progress. No manuscript conclusion has yet been changed on the basis of the unfinished extension.
+Paul/Marwa independent returns, patient alignment, adjudication and source-text extraction/mapping scores remain outstanding. The manuscript explicitly distinguishes the completed machine analyses from this pending evaluation. The original model-judge audit also lacks archived exact judge settings/prompts, which remain marked as missing in the draft rather than reconstructed by assumption.
 
 ## Gene-specific exploratory analysis
 
@@ -90,10 +90,10 @@ and Leber congenital amaurosis 6 (RPGRIP1). The frozen list contains 97 candidat
 source publications after exclusion of clinical evaluation publications and their
 reporting groups. Thirty-five full texts were retrieved, 51 lacked PMC full text,
 and 11 fetches failed. Source availability is recorded separately from eligibility.
-The current clinical evaluation list has 18 cases: three RPGRIP1 and three MPV17
-cases from the Saudi collection, plus seven Saudi and five US KMT2D cases. Subtype
-and residual patient overlap still require verification. SPINK5 has no eligible
-clinical query in this collection and is currently a provenance case study.
+The initial clinical evaluation list had 18 candidates: three RPGRIP1 and three
+MPV17 Saudi cases, plus seven Saudi and five US KMT2D cases. Source diagnosis and
+subtype checks retained 12 for the primary benchmark, as detailed below. SPINK5 has
+no eligible clinical query and remains a provenance case study.
 
 The frequency extraction development audit found two issues in its initial pilot:
 older Kabuki reports using MLL2 were missed, and explicit binary phenotype tables
@@ -141,23 +141,12 @@ study-specific frequency variation for these selected disorders. Recovering
 source-level assessment denominators is necessary before a population explanation
 can be tested. Full overlap outputs are in `frequency_overlap/`.
 
-The first explicit binary table has been checked against its source (PMID 29482518):
-17 phenotype rows for two genetically confirmed KMT2D cases, with the paper defining
-presence and absence symbols. All 34 patient–phenotype assessments and the 17
-frequency rows are retained in `frequency_curation/`, including broad mappings,
-source age/variant discrepancies and selection limitations. Their status is
-assistant-source-checked; clinician review and independence from the clinical
-queries remain pending. This two-case report is not a population prevalence sample.
-
-
-A second table (PMID 25896430) contributes 22 rows after restricting eight clinical
-Kabuki cases to the five assigned causal KMT2D variants by the authors. Their two
-missense assignments relied on computational evidence; the three reported truncating
-cases are identifiable for sensitivity analysis. The source-checked collection now
-contains 39 frequency rows and 144 patient–phenotype assessments across two sources.
-Blank cells remain unassessed. The primary missense cohort in PMID 31949313 concerns
-a syndrome explicitly distinguished from Kabuki syndrome and must be separated in
-any KMT2D gene-level frequency analysis; its comparison material still needs review.
+Two KMT2D tables contribute 39 rows and 144 patient–phenotype assessments. PMID
+29482518 supplies 17 rows for two boys, with source age/variant discrepancies
+retained. PMID 25896430 supplies 22 rows restricted to five author-assigned causal
+cases; the two computationally assigned missense cases are excluded in a specified
+sensitivity. Blank cells remain unassessed. The primary missense cohort in PMID
+31949313 concerns a disorder distinct from Kabuki and was not pooled into the update.
 
 The model proposal pass has completed for all 35 accessible frequency-source papers:
 294 candidate statements satisfy integer count bounds, 285 resolve to a proposed
@@ -166,3 +155,93 @@ the supplied source. These are technical checks only. Source checking identified
 incorrect cohort inclusion and subtype mixing despite valid count syntax. Every
 proposal still requires source review before entering an annotation update. The
 proposal audit is retained separately in `frequency_proposal_audit/`.
+
+## Frozen assessment-based frequency update
+
+`frequency_curation_combined/` contains 62 rows, 236 patient–phenotype assessments
+and 15 patients from four source cohorts: two Chinese KMT2D cohorts above, four
+Korean MPV17 hepatocerebral cases in three families (PMID 27536553), and four Japanese
+RPGRIP1 LCA cases in two families (PMID 31666973). Explicit absence and unknown are
+separate; contradictory assessment claims were deferred. The Japanese cohort is a
+follow-up and was counted once. These are selected, source-checked clinical cohorts,
+not prevalence samples or independent clinician annotations.
+
+The accepted rows collapse to 52 exact disorder–HPO pairs: 40 existing reference
+associations and 12 new positive associations. Cohort ages and ascertainment differ;
+pooling is exploratory, with source-deletion, family-balanced and truncating-KMT2D
+sensitivities. No curated source shared an evaluation publication or reporting
+group, stated care location or exact reported coding variant. Identity checks are
+source-based and do not supply private-identifier linkage or HGVS equivalence.
+
+## Clinical query eligibility and correction to the clinical benchmark
+
+Five of the 18 frozen frequency queries were source-reported unsolved or undetermined.
+One solved MPV17 neuropathy case fell outside the hepatocerebral target. The 12
+remaining queries are KMT2D eight (three Saudi/five US), RPGRIP1 three Saudi and
+MPV17 one Saudi, from three publications. Original US supplementary tables give
+consistent KMT2D gene targets but discordant within-gene phenotype/age/variant links.
+The prespecified strict identity sensitivity retains the concordant US ID 78,
+leaving eight queries. No patient reassignment was guessed.
+
+The whole Saudi clinical collection includes 1,601 solved, 313 undetermined, 661
+unsolved and one unknown-status record. Restricting the existing nearest-case
+clinical benchmark to source-reported solved diagnoses leaves 1,260 rankable Saudi
+queries: top 1 is 2.78%, top 10 is 15.63%, median rank 143.5 and MRR 0.07663.
+All 124 US records are source-reported solved, with 121 rankable queries unchanged
+(top 1 1.65%, top 10 14.05%). Clinical records were never in that reference library,
+so filtering query eligibility does not require recomputing reference scores.
+Main text and Supplementary Table S15 use the solved-only counts; the full original
+and restricted summaries are retained in `clinical_evaluation_audit/`.
+
+## Frequency-ranking results
+
+`frequency_benchmark/` evaluates the frozen rule in `docs/frequency_evaluation_plan.md`.
+The filtered reference has 6,550 OMIM disease profiles mapped to 4,891 genes; 799 rows
+citing evaluation publications or their known reporting groups were removed in all
+arms. The Kabuki1-to-KDM6A mapping was removed in all arms. Query profiles, candidates
+and gene-derived IC are fixed; weights enter the disease-to-query BMA direction.
+
+| Reference | MRR | Median rank | Top 10 / 12 |
+|---|---:|---:|---:|
+| Unweighted | 0.004807 | 275.5 | 0 |
+| Existing HPOA frequencies | 0.005040 | 307.0 | 0 |
+| Updated frequencies, fixed support | 0.005050 | 305.0 | 0 |
+| Added associations, unweighted | 0.004849 | 270.5 | 0 |
+| Added associations and updated frequencies | 0.005027 | 300.5 | 0 |
+
+The primary update improved four ranks, worsened one and left seven unchanged.
+Two RPGRIP1 queries and one KMT2D query attained their maximum gene score through
+another mapped disorder profile; their gene scores therefore did not respond to
+the intended-disorder frequency update. Winning profiles and intended-profile
+scores are included in the query-level outputs.
+Paired MRR change is 0.0000101; a publication bootstrap interval is [0, 0.0000182],
+but only three publications contribute and this interval is descriptive. All
+category-bound, missing-weight, family-balanced, truncating-only, source-deletion
+and strict-identity analyses are released; none yielded top-10 recovery. This is
+an inconclusive test of diagnostic benefit for this weighting rule, with extremely
+sparse clinical profiles and no prospective outcomes. It is retained in the
+supplement, not promoted to the paper's central claim.
+
+## Within-disorder provenance comparison
+
+A further source review found four unrelated German RPGRIP1 LCA patients with
+explicit yes/no assessments (PMID 30576320, Tables 1 and 3). This source was checked
+after the first ranking run and was not retrospectively added to that frozen update.
+`frequency_source_contrast/` compares nystagmus and cataract with the Japanese cohort:
+nystagmus is 4/4 in each; cataract is 1/4 German versus 0/4 Japanese. The positive
+German case is aged 47; the Japanese table gives ages 1–9 with later tests at 7–15.
+Patient counts are descriptive; exact intervals use the six independent families
+whose observed status is concordant for these traits. Study, population and care
+country are perfectly confounded, while ages and variants differ. Thus source
+denominators support a comparison but no adjusted population effect is identifiable.
+This is Supplementary Table S24.
+
+## Manuscript placement and verification
+
+The main paper retains care-setting associations and sensitivity to phenotype
+restriction as its argument. It now includes source-specific heterogeneity and
+gene-level support limits. Frequency provenance and ranking remain exploratory
+supplementary results. Tables S18–S24 and two figures document the extension;
+new Methods specify extraction, planned human review, genetic matching, assessment
+denominators, leakage exclusions, scoring and sensitivities. All pending clinical
+validation is labelled. Reproduction commands are in `docs/extension_reproduction.md`.

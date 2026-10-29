@@ -7,6 +7,13 @@ stay outside version control. Human reviewers: Paul Schofield and Marwa Abdelhak
 (confirmed by Robert on 2026-10-29). No annotations will be labelled human-validated
 until their actual assessments have been returned and adjudicated.
 
+Latest state: source, genetics and exploratory frequency analyses are documented
+in `results/v5/RESULTS.md` and integrated into the manuscript draft. The clinical
+query eligibility correction and the frozen frequency benchmark are complete.
+Independent clinician returns, adjudication and human-validation scores remain
+outstanding. The checkpoints below describe the initial implementation state;
+they are not evidence that model jobs remain running.
+
 ## Completion evidence
 
 1. Matched publication/source manifest, abstract and full-text extraction with the
@@ -50,7 +57,7 @@ until their actual assessments have been returned and adjudicated.
   comparison. Check shared patients and families where identifiable, and exclude
   development examples from independent evaluation.
 
-## State, 2026-10-29
+## Initial state, 2026-10-29
 
 - Local analysis repository started clean at 531f4bee7. Manuscript source is at
   f3d9861; an author-facing review memo is untracked and is being retained.
@@ -59,7 +66,7 @@ until their actual assessments have been returned and adjudicated.
 - Recovered original HPO inputs from unimatrix01:/data/hohndor/pavs-popmodel/hpo/.
 - Human review is outstanding; preparing reviewer materials is part of this work.
 
-## Progress checkpoint
+## Initial progress checkpoint (superseded by the results report)
 
 - Source-specific analysis completed: 18 paired source–region benchmarks with
   publication and reporting-group resampling, plus 180 regional tests across
