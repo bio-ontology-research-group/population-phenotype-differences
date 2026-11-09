@@ -72,6 +72,7 @@ def cmd_rank(a):
     organ = {t for t in eng.terms if ROOT_PA in eng.terms[t]["is_a"]} | {ROOT_PA, "HP:0000001"}
     cases = [r for r in read_cases(a.cases) if r["gene"] in eng.gid]
     cases = cases[a.chunk::a.chunks]
+    import hashlib
     gnames = np.array(eng.genes)
     rows = []
 
@@ -89,6 +90,18 @@ def cmd_rank(a):
         affected = collections.defaultdict(set)
         for g, h in sole.get(r["pmid"], []): affected[g].add(h)
         bed = [t for t in terms if tc.get(t) in BED]; tst = [t for t in terms if tc.get(t) in TEST]
+        if a.random_control:
+            # control for the bedside restriction: keep a random subset of the same size as the bedside profile,
+            # so that the number of findings removed is matched and only their type differs (seeded per case)
+            if not bed or not tst: continue
+            seed = int(hashlib.sha1(r["id"].encode()).hexdigest()[:8], 16)
+            keep = sorted(np.random.default_rng(seed).choice(len(terms), size=len(bed), replace=False))
+            rnd = [terms[k] for k in keep]
+            rows.append({"id": r["id"], "gene": g0, "region": r["region"], "corpus": r["corpus"], "n_terms": len(terms),
+                         "n_bed": len(bed), "n_test": len(tst), "n_rand_test": sum(tc.get(t) in TEST for t in rnd),
+                         "rank_all": rank(terms, affected), "rank_rand": rank(rnd, affected), "seed": seed})
+            if i % 500 == 0: print(f"chunk {a.chunk}: {i}/{len(cases)}", flush=True)
+            continue
         prof = [t for t in eng.g2t[g0] if t not in affected.get(g0, set()) and t not in organ]
         cov = np.mean([any(p in eng.anc_sets[t] for p in prof) for t in terms])
         rows.append({"id": r["id"], "gene": g0, "region": r["region"], "corpus": r["corpus"], "n_terms": len(terms),
@@ -169,6 +182,7 @@ def main():
     ap.add_argument("cmd", choices=["rank", "stats"])
     ap.add_argument("--cases", action="append", required=True); ap.add_argument("--hpo-dir"); ap.add_argument("--termclass")
     ap.add_argument("--chunks", type=int, default=1); ap.add_argument("--chunk", type=int, default=0)
+    ap.add_argument("--random-control", action="store_true", help="rank: paired cases only; rank a random subset of the same size as the bedside profile")
     ap.add_argument("--percase"); ap.add_argument("--groups"); ap.add_argument("--perms", type=int, default=2000)
     ap.add_argument("--out", required=True)
     a = ap.parse_args()

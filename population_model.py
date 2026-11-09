@@ -278,6 +278,11 @@ def cmd_terms(a):
             if ts: cases.append({"gene": r["gene"], "region": r["region"], "corpus": r.get("corpus", ""),
                                  "author": r.get("author_region") or "UNKNOWN", "group": group_of(G, r["pmid"]), "terms": ts,
                                  "extra": r.get(a.key_extra, "") if a.key_extra else ""})
+    if a.require_classified:  # sensitivity: drop cases with no test-based or bedside finding (share would be 0)
+        tc0 = {x["id"]: x["class"] for x in map(json.loads, open(a.termclass))}
+        CLS = {"laboratory", "imaging", "physiological_test", "pathology", "clinical_exam", "symptom_history"}
+        n0 = len(cases); cases = [c for c in cases if any(tc0.get(t) in CLS for t in c["terms"])]
+        print(f"require-classified: dropped {n0 - len(cases)} of {n0} cases with no classified finding")
     key = (lambda c: (c["gene"], c["corpus"], c["extra"])) if a.strata == "total" else (lambda c: (c["gene"], c["corpus"], c["author"], c["extra"]))
     sreg = collections.defaultdict(set)
     for c in cases: sreg[key(c)].add(c["region"])
@@ -393,6 +398,7 @@ def main():
     ap.add_argument("--r2-boot", type=int, default=50, help="group-cluster bootstraps for the variance decomposition")
     ap.add_argument("--termclass", help="termclass.jsonl from qwen_tasks.py: adds case-level test-vs-bedside outcomes")
     ap.add_argument("--where", action="append", help="terms: keep only cases with COL=VALUE (repeatable)")
+    ap.add_argument("--require-classified", action="store_true", help="terms: drop cases with no test-based or bedside finding (needs --termclass)")
     ap.add_argument("--key-extra", help="terms: add this case-table column to the stratum key (cases without it dropped)")
     ap.add_argument("--min-cases", type=int, default=10); ap.add_argument("--show", type=int, default=15)
     a = ap.parse_args()

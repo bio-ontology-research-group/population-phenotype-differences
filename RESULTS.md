@@ -684,3 +684,24 @@ of the full model 0.066 (0.023 to 0.274); unique R2 of phenotyping depth 0.012 (
 for a median 86% (68% to 92%) of the within-gene variation the model explains, population for 1.2% (0.03% to 28%).
 Most of the within-gene variance (R2 of 0.02 to 0.27) is explained by none of the layers. Reported as Supplementary
 Table S17 and one Discussion sentence (Paul's heterogeneity point).
+
+## Random-removal control for the bedside restriction (2026-11-09, unimatrix job 12128; `gda_impact.py rank --random-control`, `random_control.py`)
+
+For each of the 25,234 paired cases (both bedside and test-based findings), the causative gene was also ranked with a
+random subset of the case's mapped classes of the same size as its bedside profile (one draw per case, generator seeded
+from the case id; `jobs/gda_rand_um.sbatch`, 40 chunks, minutes each). Outputs `results/v4/gda_rand/`; summary
+`random_control.csv` / `.tex`. The re-run's rank_all matched the 2026-10-28 chunks in 25,229 of 25,234 cases (floating-point
+tie order; max 0.002 log2 units).
+
+| Population | n | bedside / full | random / full | bedside / random | top-10 full / bedside / random |
+|---|---|---|---|---|---|
+| EUR | 12,403 | 4.09 [3.95, 4.24] | 2.50 [2.43, 2.58] | 1.63 [1.58, 1.69] | 42.1 / 19.7 / 26.6 |
+| MENA | 3,247 | 3.98 [3.71, 4.25] | 2.52 [2.39, 2.66] | 1.58 [1.47, 1.68] | 43.0 / 20.1 / 26.7 |
+| EASIA | 7,636 | 4.44 [4.24, 4.63] | 2.60 [2.50, 2.70] | 1.71 [1.63, 1.79] | 45.9 / 21.4 / 29.2 |
+| SASIA | 956 | 4.59 [4.07, 5.27] | 2.63 [2.36, 2.91] | 1.75 [1.53, 1.99] | 45.7 / 22.6 / 31.3 |
+| LATAM | 865 | 3.87 [3.41, 4.39] | 2.77 [2.48, 3.07] | 1.40 [1.24, 1.59] | 48.8 / 27.3 / 31.2 |
+| AFR | 127 | 3.83 [2.86, 5.25] | 2.19 [1.67, 2.87] | 1.75 [1.25, 2.50] | 50.4 / 25.2 / 36.2 |
+
+Reading: removing the same number of findings at random costs a 2.2-2.8-fold rank loss, i.e. 58-75% of the bedside
+restriction's loss on the log2 scale; the remaining 1.40-1.75-fold (all intervals above 1) is attributable to the type of
+finding removed. The random subsets kept 46-52% of each case's test-based classes on average.
