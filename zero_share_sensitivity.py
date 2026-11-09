@@ -48,7 +48,7 @@ def main():
         w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
     with open(a.out + ".tex", "w") as f:
         f.write("\\begin{tabular}{lrrrrrr}\n\\toprule\n& \\multicolumn{3}{c}{All cases ($s_i=0$ if no classified finding)} & \\multicolumn{3}{c}{Cases with a classified finding} \\\\\n")
-        f.write("\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\nPopulation & Cases & Difference & $q$ & Cases & Difference & $q$ \\\\\n\\midrule\n")
+        f.write("\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\nPopulation & Cases & Difference & $p$ & Cases & Difference & $p$ \\\\\n\\midrule\n")
         for r in rows:
             f.write(f"{r['label']} & {r['n_r1_main']:,} & {r['excess_main']:+.1f} & {r['p_main']:.4f} & {r['n_r1_sens']:,} & {r['excess_sens']:+.1f} & {r['p_sens']:.4f} \\\\\n")
         f.write("\\bottomrule\n\\end{tabular}\n")
