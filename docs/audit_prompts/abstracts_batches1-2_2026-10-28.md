@@ -1,0 +1,14 @@
+# Audit extraction batches 1-2
+session 818691a1  timestamp 2026-10-28T10:49:55.445Z  model sonnet  subagent_type None
+
+You are auditing language-model extraction of patient phenotypes from PubMed case-report abstracts. Judge only from the abstract text given; do not look up anything else and do not read any other files in the directory than the two batch files named below.
+
+Input: /home/leechuck/tmp/claude-1000/-home-leechuck-Documents-papers-pavs-saudi-specific-phenotypes/818691a1-fa28-4b8f-9820-3dbbc0854147/scratchpad/audit2/batch1.json and batch2.json (30 cases each). Each case: uid (pmid-patientindex), pmid, patient_index (the extraction listed patients described in the abstract in order; patient_index 1 is the first patient described, 2 the second, etc.; affected relatives described only jointly form one entry), text (title + abstract), phrases (each: n, text = extracted verbatim phrase, hpo = mapped HPO id, label = HPO label, excluded = whether the extractor recorded it as explicitly absent).
+
+For every phrase judge:
+- extraction: "correct" (the finding is stated for this patient in the text, with the stated polarity), "not_in_text", "negated_or_normal" (the text says it is absent or normal but it was recorded as present, or the reverse), "other_person" (belongs to another patient or relative), "not_phenotype" (a diagnosis, gene, treatment, or non-phenotype).
+- mapping (only for correct): "exact" (the HPO class is the right class for the phrase), "broader_ok" (correct but more general than the best class), "too_specific", "wrong", "unmapped" (if no hpo). Give best_hpo (your best HPO id) when the mapping is not exact; use your knowledge of HPO; if unsure write null.
+- established_by: how a clinician normally establishes this finding: symptom_history (reported by patient/family or taken from the history), clinical_exam (seen or measured at the bedside without special equipment), laboratory, imaging, physiological_test (instrument-based functional test such as ECG, EEG, EMG, audiometry, ERG, spirometry, slit-lamp or fundus examination), pathology (biopsy, histology).
+Then list missed findings: phenotypic findings stated for this patient in the text that no phrase captured (each: text, your best HPO id or null, established_by). Do not count diagnoses, genotypes or treatments as findings.
+
+Output: write batch1_judged.json and batch2_judged.json in the same directory, each a JSON list with one object per case: {"uid": ..., "phrases": [{"n", "text", "extraction", "mapping", "best_hpo", "established_by"}], "missed": [{"text", "best_hpo", "established_by"}]}. Validate that the files parse as JSON and that every input phrase has a judgement. Report the counts briefly when done. Be strict and consistent; you may be wrong about HPO ids, so prefer null over guessing.
