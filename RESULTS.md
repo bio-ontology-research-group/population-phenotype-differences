@@ -705,3 +705,21 @@ tie order; max 0.002 log2 units).
 Reading: removing the same number of findings at random costs a 2.2-2.8-fold rank loss, i.e. 58-75% of the bedside
 restriction's loss on the log2 scale; the remaining 1.40-1.75-fold (all intervals above 1) is attributable to the type of
 finding removed. The random subsets kept 46-52% of each case's test-based classes on average.
+
+## Sensitivity: cases with no classified finding (2026-11-09, unimatrix job 12127; `population_model.py terms --require-classified`)
+
+The main comparison gives a case whose observed classes are all mixed or unclassified a test share of 0 (EUR 3.9%, MENA 4.1%,
+EASIA 3.0%, SASIA 2.5%, LATAM 4.0%, AFR 4.8% of cases). Total version repeated without these cases (`jobs/zeroshare_um.sbatch`,
+`zeroshare_tasks.txt`; outputs `results/v4/terms_noclass/`, summary `zero_share_sensitivity.csv`/`.tex`).
+
+| X vs EUR | all cases: diff (pp), p | excluding: diff (pp), p | change |
+|---|---|---|---|
+| MENA | -5.49 (n=4,650), 0.0005 | -5.62 (n=4,418), 0.0005 | -0.12 |
+| SASIA | -7.02 (n=1,494), 0.0005 | -7.93 (n=1,451), 0.0005 | -0.90 |
+| LATAM | -4.57 (n=1,465), 0.0005 | -4.86 (n=1,401), 0.0005 | -0.29 |
+| AFR | -9.04 (n=209), 0.0005 | -9.03 (n=198), 0.0005 | +0.00 |
+| EASIA | -0.60 (n=13,145), 0.15 | -1.22 (n=12,726), 0.0013 | -0.62 |
+
+Reading: the zero convention slightly understates the deficits (EUR has more zero-share cases than EASIA and SASIA);
+excluding the cases makes the four deficits 0.0-0.9 points larger and turns the small EASIA difference nominally
+significant (-1.2 points), still an order of magnitude smaller than the other four.
