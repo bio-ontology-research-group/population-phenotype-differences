@@ -64,6 +64,7 @@ extracted phrases only.
   | `worldbank/` | `healthspend.py` | Figure 3b and c, Table S10 |
   | `gda/` | `gda_impact.py rank` (`jobs/gda_um.sbatch`) and `gda_impact.py stats`; `collect_tables.py` adds q | Table 1, Table S13 |
   | `gda_rand/` | `gda_impact.py rank --random-control` (`jobs/gda_rand_um.sbatch`); `random_control.py` | Table S13 (continued) |
+  | `../v5/tool_restriction/` | `export_profiles.py` (`jobs/tr_export_um.sbatch`); `tool_restriction_run.py` (`jobs/tool_restriction_um.sbatch`, configuration in `jobs/tool_restriction/`); `tool_restriction_universe.py`; `tool_restriction.py` | Table S13 (continued, Exomiser and LIRICAL) |
   | `terms_noclass/` | `population_model.py terms --require-classified` (`jobs/zeroshare_um.sbatch`, `zeroshare_tasks.txt`); `zero_share_sensitivity.py` | Table S6 (continued) |
   | `symptom_sign/` | `symptom_sign.py` | Table S5 |
   | `age_sex/` | `age_sex_interaction.py` | Table S7, Figure S2 |

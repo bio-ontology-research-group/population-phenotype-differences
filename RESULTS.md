@@ -723,3 +723,43 @@ EASIA 3.0%, SASIA 2.5%, LATAM 4.0%, AFR 4.8% of cases). Total version repeated w
 Reading: the zero convention slightly understates the deficits (EUR has more zero-share cases than EASIA and SASIA);
 excluding the cases makes the four deficits 0.0-0.9 points larger and turns the small EASIA difference nominally
 significant (-1.2 points), still an order of magnitude smaller than the other four.
+
+## Bedside restriction in Exomiser and LIRICAL (2026-11-11/12, unimatrix jobs 12218 and 12219; `tool_restriction_run.py`, `tool_restriction.py`)
+
+The 25,234 paired cases and their three profiles (all, bedside only, random subset of bedside size; `export_profiles.py`,
+0 count mismatches against `results/v4/gda_rand/`) were ranked with Exomiser 15.1.0 (phenotype data 2512, phenotype-only
+preset; hiPhive default and human only) and LIRICAL 2.4.2 (data of 2026-11-11), without variant data. Gene rank from the
+Exomiser gene phenotype score, and from the highest post-test probability among a gene's diseases in LIRICAL; midranks for
+ties and for genes without a positive score. Cases with the causative gene outside the tool's gene set are excluded
+(Exomiser 247, LIRICAL 141; `not_in_universe.csv`). No leave-publication-out is possible, so only paired ratios are
+interpreted. Versions, URLs, sha256 and commands: `results/v5/tool_restriction/versions.json`. About 1,026 CPU-hours.
+
+| Tool | Population | n | bedside / full | random / full | bedside / random | top-10 full / bedside / random |
+|---|---|---|---|---|---|---|
+| hiphive_default | EUR | 12,264 | 4.76 [4.57, 4.96] | 3.14 [3.03, 3.25] | 1.52 [1.46, 1.58] | 42.0 / 19.2 / 25.0 |
+| hiphive_default | MENA | 3,231 | 4.57 [4.23, 4.93] | 3.11 [2.92, 3.34] | 1.47 [1.37, 1.58] | 41.9 / 19.4 / 25.2 |
+| hiphive_default | EASIA | 7,555 | 5.02 [4.77, 5.31] | 3.31 [3.17, 3.45] | 1.51 [1.44, 1.60] | 43.4 / 19.2 / 24.9 |
+| hiphive_default | SASIA | 953 | 4.81 [4.18, 5.60] | 3.02 [2.67, 3.41] | 1.60 [1.38, 1.84] | 42.8 / 18.8 / 26.2 |
+| hiphive_default | LATAM | 858 | 5.36 [4.61, 6.35] | 3.93 [3.42, 4.54] | 1.37 [1.16, 1.60] | 50.1 / 23.1 / 30.4 |
+| hiphive_default | AFR | 126 | 4.38 [3.16, 6.30] | 2.62 [1.92, 3.62] | 1.67 [1.16, 2.42] | 42.9 / 22.2 / 25.4 |
+| hiphive_default | ALL | 24,987 | 4.83 [4.70, 4.98] | 3.20 [3.12, 3.28] | 1.51 [1.47, 1.55] | 42.7 / 19.4 / 25.2 |
+| hiphive_human | EUR | 12,264 | 5.20 [5.00, 5.39] | 3.06 [2.97, 3.17] | 1.70 [1.64, 1.76] | 44.2 / 20.1 / 26.8 |
+| hiphive_human | MENA | 3,231 | 4.91 [4.57, 5.32] | 3.00 [2.82, 3.20] | 1.64 [1.53, 1.76] | 44.5 / 20.2 / 27.0 |
+| hiphive_human | EASIA | 7,555 | 5.27 [5.02, 5.55] | 3.11 [2.99, 3.25] | 1.70 [1.61, 1.77] | 45.5 / 19.8 / 26.9 |
+| hiphive_human | SASIA | 953 | 5.15 [4.47, 5.88] | 3.05 [2.69, 3.43] | 1.69 [1.46, 1.94] | 45.3 / 19.4 / 27.4 |
+| hiphive_human | LATAM | 858 | 5.42 [4.68, 6.34] | 3.72 [3.27, 4.23] | 1.46 [1.25, 1.70] | 51.0 / 23.7 / 31.5 |
+| hiphive_human | AFR | 126 | 4.46 [3.28, 6.26] | 2.64 [1.94, 3.76] | 1.69 [1.19, 2.35] | 42.1 / 20.6 / 23.8 |
+| hiphive_human | ALL | 24,987 | 5.18 [5.06, 5.33] | 3.09 [3.02, 3.16] | 1.68 [1.63, 1.72] | 44.9 / 20.1 / 27.0 |
+| lirical_pheno | EUR | 12,310 | 4.15 [4.01, 4.28] | 2.59 [2.51, 2.68] | 1.60 [1.55, 1.66] | 45.4 / 23.6 / 30.7 |
+| lirical_pheno | MENA | 3,231 | 4.46 [4.16, 4.79] | 2.84 [2.69, 3.03] | 1.57 [1.48, 1.68] | 48.1 / 23.1 / 29.6 |
+| lirical_pheno | EASIA | 7,610 | 4.47 [4.28, 4.68] | 2.74 [2.63, 2.86] | 1.63 [1.56, 1.72] | 44.5 / 20.8 / 27.8 |
+| lirical_pheno | SASIA | 955 | 4.45 [3.95, 5.03] | 2.76 [2.47, 3.13] | 1.61 [1.42, 1.84] | 42.9 / 19.9 / 27.9 |
+| lirical_pheno | LATAM | 860 | 4.01 [3.51, 4.59] | 2.90 [2.56, 3.31] | 1.38 [1.21, 1.57] | 47.1 / 23.5 / 29.7 |
+| lirical_pheno | AFR | 127 | 4.45 [3.27, 6.09] | 2.18 [1.69, 2.86] | 2.04 [1.44, 2.75] | 43.3 / 23.6 / 31.5 |
+| lirical_pheno | ALL | 25,093 | 4.29 [4.18, 4.39] | 2.68 [2.63, 2.74] | 1.60 [1.56, 1.64] | 45.4 / 22.5 / 29.5 |
+
+Sensitivity (`tool_restriction_scored.csv`): without cases whose causative gene had no positive score under at least one
+profile (Exomiser default 408, human only 1,853, LIRICAL 0), pooled bedside / random is 1.48 [1.44, 1.52], 1.57 [1.53, 1.60]
+and 1.60 [1.56, 1.64]. Spearman correlation with our scorer (`tool_restriction_spearman.csv`): per-case log2(bed/all) 0.66,
+0.69, 0.66; log2 rank under the full profile 0.72, 0.73, 0.60. Paper: one Results paragraph, one Methods paragraph, one
+Discussion sentence, Supplementary Methods and Table S13 (continued).

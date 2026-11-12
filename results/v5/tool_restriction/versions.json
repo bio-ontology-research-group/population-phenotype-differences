@@ -1,0 +1,90 @@
+{
+ "date": "2026-11-11 (pilot 12:30-13:35 +03), full run 2026-11-11 13:36 to 2026-11-12 03:10 +03",
+ "cluster": "unimatrix (Slurm, partition debug; nodes node002-node005; node007 excluded: no java; node008 excluded: /data not mounted)",
+ "java": "OpenJDK 21.0.13.0.3 (Ubuntu 24.04 package, /usr/bin/java on compute nodes)",
+ "exomiser": {
+  "version": "15.1.0 (released 2026-06-09)",
+  "archive_url": "https://github.com/exomiser/Exomiser/releases/download/15.1.0/exomiser-cli-15.1.0-distribution.zip",
+  "archive_sha256": "47faa54d4791686c9dc3f896762834630e9eaf607ad3cf3399074353c3dda248",
+  "phenotype_data": {
+   "release": "2512",
+   "url": "https://data.monarchinitiative.org/exomiser/data/2512_phenotype.zip",
+   "sha256": "4bb465ad61f13b3074d0d3f741969d6f4f18a1aaef644bdcf7730c816c96097f",
+   "last_modified_http": "Thu, 12 Mar 2026 19:26:18 GMT",
+   "contents_used": "2512_phenotype.mv.db (2025-11-06), rw_string_10.mv, hp.obo (hp/releases/2025-05-06); phenix/ subdirectory not unpacked (Phenix prioritiser not used)",
+   "note": "no sha256 file is published for 2512; hash computed locally"
+  },
+  "genome_data": {
+   "release": "2512_hg19",
+   "url": "https://data.monarchinitiative.org/exomiser/data/2512_hg19.zip",
+   "sha256": "dc0a7be53442ed5a420bb5ccc9adee3ab210a63198132129705dec44f6d14e34",
+   "why": "Exomiser 15.1.0 CLI refuses to start without a configured genome assembly ('No GenomeAnalysisService instance provided! You must specify at least one exomiser genome assembly data version in the application.properties file.'). No VCF is given, so no variant data are used; the hg19 Ensembl transcript set defines the enumerated gene set (34,829 genes)."
+  },
+  "mode": "phenotype-only: official preset examples/preset-phenotype-only-analysis.yml (docs: PHENOTYPE_ONLY preset), steps omimPrioritiser + hiPhivePrioritiser, empty inheritanceModes, no VCF",
+  "configs": {
+   "hiphive_default": "jobs/tool_restriction/exomiser_hiphive_default.yml = preset-phenotype-only-analysis.yml unchanged (hiPhive human, mouse, fish, PPI)",
+   "hiphive_human": "jobs/tool_restriction/exomiser_hiphive_human.yml = same with hiPhivePrioritiser: { runParams: 'human' } (as in examples/preset-exome-analysis-human-only.yml)"
+  },
+  "application_properties": "jobs/tool_restriction/exomiser_application.properties",
+  "command": "java -Xmx12g -XX:ActiveProcessorCount=2 -Djava.io.tmpdir=$WORK -Dspring.config.location=exomiser_application.properties -jar exomiser-cli-15.1.0.jar batch batch.txt",
+  "batch_line": "--analysis exomiser_hiphive_{default|human}.yml --sample s{k}_{profile}.yml --output-format PARQUET --output-directory $WORK/out --output-filename r{k}_{profile}_{config}",
+  "sample_format": "v1 phenopacket YAML: id, subject.id, phenotypicFeatures[].type.id, metaData.phenopacketSchemaVersion 1.0 (no sex/age)",
+  "score": "genePhenotypeScore from the PARQUET output (equals EXOMISER_GENE_PHENO_SCORE of TSV_GENE, checked to 5e-5 on one analysis; INFERRED, not verified: it is the combined priority score of the OMIM and hiPhive prioritisers). PARQUET lists only genes with score > 0; TSV_GENE lists all 34,829 genes (rest score 0).",
+  "N_universe": 34829,
+  "universe_definition": "all genes in a phenotype-only TSV_GENE output (hg19 2512 Ensembl gene set enumerated by Exomiser without a VCF); 26,407 have an NCBI Gene id. n_scored = genes with phenotype score > 0; causative gene with score 0 gets absent=1 and the midrank of the zero block.",
+  "python_reader": "pyarrow 17.0.0 installed with pip --target /data/hohndor/pavs-tools/pylib (PYTHONPATH), used with /data/hohndor/pavs-popmodel/venv/bin/python (numpy 1.26.4)"
+ },
+ "lirical": {
+  "version": "2.4.2 (released 2026-11-06)",
+  "archive_url": "https://github.com/TheJacksonLaboratory/LIRICAL/releases/download/v2.4.2/lirical-cli-2.4.2-distribution.zip",
+  "archive_sha256": "0e85d64dddaac4605bcabbc714e9d7ec46e847091813faa04a6ff0f27b609633",
+  "data_download_command": "java -jar lirical-cli-2.4.2.jar download -d data -v (2026-11-11)",
+  "data_sources (from biodownload-1.1.2 resource-url.properties)": {
+   "hp.json": "http://purl.obolibrary.org/obo/hp.json (hp/releases/2026-09-01)",
+   "phenotype.hpoa": "http://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa (#version 2026-09-02; 8478 OMIM, 47 DECIPHER, 4357 ORPHANET)",
+   "mim2gene_medgen": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen (downloaded 2026-11-11)",
+   "hgnc_complete_set.txt": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt (downloaded 2026-11-11)",
+   "en_product6.xml": "https://www.orphadata.com/data/xml/en_product6.xml (not used: --use-orphanet off)"
+  },
+  "data_sha256_file": "/data/hohndor/pavs-tools/lirical/data.sha256",
+  "mode": "phenotype-only: `prioritize` without --vcf and without --assembly (CLI help: 'Leave unset to run in phenotype-only mode'); defaults otherwise (OMIM diseases, no Orphanet, no negated terms, sex UNKNOWN, no age)",
+  "command": "java -Xmx2g -XX:ActiveProcessorCount=1 -XX:+UseSerialGC -Djava.io.tmpdir=$WORK -jar lirical-cli-2.4.2.jar prioritize -d data -p HP:...,HP:... -o $WORK -x l{k}_{profile} -f json --sample-id l{k}_{profile}",
+  "batch_mode": "none (one JVM per analysis)",
+  "gene_score": "max posttestProbability (JSON, full precision) over the diseases linked to the gene by LIRICAL's own data/mim2gene_medgen (type=phenotype rows with a GeneID; the file LIRICAL loads via phenol Mim2GeneMedgenLoader); NCBI Gene id -> symbol via data/hgnc_complete_set.txt",
+  "N_universe": 4961,
+  "universe_definition": "NCBI Gene ids linked by data/mim2gene_medgen (type=phenotype, GeneID present) to an OMIM disease in data/phenotype.hpoa; all are scored in every run (n_scored = 4961)"
+ },
+ "profiles": "export_profiles.py over results/fine2/cases_{store,pmcp_map2,abs}.tsv, hpo/ (hp.obo 2026-01-08), results/termclass.jsonl; same code path and seeded draw as gda_impact.py rank --random-control",
+ "slurm": {
+  "export": "job 12193 (jobs/tr_export_um.sbatch)",
+  "pilot": "LIRICAL 12196 (array 0-5, 1 cpu, 4G), Exomiser 12211 (array 0-5, 2 cpu, 16G, -Xmx12g); 60 cases (10 per region, first 10 by sha1(id))",
+  "full": "Exomiser 12218 (--array=0-149%40 -c 2 --mem=16G, -Xmx12g, sub-batches of 50 cases per JVM); LIRICAL 12219 (--array=0-299%110 -c 1 --mem=3G, -Xmx2g; time limit lowered from 12h to 3h after submission so that backfill would start it)",
+  "sbatch": "jobs/tool_restriction_um.sbatch TOOL IDS TAG XMX (UNIVERSE_N=34829 exported for Exomiser)",
+  "excluded_nodes": "node007 (no java), node008 (/data not mounted), unimatrix (login host)"
+ },
+ "compute": {
+  "pilot_per_analysis_s": {
+   "exomiser": 7.2,
+   "lirical": 17.2
+  },
+  "projection_full_cpu_h": {
+   "exomiser": 589,
+   "lirical": 362,
+   "total_requested_cpus": 951,
+   "total_allocated_threads": 1312
+  },
+  "actual_task_hours": {
+   "exomiser": 358.2,
+   "lirical": 309.0
+  },
+  "actual_cpu_h_requested": {
+   "exomiser": 716.5,
+   "lirical": 309.0,
+   "total": 1025.5
+  },
+  "actual_per_analysis_s": {
+   "exomiser": 8.52,
+   "lirical": 14.69
+  }
+ }
+}
