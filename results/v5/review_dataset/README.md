@@ -4,7 +4,9 @@ Version 1.0.0. Licence: CC BY 4.0 for the annotations (see "Licence" for quoted 
 
 ## What this is
 
-Two reviewers (Paul N. Schofield, code `PNS`; Marwa Abdelhakim, code `MA`) independently read the
+Two reviewers (Paul N. Schofield, code `PNS`, https://orcid.org/0000-0002-5111-7263, University of
+Cambridge; Marwa Abdelhakim, code `MA`, https://orcid.org/0000-0001-6816-2119, King Abdullah University
+of Science and Technology) independently read the
 abstract and the full text of 20 published case reports of Mendelian disorders and recorded, for the
 patients with the named causative gene:
 

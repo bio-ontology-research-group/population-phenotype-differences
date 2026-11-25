@@ -128,7 +128,8 @@ def main():
     pkg = {"name": "independent-review-of-phenotype-extraction", "title": "Independent review of phenotype extraction from 20 rare disease case reports",
            "description": "Two reviewers independently recorded patients, phenotypic findings (HPO), observation basis and frequency statements in the abstract and full text of 20 case reports, blind to model output and regional assignment; with the automated pipeline output for the same documents.",
            "version": "1.0.0", "licenses": [{"name": "CC-BY-4.0", "path": "https://creativecommons.org/licenses/by/4.0/", "title": "Creative Commons Attribution 4.0"}],
-           "contributors": [{"title": n, "role": "author"} for _, n in REV.values()] + [{"title": "Azza Althagafi", "role": "contributor"}, {"title": "Robert Hoehndorf", "role": "contributor"}],
+           "contributors": [{"title": "Paul N. Schofield", "role": "author", "path": "https://orcid.org/0000-0002-5111-7263", "organization": "Department of Physiology, Development and Neuroscience, University of Cambridge, United Kingdom"},
+                            {"title": "Marwa Abdelhakim", "role": "author", "path": "https://orcid.org/0000-0001-6816-2119", "organization": "King Abdullah University of Science and Technology, Thuwal, Saudi Arabia"}],
            "keywords": ["Human Phenotype Ontology", "rare disease", "case reports", "phenotype extraction", "inter-annotator agreement", "gold standard"],
            "sources": [{"title": "Human Phenotype Ontology release " + ver, "path": "http://purl.obolibrary.org/obo/hp/releases/" + ver + "/hp.obo"}, {"title": "Europe PMC", "path": "https://europepmc.org"}],
            "homepage": "https://github.com/bio-ontology-research-group/population-phenotype-differences", "resources": res}
