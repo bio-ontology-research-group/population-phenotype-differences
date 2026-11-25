@@ -1,0 +1,633 @@
+{
+ "name": "independent-review-of-phenotype-extraction",
+ "title": "Independent review of phenotype extraction from 20 rare disease case reports",
+ "description": "Two reviewers independently recorded patients, phenotypic findings (HPO), observation basis and frequency statements in the abstract and full text of 20 case reports, blind to model output and regional assignment; with the automated pipeline output for the same documents.",
+ "version": "1.0.0",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Paul N. Schofield",
+   "role": "author"
+  },
+  {
+   "title": "Marwa Abdelhakim",
+   "role": "author"
+  },
+  {
+   "title": "Azza Althagafi",
+   "role": "contributor"
+  },
+  {
+   "title": "Robert Hoehndorf",
+   "role": "contributor"
+  }
+ ],
+ "keywords": [
+  "Human Phenotype Ontology",
+  "rare disease",
+  "case reports",
+  "phenotype extraction",
+  "inter-annotator agreement",
+  "gold standard"
+ ],
+ "sources": [
+  {
+   "title": "Human Phenotype Ontology release 2026-01-08",
+   "path": "http://purl.obolibrary.org/obo/hp/releases/2026-01-08/hp.obo"
+  },
+  {
+   "title": "Europe PMC",
+   "path": "https://europepmc.org"
+  }
+ ],
+ "homepage": "https://github.com/bio-ontology-research-group/population-phenotype-differences",
+ "resources": [
+  {
+   "name": "documents",
+   "path": "documents.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 40,
+   "hash": "sha256:488a5c5541dda6a851bede42a8bd2ccfecdff7392af890df621b93561951d30a",
+   "schema": {
+    "fields": [
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "Neutral identifier shown to the reviewers (D001 to D040)."
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "Text presented: abstract or fulltext of the publication.",
+      "constraints": {
+       "enum": [
+        "abstract",
+        "fulltext"
+       ]
+      }
+     },
+     {
+      "name": "pmid",
+      "type": "string",
+      "description": "PubMed identifier of the publication."
+     },
+     {
+      "name": "pmcid",
+      "type": "string",
+      "description": "PubMed Central identifier."
+     },
+     {
+      "name": "doi",
+      "type": "string",
+      "description": "Digital object identifier."
+     },
+     {
+      "name": "publication_year",
+      "type": "string",
+      "description": "Year of publication."
+     },
+     {
+      "name": "title",
+      "type": "string",
+      "description": "Title of the publication."
+     },
+     {
+      "name": "licence",
+      "type": "string",
+      "description": "Licence of the publication as reported by Europe PMC; applies to quoted phrases."
+     },
+     {
+      "name": "target_gene",
+      "type": "string",
+      "description": "HGNC symbol of the causative gene for which the publication was sampled."
+     },
+     {
+      "name": "regional_group",
+      "type": "string",
+      "description": "Regional group assigned to the publication by the study (withheld from reviewers).",
+      "constraints": {
+       "enum": [
+        "EUR",
+        "MENA",
+        "SASIA",
+        "LATAM",
+        "AFR",
+        "EASIA"
+       ]
+      }
+     }
+    ],
+    "missingValues": [
+     ""
+    ],
+    "primaryKey": "document_id"
+   }
+  },
+  {
+   "name": "findings",
+   "path": "findings.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 1788,
+   "hash": "sha256:bde0e0a1f62728d32efb5a04e53251e839a1fe3c17b5324043fda8b3f5f20882",
+   "schema": {
+    "fields": [
+     {
+      "name": "reviewer",
+      "type": "string",
+      "description": "Reviewer code (PNS or MA).",
+      "constraints": {
+       "enum": [
+        "PNS",
+        "MA"
+       ]
+      }
+     },
+     {
+      "name": "row",
+      "type": "integer",
+      "description": "Row number in the reviewer's returned sheet."
+     },
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "Document reviewed."
+     },
+     {
+      "name": "patient_label",
+      "type": "string",
+      "description": "Label of the patient or aggregate as written by the reviewer."
+     },
+     {
+      "name": "source_phrase",
+      "type": "string",
+      "description": "Phrase or sentence in the document that supports the finding."
+     },
+     {
+      "name": "status",
+      "type": "string",
+      "description": "present, explicitly_absent or uncertain; empty if not entered."
+     },
+     {
+      "name": "hpo_id_as_entered",
+      "type": "string",
+      "description": "HPO identifier(s) exactly as entered by the reviewer."
+     },
+     {
+      "name": "hpo_label_as_entered",
+      "type": "string",
+      "description": "Label as entered by the reviewer."
+     },
+     {
+      "name": "hpo_id",
+      "type": "string",
+      "description": "Identifier resolved in the HPO release named in the README (one row per identifier; empty if absent from that release).",
+      "rdfType": "http://purl.obolibrary.org/obo/HP_0000001",
+      "constraints": {
+       "pattern": "(HP:[0-9]{7})?"
+      }
+     },
+     {
+      "name": "hpo_label",
+      "type": "string",
+      "description": "Primary label of hpo_id in that release."
+     },
+     {
+      "name": "observation_basis_as_entered",
+      "type": "string",
+      "description": "How the finding was established in this report, as entered."
+     },
+     {
+      "name": "observation_basis",
+      "type": "string",
+      "description": "Normalised basis: a single stated value, mixed if several, unclear, or empty."
+     },
+     {
+      "name": "source_locator",
+      "type": "string",
+      "description": "Section or location in the document."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "Reviewer's notes."
+     }
+    ],
+    "missingValues": [
+     ""
+    ],
+    "foreignKeys": [
+     {
+      "fields": "document_id",
+      "reference": {
+       "resource": "documents",
+       "fields": "document_id"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "patients",
+   "path": "patients.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 90,
+   "hash": "sha256:665fa69ad340c41d949e4c398d54bc29826b8271a7aa9c9ecd51687ede68e7ab",
+   "schema": {
+    "fields": [
+     {
+      "name": "reviewer",
+      "type": "string",
+      "description": "Reviewer code.",
+      "constraints": {
+       "enum": [
+        "PNS",
+        "MA"
+       ]
+      }
+     },
+     {
+      "name": "row",
+      "type": "integer",
+      "description": "Row number in the returned sheet."
+     },
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "Document reviewed."
+     },
+     {
+      "name": "patient_label",
+      "type": "string",
+      "description": "Label of the patient or aggregate."
+     },
+     {
+      "name": "unit",
+      "type": "string",
+      "description": "individual or aggregate."
+     },
+     {
+      "name": "number_of_patients",
+      "type": "string",
+      "description": "Number of patients the row describes."
+     },
+     {
+      "name": "diagnosis",
+      "type": "string",
+      "description": "Diagnosis as stated."
+     },
+     {
+      "name": "causal_gene",
+      "type": "string",
+      "description": "Causal gene as entered."
+     },
+     {
+      "name": "variant",
+      "type": "string",
+      "description": "Variant as reported."
+     },
+     {
+      "name": "allelic_state",
+      "type": "string",
+      "description": "Allelic state as entered."
+     },
+     {
+      "name": "ancestry",
+      "type": "string",
+      "description": "Stated ancestry or origin."
+     },
+     {
+      "name": "care_country",
+      "type": "string",
+      "description": "Country in which the patient was cared for."
+     },
+     {
+      "name": "care_evidence",
+      "type": "string",
+      "description": "Text supporting the care country."
+     },
+     {
+      "name": "identity_evidence",
+      "type": "string",
+      "description": "Text identifying the patient."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "Reviewer's notes."
+     }
+    ],
+    "missingValues": [
+     ""
+    ],
+    "foreignKeys": [
+     {
+      "fields": "document_id",
+      "reference": {
+       "resource": "documents",
+       "fields": "document_id"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "frequencies",
+   "path": "frequencies.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 91,
+   "hash": "sha256:2c9bb26159a9cee8b0c8f3c633e57512a245c4c33259a81e503526229d515e9a",
+   "schema": {
+    "fields": [
+     {
+      "name": "reviewer",
+      "type": "string",
+      "description": "Reviewer code.",
+      "constraints": {
+       "enum": [
+        "PNS",
+        "MA"
+       ]
+      }
+     },
+     {
+      "name": "row",
+      "type": "integer",
+      "description": "Row number in the returned sheet."
+     },
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "Document reviewed."
+     },
+     {
+      "name": "phenotype",
+      "type": "string",
+      "description": "Phenotype as stated."
+     },
+     {
+      "name": "hpo_id",
+      "type": "string",
+      "description": "HPO identifier as entered."
+     },
+     {
+      "name": "hpo_label",
+      "type": "string",
+      "description": "Primary label in the HPO release, if the identifier resolves."
+     },
+     {
+      "name": "affected",
+      "type": "string",
+      "description": "Number of patients with the phenotype, as entered."
+     },
+     {
+      "name": "assessed",
+      "type": "string",
+      "description": "Number of patients assessed, as entered."
+     },
+     {
+      "name": "cohort_definition",
+      "type": "string",
+      "description": "Cohort to which the frequency refers."
+     },
+     {
+      "name": "age_range",
+      "type": "string",
+      "description": "Age range, as entered."
+     },
+     {
+      "name": "source_locator",
+      "type": "string",
+      "description": "Location in the document."
+     },
+     {
+      "name": "overlap_notes",
+      "type": "string",
+      "description": "Notes on overlap with other cohorts."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "Reviewer's notes."
+     }
+    ],
+    "missingValues": [
+     ""
+    ],
+    "foreignKeys": [
+     {
+      "fields": "document_id",
+      "reference": {
+       "resource": "documents",
+       "fields": "document_id"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "document-assessments",
+   "path": "document_assessments.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 40,
+   "hash": "sha256:fcca473bc6915d700b39a62296744456443d2457d16dd019d29248e2c2989279",
+   "schema": {
+    "fields": [
+     {
+      "name": "reviewer",
+      "type": "string",
+      "description": "Reviewer code.",
+      "constraints": {
+       "enum": [
+        "PNS",
+        "MA"
+       ]
+      }
+     },
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "Document reviewed."
+     },
+     {
+      "name": "target_gene",
+      "type": "string",
+      "description": "Gene as entered."
+     },
+     {
+      "name": "assessment_complete",
+      "type": "string",
+      "description": "Whether the reviewer completed the document."
+     },
+     {
+      "name": "source_incomplete",
+      "type": "string",
+      "description": "Whether the reviewer judged the supplied text incomplete."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "Reviewer's notes."
+     }
+    ],
+    "missingValues": [
+     ""
+    ],
+    "foreignKeys": [
+     {
+      "fields": "document_id",
+      "reference": {
+       "resource": "documents",
+       "fields": "document_id"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "pipeline-findings",
+   "path": "pipeline_findings.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 614,
+   "hash": "sha256:04d8cd8fafed770eb4e61b981a83080d828fd4ebbd06906c4810890ba350c0d4",
+   "schema": {
+    "fields": [
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "Document processed."
+     },
+     {
+      "name": "patient_label",
+      "type": "string",
+      "description": "Patient label in the model output."
+     },
+     {
+      "name": "unit",
+      "type": "string",
+      "description": "individual or aggregate."
+     },
+     {
+      "name": "status",
+      "type": "string",
+      "description": "present or absent (explicitly excluded), as returned by the model."
+     },
+     {
+      "name": "phrase",
+      "type": "string",
+      "description": "Extracted phrase."
+     },
+     {
+      "name": "evidence",
+      "type": "string",
+      "description": "Text the model cited as evidence."
+     },
+     {
+      "name": "hpo_id",
+      "type": "string",
+      "description": "HPO class selected by the mapping procedure (empty if unmapped).",
+      "rdfType": "http://purl.obolibrary.org/obo/HP_0000001",
+      "constraints": {
+       "pattern": "(HP:[0-9]{7})?"
+      }
+     },
+     {
+      "name": "hpo_label",
+      "type": "string",
+      "description": "Primary label of hpo_id."
+     },
+     {
+      "name": "finding_class",
+      "type": "string",
+      "description": "Finding class of hpo_id used in the study."
+     }
+    ],
+    "missingValues": [
+     ""
+    ],
+    "foreignKeys": [
+     {
+      "fields": "document_id",
+      "reference": {
+       "resource": "documents",
+       "fields": "document_id"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "finding-classes",
+   "path": "finding_classes.tsv",
+   "format": "tsv",
+   "mediatype": "text/tab-separated-values",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": "\t"
+   },
+   "rows": 758,
+   "hash": "sha256:8b034f23230c22bbf7f899f3fe5f5844eda8267012beb3753fb694ac8e1608fa",
+   "schema": {
+    "fields": [
+     {
+      "name": "hpo_id",
+      "type": "string",
+      "description": "HPO class occurring in the findings or pipeline_findings table.",
+      "rdfType": "http://purl.obolibrary.org/obo/HP_0000001",
+      "constraints": {
+       "pattern": "(HP:[0-9]{7})?"
+      }
+     },
+     {
+      "name": "hpo_label",
+      "type": "string",
+      "description": "Primary label."
+     },
+     {
+      "name": "finding_class",
+      "type": "string",
+      "description": "Class assigned once per HPO class: symptom_history, clinical_exam, laboratory, imaging, physiological_test, pathology or mixed."
+     }
+    ],
+    "missingValues": [
+     ""
+    ]
+   }
+  }
+ ]
+}

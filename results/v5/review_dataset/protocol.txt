@@ -1,0 +1,40 @@
+# Independent source-text validation
+
+Please review the supplied documents independently before discussing cases with the
+other reviewer. Model predictions and assigned regional groups have been withheld.
+The source type and geography may remain apparent from the clinical text; this is
+not guaranteed source-type or geographical blinding.
+
+This is phase 1: construct a reference directly from the source. Do not consult
+model predictions. Each document names a target gene. Restrict annotation to primary
+patients affected by that gene in this report. Exclude background/cited patients,
+unaffected relatives, and laboratory models. Preserve patient labels and distinguish
+individual patients from aggregates. If identity cannot be resolved, mark it uncertain.
+
+Add one row per finding to findings.csv. State patient label, the source phrase,
+present / explicitly_absent / uncertain, and the best HPO identifier and label.
+An unmentioned finding is unknown and must not be entered as absent. Add the basis
+of observation (history, examination, laboratory, imaging, physiological_test,
+pathology, mixed or unclear), together with a short source locator/quote. Identify
+findings at the specificity the source actually supports.
+
+Complete one row per patient or aggregate in patients.csv. Record the diagnosis,
+causal gene, variant, allelic state, ancestry and place of care only where supported.
+Keep ancestry and care location separate. Use assessment_complete=yes only after the
+whole supplied document has been reviewed; mark incomplete sources explicitly.
+
+For any explicit frequency statement, add a row to frequencies.csv with the affected
+count, number actually assessed for that finding, cohort definition, age range where
+available, and supporting table/text location. Never assume every cohort member was
+assessed because the paper gives a total cohort size. Flag historical cohorts and
+possible patient overlap with other reports. Leave uncertain denominators blank.
+
+After both independent reviews are returned, disagreements will be assembled in an
+adjudication sheet. Phase 2 will compare the frozen reference with extracted findings
+and HPO mappings, score errors and missed findings, and verify identity alignment of
+abstract and full-text patients. Neither model agreement nor an empty return file
+counts as completed clinician validation.
+
+The source documents are supplied for internal research review. Do not redistribute
+the packet as part of the public analysis repository. Return your completed CSV files
+and document notes through the project team's usual channel.

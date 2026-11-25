@@ -1,0 +1,365 @@
+{
+ "rows": 838,
+ "documents": 39,
+ "hpo_ids": {
+  "current": 816,
+  "empty": 17,
+  "unknown": 5
+ },
+ "status": {
+  "present": 734,
+  "explicitly_absent": 98,
+  "": 3,
+  "uncertain": 3
+ },
+ "basis": {
+  "mixed": 73,
+  "examination": 297,
+  "history": 156,
+  "laboratory": 97,
+  "physiological_test": 5,
+  "imaging": 130,
+  "unclear": 53,
+  "": 6,
+  "pathology": 21
+ },
+ "class": {
+  "n": 635,
+  "agreement": 0.8566929133858268,
+  "agreement_ci": [
+   0.802906615367669,
+   0.9048958172557494
+  ],
+  "kappa": 0.7068670768887378,
+  "kappa_ci": [
+   0.6032775225998578,
+   0.7984542924801522
+  ],
+  "exact_class_agreement": 0.7228346456692913,
+  "reviewer_test_pipeline_bed": 12,
+  "reviewer_bed_pipeline_test": 79,
+  "by_region": {
+   "EUR": {
+    "n": 151,
+    "agreement": 0.8675496688741722,
+    "reviewer_test_pipeline_bed": 1,
+    "reviewer_bed_pipeline_test": 19
+   },
+   "MENA": {
+    "n": 118,
+    "agreement": 0.9067796610169492,
+    "reviewer_test_pipeline_bed": 0,
+    "reviewer_bed_pipeline_test": 11
+   },
+   "SASIA": {
+    "n": 58,
+    "agreement": 0.7586206896551724,
+    "reviewer_test_pipeline_bed": 0,
+    "reviewer_bed_pipeline_test": 14
+   },
+   "LATAM": {
+    "n": 145,
+    "agreement": 0.8137931034482758,
+    "reviewer_test_pipeline_bed": 8,
+    "reviewer_bed_pipeline_test": 19
+   },
+   "AFR": {
+    "n": 61,
+    "agreement": 0.8688524590163934,
+    "reviewer_test_pipeline_bed": 0,
+    "reviewer_bed_pipeline_test": 8
+   },
+   "EASIA": {
+    "n": 102,
+    "agreement": 0.8921568627450981,
+    "reviewer_test_pipeline_bed": 3,
+    "reviewer_bed_pipeline_test": 8
+   }
+  }
+ },
+ "class_confusion": {
+  "|clinical_exam": 1,
+  "|imaging": 2,
+  "|mixed": 1,
+  "|symptom_history": 1,
+  "|unclassified": 1,
+  "examination|clinical_exam": 205,
+  "examination|imaging": 10,
+  "examination|laboratory": 12,
+  "examination|mixed": 18,
+  "examination|no_hpo": 4,
+  "examination|pathology": 4,
+  "examination|physiological_test": 26,
+  "examination|symptom_history": 16,
+  "examination|unclassified": 2,
+  "history|clinical_exam": 49,
+  "history|imaging": 5,
+  "history|laboratory": 10,
+  "history|mixed": 16,
+  "history|no_hpo": 2,
+  "history|pathology": 1,
+  "history|physiological_test": 11,
+  "history|symptom_history": 60,
+  "history|unclassified": 2,
+  "imaging|clinical_exam": 8,
+  "imaging|imaging": 107,
+  "imaging|laboratory": 1,
+  "imaging|mixed": 2,
+  "imaging|no_hpo": 4,
+  "imaging|pathology": 1,
+  "imaging|physiological_test": 4,
+  "imaging|symptom_history": 1,
+  "imaging|unclassified": 2,
+  "laboratory|clinical_exam": 1,
+  "laboratory|imaging": 2,
+  "laboratory|laboratory": 76,
+  "laboratory|mixed": 5,
+  "laboratory|no_hpo": 7,
+  "laboratory|pathology": 1,
+  "laboratory|symptom_history": 1,
+  "laboratory|unclassified": 4,
+  "mixed|clinical_exam": 30,
+  "mixed|imaging": 5,
+  "mixed|laboratory": 7,
+  "mixed|mixed": 8,
+  "mixed|no_hpo": 1,
+  "mixed|pathology": 3,
+  "mixed|physiological_test": 1,
+  "mixed|symptom_history": 18,
+  "pathology|imaging": 1,
+  "pathology|laboratory": 10,
+  "pathology|no_hpo": 2,
+  "pathology|pathology": 7,
+  "pathology|unclassified": 1,
+  "physiological_test|clinical_exam": 1,
+  "physiological_test|physiological_test": 4,
+  "unclear|clinical_exam": 20,
+  "unclear|imaging": 16,
+  "unclear|laboratory": 1,
+  "unclear|mixed": 5,
+  "unclear|no_hpo": 2,
+  "unclear|pathology": 1,
+  "unclear|physiological_test": 5,
+  "unclear|symptom_history": 3
+ },
+ "extraction": {
+  "all": {
+   "documents": 40,
+   "ref_terms": 666,
+   "pred_terms": 505,
+   "exact_precision": 0.7405940594059406,
+   "exact_recall": 0.5615615615615616,
+   "lenient_precision": 0.8514851485148515,
+   "lenient_recall": 0.7222222222222222
+  },
+  "abstract": {
+   "documents": 20,
+   "ref_terms": 117,
+   "pred_terms": 97,
+   "exact_precision": 0.7938144329896907,
+   "exact_recall": 0.6581196581196581,
+   "lenient_precision": 0.8969072164948454,
+   "lenient_recall": 0.7435897435897436
+  },
+  "fulltext": {
+   "documents": 20,
+   "ref_terms": 549,
+   "pred_terms": 408,
+   "exact_precision": 0.7279411764705882,
+   "exact_recall": 0.5409836065573771,
+   "lenient_precision": 0.8406862745098039,
+   "lenient_recall": 0.7176684881602914
+  },
+  "EUR": {
+   "documents": 8,
+   "ref_terms": 165,
+   "pred_terms": 122,
+   "exact_precision": 0.7459016393442623,
+   "exact_recall": 0.5515151515151515,
+   "lenient_precision": 0.8442622950819673,
+   "lenient_recall": 0.7212121212121212
+  },
+  "MENA": {
+   "documents": 8,
+   "ref_terms": 128,
+   "pred_terms": 96,
+   "exact_precision": 0.625,
+   "exact_recall": 0.46875,
+   "lenient_precision": 0.7708333333333334,
+   "lenient_recall": 0.6328125
+  },
+  "SASIA": {
+   "documents": 4,
+   "ref_terms": 66,
+   "pred_terms": 48,
+   "exact_precision": 0.8333333333333334,
+   "exact_recall": 0.6060606060606061,
+   "lenient_precision": 0.9583333333333334,
+   "lenient_recall": 0.7878787878787878
+  },
+  "LATAM": {
+   "documents": 8,
+   "ref_terms": 139,
+   "pred_terms": 112,
+   "exact_precision": 0.8125,
+   "exact_recall": 0.6546762589928058,
+   "lenient_precision": 0.9107142857142857,
+   "lenient_recall": 0.8057553956834532
+  },
+  "AFR": {
+   "documents": 4,
+   "ref_terms": 49,
+   "pred_terms": 35,
+   "exact_precision": 0.7714285714285715,
+   "exact_recall": 0.5510204081632653,
+   "lenient_precision": 0.8571428571428571,
+   "lenient_recall": 0.6326530612244898
+  },
+  "EASIA": {
+   "documents": 8,
+   "ref_terms": 119,
+   "pred_terms": 92,
+   "exact_precision": 0.7065217391304348,
+   "exact_recall": 0.5462184873949579,
+   "lenient_precision": 0.8152173913043478,
+   "lenient_recall": 0.7226890756302521
+  }
+ },
+ "recall_by_type": {
+  "abstract": {
+   "test": {
+    "n": 44,
+    "lenient_recall": 0.7727272727272727
+   },
+   "bed": {
+    "n": 57,
+    "lenient_recall": 0.7894736842105263
+   }
+  },
+  "fulltext": {
+   "test": {
+    "n": 200,
+    "lenient_recall": 0.66
+   },
+   "bed": {
+    "n": 310,
+    "lenient_recall": 0.7774193548387097
+   }
+  }
+ },
+ "share": {
+  "pipeline_minus_reviewer_basis": {
+   "all": {
+    "n": 35,
+    "mean_diff": 3.9149099193106283,
+    "ci": [
+     -4.48747148120742,
+     12.633792411372006
+    ]
+   },
+   "abstract": {
+    "n": 16,
+    "mean_diff": 6.101190476190477,
+    "ci": [
+     -9.732886904761905,
+     24.555803571428562
+    ]
+   },
+   "fulltext": {
+    "n": 19,
+    "mean_diff": 2.0738315556223332,
+    "ci": [
+     -5.412230471392314,
+     9.718784186668909
+    ]
+   }
+  },
+  "pipeline_class_minus_reviewer_basis_on_reviewer_terms": {
+   "n": 36,
+   "mean_diff": 7.369009194272418,
+   "ci": [
+    0.3675474366112172,
+    14.864753034687588
+   ]
+  },
+  "pipeline_minus_reviewer_basis_by_region": {
+   "EUR": {
+    "n": 8,
+    "mean_diff": 3.481658761989644,
+    "ci": [
+     -8.508873530472796,
+     14.489664236906883
+    ]
+   },
+   "MENA": {
+    "n": 5,
+    "mean_diff": 8.68695652173913,
+    "ci": [
+     1.420289855072464,
+     15.720289855072465
+    ]
+   },
+   "SASIA": {
+    "n": 4,
+    "mean_diff": -3.5240800865800868,
+    "ci": [
+     -13.392857142857142,
+     5.201569264069264
+    ]
+   },
+   "LATAM": {
+    "n": 7,
+    "mean_diff": 18.093153928237964,
+    "ci": [
+     -7.4645691609977325,
+     44.307723089235694
+    ]
+   },
+   "AFR": {
+    "n": 4,
+    "mean_diff": 24.5016939582157,
+    "ci": [
+     2.510351966873707,
+     60.72463768115942
+    ]
+   },
+   "EASIA": {
+    "n": 7,
+    "mean_diff": -20.68981978756415,
+    "ci": [
+     -36.70068027210884,
+     -6.218686597446012
+    ]
+   }
+  },
+  "mean_share_reviewer_basis": {
+   "abstract": 31.88993244356566,
+   "fulltext": 34.6884431101555
+  },
+  "mean_share_pipeline": {
+   "abstract": 36.98621553884711,
+   "fulltext": 36.287797296125305
+  },
+  "pearson_r": 0.5993006529658074,
+  "n_r": 35
+ },
+ "paired_reviewer": {
+  "publications": 20,
+  "terms_fulltext_minus_abstract": {
+   "n": 20,
+   "mean_diff": 21.6,
+   "ci": [
+    15.2,
+    27.65124999999999
+   ]
+  },
+  "share_fulltext_minus_abstract": {
+   "n": 16,
+   "mean_diff": 2.9168565504525086,
+   "ci": [
+    -9.617934585258848,
+    14.72733833642281
+   ]
+  }
+ }
+}
